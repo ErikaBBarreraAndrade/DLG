@@ -70,11 +70,13 @@
 				<li class="price my-auto">
 					{{ cProduct.price | money }}
 				</li>
-				<li class="content-button my-auto">
-					<a href="{{ cProduct.url }}" target="_blank"  class="btn text-uppercase">
-						Ver Detalle
-					</a>
-				</li>
+				{% if section.settings.btn_url != blank %}
+					<li class="content-button my-auto">
+						<a href="{{ section.settings.btn_url }}" target="_blank" class="btn text-uppercase">
+							Contactar a un asesor
+						</a>
+					</li>
+				{% endif %}
 			</ul>
 		{% endif %}
 	</div>
