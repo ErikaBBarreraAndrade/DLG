@@ -6,7 +6,7 @@
 					<div class="col-11 col-sm-11 col-lg-12 col-xl-11 col-xxl-10">
 						{%- assign featured_product = collections[section.settings.featured_product_handle] -%}
 						{%- for product in featured_product.products -%}
-							{% include 'catalog-card-product-alone', cProduct:product %}
+							{% include 'catalog-card-product-list-alone', cProduct:product %}
 						{%- endfor -%}
 					</div>
 				</div>
