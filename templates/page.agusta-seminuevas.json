@@ -94,12 +94,21 @@
         "boton_url": "shopify:\/\/pages\/conoce-seminuevas",
         "boton_label": "Otras marcas"
       }
+    },
+    "9be99040-8483-4e49-be5a-eac5f4497660": {
+      "type": "seminuevas-agusta-tabs",
+      "settings": {
+        "featured_product_handle": "seminuevas-ducati",
+        "bg_block": "#f5f5f5",
+        "btn_url": ""
+      }
     }
   },
   "order": [
     "main",
     "1637775876bf01375c",
     "16378134175d1b3e30",
-    "1637815290646ac56b"
+    "1637815290646ac56b",
+    "9be99040-8483-4e49-be5a-eac5f4497660"
   ]
 }
