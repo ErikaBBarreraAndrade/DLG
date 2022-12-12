@@ -1,22 +1,31 @@
-<div class="row m-0 justify-content-center block-content-tabs-information pt-0" id="motos-nuevas">
-	<div class="container-fluid">
-		<div id="shopify-section-ducati-motos-nuevas-title-tabs" class="shopify-section agusta-seminuevas-tabs row justify-content-center">
-			<div class="col-12">
-				<div class="row justify-content-center">
-					<div class="col-12">
-						{%- assign featured_product = collections[section.settings.featured_product_handle] -%}
-						{%- for product in featured_product.products -%}
-							{% include 'catalog-card-product-list-alone', cProduct:product %}
-						{%- endfor -%}
+<link rel="stylesheet" href="{{ "box-motos-seminuevas-gral.scss.css" | asset_url }}">
+<div class="container-fluid">
+	<div class="row justify-content-center">
+		<div class="col-11 col-sm-11 col-lg-12 col-xl-11 col-xxl-9">
+			<div class="row m-0 justify-content-center block-content-tabs-information pt-0" id="motos-nuevas">
+				<div class="container-fluid">
+					<div id="shopify-section-ducati-motos-nuevas-title-tabs" class="shopify-section agusta-seminuevas-tabs row justify-content-center">
+						<div class="col-12">
+							<div class="row justify-content-center">
+								<div class="col-12">
+									{%- assign featured_product = collections[section.settings.featured_product_handle] -%}
+									{%- for product in featured_product.products -%}
+										{% include 'catalog-card-product-list-alone', cProduct:product %}
+									{%- endfor -%}
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
 {% schema %}
 {
   "name": "Seminuevas Ducati",
+  "class": "box-motos-seminuevas-gral",
   "settings": [
     {
       "type": "collection",
