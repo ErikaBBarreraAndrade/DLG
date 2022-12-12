@@ -1,0 +1,194 @@
+{% for block in section.blocks %}
+<div class="row box-motos-description" style="background: {{ block.settings.bg_block }};">
+	<div class="col-12 col-lg-6 content-description my-lg-auto">
+		<div class="row">
+			<div class="col-12">
+				{% if block.settings.title != blank%}
+					<p class="title">
+						{{ block.settings.title }}
+					</p>
+				{% endif %}
+				{% if block.settings.description != blank%}
+					<div class="description-motos">
+						{{ block.settings.description }}
+					</div>
+				{% endif %}
+			</div>
+		</div>
+		<div class="row content-details-motos">
+			<div class="col-12 col-lg-12">
+				<div class="row">
+					{% if block.settings.description_label != blank%}
+						<div class="col-6 col-sm-6 col-lg-6">
+							<p class="label mb-0">
+								Potencia máxima del motor
+							</p>
+							<p class="description-label">
+								{{ block.settings.description_label }}
+							</p>
+						</div>
+					{% endif %}
+					{% if block.settings.description_label_motor != blank%}
+						<div class="col-6 col-sm-6 col-lg-6">
+							<p class="label mb-0">
+								Kilometraje
+							</p>
+							<p class="description-label">
+								{{ block.settings.description_label_motor }}
+							</p>
+						</div>
+					{% endif %}
+					{% if block.settings.description_label_total != blank%}
+						<div class="col-6 col-sm-6 col-lg-6">
+							<p class="label mb-0">
+								Torque
+							</p>
+							<p class="description-label">
+								{{ block.settings.description_label_total }}
+							</p>
+						</div>
+					{% endif %}
+					{% if block.settings.description_label_par != blank%}
+						<div class="col-6 col-sm-6 col-lg-6">
+							<p class="label mb-0">
+								Año
+							</p>
+							<p class="description-label">
+								{{ block.settings.description_label_par }}
+							</p>
+						</div>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+		{% if block.settings.price != blank%}
+			<div class="col-12">
+				<div class="row">
+					<div class="col-12 col-sm-6 col-lg-6 my-auto">
+						<div class="price mt-4">
+							{{ block.settings.price }}
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-6 my-auto">
+						{% if block.settings.button_link != blank%}
+							<div class="content-button mt-4">
+								<a href="{{ block.settings.button_link }}" {% if block.settings.enable_target %}target="_blank" {% endif %} class="btn text-uppercase">
+									{{ block.settings.button_label }}
+								</a>
+							</div>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		{% endif %}
+	</div>
+	{% if block.settings.image != blank%}
+		<div class="col-12 col-lg-6 content-image my-lg-auto">
+			{{ block.settings.image | img_url: 'master' | img_tag: 'motos seminuevas','img-fluid w-100' }}
+		</div>
+		</div>
+	{% endif %}
+{% endfor %}
+{% schema %}
+{
+"name": "Seminuevas Otras",
+"class": "agusta-tabs-brutale",
+"settings": [],
+
+"blocks": [
+{
+"type": "text_block",
+"name": "Column",
+"settings": [
+{
+"type": "header",
+"content": "==== Color del bloque ===="
+},
+{
+"type": "color",
+"id": "bg_block",
+"label": "Background",
+"default": "#f5f5f5"
+},
+{
+"type": "header",
+"content": "==== Titulos ===="
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+},
+{
+"type": "header",
+"content": "==== Descripción ===="
+},
+{
+"type": "text",
+"id": "description",
+"label": "Descripción"
+},
+{
+"type": "header",
+"content": "==== Detalles de la moto ===="
+},
+{
+"type": "text",
+"id": "description_label",
+"label": "Potencia máxima del motor"
+},
+{
+"type": "text",
+"id": "description_label_motor",
+"label": "Kilometraje"
+},
+{
+"type": "text",
+"id": "description_label_total",
+"label": "Torque"
+},
+{
+"type": "text",
+"id": "description_label_par",
+"label": "Año"
+},
+{
+"type": "text",
+"id": "price",
+"label": "Precio"
+},
+{
+"type": "header",
+"content": "==== Botón ===="
+},
+{
+"type": "checkbox",
+"id": "enable_target",
+"label": "Abrir en página aparte",
+"default": true
+},
+{
+"type": "text",
+"id": "button_label",
+"label": "Botón label",
+"default": "Contactar a un asesor"
+},
+{
+"type": "url",
+"id": "button_link",
+"label": "Botón link"
+},
+{
+"type": "header",
+"content": "==== Imagen de moto ===="
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+}
+]
+}
+]
+}
+{% endschema %}

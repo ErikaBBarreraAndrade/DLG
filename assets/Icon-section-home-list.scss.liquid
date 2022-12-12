@@ -1,0 +1,109 @@
+$color-red: #F00000;
+/*================== DLG iconos home  ==================*/
+.Icon-section-home-list{
+  .title{
+    font-family: 'Open Sans Bold';
+    font-size: 22px;
+    line-height: 26px;
+    color: $color-red;
+    @media(min-width: 768px){
+      font-size: 40px;
+      line-height: 45px;
+    }
+    @media(min-width: 992px){
+      font-size: 40px;
+      line-height: 45px;
+    }
+  }
+  .subtitle{
+    font-family: 'Open Sans Light';
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0 auto 80px;
+    @media(min-width: 576px){
+      font-size: 40px;
+      line-height: 45px;
+    }
+    @media(min-width: 992px){
+      font-size: 40px;
+      line-height: 45px;
+      width: 735px;
+    }
+  }
+  .logo-bar__item{
+    margin-bottom: 20px;
+    @media(max-width: 991px){
+      margin: 0 0px 50px;
+
+    }
+    span{
+      font-family: 'Open Sans Light';
+      font-size: 13px;
+      line-height: 15px;
+      @media(min-width: 768px){
+        font-size: 23px;
+        line-height: 25px;
+      }
+      @media(min-width: 992px){
+        position: absolute;
+        top: 20%;
+        font-size: 16px;
+        line-height: 19px;
+      }
+      p{
+        margin: auto;
+        margin-top: 15px;
+        width: 240px;
+        text-align: center;
+        @media(min-width: 992px){
+          margin-top: 0px;
+          width: auto;
+          text-align: left;
+        }
+      }
+    }
+    .content-left{
+      position: relative;
+      margin: auto;
+      @media(max-width: 991px){
+        display: grid;
+        flex-wrap: wrap;
+        justify-content:center;
+      }
+      @media(min-width: 992px){
+        width: 590px;
+      }
+      span{
+        order: 2;
+        margin-top: 15px;
+        @media(min-width: 992px){
+          left: 0;
+          text-align: right;
+          width: 215px;
+          margin-top: 0;
+        }
+      }
+    }
+    .content-right{
+      position: relative;
+      margin: auto;
+      @media(max-width: 991px){
+        display: grid;
+        flex-wrap: wrap;
+        justify-content:center;
+      }
+      @media(min-width: 992px){
+        position: relative;
+        width: 590px;
+        margin: auto;
+      }
+      span{
+        right: 0;
+        order: 2;
+        @media(min-width: 992px){
+          width: 205px;
+        }
+      }
+    }
+  }
+}

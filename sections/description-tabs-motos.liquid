@@ -1,0 +1,252 @@
+<div class="container-fluid motos-augusta">
+  <div class="row justify-content-center block-content-tabs-information" id="motos-nuevas">
+    <div class="col-11 col-lg-12">
+      <ul class="nav nav-tabs justify-content-center" id="myTabMotos" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-inicial-tab" data-bs-toggle="tab" data-bs-target="#home-inicial" type="button" role="tab" aria-controls="home-inicial" aria-selected="true">
+            {{ section.settings.title }}
+          </button>
+        </li>
+        {% for block in section.blocks %}
+        {% if block.settings.title %}
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="{{ block.settings.title }}-tab" data-bs-toggle="tab" data-bs-target="#{{ block.settings.title }}" type="button" role="tab" aria-controls="profile" aria-selected="false">
+            {{ block.settings.title }}
+          </button>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      <div class="tab-content" id="myTabContentMotos">
+        <div class="tab-pane fade show active" id="home-inicial" role="tabpanel" aria-labelledby="home-incial-tab">
+          <div class="row justify-content-center">
+            <div class="col-11 col-sm-11 col-lg-12 col-xl-11 col-xxl-10">
+              <div class="row box-motos-description" style="background: {{ section.settings.bg_block }};">
+                {% assign shortdesc = section.settings.description | split: '[shortdesc]' | last %}
+                {% assign splitShortDesc = shortdesc | split: "|" %}
+                <div class="col-12 col-lg-6 content-description my-lg-auto">
+                  <div class="row">
+                    <div class="col-12">
+                      <p class="title">
+                        {{ splitShortDesc[0] | split: '[/shortdesc]' | first  | truncatewords: 15 }}
+                      </p>
+                      <div class="description-motos">
+                        {{ splitShortDesc[1] | split: '[/shortdesc]' | first  | truncatewords: 15 }}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row content-details-motos">
+                    <div class="col-12 col-lg-12">
+                      <div class="row">
+                        <div class="col-6 col-sm-6 col-lg-6">
+                          <p class="label mb-0">
+                            Tipo de motor
+                          </p>
+                          <p class="description-label">
+                            {{ splitShortDesc[2] | split: '[/shortdesc]' | first  | truncatewords: 15 }}
+                          </p>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-6">
+                          <p class="label mb-0">
+                            Potencia máxima del motor
+                          </p>
+                          <p class="description-label">
+                            {{ splitShortDesc[3] | split: '[/shortdesc]' | first  | truncatewords: 15 }}
+                          </p>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-6">
+                          <p class="label mb-0">
+                            Desplazamiento total del motor
+                          </p>
+                          <p class="description-label">
+                            {{ splitShortDesc[4] | split: '[/shortdesc]' | first  | truncatewords: 15 }}
+
+                          </p>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-6">
+                          <p class="label mb-0">
+                            Par máximo del motor
+                          </p>
+                          <p class="description-label">
+                            {{ splitShortDesc[5] | split: '[/shortdesc]' | first  | truncatewords: 15 }}
+
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="d-block d-lg-flex list-unstyled m-0 p-0">
+                    <li class="price my-auto">
+                      {{ splitShortDesc[6] | split: '[/shortdesc]' | first  | truncatewords: 15 }}
+                    </li>
+                    <li class="content-button my-auto">
+                      {{ splitShortDesc[7] | split: '[/shortdesc]' | first  | truncatewords: 15 }}
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-12 col-lg-6 content-image my-lg-auto">
+                  <img src="{{ splitShortDesc[8] | split: '[/shortdesc]' | first  | truncatewords: 15 }}" class="w-100 img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% for block in section.blocks %}
+        <div class="tab-pane fade" id="{{ block.settings.title }}" role="tabpanel" aria-labelledby="{{ block.settings.title }}-tab">
+          <div class="row justify-content-center">
+            <div class="col-11 col-sm-11 col-lg-12 col-xl-11 col-xxl-10">
+              <div class="row box-motos-description" style="background: {{ section.settings.bg_block }};">
+                {% assign shortdescBlock = block.settings.description | split: '[shortdesc]' | last %}
+                {% assign splitShortDescBlock = shortdescBlock | split: "|" %}
+                <div class="col-12 col-lg-6 content-description my-lg-auto">
+                  <div class="row">
+                    <div class="col-12">
+                      <p class="title">
+                        {{ splitShortDescBlock[0] | split: '[/shortdesc]' | first  | truncatewords: 15 }}
+                      </p>
+                      <div class="description-motos">
+                        {{ splitShortDescBlock[1] | split: '[/shortdesc]' | first  | truncatewords: 15 }}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row content-details-motos">
+                    <div class="col-12 col-lg-12">
+                      <div class="row">
+                        <div class="col-6 col-sm-6 col-lg-6">
+                          <p class="label mb-0">
+                            Tipo de motor
+                          </p>
+                          <p class="description-label">
+                            {{ splitShortDescBlock[2] | split: '[/shortdesc]' | first  | truncatewords: 15 }}
+                          </p>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-6">
+                          <p class="label mb-0">
+                            Potencia máxima del motor
+                          </p>
+                          <p class="description-label">
+                            {{ splitShortDescBlock[3] | split: '[/shortdesc]' | first  | truncatewords: 15 }}
+                          </p>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-6">
+                          <p class="label mb-0">
+                            Desplazamiento total del motor
+                          </p>
+                          <p class="description-label">
+                            {{ splitShortDescBlock[4] | split: '[/shortdesc]' | first  | truncatewords: 15 }}
+
+                          </p>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-6">
+                          <p class="label mb-0">
+                            Par máximo del motor
+                          </p>
+                          <p class="description-label">
+                            {{ splitShortDescBlock[5] | split: '[/shortdesc]' | first  | truncatewords: 15 }}
+
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="d-block d-lg-flex list-unstyled m-0 p-0">
+                    <li class="price my-auto">
+                      {{ splitShortDescBlock[6] | split: '[/shortdesc]' | first  | truncatewords: 15 }}
+                    </li>
+                    <li class="content-button my-auto">
+                      {{ splitShortDescBlock[7] | split: '[/shortdesc]' | first  | truncatewords: 15 }}
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-12 col-lg-6 content-image my-lg-auto">
+                  <img src="{{ splitShortDescBlock[8] | split: '[/shortdesc]' | first  | truncatewords: 15 }}" class="w-100 img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Description tabs motos",
+    "class": "agusta-tabs-brutale",
+    "settings": [
+	       {
+              "type": "header",
+              "content": "==== Color del bloque ===="
+          },
+	 {
+              "type": "color",
+              "id": "bg_block",
+              "label": "Background",
+			"default": "#f5f5f5"
+          },
+          {
+              "type": "header",
+              "content": "==== Titulos ===="
+          },
+          {
+              "type": "text",
+              "id": "title",
+              "label": "Titulo"
+          },
+	      {
+              "type": "header",
+              "content": "==== Descripción ===="
+          },
+          {
+            "type": "richtext",
+            "id": "description",
+            "label": "Descripción"
+          }
+	],
+    "blocks": [
+      {
+        "type": "text_block",
+        "name": "Column",
+        "settings": [
+         {
+              "type": "header",
+              "content": "==== Color del bloque ===="
+          },
+	 {
+              "type": "color",
+              "id": "bg_block",
+              "label": "Background",
+			"default": "#f5f5f5"
+          },
+             {
+              "type": "header",
+              "content": "==== Descripción ===="
+          },
+          {
+            "type": "richtext",
+            "id": "description",
+            "label": "Descripción"
+	}
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Description tab motos",
+        "category": "Tabs",
+        "blocks": [
+          {
+            "type": "text_block"
+          },
+          {
+            "type": "text_block"
+          },
+          {
+            "type": "text_block"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

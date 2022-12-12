@@ -1,0 +1,92 @@
+<div class="row justify-content-center">
+	<div class="col-12 col-lg-11 col-xl-10 col-xxl-8">
+		<div class="row justify-content-center">
+			{% if section.settings.image_logotipo != blank %}
+			<div class="col-12 col-lg-6 my-auto">
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-8 text-center">
+						<div class="row justify-content-center justify-content-lg-start">
+							<div class="col-8 col-lg-12">
+								<img class="lazyload img-fluid"
+								     data-src="{{ section.settings.image_logotipo | img_url:"master" }}"
+								     data-aspectratio="{{ preview_image.aspect_ratio }}"
+								     width="{{ section.settings.image_logotipo.width }}"
+								     height="{{ section.settings.image_logotipo.width | divided_by: section.settings.image_logotipo.aspect_ratio | round }}"
+								     alt="{{ preview_image.alt | escape }}">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{% endif %}
+			<div class="col-11 col-lg-6 my-auto">
+				<div class="box-description">
+					{% if section.settings.image_icono != blank %}
+						<p class="image-icon-scrambler">
+							<img class="lazyload img-fluid"
+							     data-src="{{ section.settings.image_icono | img_url:"master" }}"
+							     data-aspectratio="{{ preview_image.aspect_ratio }}"
+							     width="{{ section.settings.image_icono.width }}"
+							     height="{{ section.settings.image_icono.width | divided_by: section.settings.image_icono.aspect_ratio | round }}"
+							     alt="{{ preview_image.alt | escape }}">
+						</p>
+					{% endif %}
+					{% if section.settings.title != blank %}
+						<p class="title">
+							{{ section.settings.title }}
+						</p>
+					{% endif %}
+					{% if section.settings.description != blank %}
+						<div class="description">
+							{{ section.settings.description }}
+						</div>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Descripcion corta",
+"class": "descripcion-corta-scrambler",
+"settings": [
+{
+"type": "header",
+"content": "==== Imagen logotipo ===="
+},
+{
+"type": "image_picker",
+"id": "image_logotipo",
+"label": "Imagen logotipo"
+},
+{
+"type": "header",
+"content": "==== Imagen icono ===="
+},
+{
+"type": "image_picker",
+"id": "image_icono",
+"label": "Imagen Icono"
+},
+{
+"type": "header",
+"content": "==== Titulo ===="
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+},
+{
+"type": "header",
+"content": "==== Descripción ===="
+},
+{
+"type": "richtext",
+"id": "description",
+"label": "Descripción"
+}
+]
+}
+{% endschema %}

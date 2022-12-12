@@ -1,0 +1,161 @@
+<style>
+    .content-banner-information{
+        background: url( {{ section.settings.image_banner_mobile_secondary | img_url: 'master'}});
+    }
+    @media(min-width: 992px){
+        .content-banner-information{
+            background: url( {{ section.settings.image_banner_secondary | img_url: 'master'}});
+        }
+    }
+</style>
+<div class="container-fluid">
+	<div class="row block-content-banner-augusta justify-content-center">
+		<div class="col-12 p-0 {%if page.handle contains "scrambler"%} ps-lg-4 pe-lg-4 {% endif %}">
+			<div class="content-banner">
+				<div class="row m-0 content-banner-information">
+					<div class="col-12 content-info-box {% if page.handle contains "ducati" %}mt-auto my-lg-auto{% else %} my-auto {% endif %}">
+						{% if page.handle contains "ducati" %}
+							<div class="row">
+								<div class="col-12 col-lg-6 offset-xl-1">
+									<div class="d-block d-lg-flex">
+										<div class="flex-shrink-0">
+											{% if section.settings.image_logotipo  != blank %}
+												<img class="grid-product__image lazyload img-fluid"
+												     data-src="{{ section.settings.image_logotipo | img_url: "master" }}"
+												     data-widths="[180, 360, 540, 720, 900, 1080]"
+												     data-aspectratio="{{ preview_image.aspect_ratio }}"
+												     data-sizes="auto"
+												     width="{{ section.settings.image_logotipo.width }}"
+												     height="{{ section.settings.image_logotipo.width | divided_by: section.settings.image_logotipo.aspect_ratio | round }}"
+												     alt="{{ preview_image.alt | escape }}">
+											{% endif %}
+										</div>
+										<div class="flex-grow-1 ms-3 my-auto">
+											{% if section.settings.title  != blank %}
+												<p class="title">
+													{{section.settings.title}}
+												</p>
+											{% endif %}
+											{% if section.settings.subtitle  != blank %}
+												<p class="text_end">
+													{{section.settings.subtitle}}
+												</p>
+											{% endif %}
+											{% if section.settings.boton_url  != blank %}
+												<p class="content-button" >
+													<a href="{{section.settings.boton_url}}" class="text-uppercase btn" {% if section.settings.enable_target %}target="_blank" {% endif %}>
+														{{section.settings.boton_label}}
+													</a>
+												</p>
+											{% endif %}
+										</div>
+									</div>
+								</div>
+							</div>
+						{% else %}
+							{% if section.settings.image_logotipo  != blank %}
+								<p class="  {% if page.handle contains "agusta" %}d-block d-lg-none{% endif 	%} text-center content-logo">
+									{{ section.settings.image_logotipo | img_url: 'master' | img_tag: 'informacion-motos','img-fluid' }}
+								</p>
+							{% endif %}
+							{% if section.settings.title  != blank %}
+								<p class="title text-center {% if page.handle contains "agusta" %}text-uppercase{% endif %}">
+									{{section.settings.title}}
+								</p>
+							{% endif %}
+							{% if section.settings.subtitle  != blank %}
+								<p class="text-center text-end">
+									{{section.settings.subtitle}}
+								</p>
+							{% endif %}
+							{% if section.settings.boton_url  != blank %}
+								<p class="text-center content-button" >
+									<a href="{{section.settings.boton_url}}" class="text-uppercase btn" {% if section.settings.enable_target %}target="_blank" {% endif %}>
+										{{section.settings.boton_label}}
+									</a>
+								</p>
+							{% endif %}
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Banner secondary",
+"class": "agusta-banner-secundario",
+"settings": [
+{
+"type": "header",
+"content": "==== Imagen banner ===="
+},
+{
+"type":"image_picker",
+"id": "image_banner_secondary",
+"label":"Imagen banner desktop"
+},
+{
+"type":"image_picker",
+"id": "image_banner_mobile_secondary",
+"label":"Imagen banner mobile"
+},
+{
+"type": "header",
+"content": "==== Imagen logotipo ===="
+},
+{
+"type":"image_picker",
+"id": "image_logotipo",
+"label":"Imagen Logotipo"
+},
+{
+"type": "header",
+"content": "==== Imagen banner ===="
+},
+{
+"type":"text",
+"id": "title",
+"label":"Titulo"
+},
+{
+"type":"text",
+"id": "subtitle",
+"label":"Subtitulo"
+},
+{
+"type": "header",
+"content": "==== Botón ===="
+},
+{
+"type": "checkbox",
+"id": "enable_target",
+"label": "Abrir en página aparte",
+"default": true
+},
+{
+"type":"url",
+"id": "boton_url",
+"label":"Link botón"
+},
+{
+"type":"text",
+"id": "boton_label",
+"label":"Label botón"
+}
+],
+"presets": [
+{
+"name": "Banner secondary",
+"category": "Banner"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

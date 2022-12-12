@@ -1,0 +1,227 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "tipo_pagina": "page_agusta"
+      }
+    },
+    "1635662636c13a2022": {
+      "type": "agusta-motos-banner",
+      "settings": {
+        "bg_color": "",
+        "bg_desktop": "shopify:\/\/shop_images\/banner-principal-augusta_92111ea9-1c5d-4b87-a4fd-628c701195ed.jpg",
+        "bg_mobile": "shopify:\/\/shop_images\/banner-mobile-augusta_6c5f57d9-7508-4686-a1ba-0cee8a53b2ce.jpg",
+        "title": "<strong>No solo<\/strong> construimos <strong>Motocicletas,<\/strong>",
+        "subtitle": "Creamos <strong>Emociones<\/strong>",
+        "text_description": "Bienvenido a MV Augusta <strong>México<\/strong>",
+        "image_desktop": "shopify:\/\/shop_images\/motos-home-transparentes_15d1b3a4-5b7e-4481-961e-c155edec1703.png",
+        "image_mobile": "shopify:\/\/shop_images\/motos-augusta-mobile-banner_5cb3afcf-15e6-4b08-81c2-240b5932fb59.png"
+      }
+    },
+    "16356626783fbb29fa": {
+      "type": "agusta-motos-coleccion",
+      "settings": {
+        "title": "Diseño exclusivo",
+        "subtitle": "Desde cualquier ángulo",
+        "text_end": "Conoce toda la linea de accesorios originales MV Agusta.",
+        "enable_target": true,
+        "boton_label": "Ver ropa y accesorios",
+        "boton_link": "shopify:\/\/collections\/populares",
+        "home_featured_products": "populares"
+      }
+    },
+    "1635664627cb2dacc7": {
+      "type": "agusta-motos-banner-secundario",
+      "settings": {
+        "image_logotipo": "shopify:\/\/shop_images\/logo-MV-Agusta_ca2c0715-334b-4dea-a9c0-edd78962c8e0.png",
+        "title": "Siente <strong>El poder<\/strong> En cada kilometro",
+        "subtitle": "Descubre toda la linea MV Agusta",
+        "enable_target": false,
+        "boton_url": "shopify:\/\/pages\/agusta-motos-nuevas",
+        "boton_label": "Colección 2021"
+      }
+    },
+    "16356630290960de8e": {
+      "type": "agusta-motos-iconos",
+      "blocks": {
+        "16356630290960de8e-0": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icon-1_26dd7a23-d907-4cc9-8d4b-05e7fdb1f813.png",
+            "description": "Tenemos el inventario más grande en México. Entregas y devoluciones rápidas en toda la República."
+          }
+        },
+        "16356630290960de8e-1": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icon-2_44c4b190-933c-4e77-b3f0-34bf2bc53a83.png",
+            "description": "Ofrecemos no solo una experiencia de compra, sino una experiencia de vida."
+          }
+        },
+        "756d9348-0ea7-4c32-b649-67771fec6f22": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icon-3_1d8c5249-04a5-4df1-9658-b56db4f23f36.png",
+            "description": "Más de 17 años de experiencia trabajando con las mejores marcas de Italia y el mundo."
+          }
+        },
+        "16356630290960de8e-2": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icon-4_4d4b3759-d3fb-45d6-8c52-64c53b23c573.png",
+            "description": "Tu compra es segura, aceptamos todos los métodos de pagos disponibles en México."
+          }
+        },
+        "e0952e68-108b-43f4-bbdb-122a1859a12d": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icon-5_b86b4fed-7eb6-4362-966d-8055ed6af65b.png",
+            "description": "Y si no te gusta devolvemos tu dinero sin preguntar."
+          }
+        }
+      },
+      "block_order": [
+        "16356630290960de8e-0",
+        "16356630290960de8e-1",
+        "756d9348-0ea7-4c32-b649-67771fec6f22",
+        "16356630290960de8e-2",
+        "e0952e68-108b-43f4-bbdb-122a1859a12d"
+      ],
+      "settings": {
+        "title": "DLG Moto Art, la mejor y más grande tienda para motos y accesorios MV Agusta en México"
+      }
+    },
+    "1635664612122caa90": {
+      "type": "agusta-motos-seminuevas",
+      "blocks": {
+        "1635664612122caa90-0": {
+          "type": "text_block",
+          "settings": {
+            "image_slider": "shopify:\/\/shop_images\/producto-augusta-seminueva_614bf516-9123-4811-a4f1-29666b951b9f.jpg",
+            "link_image": "#",
+            "enable_target": true,
+            "description": "MV AGUSTA BRUTALE 800 · 2020",
+            "price": "$259,500 MXN"
+          }
+        },
+        "1635664612122caa90-1": {
+          "type": "text_block",
+          "settings": {
+            "image_slider": "shopify:\/\/shop_images\/dragster-seminueva_96fc1a5b-bf07-42f9-892b-af1e9737c224.jpg",
+            "link_image": "",
+            "enable_target": true,
+            "description": "MV AGUSTA DRAGSTER 800 RR",
+            "price": "$350,000 MXN"
+          }
+        },
+        "1635664612122caa90-2": {
+          "type": "text_block",
+          "settings": {
+            "image_slider": "shopify:\/\/shop_images\/turismo-veloce-seminueva_bf52504d-280c-41fc-89a5-13405b0b0532.jpg",
+            "link_image": "#",
+            "enable_target": true,
+            "description": "MV AUGUSTA TURISMO VELOCE",
+            "price": "$225,000 MXN"
+          }
+        }
+      },
+      "block_order": [
+        "1635664612122caa90-0",
+        "1635664612122caa90-1",
+        "1635664612122caa90-2"
+      ],
+      "settings": {
+        "color_bg": "#f5f5f5",
+        "title": "<strong>MV Agusta para todos.<\/strong> Conoce nuestras motos usadas certificadas",
+        "title_second": "",
+        "title_right": "Mv agusta SEMINUEVAS",
+        "subtitle_right": "Las mejores motos en DLG Moto Art",
+        "text_right": "<p>MV Agusta puede ser para ti también. Conoce nuestra colección de MV Agusta seminuevas en DLG Moto Art. <br\/><br\/>Tenemos opciones de pago distintas y flexibles. <br\/>Ofrecemos financiamiento y garantía de mínimo <br\/>30 días.<\/p>",
+        "button_link": "#",
+        "button_label": "Ver seminuevas"
+      }
+    },
+    "163566311801d6c4bd": {
+      "type": "content-service-motos",
+      "settings": {
+        "image_servicio": "shopify:\/\/shop_images\/servicio-augusta_d657a9aa-64d9-4b22-9f54-72ee4043dd47.jpg",
+        "title": "Servicio",
+        "subtitle": "MV Augusta",
+        "description_short": "Agenda una cita para la revisión de tu moto.",
+        "description": "Si necesitas servicio original para tu moto, contamos con las mejores \t\t\t\t\t\t\t\t\t\tinstalaciones, los técnicos más experimentados y el inventario de \t\t\t\t\t\t\t\t\t\trefacciones y accesorios más grande del país.",
+        "enable_target": true,
+        "button_link": "#",
+        "button_label": "Agendar Cita"
+      }
+    },
+    "16356631237b2ac917": {
+      "type": "agusta-motos-menu-final",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/menu-Motos-New_ec77fc10-dcf9-45a4-b4c1-caee9ee33196.jpg",
+        "image_1": "shopify:\/\/shop_images\/motos-seminuevas-menu_656ff344-a7a1-4f74-95b1-375cf3a4609c.jpg",
+        "image_2": "shopify:\/\/shop_images\/ropa-accesorios-menu_0230cdb0-3611-4310-a2b6-ec7b835bd098.jpg",
+        "image_3": "shopify:\/\/shop_images\/servicio-menu_f51e8070-c18d-4bfd-9415-317191b695ad.jpg",
+        "image_4": "shopify:\/\/shop_images\/refacciones-menu_a25dbf1b-208b-4979-9b68-e4b980871a78.jpg",
+        "button_text": "Motos nuevas",
+        "button_link": "#",
+        "button_text_2": "Motos seminuevas",
+        "button_link_2": "#",
+        "button_text_3": "Ropa y <br>Accesorios",
+        "button_link_3": "#",
+        "button_text_4": "Servicio",
+        "button_link_4": "#",
+        "button_text_5": "Refacciones",
+        "button_link_5": "#"
+      }
+    },
+    "16356692375e8cad66": {
+      "type": "description-tabs-motos",
+      "disabled": true,
+      "blocks": {
+        "16356692375e8cad66-0": {
+          "type": "text_block",
+          "settings": {
+            "bg_block": "#f5f5f5",
+            "description": "<p>asdsad<\/p><p>|sadsadas<\/p><p>|asdsad<\/p><p>|sdassad<\/p><p>|asdsad<\/p><p><\/p>"
+          }
+        },
+        "16356692375e8cad66-1": {
+          "type": "text_block",
+          "settings": {
+            "bg_block": "#f5f5f5",
+            "description": ""
+          }
+        },
+        "16356692375e8cad66-2": {
+          "type": "text_block",
+          "settings": {
+            "bg_block": "#f5f5f5",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "16356692375e8cad66-0",
+        "16356692375e8cad66-1",
+        "16356692375e8cad66-2"
+      ],
+      "settings": {
+        "bg_block": "#f5f5f5",
+        "title": "Brutale Rosso",
+        "description": "<p>BRUTALE 800 ROSSO<\/p><p>|Tecnología, calidad y encanto típicamente MV Agusta a un precio más competitivo. Dedicada a los tantos apasionados de MV Agusta es el punto de acceso al mundo de las motos italianas de tres cilindros.<br\/>|Tres cilindros, 4 tiempos, 12 válvulas<\/p><p>|81 kW (110 CV) a 11,500 r.p.m.<\/p><p>|798 cm<\/p><p>|83 Nm (8.46 kgm) a 7,600 rpm<\/p><p>|$358,000.00<\/p><p>|<a href=\"https:\/\/www.dlgmotoart.com\/brutale-800-rosso.html\">VER DETALLE<\/a><br\/>|https:\/\/cdn.shopify.com\/s\/files\/1\/0600\/8799\/2548\/files\/motos-nuevas-brutale-rosso-800.png?v=1635348062<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1635662636c13a2022",
+    "16356626783fbb29fa",
+    "1635664627cb2dacc7",
+    "16356630290960de8e",
+    "1635664612122caa90",
+    "163566311801d6c4bd",
+    "16356631237b2ac917",
+    "16356692375e8cad66"
+  ]
+}

@@ -1,0 +1,119 @@
+<div>
+  {%- liquid
+  assign current_variant = product.selected_or_first_available_variant
+
+  unless thumbnail_position
+    assign thumbnail_position = 'beside'
+  endunless
+
+  unless description_style
+    assign description_style = 'full'
+  endunless
+
+  assign product_zoom_size = '1800x1800'
+  assign product_image_size = '620x'
+
+  case image_container_width
+    when 'small'
+      assign product_image_width = 'medium-up--two-fifths'
+      assign product_description_width = 'medium-up--three-fifths'
+      assign product_image_size = '480x'
+    when 'medium'
+      assign product_image_width = 'medium-up--one-half'
+      assign product_description_width = 'medium-up--one-half'
+      assign product_image_size = '620x'
+    when 'large'
+      assign product_image_width = 'medium-up--three-fifths'
+      assign product_description_width = 'medium-up--two-fifths'
+      assign product_image_size = '740x'
+  endcase
+
+  assign product_img_structure = product.featured_media | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
+-%}
+  <div id="ProductSection-{{ section_id }}"
+       class="product-section"
+       data-section-id="{{ section_id }}"
+       data-section-type="product-template"
+       data-product-handle="{{ product.handle }}"
+       data-product-title="{{ product.title | escape }}"
+       data-product-url="{{ product.url | within: collection }}"
+       data-aspect-ratio="{{ 100 | divided_by: product.featured_media.aspect_ratio }}"
+       data-img-url="{{ product_img_structure }}"
+       {% if settings.product_zoom_enable %}
+       data-image-zoom="true"
+       {% endif %}
+       {% if settings.inventory_enable %}
+       data-inventory="true"
+       {% endif %}
+       {% if settings.inventory_transfers_enable %}
+       data-incoming-inventory="true"
+       {% endif %}
+       {% unless isModal %}
+       data-enable-history-state="true"
+       {% endunless %}>
+
+    {%- render 'product-template-variables', product: product, current_variant: current_variant -%}
+    <div class="container-fluid p-0">
+      <div class="row justify-content-center m-0">
+        <div class="col-12">
+          <div class="slider-collection">
+            <div>
+              <div class="row h-100">
+                <div class="col-12">
+                  <div class="content-image">
+                    <div class="float-lg-end">
+                      {%- render 'button-wishlist', product: product -%}
+                    </div>
+                  {%- render 'product-images',
+              section_id: section_id,
+                    product: product,
+                    isModal: isModal,
+                    image_position: image_position,
+                    product_zoom_size: product_zoom_size,
+                    product_image_size: product_image_size,
+                    thumbnail_arrows: thumbnail_arrows,
+                    thumbnail_position: thumbnail_position,
+                    video_looping: video_looping,
+                    video_style: video_style
+                    -%}
+                  </div>
+                </div>
+                <div class="col-12 content-description-form">
+                  <p class="product-single__title">
+                    {{ product.title }}
+                  </p>
+                  <p id="ProductPrice-{{ section_id }}"
+                        class="text-center product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}">
+                    {{ current_variant.price | money }}
+                  </p>
+                  <div class="row">
+                    <div class="col-12">
+                      {%- unless isModal -%}
+                      {% comment %}
+                      Shopify's product form attaches a number of tracking
+                      scripts that cause slower load times and false statistics.
+                      Quick view modals request these on-demand.
+                      {% endcomment %}
+                      {%- render 'product-form',
+                section_id: section_id,
+                      product: product,
+                      current_variant: current_variant
+                      -%}
+                      {%- else -%}
+                      <div
+                           id="ProductFormHolder-{{ section_id }}"
+                           class="product-form-holder"
+                           data-url="{{ product.url }}"
+                           data-template="{{ product.template_suffix }}"></div>
+                      {%- endunless -%}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

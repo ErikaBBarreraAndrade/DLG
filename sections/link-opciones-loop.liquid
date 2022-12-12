@@ -1,0 +1,170 @@
+{{ "section-link-opciones-loop.scss.css" | asset_url | stylesheet_tag }}
+<style>
+	.section-link-opciones-loop{
+      background: {{ section.settings.bg_block }};
+	}
+</style>
+<div class="container-fluid">
+	<div class="row justify-content-center content-option-loop">
+		<div class="col-11 col-sm-11 col-lg-12">
+			<div class="row box-opciones-description">
+				{% for block in section.blocks %}
+				{% if section.blocks.size == 5 and forloop.index < 3 %}
+				{% endif %}
+						<div class="col-6 col-sm-6 col-lg-6 content-description">
+							<div class="d-block d-lg-flex">
+								<a href="{{ block.settings.title_url }}">
+								<div class="flex-shrink-0">
+									{% if block.settings.image != blank %}
+										<img class="img-fluid w-100 lazyload"
+										     data-src="{{ block.settings.image | img_url:"master"}}"
+										     data-aspectratio="{{ preview_image.aspect_ratio }}"
+										     width="{{ block.settings.image.width }}"
+										     height="{{ block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round }}"
+										     alt="{{ preview_image.alt | escape }}">
+									{% endif %}
+								</div>
+								<div class="flex-grow-1 ms-lg-3 mt-auto">
+									{% if block.settings.title_url != blank %}
+										<div class="content-title">
+											<a href="{{ block.settings.title_url }}">
+												<p class="title mb-0">
+													{{ block.settings.title }}
+													<span class="content-arrow float-end mt-auto">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="69" height="69" viewBox="0 0 69 69">
+										<defs>
+											<filter id="Elipse_28" x="0" y="0" width="69" height="69" filterUnits="userSpaceOnUse">
+												<feOffset dy="3" input="SourceAlpha"/>
+												<feGaussianBlur stdDeviation="3" result="blur"/>
+												<feFlood flood-opacity="0.153"/>
+												<feComposite operator="in" in2="blur"/>
+												<feComposite in="SourceGraphic"/>
+											</filter>
+										</defs>
+										<g id="Grupo_220" data-name="Grupo 220" transform="translate(9.316 6.373)">
+											<g transform="matrix(1, 0, 0, 1, -9.32, -6.37)" filter="url(#Elipse_28)">
+												<g id="Elipse_28-2" data-name="Elipse 28" transform="translate(9 6)" fill="rgba(0,0,0,0.47)" stroke="#dd2f21" stroke-width="2">
+													<circle cx="25.5" cy="25.5" r="25.5" stroke="none"/>
+													<circle cx="25.5" cy="25.5" r="24.5" fill="none"/>
+												</g>
+											</g>
+											<g id="right-arrow-2" transform="translate(19.024 13.2)">
+												<path id="Trazado_34" data-name="Trazado 34" d="M118.231.281a.527.527,0,0,0-.745.744L128.7,12.238,117.486,23.448a.527.527,0,1,0,.732.757l.013-.013,11.583-11.583a.526.526,0,0,0,0-.745Z" transform="translate(-117.325 -0.127)" fill="#fff"/>
+												<path id="Trazado_35" data-name="Trazado 35" d="M117.974,24.22a.527.527,0,0,1-.373-.9L128.813,12.11,117.6.9a.527.527,0,0,1,.746-.746l11.583,11.583a.526.526,0,0,1,0,.745L118.347,24.065A.526.526,0,0,1,117.974,24.22Z" transform="translate(-117.441 0)" fill="#fff"/>
+											</g>
+										</g>
+									</svg>
+							</span>
+												</p>
+											</a>
+										</div>
+									{% endif %}
+								</div>
+								</a>
+							</div>
+						</div>
+				{% endfor %}
+			</div>
+				{% if section.settings.enable_boton %}
+				{% if section.settings.boton_url != blank %}
+					<div class="row">
+						<div class="col-12 content-button-end text-center">
+							<a href="{{ section.settings.boton_url }}" class="btn">
+					{{ section.settings.boton_label }}
+								<span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 46.538 46.54">
+  <g id="descuento" transform="translate(0 0)">
+    <path id="Trazado_222" data-name="Trazado 222" d="M44.41,23.271l2.042-5.326a1.456,1.456,0,0,0-.442-1.652L41.583,12.7l-.9-5.634a1.454,1.454,0,0,0-1.21-1.207l-5.634-.9L30.257.538A1.457,1.457,0,0,0,28.608.1L23.28,2.141,17.954.1A1.451,1.451,0,0,0,16.3.541l-3.589,4.43-5.634.9A1.457,1.457,0,0,0,5.875,7.073l-.9,5.634L.549,16.3a1.455,1.455,0,0,0-.442,1.649l2.042,5.326L.107,28.6a1.451,1.451,0,0,0,.442,1.649l4.43,3.586.9,5.634a1.454,1.454,0,0,0,1.207,1.21l5.634.9L16.3,46a1.447,1.447,0,0,0,1.652.442L23.28,44.4l5.326,2.042A1.455,1.455,0,0,0,30.257,46l3.586-4.427,5.634-.9a1.457,1.457,0,0,0,1.21-1.21l.9-5.634,4.427-3.586a1.452,1.452,0,0,0,.442-1.649Z" transform="translate(-0.011 0)" fill="#fff"/>
+    <g id="Grupo_226" data-name="Grupo 226" transform="translate(14.543 11.636)">
+      <path id="Trazado_223" data-name="Trazado 223" d="M164.385,136.761a4.363,4.363,0,1,1,4.363-4.363A4.368,4.368,0,0,1,164.385,136.761Zm0-5.817a1.454,1.454,0,1,0,1.454,1.454A1.455,1.455,0,0,0,164.385,130.944Z" transform="translate(-160.022 -128.033)" fill="#f00000"/>
+      <path id="Trazado_224" data-name="Trazado 224" d="M260.385,296.761a4.363,4.363,0,1,1,4.363-4.363A4.368,4.368,0,0,1,260.385,296.761Zm0-5.817a1.454,1.454,0,1,0,1.454,1.454A1.459,1.459,0,0,0,260.385,290.944Z" transform="translate(-247.296 -273.491)" fill="#f00000"/>
+      <path id="Trazado_225" data-name="Trazado 225" d="M161.489,151.287a1.454,1.454,0,0,1-1.181-2.3l14.543-20.36a1.454,1.454,0,0,1,2.368,1.69l-14.543,20.36A1.46,1.46,0,0,1,161.489,151.287Z" transform="translate(-160.035 -128.017)" fill="#f00000"/>
+    </g>
+  </g>
+</svg>
+
+</span>
+							</a>
+						</div>
+					</div>
+				{% endif %}
+			{% endif %}
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Link opciones loop",
+"class": "section-link-opciones-loop",
+"settings": [
+{
+"type": "header",
+"content": "==== Color del bloque ===="
+},
+{
+"type": "color",
+"id": "bg_block",
+"label": "Background",
+"default": "#000"
+},
+{
+"type": "header",
+"content": "==== Botón ===="
+},
+{
+"type": "checkbox",
+"id": "enable_boton",
+"label": "Habilitar botón Descuentos",
+"default": true
+},
+{
+"type":"url",
+"id": "boton_url",
+"label":"Link botón"
+},
+{
+"type":"text",
+"id": "boton_label",
+"label":"Label botón"
+}
+],
+
+"blocks": [
+{
+"type": "text_block",
+"name": "Column",
+"settings": [
+{
+"type": "header",
+"content": "==== Imagen de moto ===="
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+},
+{
+"type": "header",
+"content": "==== Titulos ===="
+},
+{
+"type": "url",
+"id": "title_url",
+"label": "Url"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Link opciones loop",
+"category": "Link menu"
+}
+]
+}
+{% endschema %}

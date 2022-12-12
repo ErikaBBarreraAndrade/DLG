@@ -1,0 +1,137 @@
+<div
+  data-section-id="{{ section.id }}"
+  data-section-type="promo-grid" class="col-12">
+  {%- if section.blocks.size > 0 -%}
+    {%- style -%}
+      .flex-grid--{{ section.id }} {
+        margin-bottom: {{ section.settings.gutter_size }}px;
+      }
+    {%- endstyle -%}
+    {%- render 'promo-grid', section: section, collection_page: true -%}
+  {%- endif -%}
+</div>
+
+{% schema %}
+  {
+    "name": "Collection promotions",
+"max_blocks": 5,
+    "settings": [
+      {
+        "type": "range",
+        "id": "gutter_size",
+        "label": "Spacing",
+        "default": 20,
+        "min": 0,
+        "max": 40,
+        "step": 1,
+        "unit": "px"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "banner",
+        "name": "Banner",
+        "settings": [
+          {
+            "label": "Only show promotion on",
+            "id": "promo_collection",
+            "type": "collection",
+            "info": "If no collection is chosen, your promotion will appear on all collections"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Banner promotion"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text"
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          },
+          {
+            "type": "text",
+            "id": "label",
+            "label": "Link label",
+            "default": "Shop now"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "Image Mobile"
+          },
+          {
+            "type": "header",
+            "content": "Design"
+          },
+          {
+            "type": "color",
+            "id": "color_tint",
+            "label": "Tint",
+            "default": "#000000"
+          },
+          {
+            "type": "range",
+            "id": "color_tint_opacity",
+            "label": "Amount",
+            "default": 8,
+            "min": 0,
+            "max": 20,
+            "step": 2,
+            "unit": "%"
+          },
+          {
+            "type": "checkbox",
+            "id": "framed",
+            "label": "Add frame",
+            "default": false
+          }
+        ]
+      },
+{
+"type": "menu",
+"name": "Menu",
+"settings": [
+{
+"label": "Only show promotion on",
+"id": "promo_collection",
+"type": "collection",
+"info": "If no collection is chosen, your promotion will appear on all collections"
+},
+{
+"type": "text",
+"id": "heading",
+"label": "Heading",
+"default": "Banner promotion"
+},
+{
+"type": "url",
+"id": "link",
+"label": "Link"
+},
+{
+"type": "text",
+"id": "label",
+"label": "Link label",
+"default": "Shop now"
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+}
+]
+}
+    ]
+  }
+{% endschema %}

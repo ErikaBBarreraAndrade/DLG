@@ -1,0 +1,271 @@
+<style>
+	{% if page.handle contains "ducati" %}
+  .box-div-banner-end .content-banner-link {
+      transition: all 0.5s;
+      position: relative;
+      width: 100%;
+      padding-bottom: 25%;
+      transform-origin: 0 100%;
+      transform: skewX(-20deg) translatez(1px);
+      overflow: hidden;
+      height: 356px;
+  }
+  @media (min-width: 1200px) {
+      .box-div-banner-end .content-banner-link, .box-content-banner {
+          height: 403px;
+      }
+      .box-div-banner-end .content-banner-link:before {
+          width: 189%;
+          height: 403px;
+      }
+      .box-div-banner-end .content-banner-link:before {
+          height: 565px;
+      }
+  }
+  .box-div-banner-end .content-banner-link:before {
+      content: "";
+      transition: all 0.5s;
+      position: absolute;
+      width: 240%;
+      height: 563px;
+      background-size: cover !important;
+      background-position: top;
+      transform-origin: inherit;
+      transform: skewX(23deg);
+      left: 1px;
+  }
+  .box-div-banner-end:first-child a .content-banner-link:before {
+      background: url({{section.settings.image | img_url: 'master'}});
+  }
+  .box-div-banner-end:nth-child(2) a .content-banner-link:before {
+      background: url({{section.settings.image_1 | img_url: 'master'}});
+  }
+  .box-div-banner-end:nth-child(3) a .content-banner-link:before {
+      background: url({{section.settings.image_2 | img_url: 'master'}});
+  }
+  .box-div-banner-end:nth-child(4) a .content-banner-link:before {
+      background: url({{section.settings.image_3 | img_url: 'master'}});
+  }
+  .box-div-banner-end:nth-child(5) a .content-banner-link:before {
+      background: url({{section.settings.image_4 | img_url: 'master'}});
+  }
+  @media (min-width: 1600px) {
+      .box-div-banner-end .content-banner-link, .box-content-banner {
+          height: 560px;
+          border-right: 2px solid #EF0000;
+      }
+      /*============================ Banner options parallelogram ==========================*/
+	{% else %}
+      .box-div-banner-end:first-child .content-banner-link{
+          background: url({{section.settings.image | img_url: 'master'}});
+      }
+      .box-div-banner-end:nth-child(2) .content-banner-link{
+          background: url({{section.settings.image_1 | img_url: 'master'}});
+      }
+      .box-div-banner-end:nth-child(3) .content-banner-link{
+          background: url({{section.settings.image_2 | img_url: 'master'}});
+      }
+      .box-div-banner-end:nth-child(4) .content-banner-link{
+          background: url({{section.settings.image_3 | img_url: 'master'}});
+      }
+      .box-div-banner-end:nth-child(5) .content-banner-link{
+          background: url({{section.settings.image_4 | img_url: 'master'}});
+      }
+	{% endif %}
+</style>
+<div class="container-fluid">
+	<div class="row justify-content-lg-center box-menu-banner-end">
+		<div class="col-12  {% if page.handle contains "ducati" %}col-sm-10 {% else %} col-sm-11 col-lg-11 col-xl-11 col-xxl-10 {% endif %}content-images-menu">
+			<div class="row box-menu">
+				{% if section.settings.button_link != blank %}
+					<div class="col box-div-banner-end">
+						<div class="triangle-right"></div>
+						<a href="{{section.settings.button_link}}">
+							<div class="content-banner-link text-center">
+								<div class="row box-content-banner m-0">
+									<div class="col-12 mt-auto">
+										<div class="title-banner text-uppercase">
+											{{section.settings.button_text}}
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<div class="triangle-bottom"></div>
+					</div>
+				{% endif %}
+				{% if section.settings.button_link_2 != blank %}
+					<div class="col box-div-banner-end">
+						<div class="triangle-right"></div>
+						<a href="{{section.settings.button_link_2}}">
+							<div class="content-banner-link text-center">
+								<div class="row box-content-banner m-0">
+									<div class="col-12 mt-auto">
+										<div class="title-banner text-uppercase">
+											{{section.settings.button_text_2 }}
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<div class="triangle-bottom"></div>
+					</div>
+				{% endif %}
+				{% if section.settings.button_link_3 != blank %}
+					<div class="col box-div-banner-end">
+						<div class="triangle-right"></div>
+						<a href="{{section.settings.button_link_3}}">
+							<div class="content-banner-link text-center">
+								<div class="row box-content-banner m-0">
+									<div class="col-12 mt-auto">
+										<div class="title-banner text-uppercase">
+											{{section.settings.button_text_3 }}
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<div class="triangle-bottom"></div>
+					</div>
+				{% endif %}
+				{% if section.settings.button_link_4 != blank %}
+					<div class="col box-div-banner-end">
+						<div class="triangle-right"></div>
+						<a href="{{section.settings.button_link_4}}">
+							<div class="content-banner-link text-center">
+								<div class="row box-content-banner m-0">
+									<div class="col-12 mt-auto">
+										<div class="title-banner text-uppercase">
+											{{section.settings.button_text_4 }}
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<div class="triangle-bottom"></div>
+					</div>
+				{% endif %}
+				{% if section.settings.button_link_5 != blank %}
+					<div class="col box-div-banner-end">
+						<div class="triangle-right"></div>
+						<a href="{{section.settings.button_link_5}}">
+							<div class="content-banner-link text-center">
+								<div class="row box-content-banner m-0">
+									<div class="col-12 mt-auto">
+										<div class="title-banner text-uppercase">
+											{{section.settings.button_text_5}}
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<div class="triangle-bottom"></div>
+					</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Menu bottom end Scrambler",
+"class": "agusta-menu-final",
+"settings": [
+{
+"type": "header",
+"content": "==== Imagenes background ===="
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "1° imagen"
+},
+{
+"type": "image_picker",
+"id": "image_1",
+"label": "2° imagen"
+},
+{
+"type": "image_picker",
+"id": "image_2",
+"label": "3° imagen"
+},
+{
+"type": "image_picker",
+"id": "image_3",
+"label": "4° imagen"
+},
+{
+"type": "image_picker",
+"id": "image_4",
+"label": "5° imagen"
+},
+{
+"type": "header",
+"content": "==== Botones ===="
+},
+{
+"type": "text",
+"id": "button_text",
+"label": "1° botón label"
+},
+{
+"type": "url",
+"id": "button_link",
+"label": "1° botón link"
+},
+{
+"type": "text",
+"id": "button_text_2",
+"label": "2° botón label"
+},
+{
+"type": "url",
+"id": "button_link_2",
+"label": "2° botón link"
+},
+{
+"type": "text",
+"id": "button_text_3",
+"label": "1° botón label"
+},
+{
+"type": "url",
+"id": "button_link_3",
+"label": "3° botón link"
+},
+{
+"type": "text",
+"id": "button_text_4",
+"label": "1° botón label"
+},
+{
+"type": "url",
+"id": "button_link_4",
+"label": "4° botón link"
+},
+{
+"type": "text",
+"id": "button_text_5",
+"label": "5° botón label"
+},
+{
+"type": "url",
+"id": "button_link_5",
+"label": "5° botón link"
+}
+],
+"presets": [
+{
+"name": "Menu bottom end Scrambler",
+"category": "Image & link"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

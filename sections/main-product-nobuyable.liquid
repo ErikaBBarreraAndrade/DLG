@@ -1,0 +1,707 @@
+<style>
+.tmpl-nobuyable .main-content {
+    margin-top: -90px;
+}
+    .tmpl-nobuyable .agusta-banner-800 .content-banner-principal-banner-rosso,
+  .tmpl-nobuyable .agusta-banner-800  .content-information-motos{
+      min-height: 860px;
+      background-size: cover;
+      background-position: center;
+  }
+@media all and (min-width:768px){
+    .tmpl-nobuyable .agusta-banner-800 .content-banner-principal-banner-rosso,
+  .tmpl-nobuyable .agusta-banner-800  .content-information-motos{
+	min-height: 1713px;
+  }
+}
+@media all and (min-width:992px){
+    .tmpl-nobuyable .agusta-banner-800 .content-banner-principal-banner-rosso,
+    .tmpl-nobuyable .agusta-banner-800  .content-information-motos{
+        min-height: 860px;
+    }
+}
+</style>
+    {{ 'nobuyable-products.scss.css' | asset_url | stylesheet_tag }}
+
+<div id="shopify-section-template--15391460622564__1635663527960c05f6" class="shopify-section agusta-banner-800">
+    <style>
+        .content-banner-principal-banner-rosso {
+          background: url({{ product.images[1].src | img_url : 'master'}});
+        }
+
+        @media (min-width: 992px) {
+            .content-banner-principal-banner-rosso {
+                background: url({{ product.images[0].src | img_url : 'master'}});
+            }
+        }
+
+        .page_ducati .box-div-banner-end .content-banner-link {
+      transition: all 0.5s;
+      position: relative;
+      width: 100%;
+      padding-bottom: 25%;
+      transform-origin: 0 100%;
+      transform: skewX(-20deg) translatez(1px);
+      overflow: hidden;
+      height: 356px;
+  }
+  @media (min-width: 1200px) {
+      .box-div-banner-end .content-banner-link, .box-content-banner {
+          height: 403px;
+      }
+      .box-div-banner-end .content-banner-link:before {
+          width: 189%;
+          height: 403px;
+      }
+      .box-div-banner-end .content-banner-link:before {
+          height: 565px;
+      }
+  }
+  .page_ducati .box-div-banner-end .content-banner-link:before {
+      content: "";
+      transition: all 0.5s;
+      position: absolute;
+      width: 250%;
+      height: 563px;
+      background-size: cover !important;
+      background-position: top;
+      transform-origin: inherit;
+      transform: skewX(23deg);
+      left: 1px;
+  }
+        @media (min-width: 1280px) {
+          .box-div-banner-end .content-banner-link:before {
+            width: 220%;
+          }
+        }
+    @media (min-width: 1800px) {
+      .box-div-banner-end .content-banner-link:before {
+        width: 192%;
+      }
+    }
+  @media (min-width: 1600px) {
+      .box-div-banner-end .content-banner-link, .box-content-banner {
+          height: 410px;
+          /*border-right: 2px solid #EF0000;*/
+      }
+  }
+      /*============================ Banner options parallelogram ==========================*/
+
+</style>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 p-0">
+                <div class="content-banner-principal-banner-rosso">
+                    <div class="row content-information-motos m-0">
+                        <div class="col-12 mt-auto">
+                            <div class="row">
+                                <div class="col-12">
+<!--                                     <p class="title text-uppercase text-center mb-0">
+                                        {{ product.vendor }}
+                                    </p> -->
+                                    <p class="subtitle text-center mb-0">
+                                        {{ product.title }}
+                                    </p>
+                                    <p class="content-button text-center">
+                                        <a href="#" class="btn text-uppercase">
+                                            Contactar con un ejecutivo
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="col-12 content-description">
+                                    <ul class="d-flex justify-content-center list-unstyled m-0 p-0">
+                                        <li class="text-center block-information price my-auto nobuyable-price">
+                                            {{ product.price | money }}
+                                        </li>
+                                        <li class="text-center block-information">
+                                            <p class="label text-center mb-0">
+                                                Potencia
+                                            </p>
+                                            {{ product.metafields.motor.potencia }}
+                                        </li>
+                                        <li class="text-center block-information">
+                                            <p class="label text-center mb-0">
+                                                Par
+                                            </p>
+                                            {{ product.metafields.motor.par }}
+                                        </li>
+                                      {% for option in product.options %}
+                                        {% if option == "Color" %}
+                                          <li class="text-center block-information bloque-colores">
+                                                <ul class="justify-content-center list-unstyled m-0 p-0">
+                                                    <li>
+                                                        <ul class="d-flex justify-content-center list-unstyled m-0 p-0">
+                                                          {% for variant in product.variants %}
+                                                          <li>
+	                                                       {% comment %}   {{ variant.metafields.moto.color.value }}{% endcomment %}
+                                                            <div class="content-color nobuyable-color-picker {% if forloop.first %}active{% endif %}" data-title="{{variant.title}}" data-price="{{ variant.price | money }}" style="background: {{ variant.title }}">
+                                                              <div class="label-txt-color d-none">
+                                                                {{ variant.sku }}
+                                                              </div>
+                                                              <div class="content-hover-type-color">
+                                                                <div class="content-color-hover" style="background: {{ variant.title }}"></div>
+                                                              </div>
+                                                            </div>
+                                                          </li>
+                                                          {% endfor %}
+                                                        </ul>
+                                                      <p class="label label-nameColor mb-0">
+                                                        Color:
+                                                      {% for variant in product.variants %}
+                                                        {% if forloop.first %} {{ variant.sku }}{% endif %}
+                                                      {% endfor %}
+                                                      </p>
+                                                    </li>
+                                                </ul>
+                                      		</li>
+                                      	{% endif %}
+                                      {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div id="shopify-section-template--15391460622564__163566375951e073e1" class="shopify-section agusta-brutale-tabs"><div class="container-fluid">
+    <div class="row justify-content-center">
+      {% if product.handle contains "scrambler" %}
+        <div class="col-12 text-center">
+	        <div class="title-scrambler-intro-tabs">
+		        Act the <span>#Joyvolution!</span>
+	        </div>
+        </div>
+      {% endif %}
+        <div class="col-11 col-lg-12">
+            {{ product.description }}
+        </div>
+    </div>
+    <div class="row justify-content-center content-tabs">
+        <div class="col-11 col-sm-11 col-lg-12 col-xl-11 col-xxl-10">
+            <div class="row justify-content-end">
+                <div class="col-12 col-lg-6">
+                    <ul class="nav nav-tabs m-0" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+                                DISEÑO
+                            </button>
+                        </li>
+
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="MOTOR-tab" data-bs-toggle="tab" data-bs-target="#MOTOR" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                                MOTOR
+                            </button>
+
+                        </li>
+
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="ERGONOMÍA-tab" data-bs-toggle="tab" data-bs-target="#ERGONOMÍA" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                                ERGONOMÍA
+                            </button>
+
+                        </li>
+
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="TECNOLOGÍA-tab" data-bs-toggle="tab" data-bs-target="#TECNOLOGÍA" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                                TECNOLOGÍA
+                            </button>
+
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-12">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="row">
+                                <div class="col-12 col-lg-5">
+								{% assign designImg = product.metafields.design.image.value | remove_first: 'files/' | file_url %}
+                                    <img class="feature-row__image img-fluid lazyautosizes lazyloaded"
+                                         data-src="{{ designImg }}"
+                                         data-widths="[180, 360, 540, 720, 900, 1080]"
+                                         data-sizes="auto" alt=""
+                                         sizes="448px"
+                                         src="{{ designImg }}">
+                                </div>
+                                <div class="col-12 col-12 col-lg-6 offset-lg-1 order-first order-lg-last">
+                                    <div class="description-tabs">
+										{{ product.metafields.design.description }}
+                                  	</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="MOTOR" role="tabpanel" aria-labelledby="MOTOR-tab">
+                            <div class="row">
+                                <div class="col-12 col-lg-5">
+								{% assign motorImg = product.metafields.motor.image.value | remove_first: 'files/' | file_url %}
+
+                                    <img class="feature-row__image img-fluid lazyautosizes lazyloaded" data-src="{{motorImg}}" data-widths="[180, 360, 540, 720, 900, 1080]" data-sizes="auto" alt="" sizes="469px" src="{{motorImg}}">
+
+                                </div>
+                                <div class="col-12 col-12 col-lg-6 offset-lg-1 offset-lg-1 order-first order-lg-last">
+                                    <div class="description-tabs">
+										{{ product.metafields.motor.description }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="ERGONOMÍA" role="tabpanel" aria-labelledby="ERGONOMÍA-tab">
+                            <div class="row">
+                                <div class="col-12 col-lg-5">
+								{% assign ergonomiaImg = product.metafields.ergonomia.image.value | remove_first: 'files/' | file_url %}
+
+                                    <img class="feature-row__image img-fluid lazyautosizes lazyloaded" data-src="{{ergonomiaImg}}" data-widths="[180, 360, 540, 720, 900, 1080]" data-sizes="auto" alt="" sizes="469px" src="{{ergonomiaImg}}">
+
+                                </div>
+                                <div class="col-12 col-12 col-lg-6 offset-lg-1 offset-lg-1 order-first order-lg-last">
+                                    <div class="description-tabs">
+										{{ product.metafields.ergonomia.description }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="TECNOLOGÍA" role="tabpanel" aria-labelledby="TECNOLOGÍA-tab">
+                            <div class="row">
+                                <div class="col-12 col-lg-5">
+								{% assign techImg = product.metafields.tecnologia.image.value | remove_first: 'files/' | file_url %}
+
+                                    <img class="feature-row__image img-fluid lazyautosizes lazyloaded" data-src="{{ techImg }}" data-widths="[180, 360, 540, 720, 900, 1080]" data-sizes="auto" alt="" sizes="469px" src="{{ techImg }}">
+
+                                </div>
+                                <div class="col-12 col-12 col-lg-6 offset-lg-1 offset-lg-1 order-first order-lg-last">
+                                    <div class="description-tabs">
+										{{ product.metafields.tecnologia.description }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<div id="shopify-section-template--15391460622564__1635663856d4a69acc" class="shopify-section agusta-brutale-tabs-des-caract"><div class="container-fluid content-tabs-description">
+    <div class="row justify-content-center content-tabs m-0">
+        <div class="col-11 col-sm-11 col-lg-12 col-xl-11 col-xxl-10 d-none d-lg-block">
+            <div class="row">
+                <div class="col-12 col-lg-3 col-xxl-4">
+                    <ul class="nav flex-column  m-0" id="description-tabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-2-tab" data-bs-toggle="tab" data-bs-target="#home-2" type="button" role="tab" aria-controls="home-2" aria-selected="true">
+                                MOTOR
+                            </button>
+                        </li>
+
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="transmision-tab" data-bs-toggle="tab" data-bs-target="#transmision" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                                TRANSMISIÓN
+                            </button>
+
+                        </li>
+
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="vehiculo-tab" data-bs-toggle="tab" data-bs-target="#vehiculo" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                                VEHÍCULO
+                            </button>
+
+                        </li>
+
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="dimensiones-y-pesos-tab" data-bs-toggle="tab" data-bs-target="#dimensiones-y-pesos" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                                DIMENSIONES Y PESOS
+                            </button>
+
+                        </li>
+
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="equipamento-y-garantia-tab" data-bs-toggle="tab" data-bs-target="#equipamento-y-garantia" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                                EQUIPAMIENTO Y GARANTÍA
+                            </button>
+
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-9 col-xxl-8">
+                    <div class="tab-content" id="myTabContentDes">
+                        <div class="tab-pane fade active show" id="home-2" role="tabpanel" aria-labelledby="home-2-tab">
+                            <div class="description-tabs">
+                              {% if product.metafields.motor.cilindrada != blank %}
+                                <p><strong>Cilindrada </strong><span>{{product.metafields.motor.cilindrada }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.motor.potencia != blank %}
+                              <p><strong>Potencia </strong><span>{{product.metafields.motor.potencia }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.motor.par != blank %}
+                              <p><strong>Par </strong><span>{{product.metafields.motor.par }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.motor.control != blank %}
+                              <p><strong>Control juego válvulas (desmoservice) </strong><span>{{product.metafields.motor.control }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.motor.alimentacion != blank %}
+                              <p><strong>Alimentación </strong><span>{{product.metafields.motor.alimentacion }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.motor.escape != blank %}
+                              <p><strong>Escape </strong><span>{{product.metafields.motor.escape }}</span></p>
+                              {% endif %}
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="transmision" role="tabpanel" aria-labelledby="transmision-tab">
+                            <div class="description-tabs">
+                              {% if product.metafields.transmision.cambio != blank %}
+                                <p><strong>Cambio</strong> <span>{{product.metafields.transmision.cambio }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.transmision.primaria != blank %}
+                              <p><strong>Transmisión primaria</strong> <span>{{product.metafields.transmision.primaria }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.transmision.relacion != blank %}
+                              <p><strong>Relación </strong><span>{{product.metafields.transmision.relacion }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.transmision.final != blank %}
+                              <p><strong>Transmisión final </strong><span>{{product.metafields.transmision.final }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.transmision.embrague != blank %}
+                              <p><strong>Embrague</strong> <span>{{product.metafields.transmision.embrague }}</span></p>
+                              {% endif %}
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="vehiculo" role="tabpanel" aria-labelledby="vehiculo-tab">
+                            <div class="description-tabs">
+                              {% if product.metafields.vehiculo.suspension_delantera != blank %}
+                                <p><strong>Suspensión delantera</strong> <span>{{product.metafields.vehiculo.suspension_delantera }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.vehiculo.suspension_trasera != blank %}
+                              <p><strong>Suspensión trasera</strong> <span>{{product.metafields.vehiculo.suspension_trasera }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.vehiculo.rueda_trasera != blank %}
+                              <p><strong>Rueda trasera</strong> <span>{{product.metafields.vehiculo.rueda_trasera }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.vehiculo.rueda_delantera != blank %}
+                              <p><strong>Rueda delantera </strong><span>{{product.metafields.vehiculo.rueda_delantera }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.vehiculo.llanta_delantera != blank %}
+                              <p><strong>Llanta delantera</strong> <span>{{product.metafields.vehiculo.llanta_delantera }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.vehiculo.llanta_trasera != blank %}
+                              <p><strong>Llanta trasera</strong> <span>{{product.metafields.vehiculo.llanta_trasera }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.vehiculo.recorrido != blank %}
+                              <p><strong>Recorrido de la suspensión (del/tras) </strong><span>{{product.metafields.vehiculo.recorrido }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.vehiculo.freno_delantero != blank %}
+                              <p><strong>Freno delantero</strong> <span>{{product.metafields.vehiculo.freno_delantero }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.vehiculo.freno_trasero != blank %}
+                              <p><strong>Freno trasero</strong> <span>{{product.metafields.vehiculo.freno_trasero }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.vehiculo.instrumentacion != blank %}
+                              <p><strong>Instrumentación</strong> <span>{{product.metafields.vehiculo.instrumentacion }}</span></p>
+                              {% endif %}
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="dimensiones-y-pesos" role="tabpanel" aria-labelledby="dimensiones-y-pesos-tab">
+                            <div class="description-tabs">
+                              {% if product.metafields.dimension.instrumentacion != blank %}
+                                <p><strong>Peso en Seco</strong> <span>{{product.metafields.dimension.peso_seco }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.dimension.peso_marcha != blank %}
+                              <p><strong>Peso en orden de marcha</strong> <span>{{product.metafields.dimension.peso_marcha }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.dimension.altura != blank %}
+                              <p><strong>Altura asiento </strong><span>{{product.metafields.dimension.altura }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.dimension.distancia != blank %}
+                              <p><strong>Distancia entre ejes</strong> <span>{{product.metafields.dimension.distancia }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.dimension.lanzamiento != blank %}
+                              <p><strong>Lanzamiento</strong> <span>{{product.metafields.dimension.lanzamiento }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.dimension.trail != blank %}
+                              <p><strong>Trail </strong><span>{{product.metafields.dimension.trail }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.dimension.capacidad != blank %}
+                              <p><strong>Capacidad del deposito de combustible </strong><span>{{product.metafields.dimension.capacidad }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.dimension.asientos != blank %}
+                              <p><strong>Número de asientos</strong> <span>{{product.metafields.dimension.asientos }}</span></p>
+                              {% endif %}
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="equipamento-y-garantia" role="tabpanel" aria-labelledby="equipamento-y-garantia-tab">
+                            <div class="description-tabs">
+                              {% if product.metafields.equipamiento.serie != blank %}
+                                <p><strong>Equipamiento de serie</strong> <span>{{product.metafields.equipamiento.serie }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.equipamiento.garantia != blank %}
+                              <p><strong>Garantía (meses) </strong><span>{{product.metafields.equipamiento.garantia }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.equipamiento.intervalos != blank %}
+                              <p><strong>Intervalos de servicio (km/meses) </strong><span>{{product.metafields.equipamiento.intervalos }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.equipamiento.estandar != blank %}
+                              <p><strong>Estándar </strong><span>{{product.metafields.equipamiento.estandar }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.equipamiento.emisiones != blank %}
+                              <p><strong>Emisiones CO2 </strong><span>{{product.metafields.equipamiento.emisiones }}</span></p>
+                              {% endif %}
+                              {% if product.metafields.equipamiento.consumos != blank %}
+                              <p><strong>Consumos </strong><span>{{product.metafields.equipamiento.consumos }}</span></p>
+                              {% endif %}
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 d-block d-lg-none">
+            <div class="accordion" id="accordionDes">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            MOTOR
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionDes">
+                        <div class="accordion-body description-tabs">
+                            {% if product.metafields.motor.cilindrada != blank %}
+                                <p class="text-end"><strong>Cilindrada </strong><span>{{product.metafields.motor.cilindrada }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.motor.potencia != blank %}
+                                <p class="text-end"><strong>Potencia </strong><span>{{product.metafields.motor.potencia }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.motor.par != blank %}
+                                <p class="text-end"><strong>Par </strong><span>{{product.metafields.motor.par }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.motor.control != blank %}
+                                <p class="text-end"><strong>Control juego válvulas (desmoservice) </strong><span>{{product.metafields.motor.control }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.motor.alimentacion != blank %}
+                                <p class="text-end"><strong>Alimentación </strong><span>{{product.metafields.motor.alimentacion }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.motor.escape != blank %}
+                                <p class="text-end"><strong>Escape </strong><span>{{product.metafields.motor.escape }}</span></p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            TRANSMISIÓN
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionDes">
+                        <div class="accordion-body description-tabs">
+                            {% if product.metafields.transmision.cambio != blank %}
+                                <p class="text-end"><strong>Cambio</strong> <span>{{product.metafields.transmision.cambio }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.transmision.primaria != blank %}
+                                <p class="text-end"><strong>Transmisión primaria</strong> <span>{{product.metafields.transmision.primaria }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.transmision.relacion != blank %}
+                                <p class="text-end"><strong>Relación </strong><span>{{product.metafields.transmision.relacion }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.transmision.final != blank %}
+                                <p class="text-end"><strong>Transmisión final </strong><span>{{ product.metafields.transmision.final }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.transmision.embrague != blank %}
+                                <p class="text-end"><strong>Embrague</strong> <span>{{product.metafields.transmision.embrague }}</span></p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            VEHÍCULO
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionDes">
+                        <div class="accordion-body description-tabs">
+                            {% if product.metafields.vehiculo.suspension_delantera != blank %}
+                                <p class="text-end"><strong>Suspensión delantera</strong> <span>{{product.metafields.vehiculo.suspension_delantera }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.vehiculo.suspension_trasera != blank %}
+                                <p class="text-end"><strong>Suspensión trasera</strong> <span>{{product.metafields.vehiculo.suspension_trasera }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.vehiculo.rueda_trasera != blank %}
+                                <p class="text-end"><strong>Rueda trasera</strong> <span>{{product.metafields.vehiculo.rueda_trasera }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.vehiculo.rueda_delantera != blank %}
+                                <p class="text-end"><strong>Rueda delantera </strong><span>{{product.metafields.vehiculo.rueda_delantera }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.vehiculo.llanta_delantera != blank %}
+                                <p class="text-end"><strong>Llanta delantera</strong> <span>{{product.metafields.vehiculo.llanta_delantera }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.vehiculo.llanta_trasera != blank %}
+                                <p class="text-end"><strong>Llanta trasera</strong> <span>{{product.metafields.vehiculo.llanta_trasera }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.vehiculo.recorrido != blank %}
+                                <p class="text-end"><strong>Recorrido de la suspensión (del/tras) </strong><span>{{product.metafields.vehiculo.recorrido }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.vehiculo.freno_delantero != blank %}
+                                <p class="text-end"><strong>Freno delantero</strong> <span>{{product.metafields.vehiculo.freno_delantero }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.vehiculo.freno_trasero != blank %}
+                                <p class="text-end"><strong>Freno trasero</strong> <span>{{product.metafields.vehiculo.freno_trasero }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.vehiculo.instrumentacion != blank %}
+                                <p class="text-end"><strong>Instrumentación</strong> <span>{{product.metafields.vehiculo.instrumentacion }}</span></p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            DIMENSIONES Y PESOS
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionDes">
+                        <div class="accordion-body description-tabs">
+                            {% if product.metafields.dimension.instrumentacion != blank %}
+                                <p class="text-end"><strong>Peso en Seco</strong> <span>{{product.metafields.dimension.peso_seco }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.dimension.peso_marcha != blank %}
+                                <p class="text-end"><strong>Peso en orden de marcha</strong> <span>{{product.metafields.dimension.peso_marcha }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.dimension.altura != blank %}
+                                <p class="text-end"><strong>Altura asiento </strong><span>{{product.metafields.dimension.altura }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.dimension.distancia != blank %}
+                                <p class="text-end"><strong>Distancia entre ejes</strong> <span>{{product.metafields.dimension.distancia }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.dimension.lanzamiento != blank %}
+                                <p class="text-end"><strong>Lanzamiento</strong><span> {{product.metafields.dimension.lanzamiento }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.dimension.trail != blank %}
+                                <p class="text-end"><strong>Trail </strong><span>{{product.metafields.dimension.trail }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.dimension.capacidad != blank %}
+                                <p class="text-end"><strong>Capacidad del deposito de combustible </strong><span>{{product.metafields.dimension.capacidad }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.dimension.asientos != blank %}
+                                <p class="text-end"><strong>Número de asientos</strong><span>{{product.metafields.dimension.asientos }}</span></p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            EQUIPAMIENTO Y GARANTÍA
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionDes">
+                        <div class="accordion-body description-tabs">
+                            {% if product.metafields.equipamiento.serie != blank %}
+                                <p class="text-end"><strong>Equipamiento de serie</strong> <span>{{product.metafields.equipamiento.serie }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.equipamiento.garantia != blank %}
+                                <p class="text-end"><strong>Garantía (meses) </strong><span>{{product.metafields.equipamiento.garantia }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.equipamiento.intervalos != blank %}
+                                <p class="text-end"><strong>Intervalos de servicio (km/meses) </strong><span>{{product.metafields.equipamiento.intervalos }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.equipamiento.estandar != blank %}
+                                <p class="text-end"><strong>Estándar </strong><span>{{product.metafields.equipamiento.estandar }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.equipamiento.emisiones != blank %}
+                                <p class="text-end"><strong>Emisiones CO2 </strong><span>{{product.metafields.equipamiento.emisiones }}</span></p>
+                            {% endif %}
+                            {% if product.metafields.equipamiento.consumos != blank %}
+                                <p class="text-end"><strong>Consumos </strong><span>{{product.metafields.equipamiento.consumos }}</span></p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="shopify-section-template--15391460622564__1635663859ffeb9258" class="shopify-section agusta-brutale-800-gallery"><div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-11 col-lg-12 col-xl-11 col-xxl-9">
+            <div class="grid-overflow-wrapper row">
+                <div class="grid grid--uniform aos-init aos-animate" data-aos="overflow__animation"><div class="grid__item grid-product small--one-half medium-up--one-third d-flex aos-init aos-animate" data-aos="row-of-">
+                  {%- for image in product.images offset:1 -%}
+                  <div class="col-12 block-image">
+                    <a href="{{ image.src | img_url: '1024x1024'}}" data-fancybox="images">
+                      <img class="feature-row__image img-fluid lazyautosizes lazyloaded" data-src="{{ image.src | img_url: '1024x1024' }}" data-widths="[180, 360, 540, 720, 900, 1080]" data-sizes="auto" alt="" sizes="341px" src="{{ image.src | img_url: '1024x1024' }}">
+                    </a>
+                  </div>
+                  {% endfor %}
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script>
+
+    </script></div>
+<div id="shopify-section-template--15391460622564__1635664042577b34ae" class="shopify-section agusta-brutale-800-video">
+  <style data-shopify="">
+	  .agusta-brutale-800-video iframe {
+      height: 350px;
+    }
+@media only screen and (min-width: 769px) {
+  .agusta-brutale-800-video iframe {
+    height: 750px;
+  }
+}
+</style><div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-11 col-sm-11 col-lg-12 col-xl-11 col-xxl-10">
+          <iframe id="YouTubeVideo-template--15391460622564__1635664042577b34ae" data-video-id="6lZDatAzPEA" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="100%" src="{{ product.metafields.moto.video.value }}" tabindex="-1"></iframe>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

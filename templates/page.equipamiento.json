@@ -1,0 +1,226 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page-externas",
+      "settings": {
+        "tipo_pagina": "page_externa_dlg"
+      }
+    },
+    "163796038423c4f1d6": {
+      "type": "eventos-banner-general",
+      "settings": {
+        "video_banner_check": true,
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/85ff6ce479c3404d930f6e64dd089586.mp4",
+        "video_url_mobile": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d7e956c9f1ab4757af4f014c51b9964a.mp4",
+        "image_banner_check": false,
+        "image_banner": "shopify:\/\/shop_images\/banner-seccion-equipamiento.jpg",
+        "image_banner_mobile": "shopify:\/\/shop_images\/banner-equipamiento-mobile.jpg"
+      }
+    },
+    "1637960827cfd289df": {
+      "type": "seminuevas-texto-simple",
+      "settings": {
+        "bg_color": "#000000",
+        "title": "El mejor <strong>equipamiento<\/strong> solo en <span>dlg moto art<\/span>",
+        "description": ""
+      }
+    },
+    "1637974729e5cc0613": {
+      "type": "link-opciones-loop",
+      "blocks": {
+        "8b39b155-8e83-4725-b07b-b439534e11ae": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Grupo-448.jpg",
+            "title_url": "shopify:\/\/collections\/ropa-casual",
+            "title": "Ropa casual"
+          }
+        },
+        "f98a7c10-66ca-4cdb-a12f-f4ba54399967": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Grupo-449_dc1d1566-b06b-4339-ab58-6f9e4ff83769.jpg",
+            "title_url": "shopify:\/\/collections\/calzado",
+            "title": "Calzado"
+          }
+        },
+        "8ea95f6b-f830-497b-827a-35afec84c635": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/guantes-equipamiento.jpg",
+            "title_url": "shopify:\/\/collections\/guantes",
+            "title": "Guantes"
+          }
+        },
+        "ac21c367-9f5d-4c20-9208-59e5a80f81b2": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cascos-equipamiento.jpg",
+            "title_url": "shopify:\/\/collections\/cascos",
+            "title": "Cascos"
+          }
+        },
+        "36db1a5f-99f7-47ab-8515-caa3b6acf5e0": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Grupo-451.jpg",
+            "title_url": "shopify:\/\/collections\/chamarras",
+            "title": "Chamarras"
+          }
+        },
+        "f28aa147-b235-452a-bad1-f51a1a657a7b": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Grupo-450_3bf08871-fc55-485f-9786-733dbc519c75.jpg",
+            "title_url": "shopify:\/\/collections\/pantalones",
+            "title": "Pantalones"
+          }
+        },
+        "83a64a2a-1a7e-4e68-9bf0-b4e93b638815": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Grupo-455.jpg",
+            "title_url": "shopify:\/\/collections\/prendas-tecnicas",
+            "title": "Prendas<br> Técnicas"
+          }
+        },
+        "466b2941-533d-4aa5-8605-e262a25e25a3": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Grupo-452.jpg",
+            "title_url": "shopify:\/\/collections\/accesorios-cascos",
+            "title": "Accesorios <br>  para Cascos"
+          }
+        },
+        "b3f20929-c854-4123-a874-11702f87e636": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Grupo-454.jpg",
+            "title_url": "shopify:\/\/collections\/protectores",
+            "title": "Protectores"
+          }
+        },
+        "96bb74a5-1ed3-44b1-9ba8-476b68d80729": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Grupo-453_0876e0d4-f4c5-465e-9408-4b4b18e204ff.jpg",
+            "title_url": "shopify:\/\/collections\/otros",
+            "title": "Varios"
+          }
+        }
+      },
+      "block_order": [
+        "8b39b155-8e83-4725-b07b-b439534e11ae",
+        "f98a7c10-66ca-4cdb-a12f-f4ba54399967",
+        "8ea95f6b-f830-497b-827a-35afec84c635",
+        "ac21c367-9f5d-4c20-9208-59e5a80f81b2",
+        "36db1a5f-99f7-47ab-8515-caa3b6acf5e0",
+        "f28aa147-b235-452a-bad1-f51a1a657a7b",
+        "83a64a2a-1a7e-4e68-9bf0-b4e93b638815",
+        "466b2941-533d-4aa5-8605-e262a25e25a3",
+        "b3f20929-c854-4123-a874-11702f87e636",
+        "96bb74a5-1ed3-44b1-9ba8-476b68d80729"
+      ],
+      "settings": {
+        "bg_block": "#000000",
+        "enable_boton": true,
+        "boton_url": "#",
+        "boton_label": "Descuentos"
+      }
+    },
+    "1637979779d1b82e4c": {
+      "type": "iconos-atencion-clientes",
+      "blocks": {
+        "f64057a2-7fd6-4536-9736-84007520d7b7": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icono-envios.png",
+            "title": "",
+            "description": "<p>ENVÍO GRATIS en ordenes mayores a $3000MXN<br\/>*Aplica solo en el interior de la República Mexicana<\/p>"
+          }
+        },
+        "43b5bc1e-fa22-4bf9-ae10-79eed5d315a8": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icono_financiamiento_2d7c654f-b4c6-40ad-a10d-a566bcbf6883.png",
+            "title": "¿QUIERES SER DISTRIBUIDOR?",
+            "description": "<p>Contáctanos y, si cumples con los requisitos, podrás vender nuestros productos desde cualquier lugar.<\/p>"
+          }
+        },
+        "b2f07da0-6f77-4108-ad8d-0a7f824b9384": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icono_soporte_59a03645-7243-49bc-8ae7-69f1245b5a24.png",
+            "title": "SOPORTE",
+            "description": "<p>De lunes a viernes de 9:00 a 19:00 y sábados de 9:00 a 14:00 hrs GMT-6.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "f64057a2-7fd6-4536-9736-84007520d7b7",
+        "43b5bc1e-fa22-4bf9-ae10-79eed5d315a8",
+        "b2f07da0-6f77-4108-ad8d-0a7f824b9384"
+      ],
+      "settings": {
+      }
+    },
+    "16379787029eccde91": {
+      "type": "agusta-motos-iconos",
+      "blocks": {
+        "16379787022ee15acb-0": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icon-1-white.png",
+            "description": "Tenemos el inventario más grande en México. Entregas y devoluciones rápidas en toda la República."
+          }
+        },
+        "16379787022ee15acb-1": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icon-2-white.png",
+            "description": "Ofrecemos no solo una experiencia de compra, sino una experiencia de vida."
+          }
+        },
+        "16379787022ee15acb-2": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icon-3-white.png",
+            "description": "Más de 17 años de experiencia trabajando con las mejores marcas de Italia y el mundo."
+          }
+        },
+        "dc7c199d-c2bf-40f4-ad0a-baa366c5f68d": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icon-4-white.png",
+            "description": "Tu compra es segura, aceptamos todos los métodos de pagos disponibles en México."
+          }
+        },
+        "4fc9bad7-ebab-4b56-b872-646a89c5713d": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icon-5-white_57f66ad5-07ae-4c36-907f-69b35e06f39c.png",
+            "description": "Y si no te gusta devolvemos tu dinero sin preguntar."
+          }
+        }
+      },
+      "block_order": [
+        "16379787022ee15acb-0",
+        "16379787022ee15acb-1",
+        "16379787022ee15acb-2",
+        "dc7c199d-c2bf-40f4-ad0a-baa366c5f68d",
+        "4fc9bad7-ebab-4b56-b872-646a89c5713d"
+      ],
+      "settings": {
+        "title": "DLG Moto Art, <strong>la mejor y más grande tienda<\/strong> para motos y accesorios en México"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "163796038423c4f1d6",
+    "1637960827cfd289df",
+    "1637974729e5cc0613",
+    "1637979779d1b82e4c",
+    "16379787029eccde91"
+  ]
+}

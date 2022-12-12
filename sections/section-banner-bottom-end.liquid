@@ -1,0 +1,173 @@
+{{ 'banner-information-home.scss.css' | asset_url | stylesheet_tag }}
+<div class="container-fluid">
+  <div class="row" style="background: {{ section.settings.color_bg }}">
+    {% if section.settings.image != blank%}
+    <div class="col-12  col-lg-8 col-xxl-7 ps-lg-0 content-image my-auto">
+      <img class="logo-bar__image lazyload d-none d-lg-block img-fluid"
+           data-src="{{ section.settings.image | img_url: 'master' }}"
+           data-widths="[180, 360, 540, 720]"
+           data-aspectratio="{{ section.settings.image}}"
+           width="{{ section.settings.image.width }}"
+           height="{{ section.settings.image.width | divided_by: section.settings.image.aspect_ratio | round }}"
+           alt="{{ block.settings.image.alt }}">
+      <img class="logo-bar__image lazyload d-block d-lg-none img-fluid"
+           data-src="{{ section.settings.image_mobile | img_url: 'master' }}"
+           data-widths="[180, 360, 540, 720]"
+           width="{{ section.settings.image_mobile.width }}"
+           height="{{ section.settings.image_mobile.width | divided_by: section.settings.image_mobile.aspect_ratio | round }}"
+           data-aspectratio="{{ section.settings.image_mobile}}"
+           alt="{{ block.settings.image.alt }}" >
+    </div>
+    {% endif %}
+    <div class="col-12 col-lg-4 col-xxl-5 my-auto">
+      <div class="row content-information-promotions">
+        <div class="col-12 text-center text-lg-start">
+          {% if section.settings.title != blank%}
+          <p class="title text-uppercase mb-0">
+            {{ section.settings.title }}
+          </p>
+          {% endif %}
+          {% if section.settings.subtitle != blank%}
+          <p class="subtitle text-uppercase">
+            {{ section.settings.subtitle }}
+          </p>
+          {% endif %}
+          {% if section.settings.description != blank%}
+          <div class="description">
+            {{ section.settings.description }}
+          </div>
+          {% endif %}
+          {% if section.settings.button_link != blank%}
+          <p class="content-link">
+            <a href="{{ section.settings.button_link}}" {% if block.settings.enable_target_link %}target="_blank" {% endif %}>
+              {{ section.settings.button_label }}
+            </a>
+          </p>
+          {% endif %}
+          {% if section.settings.price != blank%}
+          <p class="price">
+            {{ section.settings.price }}
+          </p>
+          {% endif %}
+          {% if section.settings.button_link_2 != blank%}
+          <p class="content-button">
+            <a href="{{ section.settings.button_link_2}}" {% if block.settings.enable_target %}target="_blank" {% endif %}>
+              {{ section.settings.button_label_2 }}
+            </a>
+          </p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+ "name": "Banner information",
+"class":"banner-information-home",
+  "settings": [
+	 {
+          "type": "header",
+          "content": "==== Color de fondo ===="
+        },
+	    {
+          "type": "color",
+          "id": "color_bg",
+          "label": "Color de fondo"
+        },
+ {
+          "type": "header",
+          "content": "==== Imagenes ===="
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Imagen Desktop"
+        },
+     {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "Imagen Mobile"
+        },
+	 {
+          "type": "header",
+          "content": "==== Titulos y textos ===="
+        },
+	{
+          "type": "text",
+          "id": "title",
+          "label": "Titulo",
+          "default": "Agrega un titulo"
+        },
+		{
+          "type": "text",
+          "id": "subtitle",
+          "label": "Titulo",
+          "default": "Agrega un subtitutlo"
+        },
+	{
+          "type": "richtext",
+          "id": "description",
+          "label": "Descripción",
+          "default": "<p>Texto descriptivo</p>"
+        },
+		{
+          "type": "header",
+          "content": "==== Link ===="
+        },
+		 {
+          "type": "checkbox",
+          "id": "enable_target_link",
+          "label": "Abrir en página aparte",
+          "default": false
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Link "
+        },
+{
+          "type": "text",
+          "id": "button_label",
+          "label": "Texto Link"
+        },
+		{
+          "type": "header",
+          "content": "==== Precio ===="
+        },
+
+	     {
+          "type": "text",
+          "id": "price",
+          "label": "Precio"
+        },
+	{
+          "type": "header",
+          "content": "==== Botón ===="
+        },
+	 {
+          "type": "checkbox",
+          "id": "enable_target",
+          "label": "Abrir en página aparte",
+          "default": false
+        },
+	      {
+          "type": "url",
+          "id": "button_link_2",
+          "label": "Link Botón"
+        },
+{
+          "type": "text",
+          "id": "button_label_2",
+          "label": "Texto Botón"
+        }
+  ],
+
+  "presets": [
+    {
+       "name": "Banner information",
+      "category": "Text & image"
+    }
+  ]
+}
+{% endschema %}

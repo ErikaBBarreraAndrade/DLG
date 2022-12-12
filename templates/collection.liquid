@@ -1,0 +1,26 @@
+{{ "template--collection.scss.css" | asset_url | stylesheet_tag }}
+<div id="CollectionAjaxResult" class="collection-content">
+  <div id="CollectionAjaxContent">
+    <div class="container-fluid">
+      <div class="row">
+        {% section 'collection-banner' %}
+      </div>
+    </div>
+    <div class="page-width collection-content-products">
+      <div class="grid grid-collection-products-global">
+        <div class="grid__item medium-up--one-fifth grid__item--sidebar">
+          {% section 'collection-sidebar' %}
+        </div>
+        <div class="grid__item medium-up--four-fifths grid__item--content">
+         {% comment %} {% section 'collection-promotions' %}{% endcomment %}
+          <div class="collection-grid__wrapper">
+            <p class="title-collection">
+              {{ collection.title }}
+            </p>
+            {% section 'collection-template' %}
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+</div>

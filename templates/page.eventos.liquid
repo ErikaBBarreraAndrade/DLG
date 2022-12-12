@@ -1,0 +1,107 @@
+{% section 'eventos-banner'%}
+{% section 'eventos-bloque-texto-simple'%}
+{{ "content-tabs-eventos.scss.css" | asset_url | stylesheet_tag }}
+<div class="container-fluid content-tabs-eventos">
+	<div class="row justify-content-center">
+		<div class="col-12 col-lg-11 col-xxl-9">
+			<ul class="nav nav-tabs justify-content-center row" id="myTab" role="tablist">
+				<li class="nav-item col-6 col-sm-3 col-lg text-center my-auto" role="presentation">
+					<button class="nav-link m-auto active" id="opcion-ciudad-tab" data-bs-toggle="tab" data-bs-target="#opcion-ciudad" type="button" role="tab" aria-controls="home" aria-selected="true">
+						{% section 'titulo-ciudad'%}
+					</button>
+				</li>
+				<li class="nav-item col-6 col-sm-3 col-lg text-center my-auto" role="presentation">
+					<button class="nav-link m-auto" id="opcion-carretera-tab" data-bs-toggle="tab" data-bs-target="#opcion-carretera" type="button" role="tab" aria-controls="opcion-carretera" aria-selected="false">
+					{% section 'titulo-carretera'%}
+					</button>
+				</li>
+				<li class="nav-item col-6 col-sm-3 col-lg text-center my-auto" role="presentation">
+					<button class="nav-link m-auto" id="opcion-track-tab" data-bs-toggle="tab" data-bs-target="#opcion-track" type="button" role="tab" aria-controls="opcion-track" aria-selected="false">
+                          {% section 'titulo-track'%}
+					</button>
+				</li>
+				<li class="nav-item col-6 col-sm-3 col-lg text-center my-auto" role="presentation">
+					<button class="nav-link m-auto" id="opcion-road-tab" data-bs-toggle="tab" data-bs-target="#opcion-road" type="button" role="tab" aria-controls="opcion-road" aria-selected="false">
+						{% section 'titulo-off'%}
+					</button>
+				</li>
+			</ul>
+			<div class="section-bloque-eventos-pasados mb-0 eventos-proximos">
+				<div class="container-fluid">
+					<div class="row content-box-txt justify-content-center">
+						<div class="col-12 col-sm-12 col-lg-12">
+							<div class="row content-box-general">
+								<div class="col-12 text-center content-box-description">
+									<div class="header--event">
+					<span class="title-left float-lg-start">
+						PRÓXIMAS ACTIVIDADES
+					</span>
+										<div class="title-right float-lg-end">
+					{% section 'titulo-right-float-road'%}
+					</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row content-tabs-activities-box">
+		<div class="col-12">
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade show active" id="opcion-ciudad" role="tabpanel" aria-labelledby="opcion-ciudad-tab">
+					<div class="row justify-content-center">
+						<div class="col-12 col-sm-11 col-lg-12 col-xl-11 col-xxl-9 p-0">
+							{% section 'eventos-ciudad'%}
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="opcion-carretera" role="tabpanel" aria-labelledby="opcion-carretera-tab">
+					<div class="row justify-content-center">
+						<div class="col-12 col-sm-11 col-lg-12 col-xl-11 col-xxl-9 content-description-tab-activities">
+							{% section 'eventos-carretera'%}
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="opcion-track" role="tabpanel" aria-labelledby="opcion-track-tab">
+					<div class="row justify-content-center">
+						<div class="col-12 col-sm-11 col-lg-12 col-xl-11 col-xxl-9 content-description-tab-activities">
+							{% section 'eventos-track'%}
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="opcion-road" role="tabpanel" aria-labelledby="opcion-road-tab">
+					<div class="row justify-content-center">
+						<div class="col-12 col-sm-11 col-lg-12 col-xl-11 col-xxl-9 content-description-tab-activities">
+							{% section 'eventos-road'%}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% section 'eventos-pasados'%}
+{% section 'eventos-galeria'%}
+{% section 'eventos-contacto'%}
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.eventos-slider').slick({
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true
+        });
+        $('button[data-bs-toggle="tab"]').on('shown.bs.tab', function (event) {
+            console.log("Tab");
+            $('.eventos-slider').slick('setPosition');
+            $('.eventos-slider').slick('slickGoTo', 0);
+            /*event.target // newly activated tab
+						event.relatedTarget // previous active tab*/
+        });
+    });
+</script>

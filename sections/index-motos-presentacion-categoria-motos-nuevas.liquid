@@ -1,0 +1,319 @@
+{{ 'information-box-motocycle.scss.css' | asset_url | stylesheet_tag }}
+{{ 'motos-nuevas.scss.css' | asset_url | stylesheet_tag }}
+<div class="container-fluid content-bg-seccion-black">
+	<div class="row content-box-bg h-100" style="background: #000;">
+	</div>
+</div>
+<div class="container-fluid p-0 content-motos-info-txt">
+	<div class="row m-0">
+		<div class="d-block d-lg-none pe-0 ps-0">
+			<img class="img-fluid w-100"
+			     src="{{ "fondo-seccion-motos-mobile.jpg" | asset_url }}"
+			     alt="{{ preview_image.alt | escape }}">
+		</div>
+		{% comment %}   <svg class="d-block d-lg-none pe-0" xmlns="http://www.w3.org/2000/svg" width="100%"  viewBox="0 0 803.525 4481.498">
+				 <g id="Grupo_438" data-name="Grupo 438" transform="translate(3.525 -3680.786)">
+					 <rect id="Rectángulo_239" data-name="Rectángulo 239" width="398" height="2226" transform="translate(-1 4527.455)"/>
+					 <path id="Trazado_253" data-name="Trazado 253" d="M1846.177,614.8c99.094-36.8,672.065-187.491,672.065-187.491l-.422,1624.855S1956.029,1931.033,1852.4,1899.79s-105.68-87.036-105.68-174.027v-938.5C1746.717,703.643,1747.083,651.6,1846.177,614.8Z" transform="translate(-1718.242 4662.119)" fill="#fff"/>
+					 <path id="Trazado_252" data-name="Trazado 252" d="M2418.782,1864.673c-99.094,36.8-672.065,187.491-672.065,187.491l.422-1624.855s561.791,121.132,665.424,152.375,105.68,87.036,105.68,174.027v938.5C2518.242,1775.83,2517.876,1827.877,2418.782,1864.673Z" transform="translate(-1750.242 3253.477)"/>
+					 <path id="Trazado_254" data-name="Trazado 254" d="M2418.782,1864.673c-99.094,36.8-672.065,187.491-672.065,187.491l.422-1624.855s561.791,121.132,665.424,152.375,105.68,87.036,105.68,174.027v938.5C2518.242,1775.83,2517.876,1827.878,2418.782,1864.673Z" transform="translate(-1746.717 6110.119)"/>
+				 </g>
+			 </svg>{% endcomment %}
+		<div class="ps-0 pe-0 d-none d-lg-block">
+			<img class="img-fluid w-100"
+			     src="{{ "fondo-desktop-motos-nuevas.png" | asset_url }}"
+			     alt="{{ preview_image.alt | escape }}">
+		</div>
+		{% comment %}<svg class="ps-0 pe-0 d-none d-lg-block" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" viewBox="0 0 1932 2494.649">
+			<defs>
+				<linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+					<stop offset="0" stop-opacity="0"/>
+					<stop offset="1"/>
+				</linearGradient>
+			</defs>
+			<g id="Grupo_327" data-name="Grupo 327" transform="translate(12 -2118.832)">
+				<rect id="Rectángulo_239" data-name="Rectángulo 239" width="398" height="952" transform="translate(-12 2852)"/>
+				<path id="Trazado_244" data-name="Trazado 244" d="M2418.782,781.727l-1658.54,286.4V43.861l1652.32,212.258c60.774,7.806,105.68,51.9,105.68,103.77v319C2518.242,728.752,2476.673,771.729,2418.782,781.727Z" transform="translate(-760.242 2074.971)"/>
+				<path id="Trazado_245" data-name="Trazado 245" d="M2418.782,781.727l-1658.54,286.4V43.861l1652.32,212.258c60.774,7.806,105.68,51.9,105.68,103.77v319C2518.242,728.752,2476.673,771.729,2418.782,781.727Z" transform="translate(-760.242 3545.35)"/>
+				<path id="Trazado_246" data-name="Trazado 246" d="M2418.782,781.727l-1658.54,286.4V43.861l1652.32,212.258c60.774,7.806,105.68,51.9,105.68,103.77v319C2518.242,728.752,2476.673,771.729,2418.782,781.727Z" transform="translate(2680.242 3879.773) rotate(180)" fill="#fff"/>
+				<path id="Trazado_98" data-name="Trazado 98" d="M0,0H1086.221V175.919H0Z" transform="translate(1228 2471.133) rotate(180)" fill="url(#linear-gradient)" style="mix-blend-mode: multiply;isolation: isolate"/>
+				<path id="Trazado_99" data-name="Trazado 99" d="M0,0H1122V120.683H0Z" transform="translate(67 2731.301)" fill="url(#linear-gradient)" style="mix-blend-mode: multiply;isolation: isolate"/>
+				<path id="Trazado_214" data-name="Trazado 214" d="M0,0H499.318V223.246H0Z" transform="translate(438.551 2304.109) rotate(90)" fill="url(#linear-gradient)" style="mix-blend-mode: multiply;isolation: isolate"/>
+				<path id="Trazado_215" data-name="Trazado 215" d="M0,0H523.01V161.08H0Z" transform="translate(1054.379 2837.643) rotate(-90)" fill="url(#linear-gradient)" style="mix-blend-mode: multiply;isolation: isolate"/>
+			</g>
+		</svg>{% endcomment %}
+		<div class="col-12 col-lg-12 box-absolute-general">
+			<div class="row content-box-information h-100">
+				<div class="col-12">
+					{% for block in section.blocks %}
+						{% assign mod = forloop.index | modulo: 2 %}
+						{% if mod == 0 %}
+							{%- assign column_width = 'col-12 col-lg-12 col-xl-11 col-xxl-11 offset-xxl-1 box-information h-100' -%}
+							<div class="row block-motos-des block-motos-right justify-content-end">
+								<div class="col-12 col-lg-12 content-motocycle-info {{ block.settings.tipo_moto }}">
+									{% comment %}  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1758 1024.27">
+											<path id="Trazado_246" data-name="Trazado 246" d="M2418.782,781.727l-1658.54,286.4V43.861l1652.32,212.258c60.774,7.806,105.68,51.9,105.68,103.77v319C2518.242,728.752,2476.673,771.729,2418.782,781.727Z" transform="translate(2518.242 1068.131) rotate(180)" fill="#fff"/>
+										</svg>{% endcomment %}
+
+									<div class="row box-information-box-motos">
+										<div class="{{ column_width }} my-auto" {{ block.shopify_attributes }}>
+											<div class="row content-txt-mts h-100">
+												<div class="col-12 col-lg-4   ms-lg-5 my-auto box-content-information-txt">
+													<div class="row">
+														{% if block.settings.image_logotipo != blank %}
+															<div class="col-12 text-center">
+																{{ block.settings.image_logotipo | img_url: 'master' | img_tag: 'informacion-motos','img-fluid' }}
+															</div>
+														{% endif %}
+														<div class="col-12 text-center">
+															{% if block.settings.title != blank %}
+																<p class="title text-uppercase">{{ block.settings.title }}</p>
+															{% endif %}
+															{% if block.settings.text_description != blank %}
+																<div class="description">
+																	{{block.settings.text_description}}
+																</div>
+															{% endif %}
+															{% if block.settings.button_link != blank %}
+																<p class="content-button">
+																	<a href="{{ block.settings.button_link }}" class="btn text-uppercase" {% if block.settings.enable_target %}target="_blank" {% endif %}>
+																		{{ block.settings.button_label }}
+																	</a>
+																</p>
+															{% endif %}
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-lg-7 content-images-motos my-auto">
+													<div class="row">
+														<div class="col-12">
+															{% if block.settings.image != blank %}
+																<img class="img-fluid d-none d-lg-block lazyload"
+																     data-src=" {{ block.settings.image | img_url: 'master'}}"
+																     data-aspectratio="{{ preview_image.aspect_ratio }}"
+																     width="{{ block.settings.image.width }}"
+																     height="{{ block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round }}"
+																     alt="{{ preview_image.alt | escape }}">
+
+															{% endif %}
+															{% if block.settings.image_mobile != blank %}
+																<img class="img-fluid d-block d-lg-none lazyload"
+																     data-src=" {{ block.settings.image_mobile | img_url: 'master'}}"
+																     data-aspectratio="{{ preview_image.aspect_ratio }}"
+																     width="{{ block.settings.image_mobile.width }}"
+																     height="{{ block.settings.image_mobile.width | divided_by: block.settings.image_mobile.aspect_ratio | round }}"
+																     alt="{{ preview_image.alt | escape }}">
+															{% endif %}
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						{% else %}
+							{%- assign column_width = 'col-12  col-lg-12 col-xl-11 col-xxl-11 offset-xxl-1 box-information h-100' -%}
+							<div class="row block-motos-des block-motos-left">
+								<div class="col-12 col-lg-12 content-motocycle-info {{ block.settings.tipo_moto }}">
+									{% comment %}  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1758 1024.27">
+											<path id="Trazado_244" data-name="Trazado 244" d="M2418.782,781.727l-1658.54,286.4V43.861l1652.32,212.258c60.774,7.806,105.68,51.9,105.68,103.77v319C2518.242,728.752,2476.673,771.729,2418.782,781.727Z" transform="translate(-760.242 -43.861)"/>
+										</svg>{% endcomment %}
+									<div class="row  box-information-box-motos box-motos-black">
+										<div class="{{ column_width }} my-auto" {{ block.shopify_attributes }}>
+											<div class="row content-txt-mts h-100">
+												<div class="col-12 col-lg-7 content-images-motos order-last order-lg-first my-auto">
+													<div class="row">
+														<div class="col-12">
+															{% if block.settings.image != blank %}
+																<img class="img-fluid d-none d-lg-block lazyload"
+																     data-src=" {{ block.settings.image | img_url: 'master'}}"
+																     data-aspectratio="{{ preview_image.aspect_ratio }}"
+																     width="{{ block.settings.image.width }}"
+																     height="{{ block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round }}"
+																     alt="{{ preview_image.alt | escape }}">
+
+															{% endif %}
+															{% if block.settings.image_mobile != blank %}
+																<img class="img-fluid d-block d-lg-none lazyload"
+																     data-src=" {{ block.settings.image_mobile | img_url: 'master'}}"
+																     data-aspectratio="{{ preview_image.aspect_ratio }}"
+																     width="{{ block.settings.image_mobile.width }}"
+																     height="{{ block.settings.image_mobile.width | divided_by: block.settings.image_mobile.aspect_ratio | round }}"
+																     alt="{{ preview_image.alt | escape }}">
+															{% endif %}
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-lg-4 order-first order-lg-last ms-lg-5 my-auto box-content-information-txt">
+													<div class="row">
+														{% if block.settings.image_logotipo != blank %}
+															<div class="col-12 text-center">
+																{{ block.settings.image_logotipo | img_url: 'master' | img_tag: 'informacion-motos','img-fluid' }}
+															</div>
+														{% endif %}
+														<div class="col-12 text-center">
+															{% if block.settings.title != blank %}
+																<p class="title text-uppercase">{{ block.settings.title }}</p>
+															{% endif %}
+															{% if block.settings.text_description != blank %}
+																<div class="description">
+																	{{block.settings.text_description}}
+																</div>
+															{% endif %}
+															{% if block.settings.button_link != blank %}
+																<p class="content-button">
+																	<a href="{{ block.settings.button_link }}" class="btn text-uppercase" {% if block.settings.enable_target %}target="_blank" {% endif %}>
+																		{{ block.settings.button_label }}
+																	</a>
+																</p>
+															{% endif %}
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						{% endif %}
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $('body').addClass('motos-nuevas-seccion');
+</script>
+{% schema %}
+{
+"name": "Informacion motos compl",
+"class":"information-box-motocycle",
+"max_blocks":5,
+"settings": [
+],
+"blocks": [
+{
+"type": "text_block",
+"name": "Column",
+"settings": [
+{
+"type": "header",
+"content": "==== Imagenes motos ===="
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "Imagen"
+},
+{
+"type": "image_picker",
+"id": "image_mobile",
+"label": "Imagen Mobile"
+},
+{
+"type": "header",
+"content": "==== Imagen logotipo ===="
+},
+{
+"type": "image_picker",
+"id": "image_logotipo",
+"label": "Imagen Logotipo"
+},
+{
+"type": "header",
+"content": "==== Titulo ===="
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo",
+"default": "Agrega un titulo"
+},
+{
+"type": "header",
+"content": "==== Descripción ===="
+},
+{
+"type": "richtext",
+"id": "text_description",
+"label": "Texto descriptivo",
+"default": "<p>Texto descriptivo</p>"
+},
+{
+"type": "header",
+"content": "==== Tipo de moto ===="
+},
+{
+"type": "select",
+"id": "tipo_moto",
+"label": "Tipo de moto",
+"default": "ducati-moto-information",
+"options": [
+{
+"value": "ducati-moto-information",
+"label": "Ducati"
+},
+{
+"value": "agusta-moto-information",
+"label": "Agusta"
+},
+{
+"value": "scrambler-moto-information",
+"label": "Scrambler"
+},
+{
+"value": "magni-moto-information",
+"label": "Magni"
+},
+{
+"value": "vyrus-moto-information",
+"label": "Vyrus"
+}
+]
+},
+{
+"type": "header",
+"content": "==== Botón ===="
+},
+{
+"type": "checkbox",
+"id": "enable_target",
+"label": "Abrir en página aparte",
+"default": false
+},
+{
+"type": "url",
+"id": "button_link",
+"label": "Link Botón"
+},
+{
+"type": "text",
+"id": "button_label",
+"label": "Texto Botón"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Informacion motos compl",
+"category": "Text & image",
+"blocks": [
+{
+"type": "text_block"
+},
+{
+"type": "text_block"
+},
+{
+"type": "text_block"
+}
+]
+}
+]
+}
+{% endschema %}

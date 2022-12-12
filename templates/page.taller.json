@@ -1,0 +1,83 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "tipo_pagina": "page_ducati"
+      }
+    },
+    "163796038423c4f1d6": {
+      "type": "eventos-banner-general",
+      "settings": {
+        "video_banner_check": false,
+        "video_url": "",
+        "image_banner_check": true,
+        "image_banner": "shopify:\/\/shop_images\/banner-seccion-taller.jpg",
+        "image_banner_mobile": "shopify:\/\/shop_images\/banner-taller-mobile.jpg"
+      }
+    },
+    "1637960827cfd289df": {
+      "type": "seminuevas-texto-simple",
+      "settings": {
+        "bg_color": "",
+        "title": "En DLG Moto Art<br> <strong>somos especialistas<\/strong> en el mantenimiento y reparación de tu motocicleta.",
+        "description": "<p>Contamos con expertos mecánicos conocedores de la marca, para que tu motocicleta este en las mejores manos, contamos con todos los datos técnicos, y utillaje especifico de nuestras marcas para de esta manera poder respetar los pasos de mantenimiento o reparación como dictan los fabricantes. De esta manera podemos garantizar el perfecto estado de funcionamiento de tu motocicleta y garantizar total seguridad.<\/p>"
+      }
+    },
+    "1637970315574e2ca6": {
+      "type": "imagen-con-texto-a-lado",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/imagen-seccion-taller.jpg",
+        "title": "Conoce los servicios que ofrecemos en el taller de <strong>DLG Moto Art<\/strong>",
+        "description": "<p>· Mantenimiento periódico de tu moto<\/p><p>· Desmo-Servcie · Diagnosis de Motos · Chequeo de Inyección <\/p><p>· Apagado de mantenimientos <\/p><p>· Reglaje de válvulas <\/p><p>· Sincronizan de cuerpos de inyección motos<\/p><p>· Reparación de motos<\/p><p>· Servicio de Neumáticos<\/p><p>· Sustitución de correas de distribución<\/p><p>· Cambio de liquido de frenos ABS<\/p><p>· Carburación de motos<\/p><p>· Reparación y ajuste de suspensiones<\/p><p>· Servicio de instalación de accesorios y garantías.<\/p>",
+        "enable_target": true,
+        "button_label": "Agenda una cita",
+        "button_url": "http:\/\/m.me\/dlgmotoart"
+      }
+    },
+    "16379688060eaac939": {
+      "type": "agusta-interna-gallery",
+      "blocks": {
+        "1637968806ccab5489-0": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/taller-galeria-1.jpg"
+          }
+        },
+        "1637968806ccab5489-1": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/taller-galeria-2.jpg"
+          }
+        },
+        "1637968806ccab5489-2": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/taller-galeria-1.jpg"
+          }
+        },
+        "019aff26-bd54-4aec-8aff-8c378104ef09": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/taller-galeria-2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "1637968806ccab5489-0",
+        "1637968806ccab5489-1",
+        "1637968806ccab5489-2",
+        "019aff26-bd54-4aec-8aff-8c378104ef09"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "163796038423c4f1d6",
+    "1637960827cfd289df",
+    "1637970315574e2ca6",
+    "16379688060eaac939"
+  ]
+}

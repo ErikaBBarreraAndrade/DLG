@@ -1,0 +1,65 @@
+.tmpl-nobuyable{
+  .bloque-colores{
+    li{
+      padding: 4px;
+      &:after{
+        content: none !important;
+      }
+      .content-color{
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        border:solid 1px #444;
+        cursor:pointer;
+        position: relative;
+        &.active{border-color:#fff;}
+        .content-hover-type-color{
+          opacity: 0;
+          transition: all 0.5s;
+          .content-color-hover{
+            height: 30px;
+            width: 30px;
+            border:solid 1px #444;
+            position: absolute;
+            top: -40px;
+            left: -7px;
+          }
+          &.color-active-square{
+            opacity: 1;
+          }
+        }
+      }
+
+    }
+  }
+  @media(max-width:991px){
+      .content-description{
+        ul{
+          display:flex !important;
+          flex-wrap: wrap;
+          li{
+            flex: 0 0 auto;
+            width: 50%;
+            padding:0 0.4rem !important;
+            margin-top: 10px;
+            &:after{
+              content: none !important;
+            }
+            &.price{
+              margin-bottom: 60px !important;
+            }
+            &.price, &.bloque-colores{
+              flex: 0 0 auto;
+              width: 100%;
+              ul{
+                li{
+                  width: auto !important;
+                  margin-top: 0px;
+                }
+              }
+            }
+          }
+        }
+      } 
+  }
+}

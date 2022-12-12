@@ -1,0 +1,73 @@
+.template-search{
+  .grid-product__link{
+    color: #000;
+    text-decoration: none;
+  }
+  .grid-product__title{
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    font-family: "Open Sans SemiBold";
+    margin-top: 30px;
+    @media(min-width: 992px){
+      font-size: 11px;
+      line-height: 15px;
+    }
+    @media(min-width: 1280px){
+      font-size: 12px;
+      line-height: 20px;
+    }
+    @media(min-width: 1400px){
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+  .grid-product__price{
+    color: #F00000;
+    font-size: 20px;
+    line-height: 27px;
+    font-family: 'Open Sans Extra Bold';
+  }
+  .grid-product__tag{
+    right: 0px;
+  }
+  .grid-product__image-mask{
+    border: 1px solid rgba(112,112,112,.3);
+    padding: 20px;
+  }
+  .block-dropdown-variant{
+    display: none;
+  }
+  .add-to-cart{
+    font-family: 'Open Sans Bold';
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    border-radius: 0;
+    border: 1px solid #000;
+    padding: 10px;
+    margin-top: 20px;
+    &:hover{
+      background: transparent !important;
+    }
+  }
+  .pagination{
+    justify-content: center;
+    padding-bottom: 120px;
+    .page{
+      a{
+        font-family: "Open Sans SemiBold";
+        color: #000;
+        text-decoration: none;
+      }
+    }
+  }
+  .search-bar--page{
+    .input-group-btn{
+      background: #F00000;
+      &:hover{
+        background: transparent;
+      }
+    }
+  }
+}

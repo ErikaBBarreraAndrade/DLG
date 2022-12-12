@@ -1,0 +1,8 @@
+<ul class="list-unstyled d-block d-sm-flex ps-0 ms-0">
+  <li class="content-date my-auto">
+    <a href="{{ article.url }}">{{ article.published_at | date: format: 'date' }}</a>
+  </li>
+  <li class="content-title my-auto">
+    <a href="{{ article.url }}">{{ article.title }}</a>
+  </li>
+</ul>

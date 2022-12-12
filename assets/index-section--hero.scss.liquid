@@ -1,0 +1,301 @@
+/*================== DLG Banner home ==================*/
+.hero{
+  height: 910px !important;
+  @media(min-width: 992px){
+    height: 710px !important;
+  }
+  @media(min-width: 1500px){
+    height: 810px !important;
+  }
+  .hero__image-wrapper{
+    &:before{
+      content: none !important;
+    }
+  }
+  .hero__text-wrap{
+    .hero__text-shadow{
+      top: 115px;
+      &:before{
+        content: none !important;
+      }
+      .hero__title{
+        font-family: 'Open Sans Bold';
+        font-size: 25px;
+        line-height: 30px;
+        color: #FFF;
+        @media(min-width: 576px){
+          font-size: 50px;
+          line-height: 50px;
+        }
+        @media(min-width: 992px){
+          font-size: 45px;
+          line-height: 48px;
+          width: 800px;
+        }
+        strong{
+          color: #F00000;
+        }
+      }
+      .content-description-short{
+        .animation-contents{
+          font-family: 'Open Sans Light';
+          font-size: 20px;
+          line-height: 23px;
+          letter-spacing: 0;
+          text-transform: initial;
+          margin: 0 auto;
+          @media(min-width: 768px){
+            font-size: 30px;
+            line-height: 33px;
+          }
+          @media(min-width: 992px){
+            font-family: 'Open Sans Bold';
+            margin: 20px auto 35px;
+            font-size: 13px;
+            line-height: 15px;
+            width: 385px;
+          }
+        }
+      }
+      .content-description-especificaciones{
+        .label{
+          font-family: 'Open Sans Semibold';
+          letter-spacing: 0;
+          font-size: 10px;
+          line-height: 17px;
+          text-transform: initial;
+          margin-bottom: 5px;
+          @media(min-width: 768px){
+            font-size: 20px;
+            line-height: 27px;
+          }
+          @media(min-width: 992px){
+            font-size: 15px;
+            line-height: 20px;
+          }
+        }
+        .description{
+          font-family: 'Open Sans Regular';
+          font-size: 10px;
+          line-height: 17px;
+          letter-spacing: 0;
+          @media(min-width: 768px){
+            font-size: 20px;
+            line-height: 27px;
+          }
+          @media(min-width: 992px){
+            font-size: 15px;
+            line-height: 20px;
+          }
+        }
+      }
+      .content-logo-slider{
+        margin: 20px 0;
+        @media(min-width: 768px){
+          margin: 30px 0;
+        }
+        @media(min-width: 992px){
+          margin: 46px 0;
+        }
+      }
+      .hero__link {
+        ul{
+          li{
+            margin-bottom: 5px;
+            @media(min-width: 768px){
+              margin-bottom: 20px;
+            }
+            @media(min-width: 992px){
+              margin-right: 35px;
+              margin-bottom: 46px;
+            }
+            &:last-child{
+              margin-right: 0px !important;
+            }
+          }
+        }
+      }
+      .hero__subtitle{
+        font-family: 'Open Sans Bold';
+        font-size: 15px;
+        line-height: 18px;
+        margin-top: 15px;
+        @media(min-width: 768px){
+          font-size: 25px;
+          line-height: 28px;
+        }
+        @media(min-width: 992px){
+          font-size: 15px;
+          margin-top: 0;
+          line-height: 23px;
+        }
+      }
+      .text_end{
+        font-family: 'Open Sans Regular';
+        font-size: 10px;
+        line-height: 18px;
+        letter-spacing: 0;
+        text-transform: initial;
+        @media(min-width: 768px){
+          font-size: 20px;
+          line-height: 28px;
+        }
+        @media(min-width: 992px){
+          font-size: 13px;
+          line-height: 23px;
+        }
+      }
+      .header_promo{
+        font-family: 'Open Sans Regular';
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        margin: 0 auto;
+        span{
+          letter-spacing: 0;
+          display: inline-block;
+          vertical-align: baseline;
+          zoom: 1;
+          *display: inline;
+          *vertical-align: auto;
+          position: relative;
+          padding: 0 20px;
+          font-size: 30px;
+          line-height: 36px;
+          color: #FFF;
+          @media(min-width: 768px){
+            font-size: 30px;
+            line-height: 36px;
+          }
+          @media(min-width: 992px){
+            font-size: 30px;
+            line-height: 36px;
+          }
+          &:after, &:before{
+            content: '';
+            display: block;
+            width: 1000px;
+            position: absolute;
+            top: 0.73em;
+            border-top: 1px solid #FFF;
+          }
+          &:after{
+            left: 100%;
+          }
+          &:before{
+            right: 100%;
+          }
+        }
+      }
+      .title_promo{
+        margin: 45px 0;
+        span{
+          letter-spacing: 0;
+          font-family: 'Open Sans Bold';
+          background:  #FF0000;
+          font-size: 46px;
+          line-height: 55px;
+          padding: 10px 60px;
+          border-bottom-left-radius: 80px;
+          border-top-right-radius: 80px;
+          @media(min-width: 768px){
+            font-size: 46px;
+            line-height: 55px;
+          }
+          @media(min-width: 992px){
+            font-size: 46px;
+            line-height: 55px;
+          }
+        }
+      }
+      .title_1_promo{
+        font-family: 'Open Sans Extra Bold';
+        font-size: 31px;
+        line-height: 37px;
+        @media(min-width: 768px){
+          font-size: 31px;
+          line-height: 37px;
+        }
+        @media(min-width: 992px){
+          font-size: 31px;
+          line-height: 37px;
+        }
+      }
+      .title_2_promo{
+        font-family: 'Open Sans Italic';
+        font-size: 31px;
+        line-height: 37px;
+        @media(min-width: 768px){
+          font-size: 31px;
+          line-height: 37px;
+        }
+        @media(min-width: 992px){
+          font-size: 31px;
+          line-height: 37px;
+        }
+      }
+      .title_3_promo{
+        font-family: 'Open Sans Extra Bold';
+        font-size: 31px;
+        line-height: 37px;
+        @media(min-width: 768px){
+          font-size: 31px;
+          line-height: 37px;
+        }
+        @media(min-width: 992px){
+          font-size: 31px;
+          line-height: 37px;
+        }
+      }
+      .description_promo{
+        font-family: 'Open Sans Light';
+        font-size: 13px;
+        line-height: 15px;
+        margin: 40px auto 0;
+        @media(min-width: 768px){
+          font-size: 13px;
+          line-height: 15px;
+        }
+        @media(min-width: 992px){
+          font-size: 13px;
+          line-height: 15px;
+          width: 650px;
+        }
+      }
+    }
+  }
+}
+.index-section--hero{
+  .hero .slick-dots {
+    bottom: 40px;
+    li{
+      background: transparent;
+      width: 11px;
+      height: 11px;
+      border: 1px solid #FFF;
+      border-radius: 50px;
+      &.slick-active{
+        background: #FFF;
+      }
+      button{
+        &:before{
+          content: none !important;
+        }
+      }
+    }
+  }
+  .mobile-image-banner{
+    @media(min-width: 576px){
+      height: 910px !important;
+      padding: 0;
+    }
+    @media(min-width: 992px){
+      height: auto !important;
+    }
+  }
+  .slick-slide img {
+    object-fit: cover;
+    height: 100%;
+}
+}
+/*================== DLG Banner home ==================*/

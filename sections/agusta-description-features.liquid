@@ -1,0 +1,109 @@
+<div class="container-fluid content-tabs-description">
+  <div class="row justify-content-center content-tabs m-0">
+    <div class="col-11 col-sm-11 col-lg-12 col-xl-11 col-xxl-10">
+      <div class="row">
+        <div class="col-12 col-lg-3 col-xxl-4">
+          <ul class="nav flex-column  m-0" id="description-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-2-tab" data-bs-toggle="tab" data-bs-target="#home-2" type="button" role="tab" aria-controls="home-2" aria-selected="true">
+                {{ section.settings.tab_inicial }}
+              </button>
+            </li>
+            {% for block in section.blocks %}
+            {% if block.settings.title %}
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="{{ block.settings.title |  handleize  }}-tab" data-bs-toggle="tab" data-bs-target="#{{ block.settings.title | handleize }}" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                {{ block.settings.title }}
+              </button>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col-12 col-lg-9 col-xxl-8">
+          <div class="tab-content" id="myTabContentDes">
+            <div class="tab-pane fade show active" id="home-2" role="tabpanel" aria-labelledby="home-2-tab">
+              <div class="description-tabs">
+                {{ section.settings.tab_inicial_texto }}
+              </div>
+            </div>
+            {% for block in section.blocks %}
+            <div class="tab-pane fade" id="{{ block.settings.title | handleize }}" role="tabpanel" aria-labelledby="{{ block.settings.title | handleize }}-tab">
+              <div class="description-tabs">
+                {{ block.settings.description }}
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+{% schema %}
+  {
+     "name": "Tabs description features",
+    "class": "agusta-brutale-tabs-des-caract",
+		"max_blocks": 5,
+
+ "settings": [
+	{
+			"type": "header",
+			"content": "==== Inicio de tabs ===="
+		},
+{
+			"type": "text",
+			"id": "tab_inicial",
+			"label": "Subtitulo tabs"
+		},
+	{
+			"type": "richtext",
+			"id": "tab_inicial_texto",
+			"label": "Descripción tabs"
+		}
+	],
+    "blocks": [
+      {
+        "type": "text_block",
+        "name": "Column",
+        "settings": [
+         {
+              "type": "header",
+              "content": "==== Titulo ===="
+          },
+          {
+              "type": "text",
+              "id": "title",
+              "label": "Titulo"
+          },
+	      {
+              "type": "header",
+              "content": "==== Descripción ===="
+          },
+	  	 {
+              "type": "richtext",
+              "id": "description",
+              "label": "Descripción"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Tabs description features",
+        "category": "Tabs",
+        "blocks": [
+          {
+            "type": "text_block"
+          },
+          {
+            "type": "text_block"
+          },
+          {
+            "type": "text_block"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

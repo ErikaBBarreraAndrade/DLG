@@ -1,0 +1,90 @@
+{% assign cProduct = product %}
+<div class="row box-motos-description" style="background: {{ block.settings.bg_block }};">
+	{% if product.handle contains "scrambler" %}
+	<div class="triangle-right">
+	</div>
+	{% endif %}
+	<div class="col-12 col-lg-6 content-description my-lg-auto">
+		<div class="row">
+			<div class="col-12">
+				{% if cProduct.title != blank%}
+					<p class="title">
+						{{ cProduct.title }}
+					</p>
+				{% endif %}
+				{% if cProduct.metafields.catalog.description.value != blank%}
+					<div class="description-motos">
+						{{ cProduct.metafields.catalog.description.value }}
+					</div>
+				{% endif %}
+			</div>
+		</div>
+		<div class="row content-details-motos">
+			<div class="col-12 col-lg-12">
+				<div class="row">
+				{% if cProduct.metafields.catalog.alimentacion.value != blank%}
+						<div class="col-6 col-sm-6 col-lg-6">
+							<p class="label mb-0">
+								Alimentación
+							</p>
+							<p class="description-label">
+								{{ cProduct.metafields.catalog.alimentacion.value }}
+							</p>
+						</div>
+					{% endif %}
+				{% if cProduct.metafields.catalog.potencia.value != blank%}
+						<div class="col-6 col-sm-6 col-lg-6">
+							<p class="label mb-0">
+								Potencia máxima del motor
+							</p>
+							<p class="description-label">
+								{{ cProduct.metafields.catalog.potencia.value }}
+							</p>
+						</div>
+					{% endif %}
+				{% if cProduct.metafields.catalog.desplazamiento.value != blank%}
+						<div class="col-6 col-sm-6 col-lg-6">
+							<p class="label mb-0">
+								Desplazamiento total del motor
+							</p>
+							<p class="description-label">
+								{{ cProduct.metafields.catalog.desplazamiento.value }}
+							</p>
+						</div>
+					{% endif %}
+				{% if cProduct.metafields.catalog.par.value != blank%}
+						<div class="col-6 col-sm-6 col-lg-6">
+							<p class="label mb-0">
+								Par máximo del motor
+							</p>
+							<p class="description-label">
+								{{ cProduct.metafields.catalog.par.value }}
+							</p>
+						</div>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+		{% if cProduct.price != blank%}
+			<ul class="d-block d-lg-flex list-unstyled m-0 p-0">
+				<li class="price my-auto">
+					{{ cProduct.price | money }}
+				</li>
+					<li class="content-button my-auto">
+						<a href="{{ cProduct.url }}" target="_blank"  class="btn text-uppercase">
+							Ver Detalle
+						</a>
+					</li>
+			</ul>
+		{% endif %}
+	</div>
+  {% if cProduct.metafields.catalog.image.value != blank%}
+		<div class="col-12 col-lg-6 content-image my-lg-auto">
+			{{ cProduct.metafields.catalog.image.value | remove_first: 'files/' | file_url  | img_tag: 'motos seminuevas','img-fluid w-100' }}
+		</div>
+  {% endif %}
+	{% if product.handle contains "scrambler" %}
+		<div class="triangle-bottom">
+		</div>
+	{% endif %}
+</div>

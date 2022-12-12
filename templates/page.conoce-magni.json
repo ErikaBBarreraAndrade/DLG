@@ -1,0 +1,60 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "tipo_pagina": "page_magni"
+      }
+    },
+    "16373667310a6c2a45": {
+      "type": "banner-simple",
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/banner-seccion-magni.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner_magni_principal_mobile.jpg",
+        "enable_border": true,
+        "color_border": "#ef0000",
+        "title": "Conoce MAGNI en DLG Moto Art",
+        "subtitle": "",
+        "enable_target": false,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "1637370781998e1701": {
+      "type": "content-description-short",
+      "settings": {
+        "logotipo_imagen": "shopify:\/\/shop_images\/logotipo_magni.png",
+        "title": "<strong>Magni es una empresa italiana íntimamente ligada a MV Agusta<\/strong> y siempre se le ha relacionado al rojo, color racing por excelencia en Italia.",
+        "subtitle": "",
+        "description": "<p>Las líneas de las motocicletas Magni siempre han estado unidas por un hilo rojo invisible, muy largo e indestructible que comenzó cuando Arturo Magni comenzó a trabajar en las motos más tituladas del mundo y nunca se rompió, incluso cuando comenzó la producción de motocicletas Magni.<\/p>"
+      }
+    },
+    "165997282216f7432e": {
+      "type": "collections-tabs-magni",
+      "blocks": {
+        "e062961b-cede-42d0-b8b1-f8764fb3a639": {
+          "type": "collection_tab",
+          "settings": {
+            "featured_product_handle": "magni",
+            "tab_name": "Magni",
+            "bg_block": "#26282c"
+          }
+        }
+      },
+      "block_order": [
+        "e062961b-cede-42d0-b8b1-f8764fb3a639"
+      ],
+      "settings": {
+        "title": "Una motocicleta de un color <strong>rojo dominante<\/strong>",
+        "description": "<p>Siempre que decimos MAGNI, nos viene de inmediato a la mente la imagen de una motocicleta de un color rojo dominante, el color más significativo de las motocicletas y autos de carrera más prestigiosos de Italia.<\/p>",
+        "bg_block": "#26282c"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16373667310a6c2a45",
+    "1637370781998e1701",
+    "165997282216f7432e"
+  ]
+}

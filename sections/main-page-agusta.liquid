@@ -1,0 +1,34 @@
+
+{% schema %}
+{
+"name": "página interna",
+"tag": "section",
+"class": "spaced-section",
+"settings": [
+{
+"type": "select",
+"id": "tipo_pagina",
+"label": "Tipo de pagina",
+"default": "page_ducati",
+"options": [
+{
+"value": "page_ducati",
+"label": "Ducati"
+},
+{
+"value": "page_agusta",
+"label": "Agusta"
+},
+{
+"value": "page_scrambler",
+"label": "Scrambler"
+}
+]
+}
+]
+}
+{% endschema %}
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $('body').addClass('{{ section.settings.tipo_pagina }}')
+</script>

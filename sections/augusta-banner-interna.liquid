@@ -1,0 +1,207 @@
+<style>
+  .content-banner-principal-banner-rosso{
+    background: url({{section.settings.bg_mobile | img_url: 'master'}});
+  }
+  @media(min-width: 992px) {
+    .content-banner-principal-banner-rosso{
+      background: url({{section.settings.bg_desktop | img_url: 'master'}});
+    }
+  }
+</style>
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-12 p-0">
+      <div class="content-banner-principal-banner-rosso">
+        <div class="row content-information-motos m-0">
+          <div class="col-12 mt-auto">
+            <div class="row">
+              <div class="col-12">
+                {% if section.settings.title != blank %}
+                <p class="title text-uppercase text-center mb-0">
+                  {{section.settings.title}}
+                </p>
+                {% endif %}
+                {% if section.settings.subtitle != blank %}
+                <p class="subtitle text-center mb-0">
+                  {{section.settings.subtitle}}
+                </p>
+                {% endif %}
+                {% if section.settings.button_link != blank %}
+                <p class="content-button text-center">
+                  <a href="{{section.settings.button_link}}" class="btn text-uppercase">
+                    {{section.settings.button_label}}
+                  </a>
+                </p>
+                {% endif %}
+              </div>
+              <div class="col-12 content-description">
+                <ul class="d-flex justify-content-center list-unstyled m-0 p-0">
+                  {% if section.settings.price != blank %}
+                  <li class="text-center block-information price my-auto">
+                    {{section.settings.price }}
+                  </li>
+                  {% endif %}
+                  {% if section.settings.potencia != blank %}
+                  <li class="text-center block-information">
+                    <p class="label text-center mb-0">
+                      Potencia
+                    </p>
+                    {{section.settings.potencia }}
+                  </li>
+                  {% endif %}
+                  {% if section.settings.par != blank %}
+                  <li class="text-center block-information">
+                    <p class="label text-center mb-0">
+                      Par
+                    </p>
+                    {{section.settings.par}}
+                  </li>
+                  {% endif %}
+                  {% if section.settings.enable_colors %}
+                  <li class="text-center block-information bloque-colores">
+                    <ul class="justify-content-center list-unstyled m-0 p-0">
+                      <li>
+                        <p class="label text-center mb-0">
+                          Color
+                        </p>
+                        <ul class="d-flex justify-content-center list-unstyled m-0 p-0">
+                          {% for block in section.blocks %}
+                          <li>
+                            <div class="content-color" style="background: {{ block.settings.bg_block}}">
+                            </div>
+                          </li>
+                          {% endfor %}
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  {% endif %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Banner general inter",
+    "class": "agusta-banner-800",
+    "settings": [
+		{
+			"type": "header",
+			"content": "==== Imagenes background ===="
+		},
+		{
+			"type": "image_picker",
+			"id": "bg_desktop",
+			"label": "Banner desktop"
+		},
+	{
+			"type": "image_picker",
+			"id": "bg_mobile",
+			"label": "Banner mobile"
+		},
+{
+			"type": "header",
+			"content": "==== Titulos  ===="
+		},
+{
+			"type": "text",
+			"id": "title",
+			"label": "Titulo"
+		},
+{
+			"type": "text",
+			"id": "subtitle",
+			"label": "Subtitulo"
+		},
+{
+			"type": "header",
+			"content": "==== Botón  ===="
+		},
+{
+			"type": "text",
+			"id": "button_label",
+			"label": "Botón label"
+		},
+{
+			"type": "url",
+			"id": "button_link",
+			"label": "Botón link"
+		},
+	{
+			"type": "header",
+			"content": "==== Características  ===="
+		},
+{
+			"type": "text",
+			"id": "price",
+			"label": "Precio"
+		},
+	{
+			"type": "text",
+			"id": "potencia",
+			"label": "Potencia"
+		},
+{
+			"type": "text",
+			"id": "par",
+			"label": "Par"
+		},
+{
+			"type": "header",
+			"content": "==== Activación de bloque de colores  ===="
+		},
+ {
+          "type": "checkbox",
+          "id": "enable_colors",
+          "label": "Activar bloque de colores",
+          "default": true
+        }
+],
+ "blocks": [
+      {
+        "type": "text_block",
+        "name": "Column",
+        "settings": [
+         {
+              "type": "header",
+              "content": "==== Color del bloque ===="
+          },
+	 {
+              "type": "color",
+              "id": "bg_block",
+              "label": "Background",
+			"default": "#FFF"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+"name": "Banner general inter",
+        "category": "image",
+        "blocks": [
+          {
+            "type": "text_block"
+          },
+          {
+            "type": "text_block"
+          },
+          {
+            "type": "text_block"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

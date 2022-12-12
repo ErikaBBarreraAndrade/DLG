@@ -1,0 +1,150 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "tipo_pagina": "page_ducati"
+      }
+    },
+    "1637775876bf01375c": {
+      "type": "banner-simple-descripcion-logotipo",
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/banner-ducati-seminuevas.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-ducati-seminuevas-mobile.jpg",
+        "image_logotipo": "shopify:\/\/shop_images\/logo-Ducati.png",
+        "title": "Encuentra la colección más completa de motos seminuevas certificadas <strong>Ducati en DLG Moto Art<\/strong>",
+        "subtitle": "",
+        "enable_target": false,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "16378134175d1b3e30": {
+      "type": "content-description-short",
+      "settings": {
+        "logotipo_imagen": "shopify:\/\/shop_images\/descripcion-corta-imagen-ducati-seminuevas.png",
+        "title": "<strong>Formas sinuosas, estilizadas y seductoras<\/strong>, para un estilo atemporal que se convierte en un punto de referencia inalcanzable.",
+        "subtitle": "",
+        "description": "<p>Ducati puede ser para ti también. Conoce nuestra colección de Ducati seminuevas en DLG Moto Art. Tenemos opciones de pago distintas y flexibles.<\/p><p>Ofrecemos financiamiento y garantía de mínimo 30 días.<br\/><em>Financiamiento y garantía de 30 días.*<\/em><\/p>"
+      }
+    },
+    "1637815290646ac56b": {
+      "type": "seminuevas-loop-motos",
+      "blocks": {
+        "c927bde4-9b79-4167-b90b-b4848f529bb4": {
+          "type": "text_block",
+          "settings": {
+            "bg_block": "#ffffff",
+            "title": "Monster 821 Stealth",
+            "description": "Toda la esencia de Ducati en una moto moderna y contemporánea. Aquí está la nueva Monster en la forma más compacta, esencial y ligera posible.",
+            "description_label": "80 kW (109 CV) @ 9,250 rpm",
+            "description_label_motor": "1,150 km",
+            "description_label_total": "86 Nm (8.8 kgm) @ 7,750 rpm",
+            "description_label_par": "2020",
+            "price": "$254,500.00",
+            "enable_target": true,
+            "button_label": "Contactar a un asesor",
+            "button_link": "https:\/\/wa.me\/5215550213847?text=Quiero%20contactar%20a%20un%20ejecutivo",
+            "image": "shopify:\/\/shop_images\/monster_821_ducati_seminuevos.jpg"
+          }
+        },
+        "dbdc7bb4-9ff0-474e-8ceb-e04d9977e9ea": {
+          "type": "text_block",
+          "settings": {
+            "bg_block": "#ffffff",
+            "title": "Multistrada 950 S",
+            "description": "Toda la esencia de Ducati en una moto moderna y contemporánea. Aquí está la nueva Monster en la forma más compacta, esencial y ligera posible.",
+            "description_label": "83 kW (113 CV) @ 9,000 rpm",
+            "description_label_motor": "8,800 km",
+            "description_label_total": "96 Nm (9.8 kgm) @ 7,750 rpm",
+            "description_label_par": "2020  |  Seminueva demo",
+            "price": "$340,000.00",
+            "enable_target": true,
+            "button_label": "Contactar a un asesor",
+            "button_link": "https:\/\/wa.me\/5215550213847?text=Quiero%20contactar%20a%20un%20ejecutivo",
+            "image": "shopify:\/\/shop_images\/multistrada-950-ducati-seminuevos.jpg"
+          }
+        },
+        "173933b0-fed5-4fd5-b2e8-cd40987f166c": {
+          "type": "text_block",
+          "settings": {
+            "bg_block": "#ffffff",
+            "title": "Multistrada 1200 Enduro Pro",
+            "description": "Toda la esencia de Ducati en una moto moderna y contemporánea. Aquí está la nueva Monster en la forma más compacta, esencial y ligera posible.",
+            "description_label": "112 kW (152 CV) @ 9,500 rpm",
+            "description_label_motor": "3,706 km",
+            "description_label_total": "128 Nm (13.1 kgm) @ 7,500 rpm",
+            "description_label_par": "2018",
+            "price": "$299,000.00",
+            "enable_target": true,
+            "button_label": "Contactar a un asesor",
+            "button_link": "https:\/\/wa.me\/5215550213847?text=Quiero%20contactar%20a%20un%20ejecutivo",
+            "image": "shopify:\/\/shop_images\/multistrada-1200-ducati-seminuevas.jpg"
+          }
+        },
+        "5be5baf8-d835-4da2-b5ac-87c86594edcb": {
+          "type": "text_block",
+          "settings": {
+            "bg_block": "#ffffff",
+            "title": "Hypermotard 950",
+            "description": "Toda la esencia de Ducati en una moto moderna y contemporánea. Aquí está la nueva Monster en la forma más compacta, esencial y ligera posible.",
+            "description_label": "84 kW (114 CV) @ 9,000 rpm",
+            "description_label_motor": "8,000 km",
+            "description_label_total": "96 Nm (9.8 kgm) @ 7,250 rpm",
+            "description_label_par": "2019",
+            "price": "$225,000.00",
+            "enable_target": true,
+            "button_label": "Contactar a un asesor",
+            "button_link": "https:\/\/wa.me\/5215550213847?text=Quiero%20contactar%20a%20un%20ejecutivo",
+            "image": "shopify:\/\/shop_images\/hypermotard-950-ducati-seminuevas.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "c927bde4-9b79-4167-b90b-b4848f529bb4",
+        "dbdc7bb4-9ff0-474e-8ceb-e04d9977e9ea",
+        "173933b0-fed5-4fd5-b2e8-cd40987f166c",
+        "5be5baf8-d835-4da2-b5ac-87c86594edcb"
+      ],
+      "settings": {
+        "enable_boton": true,
+        "boton_url": "shopify:\/\/pages\/conoce-seminuevas",
+        "boton_label": "Otras marcas"
+      }
+    },
+    "165360695777870a5f": {
+      "type": "iconos-atencion-clientes",
+      "blocks": {
+        "d1c6bffa-09bb-45eb-be3b-b55e63ddcd39": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icono_financiamiento_9c79e497-6037-43c9-965c-e0e74cb984e3.png",
+            "title": "FINANCIAMIENTO",
+            "description": "<p>Contamos con planes de financiamiento a partir de un 35% de enganche y el resto se puede financiar en 12, 24 ó 36 meses.<\/p>"
+          }
+        },
+        "1c8b80f3-244a-40ec-b23d-8285bb25a876": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icono_soporte_82a035a1-c9b0-48e0-87e8-c00636352c45.png",
+            "title": "SOPORTE",
+            "description": "<p>De lunes a viernes de 9:00 a 19:00 y sábados de 9:00 a 14:00 hrs GMT-6.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "d1c6bffa-09bb-45eb-be3b-b55e63ddcd39",
+        "1c8b80f3-244a-40ec-b23d-8285bb25a876"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1637775876bf01375c",
+    "16378134175d1b3e30",
+    "1637815290646ac56b",
+    "165360695777870a5f"
+  ]
+}

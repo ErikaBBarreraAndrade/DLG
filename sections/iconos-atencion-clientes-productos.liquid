@@ -1,0 +1,84 @@
+<div class="container-fluid">
+	<div class="row justify-content-center">
+		<div class="col-11 col-sm-11 col-lg-12 col-xl-11 col-xxl-8 content-box">
+			<div class="row content-des-icons justify-content-center">
+				<div class="col-12 col-lg-10">
+					<div class="row">
+						{% for block in section.blocks %}
+							<div class="col-4 col-lg-4 text-center text-lg-start content-icon-description">
+								<div class="d-block d-lg-flex me-3 box-description">
+									<div class="flex-shrink-0">
+										{% if block.settings.image_icono != blank %}
+											<img class="lazyload img-fluid"
+											     data-src="{{ block.settings.image_icono | img_url:"master" }}"
+											     data-aspectratio="{{ preview_image.aspect_ratio }}"
+											     width="{{ block.settings.image_icono.width }}"
+											     height="{{ block.settings.image_icono.width | divided_by: block.settings.image_icono.aspect_ratio | round }}"
+											     alt="{{ preview_image.alt | escape }}">
+										{% endif %}
+									</div>
+									<div class="flex-grow-1 ms-2 mt-2 my-lg-auto">
+										{% if block.settings.title != blank %}
+											<p class="title mb-0">
+												{{ block.settings.title }}
+											</p>
+										{% endif %}
+										{% if block.settings.description != blank %}
+											<div class="description">
+												{{ block.settings.description }}
+											</div>
+										{% endif %}
+									</div>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Descripcion corta icons",
+"class": "section-contenedor-icons-business",
+"max_blocks": 3,
+"settings": [],
+
+"blocks": [
+{
+"type": "text_block",
+"name": "Column",
+"settings": [
+{
+"type": "header",
+"content": "==== Icono ===="
+},
+{
+"type": "image_picker",
+"id": "image_icono",
+"label": "Icono"
+},
+{
+"type": "header",
+"content": "==== Titulo ===="
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+},
+{
+"type": "header",
+"content": "==== Descripción ===="
+},
+{
+"type": "richtext",
+"id": "description",
+"label": "Descripción"
+}
+]
+}
+]
+}
+{% endschema %}

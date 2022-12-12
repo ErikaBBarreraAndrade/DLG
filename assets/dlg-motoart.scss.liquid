@@ -1,0 +1,1159 @@
+$color-red: #F00000;
+/*================== DLG Header ==================*/
+.header-item.header-item--logo{
+  @media(min-width: 992px){
+    padding-bottom: 20px;
+  }
+}
+body{
+  overflow-x: hidden !important;
+}
+header{
+  .header-item--icons{
+    @media(min-width: 992px){
+      padding-bottom: 25px;
+    }
+  }
+}
+.header-black .header-sticky-wrapper{
+  background: #000 !important;
+}
+.header-black .site-header--opening{
+  background: #000 !important;
+}
+.header-black .main-content{
+  margin-top: 100px;
+}
+.header-wrapper--sticky .site-header:not(.site-header--stuck){
+  background: rgba(0,0,0,.27) !important;
+}
+.site-header--opening{
+  background: #000 !important;
+}
+.slider-products{
+  .grid-product__color-image{
+    position: relative !important;
+  }
+}
+.product-slider-home{
+  .grid-product__color-image{
+    position: relative !important;
+  }
+  .block-dropdown-variant{
+    display: none;
+  }
+}
+.header-dlg{
+  position: relative;
+  z-index: 999;
+  header{
+    .site-nav{
+      margin-left: auto !important;
+      @media(min-width: 992px){
+        position: relative;
+        z-index: 9;
+      }
+      .site-nav__item{
+        &.site-nav--has-dropdown{
+          .site-nav__dropdown{
+            padding: 10px 10px 24px;
+            width: 445px;
+            min-height: 450px;
+            li{
+              a{
+                margin-left: 15px;
+                padding-left: 10px;
+                text-transform: uppercase;
+                transition: all 1s;
+                padding-left: 25px !important;
+                &:hover{
+                  color: $color-red;
+                }
+              }
+            }
+          }
+          &.Motos{
+            .site-nav__dropdown{
+              background: url({{ 'menu-motos.png' | asset_url }}) no-repeat, bottom;
+              background-size: cover;
+              width: 471px;
+              background-position: bottom;
+              li{
+                a{
+                  font-family: 'Open Sans Bold';
+                  background-color: transparent !important;
+                  font-size: 15px;
+                  line-height: 15px;
+                  color: #FFF;
+                  text-decoration: none;
+                  @media(min-width: 768px){
+                    font-size: 15px;
+                    line-height: 15px;
+                  }
+                  @media(min-width: 992px){
+                    font-size: 15px;
+                    line-height: 15px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .site-nav__link{
+          font-family: 'Open Sans Regular';
+          letter-spacing: 0;
+          color: #FFF !important;
+          background: transparent !important;
+          @media(min-width: 992px){
+            padding: 7.5px 25px;
+            padding-bottom: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+/*================== DLG Header ==================*/
+/*================== DLG presentacion motos  ==================*/
+.triangulo-black-top{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  top: 1px;
+  border-color: transparent transparent transparent #000000;
+  position: relative;
+  @media(min-width: 992px){
+    border-width: 215px 0 0 930px;
+  }
+  @media(min-width: 1200px){
+    border-width: 215px 0 0 1130px;
+  }
+  @media(min-width: 1300px){
+    border-width: 215px 0 0 1230px;
+  }
+  @media(min-width: 1400px){
+    border-width: 215px 0 0 1330px;
+  }
+  @media(min-width: 1500px){
+    border-width: 215px 0 0 1420px;
+  }
+  @media(min-width: 1800px){
+    border-width: 215px 0 0 1692px;
+  }
+}
+.triangulo-black-bottom{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 0 215px 1713px;
+  border-color: transparent transparent transparent #000;
+  position: relative;
+  top: -1px;
+  @media(min-width: 992px){
+    border-width: 0px 0 215px 930px;
+  }
+  @media(min-width: 1200px){
+    border-width: 0px 0 215px 1130px;
+  }
+  @media(min-width: 1300px){
+    border-width: 0px 0 215px 1230px;
+  }
+  @media(min-width: 1400px){
+    border-width: 0px 0 215px 1330px;
+  }
+  @media(min-width: 1500px){
+    border-width: 0px 0 215px 1420px;
+  }
+  @media(min-width: 1800px){
+    border-width: 0px 0 215px 1692px;
+  }
+}
+/*================== Bloque texto simple  ==================*/
+.section-bloque-texto-simple{
+  padding: 45px 0 30px;
+  @media (min-width: 576px){
+    padding: 130px 0 40px;
+  }
+  @media(min-width: 992px){
+    padding: 90px 0 40px;
+  }
+  @media(min-width: 1280px){
+    padding: 90px 0 40px;
+  }
+  .content-box-description{
+    .title{
+      font-family: "Open Sans Bold";
+      font-size: 30px;
+      line-height: 33px;
+      margin: auto;
+      margin-bottom: 30px !important;
+      width: 282px;
+      @media (min-width: 576px){
+        font-size: 55px;
+        line-height: 57px;
+        width: 535px;
+        margin-bottom: 95px !important;
+      }
+      @media(min-width: 992px){
+        margin-left: 0;
+        font-size: 30px;
+        margin-bottom: 30px !important;
+        line-height: 33px;
+        width: auto;
+      }
+      @media(min-width: 1280px){
+        font-size: 30px;
+        line-height: 33px;
+      }
+      strong{
+        color: $color-red;
+        letter-spacing: -1px;
+        @media(max-width: 991px){
+          display: block;
+        }
+      }
+    }
+    .description{
+      p{
+        font-family: "Open Sans Regular";
+        color: #000;
+        font-size: 15px;
+        line-height: 17px;
+        margin: auto;
+        margin-bottom: 25px;
+        width: 250px;
+        @media (min-width: 576px){
+          font-size: 25px;
+          line-height: 27px;
+          margin-bottom: 25px;
+          width: 530px;
+        }
+        @media(min-width: 992px){
+          font-size: 16px;
+          line-height: 19px;
+          margin: auto;
+          margin-bottom: 25px;
+          margin-left: 0;
+          width: auto;
+        }
+        em{
+          font-family: "Open Sans SemiboldItalic";
+        }
+      }
+    }
+  }
+}
+/*================== Bloque texto simple  ==================*/
+.seminuevas{
+  /*================== Formulario contacto Agusta ==================*/
+  .contact-box{
+    background: $color-red;
+    padding: 60px 0;
+    .title{
+      font-family: "Open Sans Bold";
+      font-size: 20px;
+      line-height: 30px;
+      color: #FFF;
+      margin: auto;
+      margin-bottom: 30px;
+      text-transform: initial !important;
+      width: 320px;
+      @media(min-width: 576px){
+        font-size: 30px;
+        line-height: 40px;
+        width: 500px;
+      }
+      @media(min-width: 992px){
+        font-size: 20px;
+        line-height: 40px;
+        width: auto;
+      }
+    }
+  }
+  .globo-form {
+    .globo-form-app{
+      max-width: 83% !important;
+      margin: auto !important;
+      background: $color-red;
+      form{
+        .content{
+          .globo-label{
+            display: none;
+          }
+          .globo-form-control{
+            input{
+              box-shadow: none !important;
+              text-align: center;
+              background: transparent !important;
+              border-bottom: 1px solid #FFF;
+              font-family: 'Roboto Italic';
+              color: #FFF;
+              font-size: 13px;
+              line-height: 19px;
+              border-radius: 0;
+              width: 80%;
+              margin: auto;
+              &::placeholder{
+                font-family: 'Roboto Italic';
+                color: #FFF;
+              }
+            }
+          }
+        }
+        .messages{
+          .error{
+            text-align: center !important;
+          }
+        }
+        .success{
+          background: rgba(17,172,228,0.5) !important;
+          .content{
+            text-align: center;
+            h4{
+              font-family: "21 Cent Condensed";
+            }
+            p{
+              font-family: "Roboto Regular";
+            }
+          }
+        }
+        .footer{
+          margin-bottom: 50px;
+          .submit{
+            font-family: "Open Sans Bold";
+            font-size: 13px;
+            line-height: 25px;
+            color: #000;
+            padding: 5px;
+            box-shadow: none !important;
+            border-radius: 50px;
+          }
+        }
+      }
+    }
+  }
+  /*================== Formulario contacto Agusta ==================*/
+}
+.tmpl-motos-nuevas{
+  .ducati-moto-information{
+    position: absolute;
+    top: 2% !important;
+    @media(min-width: 576px){
+      position: absolute;
+      top: 0% !important;
+    }
+    @media(min-width: 992px){
+      position: absolute;
+      top: 8% !important;
+    }
+    @media(min-width: 1280px){
+      top: 10% !important;
+    }
+    @media(min-width: 1500px){
+      position: absolute;
+      top: 10%;
+    }
+    .box-content-information-txt{
+      .description{
+        font-family: 'Open Sans Light';
+        font-size: 15px;
+        line-height: 17px;
+        color: #FFF;
+        margin: auto;
+        @media(min-width: 576px){
+          font-size: 25px;
+          line-height: 27px;
+          width: 410px;
+        }
+        @media(min-width: 992px){
+          font-size: 13px;
+          line-height: 18px;
+          width: auto;
+        }
+        @media(min-width: 1500px){
+          font-size: 15px;
+          line-height: 20px;
+          width: 370px;
+        }
+      }
+    }
+  }
+  .agusta-moto-information{
+    top: 22% !important;
+    @media(min-width: 576px){
+      top: 22% !important;
+    }
+    @media (min-width: 992px) {
+      top: 29% !important;
+    }
+    @media (min-width: 1280px){
+      top: 30% !important;
+    }
+    @media (min-width: 1500px){
+      top: 32% !important;
+    }
+  }
+  .scrambler-moto-information{
+    top: 42% !important;
+    @media (min-width: 576px){
+      top: 41% !important;
+    }
+    @media (min-width: 992px){
+      top: 47% !important;
+    }
+    @media (min-width: 1100px){
+      top: 45% !important;
+    }
+    @media (min-width: 1280px){
+      top: 49% !important;
+    }
+    .box-content-information-txt{
+      @media (min-width: 992px) {
+        left: -11%;
+        position: relative;
+      }
+      @media (min-width: 1100px) {
+        left: -9%;
+        position: relative;
+      }
+      @media (min-width: 1280px) {
+        left: 0%;
+      }
+      img{
+        @media (min-width: 992px){
+          width: 60%;
+        }
+        @media (min-width: 1100px){
+          width: 60%;
+        }
+        @media (min-width: 1280px){
+          width: 60%;
+        }
+        @media (min-width: 1500px){
+          width: auto;
+        }
+      }
+    }
+    .title{
+      font-family: 'Akzidenz-Grotesk Pro Bold';
+      font-size: 20px;
+      line-height: 23px;
+      color: #FFF;
+      margin: 30px auto 24px;
+      text-transform: inherit !important;
+      @media(min-width: 576px){
+        margin: 30px auto 24px;
+        font-size: 40px;
+        line-height: 40px;
+        width: 405px;
+      }
+      @media(min-width: 992px){
+        margin: 15px auto 10px;
+        font-size: 25px;
+        line-height: 25px;
+        width: auto;
+      }
+      @media(min-width: 1500px){
+        margin: 30px auto 24px;
+        font-size: 30px;
+        line-height: 30px;
+        width: auto;
+      }
+    }
+    .description{
+      font-family: 'Roboto Regular';
+      font-size: 15px;
+      line-height: 17px;
+      color: #EDC517;
+      margin: auto;
+      @media(min-width: 576px){
+        font-size: 25px;
+        line-height: 27px;
+        width: 400px;
+      }
+      @media(min-width: 992px){
+        font-size: 15px;
+        line-height: 17px;
+        width: 370px;
+      }
+    }
+    .content-button{
+      margin-top: 24px;
+      @media(min-width: 576px){
+        margin-top: 24px;
+      }
+      @media(min-width: 992px){
+        margin-top: 24px;
+      }
+      a{
+        font-family: 'Open Sans Bold';
+        color: #000;
+        font-size: 13px;
+        line-height: 12px;
+        text-decoration: none;
+        border: 1px solid;
+        padding: 10px 15px;
+        border-radius: 25px;
+        background: #EDC517;
+        transition: all 0.5s;
+        @media(min-width: 576px){
+          font-size: 23px;
+          line-height: 12px;
+        }
+        @media(min-width: 992px){
+          font-size: 13px;
+          line-height: 12px;
+        }
+        &:hover{
+          background: #FFF !important;
+          border: 1px solid #EDC517 !important;
+        }
+      }
+    }
+  }
+}
+.hero-natural-mobile--template--15409127260388__1639091636538c1168{
+  @media (min-width: 576px){
+    height: 910px !important;
+    padding: 0 !important;
+  }
+  @media (min-width: 992px){
+    height: auto !important;
+    padding: 0 !important;
+  }
+}
+.content-cat-index{
+  padding: 40px 15px;
+  overflow-x: scroll;
+  @media(min-width: 768px){
+    padding: 57px 15px;
+  }
+  @media(min-width: 992px){
+    overflow-x: hidden;
+  }
+  @media(min-width: 1400px){
+    width: 1340px;
+    margin: auto;
+    padding: 94px 70px;
+  }
+  @media(min-width: 1500px){
+    width: 1340px;
+    margin: auto;
+    padding: 94px 70px;
+  }
+  a{
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  .content-cat-index-wrapper{
+    @media(max-width: 991px){
+      min-width: 1185px;
+      max-width: 1228px;
+    }
+    .row-content-cat-index{
+      @media(max-width: 991px){
+        min-width: 1185px;
+        max-width: 1228px;
+        height: 245px;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+  .block-image{
+    @media(max-width: 991px){
+      flex: 0 0 233px;
+      max-width: 233px;
+      height: 218px;
+    }
+  }
+  .block-image-cat-home{
+    @media(min-width: 992px){
+      max-width: 20%;
+    }
+  }
+  .content-image{
+    background: #FFF;
+    padding: 16px;
+    padding-bottom: 1px;
+    box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.5);
+    width: 213px;
+    height: 213px;
+    margin: auto;
+    @media(min-width: 768px){
+      padding: 16px;
+      padding-bottom: 1px;
+    }
+    @media(min-width: 992px){
+      padding: 10px;
+      padding-bottom: 1px;
+      width: 170px;
+      height: 170px;
+    }
+    @media(min-width: 1200px){
+      padding: 16px;
+      width: 200px;
+      height: 200px;
+    }
+    @media(min-width: 1280px){
+      width: 213px;
+      height: 213px;
+    }
+    .title{
+      font-weight: 100;
+      text-transform: uppercase;
+      margin: 15px auto 0;
+      @media(min-width: 576px){
+        margin-top: 10px;
+        margin-bottom: 4px;
+      }
+      @media(min-width: 992px){
+        margin-top: 10px;
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
+/*================== Megamenu  ==================*/
+.new-navigation{
+	.link_item_block{
+		&:last-child{
+			.site-nav__dropdown{
+        left: -40%;
+        &:before{
+          left: 30%;
+        }
+			}
+    }
+	}
+  .site-nav--has-dropdown{
+	  &:hover{
+		  .site-nav__dropdown{
+        display:flex;
+		  }
+	  }
+	  .site-nav__dropdown{
+      background: #1b1b1b;
+      display: none;
+      top: 46px;
+		  &:before{
+			  content: "";
+			  position: absolute;
+        width: 28px;
+			  height: 24px;
+        background: url({{ "triangle-before.png" | asset_url }});
+        top: -17px;
+        left: 8%;
+        background-size: contain;
+		  }
+		  ul{
+        margin-left:0;padding-left: 10px;
+        min-width: 50%;
+			  li{
+          position:relative;
+				  img{
+            margin: auto;
+					  text-align:center;
+				  }
+				  &.brand-logo{
+					  img{
+              max-width: 110px;
+            }
+				  }
+				  &.brand-item-list{
+					  img{
+              width: 100%;
+					  }
+				  }
+				  a{
+            background: transparent;
+            color: #FFF;
+            text-align: left;
+            margin: 0 !important;
+            padding-top: 0;
+            padding-bottom: 0;
+            width: 80%;
+            text-decoration:none;
+					  &.parent_first_link{
+              font-family: 'Open Sans Bold';
+              font-size: 15px;
+              padding: 3px 10px !important;
+            }
+					  &.parent_second_link{
+              font-family: 'Open Sans Semibold';
+              font-size: 13px;
+              padding: 0 10px !important;
+                line-height: 23px;
+            }
+          }
+			  }
+			  &.brand-image-container{
+          padding-top: 10px;
+				  li{
+            text-align: center;
+				  }
+			  }
+			  &.menu-parent-global{
+				  .link-parent-global{
+					  a{
+              border-top: 1px solid transparent;
+              border-bottom: 1px solid transparent;
+              transition: all 1s;
+/*               &:hover{
+                border-top: 1px solid $color-red;
+                border-bottom: 1px solid $color-red;
+              } */
+					  }
+					  &:last-child{
+              margin-top: 40px;
+						  a{
+                font-family: 'Open Sans SemiboldItalic';
+              }
+					  }
+				  }
+			  }
+		  }
+		  .dropdown-child-link{
+			  li{
+				  a{
+            font-family: 'Open Sans Light Italic';
+            font-size: 13px;
+            text-transform: capitalize !important;
+            padding: 0 10px !important;
+				  }
+			  }
+		  }
+	  }
+  }
+  .menu-Accesorios, .menu-Equipamiento{
+    padding: 0 !important;
+	  .menu-parent-global{
+      padding: 15px !important;
+		  li{
+			  &.link-parent-global{
+          border-top: 1px solid transparent;
+          border-bottom: 1px solid transparent;
+          transition: all 1s;
+          &:hover{
+            border-top: 1px solid $color-red;
+            border-bottom: 1px solid $color-red;
+          }
+			  }
+		  }
+	  }
+    .brand-image-container{
+      padding: 0 !important;
+      margin: 0 !important;
+      .brand-logo{
+        img{
+          width: 100%;
+          max-width: 100% !important;
+        }
+      }
+    }
+  }
+  .collapsed-menu{
+	  max-height:0;
+	  overflow:hidden;
+	  transition: max-height 1s cubic-bezier(0, 1, 0, 1);
+	  &.expanded{
+		  max-height:600px;
+		  transition: max-height 1s ease-in-out;
+	  }
+  }
+  .site-nav__deep-dropdown-trigger {
+    .icon-chevron-down{
+      position: absolute;
+      top: 13px;
+      color: white;
+      left: 0px;
+	    &.opened{
+        transform: rotate(0deg) translateX(50%);
+           top: 8px;
+	    }
+    }
+    svg{
+	    &.icon{
+        cursor:pointer;
+	    }
+    }
+  }
+}
+.menu-Accesorios, .menu-Equipamiento{
+  padding: 0 !important;
+	.brand-item-list{
+    display: none !important;
+    }
+}
+/*================== Megamenu  ==================*/
+/*================== Megamenu hamburguesa desktop ==================*/
+/*================== Megamenu hamburguesa desktop ==================*/
+#CartDrawer{
+  #CartContainer{
+    flex-wrap: wrap;
+  }
+  .drawer__scrollable{
+    flex-wrap: wrap;
+  }
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: white;
+	@media (max-width: 991px)  {
+    height: 0px;
+  }
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+/*================== Products Recommendation ==================*/
+.content-recommendation-block{
+	.section-header{
+		.section-header__title{
+      font-family: 'Open Sans Light Italic';
+      font-size: 30px;
+      text-transform: uppercase;
+      margin-bottom: 70px;
+			span{
+        font-family: 'Open Sans Bold';
+        color: $color-red;
+			}
+		}
+	}
+	.product-recommendations{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 800px;
+    width: 750px;
+    margin: auto;
+    justify-content: center;
+		@media(min-width: 575px){
+      max-width: 1100px;
+      width: 1100px;
+		}
+		@media(min-width: 992px){
+      overflow: hidden;
+      max-width: 100%;
+      width: 100%;
+		}
+		.grid{
+			@media(max-width: 991px){
+        white-space: initial !important;
+			}
+			.content-product{
+        width: 250px;
+        @media(min-width: 575px){
+          width: 350px;
+        }
+        @media(min-width: 992px){
+          width: 25%;
+        }
+				.grid-product__image-mask{
+					border: 1px solid #707070;
+				}
+				.content-title-price{
+          margin-top: 25px;
+					.grid-product__title--heading{
+            font-family: 'Open Sans Semibold';
+            font-size: 15px;
+            color: #000;
+            @media(min-width: 992px){
+              font-size: 12px;
+              line-height: 20px;
+            }
+            @media(min-width: 1400px){
+              font-size: 15px;
+              line-height: 20px;
+            }
+					}
+					.grid-product__price{
+            font-family: 'Open Sans Extra Bold';
+            font-size: 20px;
+            color: $color-red;
+					}
+				}
+				.button-buy-product{
+          display: none !important;
+				}
+			}
+		}
+	}
+}
+/*================== Products Recommendation ==================*/
+.index-section--hero{
+  .hero-natural-mobile--template--15663083684068__1639091636538c1168{
+    @media(max-width: 991px){
+      height: 910px !important;
+      padding-bottom: 0px;
+    }
+  }
+}
+.product-slider-products-inside{
+	.price{
+    @media(max-width: 576px){
+      font-size: 11px !important;
+      line-height: 14px !important;
+    }
+	}
+	.content-button{
+    @media(max-width: 991px){
+      width: 50%;
+    }
+    button{
+      @media(max-width: 576px){
+        font-size: 9px !important;
+      }
+    }
+	}
+	.grid-product__price--original{
+    display: none;
+	}
+}
+#motos-nuevas{
+	.nav-link{
+    .logotipo-color{
+      display: none;
+    }
+    .logotipo-blanco-negro{
+      display: block;
+    }
+    &.active{
+      .logotipo-color{
+        display: block;
+      }
+      .logotipo-blanco-negro{
+        display: none;
+      }
+    }
+	}
+}
+.content-tabs-activities-box{
+  .content-description-tab-activities,.content-image{
+    @media (max-width: 991px) {
+      padding: 0 !important;
+    }
+  }
+}
+#myTabContentDes{
+  .description-tabs{
+    p{
+      span{
+        width: 70%;
+        display: block;
+        margin-left: auto;
+      }
+    }
+  }
+}
+#accordionDes{
+  .description-tabs{
+    p{
+      span{
+        width: 70%;
+        display: block;
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+/*============= Accounts ============*/
+.template-customers-login, .template-customers-register  {
+  .box-newsletter{
+    display: none;
+  }
+  .section-header__title{
+    font-family: 'Open Sans Bold';
+    color: #000;
+    font-size: 40px;
+  }
+  form{
+    label{
+      display: block;
+    }
+    button, .btn{
+      font-family: 'Open Sans Bold';
+      font-size: 15px;
+      line-height: 8px;
+      color: #000;
+      border-radius: 0;
+      border: 1px solid #000;
+      padding: 10px;
+      margin-top: 20px;
+      &:hover{
+        background: transparent !important;
+      }
+    }
+  }
+  a{
+    color: #000;
+    text-decoration: none;
+  }
+}
+.template-challange{
+  main{
+    min-height: 80vh !important;
+    .shopify-challenge__button {
+      font-family: 'Open Sans Bold';
+      font-size: 15px;
+      line-height: 8px;
+      color: #000;
+      border-radius: 0;
+      border: 1px solid #000;
+      padding: 10px;
+      margin-top: 20px;
+
+      &:hover {
+        background: transparent !important;
+      }
+    }
+  }
+}
+/*============= Accounts ============*/
+.predictive-result__layout{
+  .grid-product__content{
+    a{
+      color: #000;
+      text-decoration: none;
+      font-family: 'Open Sans Semibold';
+      font-size: 15px;
+      line-height: 20px;
+      .grid-product__meta{
+        .grid-product__title{
+          font-family: 'Open Sans Semibold';
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  .btn--small{
+    font-family: 'Open Sans Bold';
+    background: #ff4326;
+    color: #fff;
+    font-size: 13px;
+    line-height: 12px;
+    padding: 5px 15px;
+    border-radius: 50px;
+  }
+  ul{
+    li{
+      a{
+        color: #000;
+        font-family: 'Open Sans Semibold';
+        font-size: 13px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.drawer--right{
+  @media (max-width: 991px) {
+    width: 100%;
+    max-width: 100%;
+    right: -100%;
+  }
+  &.drawer--is-open {
+    @media (max-width: 991px) {
+      transform: translate(-100%);
+    }
+  }
+}
+.agusta-brutale-800-gallery{
+  .grid__item{
+    .block-image{
+      &:first-child{
+        display: none !important;
+      }
+    }
+  }
+}
+#NavDrawer{
+  .menu-linklist-2-inside{
+    &.is-open{
+     height: auto !important;
+    }
+  }
+}
+.parent_second_link_special{
+  font-family: Open Sans Semibold !important;
+  font-size: 13px !important;
+  line-height: 23px !important;
+}
+.redLinkSpecial{
+  color:#f00000 !important;
+}
+.result-empty-search a{
+  display: none !important;
+}
+.boost-pfs-filter-option-item button, .boost-pfs-filter-option-item a {
+  color: #FFF !important;
+  @media(min-width: 992px){
+    color: #000 !important;
+  }
+  
+}
+    @media (max-width: 767px){
+.boost-pfs-filter-mobile-toolbar-items {
+    background: transparent !important;
+}
+    }
+@media (max-width: 767px){
+  .boost-pfs-filter-tree-mobile-sticky.boost-pfs-filter-tree-mobile-open {
+    position: relative !important;
+    background: transparent !important;
+    margin: 0!important;
+}
+  .boost-pfs-filter-mobile-toolbar-items {
+    background: transparent !important;
+    border-bottom: 1px solid #e3e3e3;
+    padding: 15px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+  .boost-pfs-filter-tree-content {
+    position: relative !important;
+    margin: 0;
+    left: 0;
+}
+  .boost-pfs-filter-tree-mobile-sticky.boost-pfs-filter-tree-mobile-open {
+    position: relative !important;
+}
+  .boost-pfs-filter-options-wrapper{
+    top: 60px !important;
+  }
+  .boost-pfs-filter-tree-content {
+    margin: 0 !important;
+    left: 0 !important;
+}
+}
+    .limoniapps-discountninja-stickybar-topmargin{
+        header.site-header--opening{
+      margin-top: 50px !important;
+    } 
+    }
+ 
+.template-index{
+  .header-sticky-wrapper{
+    position: absolute;
+    width: 100%;
+    .site-header{
+      background: transparent;
+    }
+  }
+}

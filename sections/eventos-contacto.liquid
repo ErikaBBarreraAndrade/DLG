@@ -1,0 +1,68 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-12">
+			{% if section.settings.title != blank %}
+				<p class="title text-center">
+					{{ section.settings.title }}
+				</p>
+			{% endif %}
+		</div>
+		<div class="col-12">
+			{% form 'contact' %}
+				{% if form.posted_successfully? %}
+					<p class="note form-success">
+						{{ 'contact.form.post_success' | t }}
+					</p>
+				{% endif %}
+				{{ form.errors | default_errors }}
+				<div class="row justify-content-center">
+					<div class="col-11 col-lg-12">
+						<div class="row">
+							<div class="col-12 col-lg-12 collapse">
+								<label for="ContactFormType">Tipo de formulario</label>
+								<input class="form-control" type="text" id="ContactFormType" name="contact[tipo]" value="FORMULARIO: PENDIENTES DE EVENTOS ">
+							</div>
+							<div class="col-12 col-lg-6 pe-lg-1">
+								<input class="form-control" type="text" id="ContactFormName" name="contact[name]" placeholder="Nombre completo" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}">
+							</div>
+							<div class="col-12 col-lg-6 ps-lg-1">
+								<input class="form-control" type="email" id="ContactFormEmail" name="contact[email]" placeholder="Escribe aquí" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" class="{% if form.errors contains 'email' %}input--error{% endif %}">
+							</div>
+							<div class="col-12">
+								<input class="form-control" type="text" id="ContactFormUbicacion" name="contact[ubicacion]" placeholder="¿Desde dónde nos visitas?" value="{% if form[ubicacion] %}{{ form[ubicacion] }}{% elsif customer %}{{ customer.ubicacion }}{% endif %}">
+							</div>
+							<div class="col-12 col-lg-6 pe-lg-1">
+								<input class="form-control" type="text" id="ContactFormTipoMoto" name="contact[tipoMoto]" placeholder="Motocicleta/Marca/Modelo" value="{% if form[tipoMoto] %}{{ form[tipoMoto] }}{% elsif customer %}{{ customer.tipoMoto }}{% endif %}">
+							</div>
+							<div class="col-12 col-lg-6 ps-lg-1">
+								<input class="form-control" type="tel" id="ContactFormPhone" name="contact[phone]" placeholder="Teléfono" pattern="[0-9\-]*" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+							</div>
+							<div class="col-12 text-center">
+									<button type="submit" class="btn">
+										Enviar
+									</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			{% endform %}
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Contacto eventos",
+"class": "seccion-contacto-eventos",
+"settings": [
+{
+"type": "header",
+"content": "==== Titulos ===="
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+}
+]
+}
+{% endschema %}

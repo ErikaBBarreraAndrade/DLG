@@ -1,0 +1,72 @@
+{{ "index-section-menu-home.scss.css" | asset_url | stylesheet_tag }}
+<div class="container-fluid">
+  <div class="row justify-content-md-center">
+    <div class="col-12">
+      <div class="grid-overflow-wrapper row  content-menu-wrapper justify-content-lg-center">
+        <div class="grid grid--uniform aos-init ms-lg-0 aos-animate" data-aos="overflow__animation">
+          <div class="grid__item ps-lg-0 ms-0 grid-product d-flex aos-init aos-animate justify-content-lg-center" data-aos="row-of-">
+            {% for block in section.blocks %}
+              <div class="col-12 content-image text-center">
+                <a   href="{{ block.settings.button_link }}">
+                  {{ block.settings.image | img_url: 'master' | img_tag: 'feature-row__image', 'img-fluid' }}
+                  {% if block.settings.title != blank %}
+                    <p class="title">{{ block.settings.title }}</p>
+                  {% endif %}
+                </a>
+              </div>
+            {% endfor %}
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Index section menu",
+  "class": "index-section-menu-home",
+  "settings": [
+  ],
+  "blocks": [
+    {
+      "type": "text_block",
+      "name": "Column",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Add a title or tagline"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Index section menu",
+      "category": "images",
+      "blocks": [
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "text_block"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

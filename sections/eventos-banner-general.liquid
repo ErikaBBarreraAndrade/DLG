@@ -1,0 +1,83 @@
+<div class="container-fluid">
+  <div class="row content-banner">
+    <div class="col-12 p-0">
+      {% if section.settings.video_banner_check %}
+      <video width="100%" autoplay playsinline loop muted class="d-none d-lg-block {% if section.settings.image_banner_check %}collapse{% endif %}">
+        <source src="{{ section.settings.video_url }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video width="100%" autoplay playsinline loop muted class="d-block d-lg-none {% if section.settings.image_banner_check %}collapse{% endif %}">
+        <source src="{{ section.settings.video_url_mobile }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      {% elsif section.settings.image_banner_check %}
+      <img class="img-fluid d-none d-lg-block	{% if section.settings.video_banner_check %}collapse{% endif %} w-100 lazyload"
+           data-src="{{ section.settings.image_banner | img_url:"master" }}"
+           data-aspectratio="{{ preview_image.aspect_ratio }}"
+           width="{{ section.settings.image_banner.width }}"
+           height="{{ section.settings.image_banner.width | divided_by: section.settings.image_banner.aspect_ratio | round }}"
+           alt="{{ preview_image.alt | escape }}">
+      <img class="img-fluid d-block d-lg-none	{% if section.settings.video_banner_check %}collapse{% endif %} w-100 lazyload"
+           data-src="{{ section.settings.image_banner_mobile | img_url:"master" }}"
+           width="{{ section.settings.image_banner_mobile.width }}"
+           height="{{ section.settings.image_banner_mobile.width | divided_by: section.settings.image_banner_mobile.aspect_ratio | round }}"
+           data-aspectratio="{{ preview_image.aspect_ratio }}"
+           alt="{{ preview_image.alt | escape }}">
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+"name": "Banner general",
+"class": "seccion-eventos-banner",
+"settings": [
+{
+"type": "header",
+"content": "==== Video ===="
+},
+{
+"type": "checkbox",
+"id": "video_banner_check",
+"label": "Habilitar video",
+"default": true
+},
+{
+"type": "url",
+"id": "video_url",
+"label": "Url video"
+},
+{
+"type": "url",
+"id": "video_url_mobile",
+"label": "Url video Mobile"
+},
+{
+"type": "header",
+"content": "==== Imagen ===="
+},
+{
+"type": "checkbox",
+"id": "image_banner_check",
+"label": "Habilitar Imagen",
+"default": false
+},
+{
+"type": "image_picker",
+"id": "image_banner",
+"label": "Imagen"
+},
+{
+"type": "image_picker",
+"id": "image_banner_mobile",
+"label": "Imagen Mobile"
+}
+],
+"presets": [
+{
+"name": "Banner General",
+"category": "image"
+}
+]
+}
+{% endschema %}

@@ -1,0 +1,100 @@
+$color-red: #F00000;
+/*================== DLG videos youtube home  ==================*/
+.contenedor-videos-youtube{
+  .content-video{
+    background-position: center !important;
+    padding: 40px 0;
+    @media(min-width: 768px){
+      padding: 60px 0;
+    }
+    @media(min-width: 992px){
+      background-size: cover !important;
+      background-attachment: fixed !important;
+      padding: 100px 0;
+    }
+  }
+  .title{
+    font-family: 'Open Sans Bold';
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFF;
+    @media(min-width: 768px){
+      font-size: 40px;
+      line-height: 45px;
+    }
+    @media(min-width: 992px){
+      font-size: 30px;
+      line-height: 35px;
+    }
+  }
+  .subtitle{
+    font-family: 'Open Sans Light Italic';
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFF;
+    margin: auto;
+    width: 320px;
+    margin-bottom: 40px;
+    @media(min-width: 576px){
+      font-size: 40px;
+      line-height: 45px;
+      margin-bottom: 60px;
+      width: 80%;
+    }
+    @media(min-width: 992px){
+      font-size: 30px;
+      line-height: 35px;
+      margin-bottom: 60px;
+      width: auto;
+    }
+  }
+  .content-button{
+    margin-top:40px;
+    @media(min-width: 768px){
+      margin-top:40px;
+    }
+    @media(min-width: 992px){
+      margin-top:40px;
+    }
+    a{
+      font-family: "Open Sans Bold";
+      color: $color-red;
+      background: #FFF;
+      font-size: 13px;
+      line-height: 12px;
+      transition: all 0.5s;
+      padding: 5px 15px;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 50px;
+      &:hover{
+        background: #000;
+      }
+    }
+  }
+  .text_end{
+    font-family: 'Open Sans Light';
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFF;
+    margin: 40px 0;
+    padding-bottom: 40px;
+    @media(min-width: 768px){
+      font-size: 40px;
+      line-height: 45px;
+      margin: 40px 0;
+    }
+    @media(min-width: 992px){
+      font-family: 'Open Sans Bold';
+      font-size: 30px;
+      line-height: 20px;
+      margin: 40px 0;
+      padding-bottom: 0px;
+    }
+  }
+  .slick-slide{
+    @media(min-width: 576px) {
+      padding: 0 15px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+<link rel="preload" href="{{ "main-blog-template.scss.css" | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ "main-blog-template.scss.css" | asset_url }}"></noscript>
+<div data-section-id="{{ section.id }}" data-section-type="blog">
+  <div class="container-fluid">
+    <!-- Noticia más reciente -->
+    <div class="row content-post-recent justify-content-center justify-content-lg-end">
+      <div class="col-12 col-xl-10">
+        {%- for article in blog.articles limit: 1 -%}
+          {%- render 'article-grid-item-recent', article: article-%}
+        {%- endfor -%}
+      </div>
+    </div>
+    <!-- Noticia más reciente -->
+    {%- paginate blog.articles by 8 -%}
+    <!-- Noticias-->
+    <div class="row justify-content-center justify-content-lg-end content-post-grid">
+      <div class="col-11 col-xl-10">
+        <div class="content-title-blog-grid text-uppercase text-center text-lg-start">
+          Todos los articulos
+        </div>
+        <div class="content-articles-box">
+          {%- for article in blog.articles -%}
+            {%- render 'article-grid-item', article: article -%}
+          {%- endfor -%}
+        </div>
+        {%- if paginate.pages > 1 -%}
+          {%- render 'pagination', paginate: paginate -%}
+        {%- endif -%}
+      </div>
+    </div>
+    <!-- Noticias-->
+    {%- endpaginate -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Blog",
+  "class": "main-blog-template",
+  "settings": [
+  ]
+}
+{% endschema %}

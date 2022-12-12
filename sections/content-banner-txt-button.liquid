@@ -1,0 +1,111 @@
+<style>
+  .content-banner{
+    background: url({{section.settings.bg_mobile_sencillo | img_url: 'master'}});
+  }
+  @media(min-width: 992px){
+    .content-banner{
+      background: url({{section.settings.bg_desktop_sencillo | img_url: 'master'}});
+    }
+  }
+</style>
+<div class="container-fluid">
+  <div class="row content-banner">
+    <div class="col-12 mt-auto my-lg-auto text-center">
+      {% if section.settings.title != blank %}
+      <p class="title mb-0 text-uppercase">
+        {{section.settings.title}}
+      </p>
+      {% endif %}
+      {% if section.settings.subtitle != blank %}
+      <p class="subtitle mb-0 text-uppercase">
+        {{section.settings.subtitle}}
+      </p>
+      {% endif %}
+      {% if section.settings.text_end != blank %}
+      <p class="text_end mb-0">
+        {{section.settings.text_end}}
+      </p>
+      {% endif %}
+      {% if section.settings.button_link != blank %}
+      <p class="content-button">
+        <a href="{{ section.settings.button_link}}" {% if section.settings.enable_target %}target="_blank" {% endif %} class="btn">
+          {{ section.settings.button_text}}
+        </a>
+      </p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+"name": "Banner sencillo txt btn",
+    "class": "banner-sencillo-txt-btn",
+    "settings": [
+		{
+		"type": "header",
+		"content":"==== Imagen banner ===="
+		},
+	{
+			"type": "image_picker",
+			"id":"bg_desktop_sencillo",
+			"label":"Imagen Desktop"
+		},
+	{
+			"type": "image_picker",
+			"id":"bg_mobile_sencillo",
+			"label":"Imagen Mobile"
+		},
+	{
+		"type": "header",
+		"content":"==== Titulos ===="
+		},
+	{
+			"type": "text",
+			"id":"title",
+			"label":"Titulo"
+		},
+	{
+			"type": "text",
+			"id":"subtitle",
+			"label":"Subtitulo"
+		},
+	{
+			"type": "text",
+			"id":"text_end",
+			"label":"Texto final"
+		},
+	{
+		"type": "header",
+		"content":"==== Botón ===="
+		},
+ {
+          "type": "checkbox",
+          "id": "enable_target",
+          "label": "Abrir en página aparte",
+          "default": true
+        },
+	{
+			"type": "url",
+			"id":"button_link",
+			"label":"Link Botón"
+		},
+	{
+			"type": "text",
+			"id":"button_text",
+			"label":"Texto Botón"
+		}
+	],
+   "presets": [
+      {
+        "name": "Banner sencillo txt btn",
+        "category": "Image & link"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

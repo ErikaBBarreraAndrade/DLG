@@ -1,0 +1,239 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "tipo_pagina": "page_agusta"
+      }
+    },
+    "1639091636538c1168": {
+      "type": "slideshow",
+      "blocks": {
+        "163909163673c2e43e-1": {
+          "type": "image",
+          "settings": {
+            "title": "Descubre la nueva <strong>Monster Plus<\/strong>",
+            "description_short": "Toda la esencia de Ducati en una moto moderna y contemporánea. Aquí está la nueva Monster en la forma más compacta, esencial y ligera posible.",
+            "title_size": 80,
+            "description_specs": "111 CV (82 KW) @ 9,250 RPM",
+            "description_specs_2": "9.5 KGM (93 NM) @ 6,500 RPM",
+            "subheading": "",
+            "text_end": "",
+            "link_text_1": "Ver  monster",
+            "link_1": "shopify:\/\/pages\/paginas-ducati-monster-1200",
+            "link_text_2": "",
+            "link_2": "",
+            "link_text_3": "",
+            "link_3": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/banner-2-dlg-home-min-motos-nuevas.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/banner-home-2-mobile_e177e971-ab24-4661-8a9e-a1f87ab7b711.jpg",
+            "focal_point": "center center"
+          }
+        },
+        "163909163673c2e43e-0": {
+          "type": "image",
+          "settings": {
+            "title": "Bienvenido a la tienda más grande de motociclismo en México",
+            "description_short": "",
+            "image_logo": "shopify:\/\/shop_images\/logo-dlg-grande_90a244b9-9a25-444f-af87-8831f2050c1f.png",
+            "title_size": 70,
+            "description_specs": "",
+            "description_specs_2": "",
+            "subheading": "ENVÍO GRATIS en ordenes mayores a $3,000 MXN",
+            "text_end": "*Aplica solo en el interior de la República Mexicana",
+            "link_text_1": "Motos nuevas",
+            "link_1": "shopify:\/\/pages\/motos-nuevas",
+            "link_text_2": "Accesorios motos",
+            "link_2": "shopify:\/\/pages\/accesorios",
+            "link_text_3": "Equipamiento",
+            "link_3": "shopify:\/\/pages\/equipamiento",
+            "color_accent": "#ff4326",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/banner-1-dlg-home-min-motos-nuevas_ee69c39e-9b3a-4767-b964-cff7ab996701.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/banner-1-home-mobile_ccde2d22-5a43-4ac8-a4d4-ab3ebfcf0e63.jpg",
+            "focal_point": "center center"
+          }
+        },
+        "ec9f7df0-5416-4d67-a2e2-ad3f8776904d": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "description_short": "",
+            "title_size": 80,
+            "description_specs": "",
+            "description_specs_2": "",
+            "subheading": "",
+            "text_end": "",
+            "link_text_1": "",
+            "link_1": "",
+            "link_text_2": "",
+            "link_2": "",
+            "link_text_3": "",
+            "link_3": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/slider-promociones.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/banner-slider-home-mobile-3_1ef27040-7ade-44d9-b561-be1d11dbfa92.jpg",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "163909163673c2e43e-1",
+        "163909163673c2e43e-0",
+        "ec9f7df0-5416-4d67-a2e2-ad3f8776904d"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "dots",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "16390936246fea7c70": {
+      "type": "index-motos-presentacion-categoria-motos-nuevas",
+      "blocks": {
+        "163909362413bd5105-0": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ducati-motos-home_dce62cc7-7493-401d-baa3-c90c3b4a0795.png",
+            "image_mobile": "shopify:\/\/shop_images\/motos-ducati-home-mobile_15addd83-f7f3-4826-87e8-604d454055ad.png",
+            "image_logotipo": "shopify:\/\/shop_images\/logo-Ducati_b689c054-05fb-4027-a30f-ef67fbb2246a.png",
+            "title": "Conoce la tienda <strong>Ducati más grande en México.<\/strong>",
+            "text_description": "<p>Desde los últimos lanzamientos, todos los accesorios disponibles y el mayor catálogo de equipamiento Ducati en un solo lugar.<\/p>",
+            "tipo_moto": "ducati-moto-information",
+            "enable_target": false,
+            "button_link": "shopify:\/\/pages\/ducati-motos",
+            "button_label": "Mundo ducati"
+          }
+        },
+        "163909362413bd5105-1": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/agusta-motos-home_6477913a-75a9-43cb-b381-7ea04ed7d1cf.png",
+            "image_mobile": "shopify:\/\/shop_images\/motos-agusta-home_548bc9a0-b09b-43fb-835a-c23c931588be.png",
+            "image_logotipo": "shopify:\/\/shop_images\/logo-medium-agusta_12f610cc-fdb9-449c-a425-a146ee121c0c.png",
+            "title": "<strong>No solo<\/strong> Construimos <strong>MotocICLETAS,<\/strong> CREAMOS <strong>EMOCIONES.<\/strong>",
+            "text_description": "<p>Miramos al futuro, y creamos maquinas que siempre están un paso adelante. Conoce MV Agusta México.<\/p>",
+            "tipo_moto": "agusta-moto-information",
+            "enable_target": false,
+            "button_link": "shopify:\/\/pages\/mundo-agusta",
+            "button_label": "Mundo mv agusta"
+          }
+        },
+        "163909362413bd5105-2": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/scrambler-motos-home_b788f658-338f-4df6-9617-60ba485c563a.png",
+            "image_mobile": "shopify:\/\/shop_images\/motos-scrambler-home_4394c3cb-f82d-4a70-9daf-ae53ceed8cad.png",
+            "image_logotipo": "shopify:\/\/shop_images\/Imagen_6_f42aad43-2e70-4ba0-887b-1cffe76f5c30.png",
+            "title": "¿Estás preparado para una nueva era?",
+            "text_description": "<p>Descubre la nueva linea de motos, accesorios y equipamiento Scrambler.<\/p>",
+            "tipo_moto": "scrambler-moto-information",
+            "enable_target": false,
+            "button_link": "shopify:\/\/pages\/scrambler-motos",
+            "button_label": "Mundo scrambler"
+          }
+        },
+        "b9fdb4c0-632c-45ca-b1d0-474e6ac26940": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/magni-motos-nuevas.png",
+            "image_mobile": "shopify:\/\/shop_images\/magni-motos-nuevas.png",
+            "image_logotipo": "shopify:\/\/shop_images\/logotipo-magni.png",
+            "title": "Una motocicleta de un color <strong>rojo dominante<\/strong>",
+            "text_description": "<p>Siempre que decimos MAGNI, nos viene de inmediato a la mente la imagen de una motocicleta de un color rojo dominante, el color más significativo de las motocicletas y autos de carrera más prestigiosos de Italia.<\/p>",
+            "tipo_moto": "magni-moto-information",
+            "enable_target": false,
+            "button_link": "shopify:\/\/pages\/conoce-magni",
+            "button_label": "VER MAGNI"
+          }
+        },
+        "2bfd7a7f-de69-4bdb-a441-6371d4dc30a8": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vyrus-motos-nuevas.png",
+            "image_mobile": "shopify:\/\/shop_images\/vyrus-motos-nuevas.png",
+            "image_logotipo": "shopify:\/\/shop_images\/VYRUS-Logo-sito-motos-nuevas.png",
+            "title": "Pura locura tecnológica",
+            "text_description": "<p>“Algunas personas dicen que Vyrus es una motocicleta muy cara… es cierto!. Sin embargo comparado con el valor real de esta pieza de arte elaborada a mano. En realidad el precio es muy barato”<br\/><br\/>Ascanio Rodorigo<\/p>",
+            "tipo_moto": "vyrus-moto-information",
+            "enable_target": false,
+            "button_link": "shopify:\/\/pages\/conoce-vyrus",
+            "button_label": "VER ALYEN 988"
+          }
+        }
+      },
+      "block_order": [
+        "163909362413bd5105-0",
+        "163909362413bd5105-1",
+        "163909362413bd5105-2",
+        "b9fdb4c0-632c-45ca-b1d0-474e6ac26940",
+        "2bfd7a7f-de69-4bdb-a441-6371d4dc30a8"
+      ],
+      "settings": {
+      }
+    },
+    "1639092885b4b44d0b": {
+      "type": "icon-list",
+      "blocks": {
+        "1639092885c35fa7e3-0": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon-1_acd64cdd-5727-4026-a0ea-95d5b073088a.png",
+            "description": "<p>Tenemos el inventario más grande en México. Entregas y devoluciones rápidas en toda la República.<\/p>"
+          }
+        },
+        "1639092885c35fa7e3-1": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon-2_713acb7e-bb99-4a09-9692-8a8f7eeb85f1.png",
+            "description": "<p>Ofrecemos no solo una experiencia de compra, sino una experiencia de vida.<\/p>"
+          }
+        },
+        "1639092885c35fa7e3-2": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon-3_c90fd380-0fec-4650-a6f5-ee03ba313dfc.png",
+            "description": "<p>Más de 17 años de experiencia trabajando con las mejores marcas de Italia y el mundo.<\/p>"
+          }
+        },
+        "1639092885c35fa7e3-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon-4_5890a90c-096a-49de-bd06-d00d6413530a.png",
+            "description": "<p>Tu compra es segura, aceptamos todos los métodos de pagos disponibles en México.<\/p>"
+          }
+        },
+        "55ceee51-0cbd-44d1-a277-f63966a899a5": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon-5_c876732e-2b57-4523-ae57-a67dbf41ff7c.png",
+            "description": "<p>Y si no te gusta devolvemos tu dinero sin preguntar.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1639092885c35fa7e3-0",
+        "1639092885c35fa7e3-1",
+        "1639092885c35fa7e3-2",
+        "1639092885c35fa7e3-3",
+        "55ceee51-0cbd-44d1-a277-f63966a899a5"
+      ],
+      "settings": {
+        "title": "DLG Moto Art,",
+        "subtitle": "la mejor y más grande tienda para motos y accesorios en México"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1639091636538c1168",
+    "16390936246fea7c70",
+    "1639092885b4b44d0b"
+  ]
+}

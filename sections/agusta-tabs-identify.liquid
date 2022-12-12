@@ -1,0 +1,183 @@
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-11 col-lg-12">
+      {% if section.settings.title%}
+      <p class="title text-center mb-0 text-uppercase">
+        {{ section.settings.title }}
+      </p>
+      {% endif %}
+      {% if section.settings.subtitle%}
+      <p class="subtitle text-center">
+        {{ section.settings.subtitle }}
+      </p>
+      {% endif %}
+      {% if section.settings.description%}
+      <div class="description text-center mb-0">
+        {{ section.settings.description }}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  <div class="row justify-content-center content-tabs">
+    <div class="col-11 col-sm-11 col-lg-12 col-xl-11 col-xxl-10">
+      <div class="row justify-content-end">
+        <div class="col-12 col-lg-6">
+          <ul class="nav nav-tabs m-0" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+                {{ section.settings.tab_inicial }}
+              </button>
+            </li>
+            {% for block in section.blocks %}
+            {% if block.settings.title %}
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="{{ block.settings.title }}-tab" data-bs-toggle="tab" data-bs-target="#{{ block.settings.title }}" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                {{ block.settings.title }}
+              </button>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col-12">
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  {% if section.settings.image_inicial%}
+                  <img class="feature-row__image lazyload img-fluid"
+                       data-src="{{section.settings.image_inicial | img_url: 'master'}}"
+                       data-widths="[180, 360, 540, 720, 900, 1080]"
+                       data-sizes="auto"
+                       width="{{ section.settings.image_inicial.width }}"
+                       height="{{ section.settings.image_inicial.width | divided_by: section.settings.image_inicial.aspect_ratio | round }}"
+                       alt="">
+                  {% endif %}
+                </div>
+                <div class="col-12 col-12 col-lg-6 offset-lg-1">
+                  <div class="description-tabs">
+                    {{ section.settings.tab_inicial_texto }}
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% for block in section.blocks %}
+            <div class="tab-pane fade" id="{{ block.settings.title }}" role="tabpanel" aria-labelledby="{{ block.settings.title }}-tab">
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  {% if block.settings.image_tabs%}
+                  <img class="feature-row__image lazyload img-fluid"
+                       data-src="{{block.settings.image_tabs | img_url: 'master'}}"
+                       data-widths="[180, 360, 540, 720, 900, 1080]"
+                       data-sizes="auto"
+                       alt="">
+                  {% endif %}
+                </div>
+                <div class="col-12 col-12 col-lg-6 offset-lg-1">
+                  <div class="description-tabs">
+                    {{ block.settings.description }}
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Text and image",
+    "class": "agusta-brutale-tabs",
+    "settings": [
+		{
+			"type": "header",
+			"content": "==== Titulos y descripción ===="
+		},
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Titulo"
+		},
+		{
+			"type": "text",
+			"id": "subtitle",
+			"label": "Subtitulo"
+		},
+		{
+			"type": "richtext",
+			"id": "description",
+			"label": "Descripción"
+		},
+	{
+			"type": "header",
+			"content": "==== Inicio de tabs ===="
+		},
+{
+			"type": "text",
+			"id": "tab_inicial",
+			"label": "Subtitulo tabs"
+		},
+	{
+			"type": "richtext",
+			"id": "tab_inicial_texto",
+			"label": "Descripción tabs"
+		},
+		{
+			"type": "image_picker",
+			"id": "image_inicial",
+			"label": "Imagen"
+		}
+	],
+    "blocks": [
+      {
+        "type": "text_block",
+        "name": "Column",
+        "settings": [
+         {
+              "type": "header",
+              "content": "==== Titulo ===="
+          },
+          {
+              "type": "text",
+              "id": "title",
+              "label": "Titulo"
+          },
+	      {
+              "type": "header",
+              "content": "==== Descripción ===="
+          },
+	  	 {
+              "type": "richtext",
+              "id": "description",
+              "label": "Descripción"
+          },
+		{
+			"type": "image_picker",
+			"id": "image_tabs",
+			"label": "Imagen"
+		}
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Tabs and image",
+        "category": "Text",
+        "blocks": [
+          {
+            "type": "text_block"
+          },
+          {
+            "type": "text_block"
+          },
+          {
+            "type": "text_block"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

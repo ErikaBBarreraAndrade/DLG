@@ -1,0 +1,72 @@
+<!--<div class="row">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      {%- for block in section.blocks -%}
+          {%- if collection_page -%}
+          {%- if block.settings.promo_collection != blank -%}
+            {%- if block.settings.promo_collection != collection.handle -%}
+              {%- continue -%}
+            {%- endif -%}
+          {%- endif -%}
+        {%- endif -%}
+        {%- case block.type -%}
+            {%- when 'banner' -%}
+              <div class="col-12">
+              <style>
+                .content-banner{
+                  background: url({{ block.settings.image_mobile | img_url: 'master' }});
+                }
+                @media(min-width: 992px){
+                  .content-banner{
+                    background: url({{ block.settings.image | img_url: 'master' }})!important;
+                  }
+                }
+              </style>
+              {%- if block.settings.image != blank -%}
+                <div class="row content-banner">
+                  <div class="col-12 my-auto">
+                   <div class="row justify-content-end content-description-txt">
+                     <div class="col-12 col-lg-5">
+                       {%- if block.settings.heading != blank -%}
+                         <p class="title">{{ block.settings.heading }}</p>
+                       {%- endif -%}
+                       {%- if block.settings.text != blank -%}
+                         <div class="description">{{ block.settings.text }}</div>
+                       {%- endif -%}
+                       {%- if block.settings.label != blank -%}
+                         <p class="content-button">
+                           <a href="{{ block.settings.link }}" class="btn">
+                             {{ block.settings.label }}
+                           </a>
+                         </p>
+                       {%- endif -%}
+                     </div>
+                   </div>
+                  </div>
+                </div>
+                <div class="row bloque-bottom-bg">
+
+                </div>
+              {%- endif -%}
+        </div>
+          {%- when 'menu' -%}
+            <div class="col-12 col-lg-3 content-block-image-menu">
+            {%- if block.settings.image != blank -%}
+              <div class="row content-banner-menu" style="background: url({{ block.settings.image | img_url: 'master' }});">
+                <div class="col-12 mt-auto text-center">
+                  {%- if block.settings.label != blank -%}
+                    <p class="content-button">
+                      <a href="{{ block.settings.link }}" class="btn">
+                        {{ block.settings.label }}
+                      </a>
+                    </p>
+                  {%- endif -%}
+                </div>
+              </div>
+            {%- endif -%}
+          </div>
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>-->

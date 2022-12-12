@@ -1,0 +1,134 @@
+{{ 'Icon-section-home-list.scss.css' | asset_url | stylesheet_tag }}
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-11 col-sm-11 col-lg-12 col-xl-11 col-xxl-9">
+      <div class="row">
+        <div class="col-12 text-center text-uppercase">
+          {%- if section.settings.title != blank -%}
+          <p class="title mb-0">
+            {{ section.settings.title }}
+          </p>
+          {%- endif -%}
+          {%- if section.settings.subtitle != blank -%}
+          <p class="subtitle">
+            {{ section.settings.subtitle }}
+          </p>
+          {%- endif -%}
+        </div>
+      </div>
+      {%- if section.blocks.size > 0 -%}
+      <div class="row justify-content-center">
+        {%- for block in section.blocks -%}
+        {% assign mod = forloop.index | modulo: 2 %}
+        {% if mod == 0 %}
+        <div class="logo-bar__item col-12" {{ block.shopify_attributes }}>
+          <div class="content-left">
+            <div class="col-12">
+              {%- if block.settings.image != blank -%}
+              <img class="logo-bar__image lazyload"
+                   data-src="{{ block.settings.image | img_url: 'master' }}"
+                   data-widths="[180, 360, 540, 720]"
+                   data-aspectratio="{{ block.settings.image}}"
+                   width="{{ block.settings.image.width }}"
+                   height="{{ block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round }}"
+                   alt="{{ block.settings.image.alt }}">
+              {%- endif -%}
+              <span>
+                {%- if block.settings.description != blank -%}
+                {{ block.settings.description }}
+                {%- endif -%}
+              </span>
+            </div>
+          </div>
+        </div>
+        {% else %}
+        <div class="logo-bar__item col-12" {{ block.shopify_attributes }}>
+          <div class="content-right">
+            <span>
+              {%- if block.settings.description != blank -%}
+              {{ block.settings.description }}
+              {%- endif -%}
+            </span>
+            {%- if block.settings.image != blank -%}
+            <img class="logo-bar__image lazyload"
+                 data-src="{{ block.settings.image | img_url:'master' }}"
+                 data-widths="[180, 360, 540, 720]"
+                 data-aspectratio="{{ block.settings.image}}"
+                 width="{{ block.settings.image.width }}"
+                 height="{{ block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round }}"
+                 alt="{{ block.settings.image.alt }}">
+            {%- endif -%}
+          </div>
+        </div>
+        {% endif %}
+        {%- endfor -%}
+      </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Icon list",
+    "class": "Icon-section-home-list",
+    "settings": [
+      {
+      "type": "header",
+      "content": "==== Titulos ===="
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Titulo"
+      },
+	      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subtitulo"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "logo_image",
+        "name": "Logo",
+        "settings": [
+	 {
+            "type": "header",
+            "content": "==== Iconos ===="
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "richtext",
+            "id": "description",
+            "label": "Descripción"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Icon list",
+        "category": "Image",
+        "blocks": [
+          {
+            "type": "logo_image"
+          },
+          {
+            "type": "logo_image"
+          },
+          {
+            "type": "logo_image"
+          },
+          {
+            "type": "logo_image"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

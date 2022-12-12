@@ -1,0 +1,101 @@
+{{ "seccion-image-text-info.scss.css" | asset_url | stylesheet_tag }}
+<div class="container-fluid">
+	<div class="row content-description-box justify-content-center">
+		<div class="col-11 col-sm-11 col-lg-12 col-xl-11 col-xxl-9 box-gral">
+			<div class="row content-information-general">
+				{% if section.settings.image %}
+				<div class="col-12 col-lg-6 content-image">
+						<img class="w-100 img-fluid lazyload"
+						     data-src="{{ section.settings.image | img_url:"master" }}"
+						     data-aspectratio="{{ preview_image.aspect_ratio }}"
+						     width="{{ section.settings.image.width }}"
+						     height="{{ section.settings.image.width | divided_by: section.settings.image.aspect_ratio | round }}"
+						     alt="{{ preview_image.alt | escape }}">
+				</div>
+				{% endif %}
+				<div class="col-12 col-lg-6 content-description my-auto">
+					{% if section.settings.title != blank %}
+						<p class="title">
+						{{ section.settings.title }}
+						</p>
+					{% endif %}
+					{% if section.settings.description != blank %}
+						<div class="description">
+							{{ section.settings.description }}
+						</div>
+					{% endif %}
+					{% if section.settings.button_url != blank %}
+						<div class="content-button">
+							<a href="{{ section.settings.button_url }}" {% if section.settings.enable_target %} target="_blank" {% endif %}>
+								{{ section.settings.button_label }} <span class="ms-2"><svg xmlns="http://www.w3.org/2000/svg" width="25.942" height="25.944" viewBox="0 0 25.942 25.944">
+  <g id="messenger" transform="translate(0 -0.001)">
+    <path id="Trazado_232" data-name="Trazado 232" d="M13,0A12.723,12.723,0,0,0,.025,12.433a12.2,12.2,0,0,0,4.324,9.252V25.4a.54.54,0,0,0,.827.458L8.188,23.98A13.383,13.383,0,0,0,13,24.863a12.723,12.723,0,0,0,12.971-12.43A12.723,12.723,0,0,0,13,0Z" transform="translate(-0.025 0)" fill="#fff"/>
+    <path id="Trazado_233" data-name="Trazado 233" d="M102.558,170.912a.54.54,0,0,0-.692-.151l-5.621,3.064-3.5-3a.54.54,0,0,0-.734.028L85.53,177.34a.54.54,0,0,0,.641.856l5.621-3.064,3.5,3a.54.54,0,0,0,.734-.028l6.485-6.485A.54.54,0,0,0,102.558,170.912Z" transform="translate(-81.048 -162.045)" fill="#237ee7"/>
+  </g>
+</svg>
+</span>
+							</a>
+						</div>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Imagen text info",
+"class": "seccion-image-text-info",
+"settings": [
+{
+"type": "header",
+"content": "==== Imagen ===="
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "Imagen"
+},
+{
+"type": "header",
+"content": "==== Titulo y descripción ===="
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+},
+{
+"type": "richtext",
+"id": "description",
+"label": "Descripción"
+},
+{
+"type": "header",
+"content": "==== Botón ===="
+},
+{
+"type": "checkbox",
+"id": "enable_target",
+"label": "Abrir en una página aparte",
+"default": false
+},
+{
+"type": "text",
+"id": "button_label",
+"label": "Texto Botón"
+},
+{
+"type": "url",
+"id": "button_url",
+"label": "Link Botón"
+}
+],
+"presets": [
+{
+"name": "Imagen text info",
+"category": "image & text"
+}
+]
+}
+{% endschema %}

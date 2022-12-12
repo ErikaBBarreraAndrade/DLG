@@ -1,0 +1,26 @@
+
+{% schema %}
+{
+  "name": "página interna",
+  "tag": "section",
+  "class": "spaced-section",
+"settings": [
+{
+"type": "select",
+"id": "tipo_pagina",
+"label": "Tipo de pagina",
+"default": "page_externa_dlg",
+"options": [
+{
+"value": "page_externa_dlg",
+"label": "Pagina externa general"
+}
+]
+}
+]
+}
+{% endschema %}
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$('body').addClass('{{ section.settings.tipo_pagina }}')
+</script>

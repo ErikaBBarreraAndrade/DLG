@@ -1,0 +1,108 @@
+<style>
+    .section-bloque-texto-simple{
+        background: {{ section.settings.bg_color }}
+    }
+</style>
+<div class="container-fluid">
+	<div class="row content-box-txt justify-content-center">
+		<div class="col-12 col-lg-12 col-xl-11 col-xxl-9">
+			<div class="row content-box-general">
+				<div class="col-12 text-center content-box-description">
+					{% if section.settings.header != blank %}
+						<p class="header--event">
+					<span class="title-left float-lg-start">
+						{{ section.settings.header }}
+					</span>
+							<span class="title-right float-lg-end">
+						{{ section.settings.header_sub }}
+					</span>
+						</p>
+					{% endif %}
+				</div>
+				<div class="col-12 content-box-description">
+					<div class="row">
+						{% if section.settings.image != blank %}
+							<div class="col-12 col-lg-6 content-image">
+								<img class="img-fluid w-100 lazyload"
+								     data-src="{{ section.settings.image | img_url:"master" }}"
+								     data-widths="[180, 360, 540, 720, 900, 1080]"
+								     data-aspectratio="{{ preview_image.aspect_ratio }}"
+								     data-sizes="auto"
+								     width="{{ section.settings.image.width }}"
+								     height="{{ section.settings.image.width | divided_by: section.settings.image.aspect_ratio | round }}"
+								     alt="{{ preview_image.alt | escape }}">
+							</div>
+						{% endif %}
+						<div class="col-12 col-lg-6 description-box">
+							{% if section.settings.date != blank %}
+								<p class="date">
+									{{ section.settings.date }}
+								</p>
+							{% endif %}
+							{% if section.settings.title != blank %}
+								<p class="title">
+									{{ section.settings.title }}
+								</p>
+							{% endif %}
+							{% if section.settings.description != blank %}
+								<div class="description">
+									{{ section.settings.description }}
+								</div>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Eventos pasados",
+"class":"section-bloque-eventos-pasados",
+"settings": [
+{
+"type": "header",
+"content": "==== Header ===="
+},
+{
+"type": "text",
+"id": "header",
+"label": "Titulo izquierdo"
+},
+{
+"type": "text",
+"id": "header_sub",
+"label": "Titulo derecho"
+},
+{
+"type": "header",
+"content": "==== Imagen ===="
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "Imagen evento"
+},
+{
+"type": "text",
+"id": "date",
+"label": "Fecha"
+},
+{
+"type": "header",
+"content": "==== Titulos ===="
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+},
+{
+"type": "richtext",
+"id": "description",
+"label": "Descripción"
+}
+]
+}
+{% endschema %}

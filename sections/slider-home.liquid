@@ -1,0 +1,275 @@
+{{ "slider-home.scss.css" | asset_url | stylesheet_tag }}
+{{ "slider--home.css" | asset_url | stylesheet_tag }}
+<section class="banner__slider">
+	<div class="slider stick-dots">
+		{% for block in section.blocks %}
+		<div class="slide">
+			<div class="slide__img">
+				{% if block.settings.image != blank %}
+					<img src="{{ block.settings.image | img_url:"master" }}"
+					     alt="" class="full-image animated d-none d-lg-block img-fluid"
+					     width="{{ block.settings.image.width }}"
+					     height="{{ block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round }}"
+					     data-animation-in="zoomInImage"/>
+				{% endif %}
+				{% if block.settings.image_mobile != blank %}
+					<img src="{{ block.settings.image_mobile | img_url:"master" }}"
+					     width="{{ block.settings.image_mobile.width }}"
+					     height="{{ block.settings.image_mobile.width | divided_by: block.settings.image_mobile.aspect_ratio | round }}"
+					     alt="" class="full-image animated d-block d-lg-none img-fluid"
+					     data-animation-in="zoomInImage"/>
+				{% endif %}
+			</div>
+			<div class="slide__content ">
+				<div class="slide__content--headings text-center">
+					{% if block.settings.title != blank %}
+						<p class="animated top-title mx-auto" data-animation-in="fadeInUp" data-delay-in="0.3">
+							{{ block.settings.title }}
+						</p>
+					{% endif %}
+					{% if block.settings.description != blank %}
+						<div class="animated description mx-auto" data-animation-in="fadeInUp">
+							{{ block.settings.description }}
+						</div>
+					{% endif %}
+						{% if block.settings.logotipo != blank %}
+							<div class="row justify-content-center">
+								<div class="col-7 col-sm-10 col-md-9 col-lg-12 text-center hero__top-subtitle">
+									<div class="animated title box-logotipo" data-animation-in="fadeInUp">
+										<img src="{{ block.settings.logotipo | img_url:"master" }}"
+										     width="{{ block.settings.logotipo.width }}"
+										     height="{{ block.settings.logotipo.width | divided_by: block.settings.logotipo.aspect_ratio | round }}"
+										     alt="" class="img-fluid m-auto"/>
+									</div>
+								</div>
+							</div>
+						{% endif %}
+					{% if block.settings.enable_buttons %}
+						<div class="animated box-buttons-group" data-animation-in="fadeInUp">
+							<ul class="d-block d-lg-flex list-unstyled m-0 p-0 justify-content-center">
+								{% if block.settings.url_primer_boton != blank %}
+									<li>
+										<a href="{{ block.settings.url_primer_boton }}" class="btn btn-red-general" tabindex="0">
+											{{ block.settings.txt_primer_boton }}
+										</a>
+									</li>
+								{% endif %}
+								{% if block.settings.url_segundo_boton != blank %}
+									<li>
+										<a href="{{ block.settings.url_segundo_boton }}" class="btn btn-red-general" tabindex="0">
+											{{ block.settings.txt_segundo_boton }}
+										</a>
+									</li>
+								{% endif %}
+								{% if block.settings.url_tercer_boton != blank %}
+									<li>
+										<a href="{{ block.settings.url_tercer_boton }}" class="btn btn-red-general" tabindex="0">
+											{{ block.settings.txt_tercer_boton }}
+										</a>
+									</li>
+								{% endif %}
+							</ul>
+						</div>
+					{% endif %}
+					{% if block.settings.enable_especificaciones %}
+						<div class="content-description-especificaciones"><div class="row">
+								<div class="col-12">
+									<div class="row justify-content-center">
+										{% if block.settings.potencia != blank %}
+											<div class="col-6 col-lg-6 text-center hero__top-subtitle ">
+												<div class="animation-contents">
+													<p class="label">
+														Potencia
+													</p>
+													<p class="description">
+														{{ block.settings.potencia }}
+													</p>
+												</div>
+											</div>
+										{% endif %}
+										{% if block.settings.par != blank %}
+											<div class="col-6 col-lg-6 text-center hero__top-subtitle ">
+												<div class="animation-contents">
+													<p class="label">
+														Par
+													</p>
+													<p class="description">
+														{{ block.settings.par }}
+													</p>
+												</div>
+											</div>
+										{% endif %}
+									</div>
+								</div>
+							</div>
+
+						</div>
+					{% endif %}
+					{% if block.settings.subtitulo_final != blank %}
+						<div class="animated subtitulo_final mx-auto" data-animation-in="fadeInUp">
+							{{ block.settings.subtitulo_final }}
+						</div>
+					{% endif %}
+					{% if block.settings.texto_final != blank %}
+						<div class="animated texto_final" data-animation-in="fadeInUp">
+							{{ block.settings.texto_final }}
+						</div>
+					{% endif %}
+				{% comment %}	<button class="btn-light btn button-custom animated" data-animation-in="fadeInUp">Our menu</button>{% endcomment %}
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</section>
+{% schema %}
+{
+  "name": "Slider home",
+  "class": "slider-home",
+  "settings": [
+  ],
+  "blocks": [
+    {
+      "type": "text_block",
+      "name": "Column",
+      "settings": [
+        {
+          "type": "header",
+          "content": "==== Imagen ===="
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Imagen"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "Imagen Mobile"
+        },
+        {
+          "type": "header",
+          "content": "==== Titulo ===="
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titulo"
+        },
+        {
+          "type": "header",
+          "content": "==== Logotipo ===="
+        },
+        {
+          "type": "image_picker",
+          "id": "logotipo",
+          "label": "Logotipo"
+        },
+        {
+          "type": "header",
+          "content": "==== Descripción corta ===="
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Descripción corta"
+        },
+        {
+          "type": "header",
+          "content": "==== Botones ===="
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_buttons",
+          "label": "Activar botones",
+          "default": true
+        },
+        {
+          "type": "url",
+          "id": "url_primer_boton",
+          "label": "Url 1° boton"
+        },
+        {
+          "type": "text",
+          "id": "txt_primer_boton",
+          "label": "Text 1° boton"
+        },
+        {
+          "type": "url",
+          "id": "url_segundo_boton",
+          "label": "Url 2° boton"
+        },
+        {
+          "type": "text",
+          "id": "txt_segundo_boton",
+          "label": "Text 2° boton"
+        },
+        {
+          "type": "url",
+          "id": "url_tercer_boton",
+          "label": "Url 3° boton"
+        },
+        {
+          "type": "text",
+          "id": "txt_tercer_boton",
+          "label": "Text 3° boton"
+        },
+        {
+          "type": "header",
+          "content": "==== ESPECIFICACIONES ===="
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_especificaciones",
+          "label": "Activar especificaciones",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "potencia",
+          "label": "Especificaciones potencia"
+        },
+        {
+          "type": "text",
+          "id": "par",
+          "label": "Especificaciones Par"
+        },
+        {
+          "type": "header",
+          "content": "==== Subtitulo y texto final ===="
+        },
+        {
+          "type": "text",
+          "id": "subtitulo_final",
+          "label": "Subtitulo"
+        },
+        {
+          "type": "text",
+          "id": "texto_final",
+          "label": "Texto final"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slider home",
+      "category": "Slider",
+      "blocks": [
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "text_block"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+
+

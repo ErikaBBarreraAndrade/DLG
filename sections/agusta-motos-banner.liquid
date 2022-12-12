@@ -1,0 +1,131 @@
+<style>
+  .content-banner-principal {
+    background: url({{section.settings.bg_desktop | img_url: 'master'}});
+  }
+  @media(max-width: 991px){
+    .content-banner-principal {
+      background: url({{section.settings.bg_mobile | img_url: 'master'}}) !important;
+      background-size: cover !important;
+    }
+  }
+</style>
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-12 p-0">
+      <div class="content-banner-principal">
+        <div class="row content-information m-0">
+          <div class="col-12 my-auto">
+            {% if section.settings.title != blank %}
+            <p class="title text-uppercase text-center mb-0">
+              {{section.settings.title}}
+            </p>
+            {% endif %}
+            {% if section.settings.subtitle != blank %}
+            <p class="subtitle text-uppercase text-center mb-0">
+              {{section.settings.subtitle}}
+            </p>
+            {% endif %}
+            {% if section.settings.text_description != blank %}
+            <p class="text-end text-center mb-0">
+              {{section.settings.text_description}}
+            </p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 content-box-img" style="background: {{section.settings.bg_color}}">
+      <div class="content-motos-augusta-home row">
+        {% if section.settings.image_desktop  != blank %}
+        {{ section.settings.image_desktop | img_url: 'master' | img_tag: 'informacion-motos','w-100 p-0' }}
+        {% endif %}
+      </div>
+    </div>
+	  <div class="col-12 content-title-scroll">
+		  <div class="text-end text-uppercase d-block d-lg-none">
+			  Scroll <span class="float-end ms-3">
+			   <svg xmlns="http://www.w3.org/2000/svg" width="36.346" height="20.065" viewBox="0 0 36.346 20.065">
+  <g id="Grupo_442" data-name="Grupo 442" transform="translate(-715.837 -1715.467)">
+    <g id="noun-next-1216149" transform="translate(600.273 1707.051)">
+      <path id="Trazado_286" data-name="Trazado 286" d="M217.226,28.284a.569.569,0,0,0,.8.059l10.977-9.463a.568.568,0,0,0,0-.862L218.029,8.555a.569.569,0,1,0-.743.862l10.478,9.033-10.478,9.032a.569.569,0,0,0-.059.8Z" transform="translate(-101.525 0)" fill="#fff"/>
+    </g>
+    <g id="noun-next-1216149-2" data-name="noun-next-1216149" transform="translate(612.389 1707.051)">
+      <path id="Trazado_286-2" data-name="Trazado 286" d="M217.226,28.284a.569.569,0,0,0,.8.059l10.977-9.463a.568.568,0,0,0,0-.862L218.029,8.555a.569.569,0,1,0-.743.862l10.478,9.033-10.478,9.032a.569.569,0,0,0-.059.8Z" transform="translate(-101.525 0)" fill="#fff"/>
+    </g>
+    <g id="noun-next-1216149-3" data-name="noun-next-1216149" transform="translate(624.504 1707.051)">
+      <path id="Trazado_286-3" data-name="Trazado 286" d="M217.226,28.284a.569.569,0,0,0,.8.059l10.977-9.463a.568.568,0,0,0,0-.862L218.029,8.555a.569.569,0,1,0-.743.862l10.478,9.033-10.478,9.032a.569.569,0,0,0-.059.8Z" transform="translate(-101.525 0)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
+		    </span>
+		  </div>
+	  </div>
+  </div>
+</div>
+{% schema %}
+  {
+"name": "Banner inside motos",
+    "class": "agusta-motos-banner",
+    "settings": [
+{
+	"type": "header",
+	"content": "==== Background ===="
+},
+	 {
+          "type": "color",
+          "id": "bg_color",
+          "label": "Background Color"
+        },
+ {
+          "type": "image_picker",
+          "id": "bg_desktop",
+          "label": "Background Desktop"
+        },
+ {
+          "type": "image_picker",
+          "id": "bg_mobile",
+          "label": "Background Mobile"
+        },
+{
+	"type": "header",
+	"content": "==== Titulos y textos ===="
+},
+{
+	"type": "text",
+	"id": "title",
+	"label": "Titulo"
+},
+{
+	"type": "text",
+	"id": "subtitle",
+	"label": "Subtitulo"
+},
+{
+	"type": "text",
+	"id": "text_description",
+	"label": "Texto final"
+},
+{
+	"type": "header",
+	"content": "==== Imagenes ===="
+},
+ {
+          "type": "image_picker",
+          "id": "image_desktop",
+          "label": "Imagen Desktop"
+        }
+],
+    "presets": [
+      {
+        "name": "Banner inside motos",
+        "category": "Image & text"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

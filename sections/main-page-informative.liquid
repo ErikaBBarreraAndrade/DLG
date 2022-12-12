@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="{{ 'section-paginas-informativas.scss.css' | asset_url }}" media="print" onload="this.media='all'">
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <p class="main-page-title">
+        {{ page.title | escape }}
+      </p>
+    </div>
+    <div class="col-12">
+      <div class="rte">
+        {{ page.content }}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Sección informativa",
+  "class": "seccion-paginas-informativas"
+}
+{% endschema %}
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$('body').addClass('paginas-informativas')
+</script>

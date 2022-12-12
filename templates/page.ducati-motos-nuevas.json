@@ -1,0 +1,26 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "163666062642312e2a": {
+      "type": "content-banner-txt-button",
+      "settings": {
+        "bg_desktop_sencillo": "shopify:\/\/shop_images\/banner-motos-nuevas-ducati_367fc4a7-7070-411e-abe8-2f2221aa4648.jpg",
+        "bg_mobile_sencillo": "shopify:\/\/shop_images\/banner-motos-nuevas-ducati_367fc4a7-7070-411e-abe8-2f2221aa4648.jpg",
+        "title": "Más que <strong>lineas rojas,<\/strong>",
+        "subtitle": "la evolución nunca para",
+        "text_end": "Conoce todos los modelos Ducati en DLG Moto Art",
+        "enable_target": false,
+        "button_link": "#",
+        "button_text": "Ver motos nuevas"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "163666062642312e2a"
+  ]
+}

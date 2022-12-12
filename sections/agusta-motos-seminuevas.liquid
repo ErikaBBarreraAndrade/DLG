@@ -1,0 +1,222 @@
+<div class="container-fluid">
+  <div class="row justify-content-center box-slider-agusta-seminuevas" id="motos-seminuevas" style="background: {{section.settings.color_bg}}">
+    <div class="col-11 col-sm-11 col-lg-11 col-xl-11  {% if page.handle contains "scrambler" %}col-xxl-10 {% else %} col-xxl-9 {% endif %} ">
+      <div class="row content-slider-box">
+        {% if page.handle contains "scrambler" %}
+        <div class="triangle-right">
+        </div>
+        {% endif %}
+        <div class="col-12 content-title {% if page.handle contains "agusta" %}text-center {% else %} {% endif %}">
+          {% if section.settings.title != blank %}
+          <div class="title">
+            <div class="block-title">
+              {% if page.handle contains "scrambler" %}
+              <span>
+                <img src="{{ 'icon-more-scrambler.png' | asset_url }}" class="img-fluid">
+              </span>
+              {% endif %}
+              {{section.settings.title}}
+            </div>
+          </div>
+          {% endif %}
+          {% if section.settings.title_second != blank %}
+          <div class="title_second">
+            {{section.settings.title_second}}
+          </div>
+          {% endif %}
+        </div>
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12 col-lg-6 content-slider">
+              <div class="slider-motos-seminuevas">
+                {% for block in section.blocks %}
+                <div>
+                  <div class="row">
+                    {% if block.settings.image_slider != blank%}
+                    <div class="col-12 content-image-slider">
+                      <a href="{{block.settings.link_image}}" {% if section.settings.enable_target %}target="_blank" {% endif %}>{{ block.settings.image_slider | img_url: 'master' | img_tag: 'agusta-seminuevas','img-fluid w-100' }}</a>
+                    </div>
+                    {% endif %}
+                    {% if block.settings.description != blank%}
+                    <div class="col-12 caption-slider text-center text-lg-start">
+                      <span class="title float-lg-start">
+                        {{block.settings.description}}
+                      </span>
+                      {% if block.settings.price != blank%}
+                      <span class="price float-lg-end">
+                        {{block.settings.price}}
+                      </span>
+                      {% endif %}
+                    </div>
+                    {% endif %}
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 block-content-description-slider my-lg-auto">
+              <div class="row">
+                <div class="col-12">
+                  {% if section.settings.title_right != blank %}
+                  <p class="title text-center text-lg-start text-uppercase">
+                    {{section.settings.title_right}}
+                  </p>
+                  {% endif %}
+                  {% if section.settings.subtitle_right != blank %}
+                  <p class="subtitle text-center text-lg-start">
+                    {{section.settings.subtitle_right}}
+                  </p>
+                  {% endif %}
+                  {% if section.settings.text_right != blank %}
+                  <div class="description text-center text-lg-start">
+                    {{section.settings.text_right}}
+                  </div>
+                  {% endif %}
+                  {% if section.settings.text_end != blank %}
+                  <p class="description text-center text-lg-start mt-3 mt-sm-3 mt-lg-3">
+                    {{section.settings.text_end}}
+                  </p>
+                  {% endif %}
+                  {% if section.settings.button_link != blank %}
+                  <p class="content-button text-center text-lg-start">
+                    <a href="{{section.settings.button_link}}" class="btn text-uppercase">
+                      {{section.settings.button_label}}
+                    </a>
+                  </p>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% if page.handle contains "scrambler" %}
+        <div class="triangle-bottom">
+        </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+    "name": "Slider motos seminuevas",
+	"class": "agusta-motos-seminuevas",
+    "settings": [
+   {
+          "type": "header",
+          "content": "==== Background color ===="
+      },
+     {
+          "type": "color",
+          "id": "color_bg",
+          "label": "Background seccion"
+      },
+      {
+          "type": "header",
+          "content": "==== Titulo principal ===="
+      },
+      {
+          "type": "text",
+          "id": "title",
+          "label": "Titulo principal"
+      },
+	  {
+          "type": "text",
+          "id": "title_second",
+          "label": "Titulo extra"
+      },
+ {
+          "type": "header",
+          "content": "==== Titulos y textos bloque derecho ===="
+      },
+     {
+          "type": "text",
+          "id": "title_right",
+          "label": "Titulo"
+      },
+     {
+          "type": "text",
+          "id": "subtitle_right",
+          "label": "Subtitulo"
+      },
+     {
+          "type": "richtext",
+          "id": "text_right",
+          "label": "Descripción"
+      },
+ {
+          "type": "header",
+          "content": "==== Botón ===="
+      },
+     {
+          "type": "url",
+          "id": "button_link",
+          "label": "Link botón"
+      },
+  {
+          "type": "text",
+          "id": "button_label",
+          "label": "Label botón"
+      }
+],
+  "blocks": [
+    {
+      "type": "text_block",
+      "name": "Column",
+      "settings": [
+         {
+      "type": "header",
+      "content": "==== Imagenes slider ===="
+    },
+        {
+          "type": "image_picker",
+          "id": "image_slider",
+          "label": "Imagen"
+        },
+{
+          "type": "url",
+          "id": "link_image",
+          "label": "Link imagen"
+        },
+ {
+          "type": "checkbox",
+          "id": "enable_target",
+          "label": "Abrir en página aparte",
+          "default": true
+        },
+      {
+      "type": "header",
+      "content": "==== Descripción ===="
+    },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Descripción"
+        },
+  {
+          "type": "text",
+          "id": "price",
+          "label": "Precio"
+        }
+      ]
+    }
+  ],
+    "presets": [
+      {
+        "name": "Slider motos seminuevas",
+        "category": "Slider",
+        "blocks": [
+          {
+            "type": "text_block"
+          },
+          {
+            "type": "text_block"
+          },
+          {
+            "type": "text_block"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

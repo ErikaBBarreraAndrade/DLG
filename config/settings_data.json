@@ -1,0 +1,4799 @@
+{
+  "current": {
+    "color_body_bg": "#ffffff",
+    "color_body_text": "#111111",
+    "color_price": "#d1ba98",
+    "color_savings_text": "#ff4326",
+    "color_borders": "#2b2a27",
+    "color_button": "#ff4326",
+    "color_button_text": "#ffffff",
+    "color_sale_tag": "#ff4326",
+    "color_sale_tag_text": "#ffffff",
+    "color_cart_dot": "#ff4326",
+    "color_small_image_bg": "#ffffff",
+    "color_large_image_bg": "#ffffff",
+    "color_header": "#000000",
+    "color_header_text": "#000000",
+    "color_announcement": "#111111",
+    "color_announcement_text": "#ffffff",
+    "color_footer": "#000000",
+    "color_footer_text": "#111111",
+    "color_drawer_background": "#000000",
+    "color_drawer_text": "#ffffff",
+    "color_drawer_border": "#ff4326",
+    "color_drawer_button": "#ff4326",
+    "color_drawer_button_text": "#ffffff",
+    "color_modal_overlays": "#67635d",
+    "color_image_text": "#ffffff",
+    "color_image_overlay": "#0b0b0b",
+    "color_image_overlay_opacity": 15,
+    "color_image_overlay_text_shadow": 60,
+    "type_header_font_family": "open_sans_n4",
+    "type_header_spacing": "0",
+    "type_header_base_size": 35,
+    "type_header_line_height": 1.2,
+    "type_header_capitalize": false,
+    "type_headers_align_text": true,
+    "type_base_font_family": "open_sans_n4",
+    "type_base_spacing": "0",
+    "type_base_size": 18,
+    "type_base_line_height": 1.4,
+    "type_body_align_text": true,
+    "type_navigation_style": "heading",
+    "type_navigation_size": 18,
+    "type_navigation_capitalize": true,
+    "type_product_style": "heading",
+    "type_collection_font": "heading",
+    "type_collection_size": 23,
+    "button_style": "round",
+    "icon_weight": "4px",
+    "icon_linecaps": "round",
+    "product_save_amount": true,
+    "product_save_type": "percent",
+    "vendor_enable": false,
+    "quick_shop_enable": false,
+    "quick_shop_text": "",
+    "product_grid_image_size": "natural",
+    "product_hover_image": false,
+    "sku_enable": false,
+    "quantity_enable": true,
+    "variant_type": "button",
+    "inventory_enable": false,
+    "surface_pickup_enable": true,
+    "product_zoom_enable": true,
+    "product_color_swatches": false,
+    "collection_color_swatches": true,
+    "product_content_collapse_1": false,
+    "product_content_collapse_2": true,
+    "product_content_collapse_3": true,
+    "product_contact": false,
+    "enable_product_reviews": true,
+    "reviews_layout": "expandable",
+    "collection_grid_style": "overlaid-box",
+    "collection_grid_shape": "landscape",
+    "collection_grid_image": "collection",
+    "collection_grid_text_align": "bottom-center",
+    "collection_grid_tint": "#000000",
+    "collection_grid_opacity": 10,
+    "collection_grid_gutter": true,
+    "cart_type": "drawer",
+    "cart_icon": "cart",
+    "cart_notes_enable": false,
+    "cart_terms_conditions_enable": false,
+    "social_facebook_link": "https:\/\/www.facebook.com\/dlgmotoart\/",
+    "social_twitter_link": "https:\/\/twitter.com\/DLGMOTOART",
+    "social_pinterest_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/dlgmotoart",
+    "social_youtube_link": "https:\/\/www.youtube.com\/user\/DLGMotoArt",
+    "share_facebook": false,
+    "share_twitter": false,
+    "share_pinterest": false,
+    "favicon": "shopify:\/\/shop_images\/favicon-DLG.png",
+    "search_enable": true,
+    "predictive_search_enabled": false,
+    "show_breadcrumbs": true,
+    "checkout_logo_image": "shopify:\/\/shop_images\/DLG_LOGO-negro.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "small",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_color": "#e1e1e1",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#e32306",
+    "checkout_button_color": "#e32306",
+    "checkout_error_color": "#e32306",
+    "breadcrumb": true,
+    "color_image_2": "#cf2424",
+    "color_image_2_opacity": 0,
+    "color_image_1": "#6d1414",
+    "color_image_1_opacity": 0,
+    "type_accent_style": "body",
+    "type_accent_bold": true,
+    "type_accent_capitalize": true,
+    "type_button_font": "heading",
+    "type_button_capitalize": false,
+    "type_header_accent_transform": true,
+    "type_base_accent_transform": true,
+    "collection_grid_font": "heading",
+    "color_image_bg": "#000000",
+    "color_input": "#ffffff",
+    "checkout_banner_background_color": "#ffffff",
+    "checkout_call_to_action_color": "#a26b25",
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "1524768779513": {
+            "type": "logo",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo-dlg.png",
+              "logo-inverted": "shopify:\/\/shop_images\/logo-dlg_f1e05d53-b2cb-4406-8a40-234690062cff.png",
+              "desktop_logo_width": 220,
+              "mobile_logo_width": 150,
+              "logo_agusta": "shopify:\/\/shop_images\/logo-MV-Agusta_512b126d-a7b5-4d27-9df3-44a61ac9366e.png"
+            }
+          },
+          "4324cceb-e9b4-4cb1-bd5b-5eba26259fc0": {
+            "type": "menu",
+            "settings": {
+              "text_menu": "Equipamiento",
+              "link_menu": "#",
+              "menu_link_list": "menu-equipamiento",
+              "menu_view": "both"
+            }
+          },
+          "e112fba5-df43-41f6-98e4-cd12ee035058": {
+            "type": "menu",
+            "settings": {
+              "text_menu": "Motos",
+              "link_menu": "#",
+              "menu_link_list": "menu-principal-motos",
+              "menu_view": "both"
+            }
+          },
+          "9238f5c8-cd2b-4fb2-a482-3d71206c7d86": {
+            "type": "menu",
+            "settings": {
+              "text_menu": "Accesorios",
+              "link_menu": "shopify:\/\/pages\/accesorios",
+              "menu_link_list": "menu-principal-accesorios",
+              "menu_view": "both"
+            }
+          },
+          "986d2302-eb64-4458-bf3e-e05263db8acd": {
+            "type": "menu",
+            "settings": {
+              "text_menu": "Actividades",
+              "link_menu": "shopify:\/\/pages\/eventos",
+              "menu_link_list": "",
+              "menu_view": "mobile"
+            }
+          },
+          "a9c116ff-63a0-48bf-9e7a-23ca71b7fcdc": {
+            "type": "menu",
+            "settings": {
+              "text_menu": "Taller",
+              "link_menu": "shopify:\/\/pages\/taller",
+              "menu_link_list": "",
+              "menu_view": "mobile"
+            }
+          }
+        },
+        "block_order": [
+          "1524768779513",
+          "4324cceb-e9b4-4cb1-bd5b-5eba26259fc0",
+          "e112fba5-df43-41f6-98e4-cd12ee035058",
+          "9238f5c8-cd2b-4fb2-a482-3d71206c7d86",
+          "986d2302-eb64-4458-bf3e-e05263db8acd",
+          "a9c116ff-63a0-48bf-9e7a-23ca71b7fcdc"
+        ],
+        "settings": {
+          "main_menu_link_list": "main-menu",
+          "mega_menu_images": true,
+          "main_menu_alignment": "left-center",
+          "header_style": "sticky",
+          "sticky_index": false,
+          "sticky_collection": true,
+          "announcement_compact": true,
+          "announcement_above_header": true,
+          "toolbar_menu": "",
+          "toolbar_social": false,
+          "show_locale_selector": false,
+          "show_currency_selector": false,
+          "show_currency_flags": false
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "f5704573-3fce-4781-9011-5c5b46b938c7": {
+            "type": "logo_social",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/LOGO-DLG-ACTUAL.png",
+              "desktop_logo_height": 120,
+              "container_width": 33
+            }
+          }
+        },
+        "block_order": [
+          "f5704573-3fce-4781-9011-5c5b46b938c7"
+        ],
+        "settings": {
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "description_position": "top",
+          "subcollection_style": "above",
+          "subcollections_per_row": 5,
+          "enable_collection_count": true,
+          "per_row": 5,
+          "rows_per_page": 20,
+          "mobile_flush_grid": true
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "description_style": "default",
+          "social_enable": true,
+          "image_position": "left",
+          "image_size": "large",
+          "thumbnail_position": "below",
+          "thumbnail_arrows": false,
+          "enable_video_looping": true,
+          "product_video_style": "muted"
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+        }
+      },
+      "product-sections-template": {
+        "type": "product-sections-template",
+        "blocks": {
+          "sections-1592408474529": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "",
+              "image_width": 500,
+              "subtitle": "Improved",
+              "button_label": "Optional button",
+              "button_link": "",
+              "layout": "right"
+            }
+          },
+          "sections-1592410313636": {
+            "type": "background-image-text",
+            "settings": {
+              "subtitle": "Why choose us?",
+              "title": "Explain your brand philosophy",
+              "text": "<p>Use this section to explain your company philosophy or standards. Showcase lifestyle photography for added emphasis. This content will appear on all products.<\/p>",
+              "button_label": "",
+              "button_link": "",
+              "image": "",
+              "alignment": "center",
+              "color_border": "#f4f4f4",
+              "layout": "right",
+              "height": 650,
+              "parallax": true
+            }
+          },
+          "sections-1592408476245": {
+            "type": "testimonials",
+            "settings": {
+              "title": "Testimonials",
+              "align_text": "center",
+              "round_images": false,
+              "testimonial_1": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.<\/p>",
+              "image_1": "",
+              "author_1": "Author's name",
+              "testimonial_2": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.<\/p>",
+              "image_2": "",
+              "author_2": "Author's name"
+            }
+          },
+          "sections-1592410272428": {
+            "type": "image-hero",
+            "settings": {
+              "parallax": true,
+              "title": "Two line\ntitle image",
+              "title_size": 80,
+              "subheading": "And optional subtext",
+              "link": "",
+              "link_text": "Optional button",
+              "link_2": "",
+              "link_text_2": "",
+              "color_accent": "#ffffff",
+              "text_align": "vertical-center horizontal-center",
+              "image": "",
+              "focal_point": "center center",
+              "section_height": "650px",
+              "mobile_height": "auto"
+            }
+          },
+          "sections-1592410318615": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "",
+              "image_width": 500,
+              "subtitle": "Improved",
+              "button_label": "Optional button",
+              "button_link": "",
+              "layout": "left"
+            }
+          }
+        },
+        "block_order": [
+          "sections-1592410313636",
+          "sections-1592408476245",
+          "sections-1592408474529",
+          "sections-1592410318615",
+          "sections-1592410272428"
+        ],
+        "settings": {
+        }
+      },
+      "product-story-sections": {
+        "type": "product-story-sections",
+        "settings": {
+        }
+      },
+      "page-sections-template": {
+        "type": "page-sections-template",
+        "blocks": {
+          "page-rich-text": {
+            "type": "rich-text",
+            "settings": {
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": true
+            }
+          },
+          "page-text-columns": {
+            "type": "text-columns",
+            "settings": {
+            }
+          },
+          "page-background-image-text": {
+            "type": "background-image-text",
+            "settings": {
+              "alignment": "center",
+              "color_border": "#f4f4f4",
+              "layout": "right",
+              "height": 550
+            }
+          },
+          "page-featured-collection": {
+            "type": "featured-collection",
+            "settings": {
+              "per_row": 4,
+              "rows": 1,
+              "view_all": true
+            }
+          }
+        },
+        "block_order": [
+          "page-rich-text",
+          "page-text-columns",
+          "page-background-image-text",
+          "page-featured-collection"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": false
+        }
+      },
+      "newsletter-popup": {
+        "type": "newsletter-popup",
+        "settings": {
+          "mode": "disabled",
+          "popup_seconds": 6,
+          "popup_days": 8,
+          "popup_title": "ENTREGAS MARZO 2021",
+          "popup_text": "<p><\/p>",
+          "close_text": "No gracias",
+          "enable_newsletter": true,
+          "button_label": "APROVECHA LA PREVENTA ⇨",
+          "button_link": "shopify:\/\/collections\/all",
+          "enable_button": true
+        }
+      },
+      "1524768368258": {
+        "type": "slideshow",
+        "disabled": true,
+        "blocks": {
+          "1524768368258-0": {
+            "type": "image",
+            "settings": {
+              "title": "Bienvenido a la tienda más grande de motociclismo en México",
+              "description_short": "",
+              "image_logo": "shopify:\/\/shop_images\/logo-dlg-grande.png",
+              "title_size": 70,
+              "description_specs": "",
+              "description_specs_2": "",
+              "subheading": "ENVÍO GRATIS en ordenes mayores a $3,000 MXN",
+              "text_end": "*Aplica solo en el interior de la República Mexicana",
+              "link_text_1": "Motos nuevas",
+              "link_1": "shopify:\/\/pages\/motos-nuevas",
+              "link_text_2": "Accesorios motos",
+              "link_2": "shopify:\/\/pages\/accesorios",
+              "link_text_3": "Equipamiento",
+              "link_3": "shopify:\/\/pages\/equipamiento",
+              "color_accent": "#ff4326",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify:\/\/shop_images\/banner-1-dlg-home-min_18dc40cf-2229-4b6d-848c-41a1032b8b45.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/banner-1-home-mobile.jpg",
+              "focal_point": "center center"
+            }
+          },
+          "7257da45-1d6f-4dd9-9844-a65f4825cc02": {
+            "type": "image",
+            "settings": {
+              "title": "Descubre la nueva <strong>Monster Plus<\/strong>",
+              "description_short": "Toda la esencia de Ducati en una moto moderna y contemporánea. Aquí está la nueva Monster en la forma más compacta, esencial y ligera posible.",
+              "title_size": 80,
+              "description_specs": "111 CV (82 KW) @ 9,250 RPM",
+              "description_specs_2": "9.5 KGM (93 NM) @ 6,500 RPM",
+              "subheading": "",
+              "text_end": "",
+              "link_text_1": "Ver  monster",
+              "link_1": "#",
+              "link_text_2": "",
+              "link_2": "",
+              "link_text_3": "",
+              "link_3": "",
+              "color_accent": "rgba(0,0,0,0)",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify:\/\/shop_images\/banner-2-dlg-home-min_497b757a-0f96-403b-ac49-d1dffb083d04.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/banner-home-2-mobile.jpg",
+              "focal_point": "center center"
+            }
+          },
+          "e86f6255-26c5-4c62-8819-d2d45ca2d4aa": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "title": "",
+              "description_short": "",
+              "title_size": 80,
+              "description_specs": "",
+              "description_specs_2": "",
+              "subheading": "",
+              "text_end": "",
+              "link_text_1": "",
+              "link_1": "",
+              "link_text_2": "",
+              "link_2": "",
+              "link_text_3": "",
+              "link_3": "",
+              "color_accent": "rgba(0,0,0,0)",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify:\/\/shop_images\/Grupo_327-min.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/banner-slider-home-mobile-3.jpg",
+              "focal_point": "center center"
+            }
+          }
+        },
+        "block_order": [
+          "1524768368258-0",
+          "7257da45-1d6f-4dd9-9844-a65f4825cc02",
+          "e86f6255-26c5-4c62-8819-d2d45ca2d4aa"
+        ],
+        "settings": {
+          "section_height": "1170px",
+          "mobile_height": "100vh",
+          "parallax": false,
+          "style": "dots",
+          "autoplay": false,
+          "autoplay_speed": 5
+        }
+      },
+      "collection-header": {
+        "type": "collection-header",
+        "settings": {
+        }
+      },
+      "collection-sidebar": {
+        "type": "collection-sidebar",
+        "blocks": {
+          "1524772785241": {
+            "type": "subcollections",
+            "settings": {
+              "enable_subsubcollections": true,
+              "enable_count": true,
+              "collapsed": true
+            }
+          },
+          "1524772580942": {
+            "type": "tags_all",
+            "settings": {
+              "title": "Tags",
+              "collapsed": false
+            }
+          }
+        },
+        "block_order": [
+          "1524772785241",
+          "1524772580942"
+        ],
+        "settings": {
+          "enable_sidebar": true,
+          "filter_style": "sidebar",
+          "tags_combine": true,
+          "enable_sort": true
+        }
+      },
+      "collection-promotions": {
+        "type": "collection-promotions",
+        "blocks": {
+          "58cc70f0-3897-4cad-b4ce-f6df96e16ea7": {
+            "type": "banner",
+            "settings": {
+              "promo_collection": "frontpage",
+              "heading": "Los mejores <strong>cascos<\/strong> en <strong>dlg moto art<\/strong>",
+              "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis, nulla vel ultricies eleifend, turpis felis finibus ex, in efficitur leo lacus et ligula.<\/p>",
+              "link": "#",
+              "label": "Ver todos los cascos",
+              "image": "shopify:\/\/shop_images\/banner-coleccion-maletas.jpg",
+              "color_tint": "#000000",
+              "color_tint_opacity": 8,
+              "framed": false
+            }
+          },
+          "645d7164-57ca-45ec-a8cd-994752a9af17": {
+            "type": "menu",
+            "settings": {
+              "promo_collection": "frontpage",
+              "heading": "",
+              "link": "#",
+              "label": "Cerrados",
+              "image": "shopify:\/\/shop_images\/menu-coleccion-cerrados.png"
+            }
+          },
+          "09499f2a-3d68-4ae9-9fd7-e315ea748af0": {
+            "type": "menu",
+            "settings": {
+              "promo_collection": "frontpage",
+              "heading": "Abatibles",
+              "link": "",
+              "label": "Shop now",
+              "image": "shopify:\/\/shop_images\/menu-coleccion-abatibles.png"
+            }
+          },
+          "93c391a3-805b-4944-910f-aa4e0e8aff37": {
+            "type": "menu",
+            "settings": {
+              "promo_collection": "frontpage",
+              "heading": "",
+              "link": "",
+              "label": "Off road",
+              "image": "shopify:\/\/shop_images\/menu-coleccion-off-road.png"
+            }
+          },
+          "dc9e3422-a132-4bd4-a8c4-809950debb11": {
+            "type": "menu",
+            "settings": {
+              "promo_collection": "frontpage",
+              "heading": "",
+              "link": "",
+              "label": "Jet abiertos",
+              "image": "shopify:\/\/shop_images\/menu-coleccion-jet.png"
+            }
+          }
+        },
+        "block_order": [
+          "58cc70f0-3897-4cad-b4ce-f6df96e16ea7",
+          "645d7164-57ca-45ec-a8cd-994752a9af17",
+          "09499f2a-3d68-4ae9-9fd7-e315ea748af0",
+          "93c391a3-805b-4944-910f-aa4e0e8aff37",
+          "dc9e3422-a132-4bd4-a8c4-809950debb11"
+        ],
+        "settings": {
+          "gutter_size": 0
+        }
+      },
+      "footer-promotions": {
+        "type": "footer-promotions",
+        "settings": {
+          "hide_homepage": true,
+          "image_size": "landscape"
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "product_recommendations_heading": "También te <span>puede interesar<\/span>",
+          "related_count": 3
+        }
+      },
+      "recently-viewed": {
+        "type": "recently-viewed",
+        "settings": {
+          "show_section": false,
+          "recent_count": 3
+        }
+      },
+      "page-contact-template": {
+        "type": "page-contact-template",
+        "blocks": {
+          "page-contact-template-0": {
+            "type": "contact-form",
+            "settings": {
+              "title": "",
+              "show_phone": false,
+              "narrow_column": true
+            }
+          }
+        },
+        "block_order": [
+          "page-contact-template-0"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": true
+        }
+      },
+      "16147000264ed69ab2": {
+        "type": "featured-collections",
+        "disabled": true,
+        "blocks": {
+          "16147000264ed69ab2-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "wcycle-1",
+              "title": "Bicicletas",
+              "focal_point": "center center"
+            }
+          },
+          "16147000264ed69ab2-7": {
+            "type": "collection",
+            "settings": {
+              "collection": "accesorios",
+              "title": "",
+              "focal_point": "center center"
+            }
+          }
+        },
+        "block_order": [
+          "16147000264ed69ab2-0",
+          "16147000264ed69ab2-7"
+        ],
+        "settings": {
+          "title": "Tu gimnasio en casa con los mejores equipos",
+          "divider": false,
+          "per_row": 2,
+          "enable_gutter": true
+        }
+      },
+      "16352010196d930763": {
+        "type": "index-section-menu-home",
+        "blocks": {
+          "16352010196d930763-0": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Cascoshome_bfdb024e-360d-43fc-8fdc-889a43ca7774.png",
+              "title": "Cascos",
+              "button_link": "shopify:\/\/collections\/cascos"
+            }
+          },
+          "16352010196d930763-1": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Grupo_328.png",
+              "title": "Equipamiento",
+              "button_link": "shopify:\/\/pages\/equipamiento"
+            }
+          },
+          "16352010196d930763-2": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Grupo_327.png",
+              "title": "Seminuevas",
+              "button_link": "shopify:\/\/pages\/conoce-seminuevas"
+            }
+          },
+          "a74af659-afe6-47b3-8645-93fe48567b87": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Grupo_327_a5525b98-f0ab-4691-bafa-cae5cdc2f5f8.png",
+              "title": "Taller",
+              "button_link": "shopify:\/\/pages\/taller"
+            }
+          },
+          "e4590cf1-5fea-4ac8-aa5b-0936727f2cb4": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/ultima-imagen-menu.png",
+              "title": "Actividades",
+              "button_link": "shopify:\/\/pages\/eventos"
+            }
+          }
+        },
+        "block_order": [
+          "16352010196d930763-0",
+          "16352010196d930763-1",
+          "16352010196d930763-2",
+          "a74af659-afe6-47b3-8645-93fe48567b87",
+          "e4590cf1-5fea-4ac8-aa5b-0936727f2cb4"
+        ],
+        "settings": {
+        }
+      },
+      "1635206202f4e36155": {
+        "type": "featured-collection",
+        "disabled": true,
+        "settings": {
+          "title": "Conoce lo último del <strong>motociclismo en México<\/strong>",
+          "home_featured_products": "populares",
+          "per_row": 12,
+          "rows": 1,
+          "mobile_scrollable": true,
+          "view_all": false,
+          "divider": false
+        }
+      },
+      "agusta-motos-banner": {
+        "type": "agusta-motos-banner",
+        "settings": {
+          "bg_desktop": "shopify:\/\/shop_images\/banner-principal-augusta.jpg",
+          "bg_mobile": "shopify:\/\/shop_images\/banner-mobile-augusta.jpg",
+          "title": "<strong>No solo<\/strong> construimos <strong>Motocicletas,<\/strong>",
+          "subtitle": "Creamos <strong>Emociones<\/strong>",
+          "text_description": "Bienvenido a MV Augusta <strong>México<\/strong>",
+          "image_desktop": "shopify:\/\/shop_images\/motos-home-transparentes.png"
+        }
+      },
+      "agusta-motos-coleccion": {
+        "type": "agusta-motos-coleccion",
+        "settings": {
+          "title": "Diseño exclusivo",
+          "subtitle": "Desde cualquier ángulo",
+          "text_end": "Conoce toda la linea de accesorios originales MV Agusta.",
+          "enable_target": true,
+          "boton_label": "Ver ropa y accesorios",
+          "boton_link": "#",
+          "home_featured_products": "populares"
+        }
+      },
+      "agusta-motos-banner-secundario": {
+        "type": "agusta-motos-banner-secundario",
+        "settings": {
+          "image_logotipo": "shopify:\/\/shop_images\/logo-MV-Agusta.png",
+          "title": "Siente <strong>el poder<\/strong> en cada kilometro",
+          "subtitle": "Descubre toda la línea MV Agusta",
+          "enable_target": false,
+          "boton_url": "shopify:\/\/pages\/agusta-motos-nuevas",
+          "boton_label": "Colección 2021"
+        }
+      },
+      "agusta-motos-iconos": {
+        "type": "agusta-motos-iconos",
+        "blocks": {
+          "ff23d8a1-7197-4788-8dab-91e74b86a449": {
+            "type": "text_block",
+            "settings": {
+              "image_icono": "shopify:\/\/shop_images\/icon-1.png",
+              "description": "Tenemos el inventario más grande en México.                     Entregas y devoluciones rápidas en toda la República."
+            }
+          },
+          "e2460ce2-aeb5-4490-a3c1-cf9014698e7b": {
+            "type": "text_block",
+            "settings": {
+              "image_icono": "shopify:\/\/shop_images\/icon-2.png",
+              "description": "Ofrecemos no solo una experiencia de compra, sino una experiencia de vida."
+            }
+          },
+          "1d35d797-43be-4ad5-8bdb-9e40c239e139": {
+            "type": "text_block",
+            "settings": {
+              "image_icono": "shopify:\/\/shop_images\/icon-3.png",
+              "description": "Más de 17 años de experiencia trabajando con las mejores marcas de Italia y el mundo."
+            }
+          },
+          "b22dbf87-3074-4083-8747-7fce4a757972": {
+            "type": "text_block",
+            "settings": {
+              "image_icono": "shopify:\/\/shop_images\/icon-4.png",
+              "description": "Tu compra es segura, aceptamos todos los métodos de pagos disponibles en México."
+            }
+          },
+          "ddb07143-9867-4149-b5c1-e654bcae2dd8": {
+            "type": "text_block",
+            "settings": {
+              "image_icono": "shopify:\/\/shop_images\/icon-5.png",
+              "description": "Tu compra es segura, aceptamos todos los métodos de pagos disponibles en México."
+            }
+          }
+        },
+        "block_order": [
+          "ff23d8a1-7197-4788-8dab-91e74b86a449",
+          "e2460ce2-aeb5-4490-a3c1-cf9014698e7b",
+          "1d35d797-43be-4ad5-8bdb-9e40c239e139",
+          "b22dbf87-3074-4083-8747-7fce4a757972",
+          "ddb07143-9867-4149-b5c1-e654bcae2dd8"
+        ],
+        "settings": {
+          "title": "DLG Moto Art, la mejor y más grande tienda             para motos y accesorios MV Agusta en México"
+        }
+      },
+      "agusta-motos-seminuevas": {
+        "type": "agusta-motos-seminuevas",
+        "blocks": {
+          "96712e4b-edc1-4521-8723-e51024060b68": {
+            "type": "text_block",
+            "settings": {
+              "image_slider": "shopify:\/\/shop_images\/producto-augusta-seminueva.jpg",
+              "link_image": "#",
+              "enable_target": true,
+              "description": "MV AGUSTA BRUTALE 800 · 2020",
+              "price": "$259,500 MXN"
+            }
+          },
+          "6e6bb6cd-5d92-4370-8bf2-cee66b9ddd8e": {
+            "type": "text_block",
+            "settings": {
+              "image_slider": "shopify:\/\/shop_images\/dragster-seminueva.jpg",
+              "link_image": "#",
+              "enable_target": true,
+              "description": "MV AGUSTA DRAGSTER 800 RR",
+              "price": "$350,000 MXN"
+            }
+          },
+          "89640df9-20f6-419d-97c7-982e32f81144": {
+            "type": "text_block",
+            "settings": {
+              "image_slider": "shopify:\/\/shop_images\/turismo-veloce-seminueva.jpg",
+              "link_image": "#",
+              "enable_target": true,
+              "description": "MV AUGUSTA TURISMO VELOCE",
+              "price": "$225,000 MXN"
+            }
+          }
+        },
+        "block_order": [
+          "96712e4b-edc1-4521-8723-e51024060b68",
+          "6e6bb6cd-5d92-4370-8bf2-cee66b9ddd8e",
+          "89640df9-20f6-419d-97c7-982e32f81144"
+        ],
+        "settings": {
+          "color_bg": "#f5f5f5",
+          "title": "<strong>MV Agusta para todos.<\/strong> Conoce nuestras motos usadas certificadas",
+          "title_right": "Mv agusta SEMINUEVAS",
+          "subtitle_right": "Las mejores motos en DLG Moto Art",
+          "text_right": "<p>MV Agusta puede ser para ti también. Conoce nuestra colección de MV Agusta seminuevas en DLG Moto Art.<\/p>",
+          "button_link": "shopify:\/\/pages\/agusta-motos-nuevas",
+          "button_label": "Ver Seminuevas"
+        }
+      },
+      "agusta-motos-menu-final": {
+        "type": "agusta-motos-menu-final",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/menu-Motos-New.jpg",
+          "image_1": "shopify:\/\/shop_images\/motos-seminuevas-menu.jpg",
+          "image_2": "shopify:\/\/shop_images\/ropa-accesorios-menu.jpg",
+          "image_3": "shopify:\/\/shop_images\/servicio-menu.jpg",
+          "image_4": "shopify:\/\/shop_images\/refacciones-menu.jpg",
+          "button_text": "Motos nuevas",
+          "button_link": "#",
+          "button_text_2": "Motos seminuevas",
+          "button_link_2": "#",
+          "button_text_3": "Ropa y <br>Accesorios",
+          "button_link_3": "#",
+          "button_text_4": "Servicio",
+          "button_link_4": "#",
+          "button_text_5": "Refacciones",
+          "button_link_5": "#"
+        }
+      },
+      "agusta-motos-seminuevas-banner": {
+        "type": "agusta-motos-seminuevas-banner",
+        "settings": {
+          "bg_desktop": "shopify:\/\/shop_images\/motos-banner-augusta.jpg",
+          "bg_mobile": "shopify:\/\/shop_images\/motos-augusta-banner-mobile.jpg",
+          "title": "Conoce <strong>tu nueva bestia<\/strong>",
+          "subtitle": "Conoce toda la gama MV Agusta México",
+          "button_label": "Ver motos nuevas",
+          "button_link": "#motos-nuevas"
+        }
+      },
+      "agusta-motos-seminuevas-km": {
+        "type": "agusta-motos-seminuevas-km",
+        "settings": {
+          "image_top": "shopify:\/\/shop_images\/engine.jpg",
+          "title": "Siente <strong>el poder<\/strong>",
+          "subtitle": "En cada <strong>Kilómetro<\/strong>",
+          "text_end": "Fabricamos las máquinas más finas en dos ruedas desde 1945.",
+          "image_bottom_desktop": "shopify:\/\/shop_images\/brutale-rosso-xl.png",
+          "image_bottom_mobile": "shopify:\/\/shop_images\/moto-mobile.jpg"
+        }
+      },
+      "agusta-motos-seminuevas-banner-sec": {
+        "type": "agusta-motos-seminuevas-banner-sec",
+        "settings": {
+          "bg_desktop": "shopify:\/\/shop_images\/motos-banner-accesorios.jpg",
+          "bg_mobile": "shopify:\/\/shop_images\/motos-banner-accesorios-mobile.jpg",
+          "image_logotipo": "shopify:\/\/shop_images\/logo-MV-Agusta_512b126d-a7b5-4d27-9df3-44a61ac9366e.png",
+          "title": "diseño exclusivo.",
+          "subtitle": "Desde Cualquier Ángulo",
+          "text_end": "Descubre toda la linea de ropa y accesorios MV Agusta.",
+          "enable_target": true,
+          "button_label": "Ver Ropa y accesorios",
+          "button_link": "#"
+        }
+      },
+      "agusta-motos-seminuevas-title-tabs": {
+        "type": "agusta-motos-seminuevas-title-tabs",
+        "settings": {
+          "title": "EL DESTINO",
+          "subtitle": "TIENE MUCHOS CAMINOS",
+          "subtitle_end": "ESCOGE <strong>EL TUYO<\/strong>",
+          "description": "No hay dos pilotos iguales, por esto MV Agusta ha creado distintos         tipos de máquinas para todo tipo de piloto. Escoge la tuya."
+        }
+      },
+      "16354402231755ad0d": {
+        "type": "icon-list",
+        "blocks": {
+          "16354402231755ad0d-0": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/icon-1_9c12fd1b-5203-45ba-86b8-d00bb3cf402d.png",
+              "description": "<p><strong>Envíos rápidos a todo México.<\/strong><br\/>Enviamos a todo el territorio nacional mexicano y con entregas de 2 a 5 días hábiles.<\/p>"
+            }
+          },
+          "16354402231755ad0d-2": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/icon-3_2e8d9207-62c9-4a60-810a-825072cf3a1b.png",
+              "description": "<p><strong>Compra protegida y envíos gratis.<\/strong><br\/>En compras mayores a $3000 el envío es gratuito. Puedes rastrear tu pedido hasta que llegue a ti.<\/p>"
+            }
+          },
+          "16354402231755ad0d-1": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/icon-2_74f8c410-6362-478f-b1c3-89f716c2f559.png",
+              "description": "<p><strong>Cambia o devuelve fácil<\/strong><br\/>Si necesitas realizar un cambio cuentas con 10 días. Consulta términos y condiciones.<\/p>"
+            }
+          },
+          "16354402231755ad0d-3": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/icon-4_81226041-b30d-4f12-9f6b-8269bca0c458.png",
+              "description": "<p><strong>Pagos 100% seguros<\/strong><br\/>Aceptamos pagos con tarjeta, PayPal, MercadoPago, trasferencia, depósito bancario o en OXXO.<\/p>"
+            }
+          },
+          "c6278c41-3ac8-4c4e-ac5b-9e710c2aa4d7": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/icon-5_c99e1c8a-2bda-4d25-82d8-a6fe0855ba6d.png",
+              "description": "<p><strong>¿Necesitas ayuda?<\/strong><br\/>Contáctanos por WhatsApp, teléfono o por nuestas redes sociales y te apoyamos con tu compra.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "16354402231755ad0d-0",
+          "16354402231755ad0d-2",
+          "16354402231755ad0d-1",
+          "16354402231755ad0d-3",
+          "c6278c41-3ac8-4c4e-ac5b-9e710c2aa4d7"
+        ],
+        "settings": {
+          "title": "DLG Moto Art,",
+          "subtitle": "la mejor y más grande tienda para motos y accesorios en México"
+        }
+      },
+      "1635447480e0e439be": {
+        "type": "section-banner-bottom-end",
+        "settings": {
+          "color_bg": "#000000",
+          "image": "shopify:\/\/shop_images\/Trackday-desk.jpg",
+          "image_mobile": "shopify:\/\/shop_images\/Trackday-mob.jpg",
+          "title": "Track day",
+          "subtitle": "autódromo hermanos rodríguez",
+          "description": "<p><strong>16 · DICIEMBRE · 2022<\/strong><\/p><p><strong>Costo pagando antes del 14 de diciembre:<br\/>$7,500.00 MXN<br\/><br\/><\/strong>Registro por invitación.<br\/><br\/><\/p>",
+          "enable_target_link": false,
+          "button_link": "https:\/\/wa.me\/5215550213847",
+          "button_label": "",
+          "price": "",
+          "enable_target": false,
+          "button_link_2": "https:\/\/wa.me\/5215550213847",
+          "button_label_2": "Más información"
+        }
+      },
+      "16354533103a51bff3": {
+        "type": "videos_canal",
+        "blocks": {
+          "16354533103a51bff3-1": {
+            "type": "text_block",
+            "settings": {
+              "iframe_link": "https:\/\/www.youtube.com\/embed\/DtwO4bLS0f8"
+            }
+          },
+          "92534f36-581e-405e-8f9b-7df7a2bb1a60": {
+            "type": "text_block",
+            "settings": {
+              "iframe_link": "https:\/\/www.youtube.com\/embed\/CYgX49x_tMM"
+            }
+          },
+          "cba37a19-359b-4f44-890a-0b9cf891e23c": {
+            "type": "text_block",
+            "settings": {
+              "iframe_link": "https:\/\/www.youtube.com\/embed\/hGaM4LlTQxM"
+            }
+          }
+        },
+        "block_order": [
+          "16354533103a51bff3-1",
+          "92534f36-581e-405e-8f9b-7df7a2bb1a60",
+          "cba37a19-359b-4f44-890a-0b9cf891e23c"
+        ],
+        "settings": {
+          "image_bg": "shopify:\/\/shop_images\/background.jpg",
+          "title": "Dlg Moto Art,",
+          "subtitle": "un espacio para compartir todo <br> lo que sabemos Sobre motociclismo en México",
+          "button_link": "https:\/\/www.youtube.com\/channel\/UCoZsLNZfwOoK8DBhb8e-WZw",
+          "text_end": "Conoce de lo último en motociclismo en México"
+        }
+      },
+      "16355289356e98f0ac": {
+        "type": "collection-product-list",
+        "settings": {
+          "home_featured_products": "mas-vendidos-diciembre-2022",
+          "title": "PRODUCTOS <strong>más vendidos<\/strong>"
+        }
+      },
+      "scrambler-motos-iconos": {
+        "type": "scrambler-motos-iconos",
+        "settings": {
+          "title": "DLG Moto Art, <strong>la mejor y más grande tienda <\/strong> para motos y accesorios Scrambler en México"
+        }
+      },
+      "content-banner-txt-button-ducati": {
+        "type": "content-banner-txt-button-ducati",
+        "settings": {
+          "bg_desktop_sencillo": "shopify:\/\/shop_images\/banner-motos-nuevas-ducati_f6fbdd30-9edf-4e54-a7f9-5b6dcffcbfdb.jpg",
+          "bg_mobile_sencillo": "shopify:\/\/shop_images\/banner-motos-nuevas-principal-mobile.jpg",
+          "title": "Más que <strong>lineas rojas,<\/strong>",
+          "subtitle": "la evolución nunca para",
+          "text_end": "Conoce todos los modelos Ducati en DLG Moto Art",
+          "enable_target": true,
+          "button_link": "#motos-nuevas",
+          "button_text": "Ver motos nuevas"
+        }
+      },
+      "content-description-ducati-short": {
+        "type": "content-description-ducati-short",
+        "settings": {
+          "logotipo_imagen": "shopify:\/\/shop_images\/logo-Ducati.jpg",
+          "title": "<strong>Formas sinuosas, estilizadas y seductoras,<\/strong>  para un estilo atemporal que se convierte en un punto de referencia inalcanzable.",
+          "description": "<p>Las motos más fascinantes del mundo son el fruto del empeño dedicado en las competiciones y la expresión más pura de la técnica refinada, del diseño inconfundible y de la pasión por la moto. Ducati es un testigo orgulloso del Made in Italy, la esencia del estilo italiano se manifiesta en las líneas de todas sus motos.<\/p>"
+        }
+      },
+      "ducati-banner-secundario": {
+        "type": "ducati-banner-secundario",
+        "settings": {
+          "image_banner_secondary": "shopify:\/\/shop_images\/banner-ducati-nuevas-secundario.jpg",
+          "image_banner_mobile_secondary": "shopify:\/\/shop_images\/banner-secundario-motos-nuevas-mobile.jpg",
+          "title": "<span><strong>Ducati<\/strong> es un emblema de estilo y clase,<\/span> conoce la colección más grande de ropa y accesorios en México.",
+          "subtitle": "",
+          "enable_target": true,
+          "boton_url": "#",
+          "boton_label": "VER ROPA Y ACCESORIOS"
+        }
+      },
+      "ducati-motos-nuevas-title-tabs": {
+        "type": "ducati-motos-nuevas-title-tabs",
+        "settings": {
+          "title": "De <strong>Ducati<\/strong> para México",
+          "description": "Los puntos fuertes de Ducati han sido siempre el estilo dinámico, la compactación visual de los volúmenes y la elegancia de las líneas con las proporciones."
+        }
+      },
+      "scrambler-motos-seminuevas-banner": {
+        "type": "scrambler-motos-seminuevas-banner",
+        "settings": {
+          "bg_desktop": "shopify:\/\/shop_images\/banner_scrambler_motos_nuevas_ab37d9ca-13ce-4f07-a1f4-dc2d09f40420.jpg",
+          "bg_mobile": "shopify:\/\/shop_images\/banner-principal-motos-nuevas-scrambler-mobile_c162c574-4cb5-4839-ac9e-435ddaa4f118.jpg",
+          "title": "Conoce a toda",
+          "subtitle": "La familia scrambler",
+          "text_end": "#joyvolution!",
+          "button_label": "Ver motos nuevas",
+          "button_link": "#motos-nuevas"
+        }
+      },
+      "scrambler-motos-seminuevas-short-des": {
+        "type": "scrambler-motos-seminuevas-short-des",
+        "settings": {
+          "image_logotipo": "shopify:\/\/shop_images\/logotipo_scrambler.png",
+          "image_icono": "shopify:\/\/shop_images\/icon-more-scrambler.png",
+          "title": "#Joyvolution!",
+          "description": "<p>Inconformista, económica y esencial, la nueva Ducati Scrambler® representa la perfecta combinación de tradición e innovación. La renovada Ducati Scrambler es más moderna, cómoda y segura, y garantiza aún más diversión desenfadada en ‘The Land of Joy’.<\/p>"
+        }
+      },
+      "scrambler-motos-seminuevas-banner-sec": {
+        "type": "scrambler-motos-seminuevas-banner-sec",
+        "settings": {
+          "bg_desktop": "shopify:\/\/shop_images\/imagen_banner-secundario-nuevas-scrambler.jpg",
+          "bg_mobile": "shopify:\/\/shop_images\/banner-secundario-motos-nuevas-scrambler-mobile.jpg",
+          "title": "Hay un accesorio para cada actitud. ¿Cuál es la tuya?",
+          "subtitle": "Descubre el catálogo más completo de ropa y equipamiento Scrambler en DLG Moto Art",
+          "enable_target": true,
+          "button_label": "Ver ropa y accesorios",
+          "button_link": "#"
+        }
+      },
+      "seminuevas-banner": {
+        "type": "seminuevas-banner",
+        "settings": {
+          "image_desktop": "shopify:\/\/shop_images\/banner_seccion_seminuevas.jpg",
+          "image_mobile": "shopify:\/\/shop_images\/banner_seminuevas_principal_mobile.jpg",
+          "title": "Encuentra la colección más completa",
+          "subtitle": "de motos <span>seminuevas certificadas<\/span> en México",
+          "enable_target": false,
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "seminuevas-texto-simple": {
+        "type": "seminuevas-texto-simple",
+        "settings": {
+          "bg_color": "#f5f5f5",
+          "title": "Las mejores motos seminuevas <strong>en DLG Moto Art<\/strong>",
+          "description": "<p>La moto de tus sueños puede ser para ti también. Conoce nuestra colección de seminuevas en DLG Moto Art. <\/p><p>Tenemos opciones de pago distintas y flexibles. Ofrecemos financiamiento y garantía de mínimo 30 días.<\/p><p><em>Financiamiento y garantía de 30 días.<\/em><\/p>"
+        }
+      },
+      "seminuevas-ducati": {
+        "type": "seminuevas-ducati",
+        "blocks": {
+          "9ecd4e9d-f445-4874-afca-a330504b35c0": {
+            "type": "text_block",
+            "disabled": true,
+            "settings": {
+              "bg_block": "#f5f5f5",
+              "title": "Monster 937 Plus",
+              "description": "La nueva Monster representa toda la esencia de Ducati en la forma más ligera, compacta y esencial posible.",
+              "description_label": "111 cv",
+              "description_label_motor": "2000 kms",
+              "description_label_total": "",
+              "description_label_par": "2022",
+              "price": "$273,240 mxn",
+              "enable_target": true,
+              "button_label": "Contactar a un asesor",
+              "button_link": "https:\/\/wa.me\/5215550213847?text=Quiero%20contactar%20a%20un%20ejecutivo",
+              "image": "shopify:\/\/shop_images\/monster937plus.jpg"
+            }
+          },
+          "040d0e61-2e50-4ab9-be20-197660a06393": {
+            "type": "text_block",
+            "disabled": true,
+            "settings": {
+              "bg_block": "#f5f5f5",
+              "title": "Multistrada 1260s",
+              "description": "La Multistrada 1260 no es una trail convencional, pues la propia marca afirma que la suya es una deportiva y una turismo al mismo tiempo, y además sirve para el día a día e incluso para el off-road, de ahí los distintos modos de conducción para adecuarla a cada circunstancia.",
+              "description_label": "158 CV a 9.500 rpm",
+              "description_label_motor": "12,000 kms",
+              "description_label_total": "129 Nm a 7.500 rpm",
+              "description_label_par": "2020",
+              "price": "$318,000",
+              "enable_target": true,
+              "button_label": "Contactar a un asesor",
+              "button_link": "https:\/\/wa.me\/5215550213847?text=Quiero%20contactar%20a%20un%20ejecutivo",
+              "image": "shopify:\/\/shop_images\/multistrada_1260s_portada_bc286ccf-d8ba-431a-98d5-699a529771ba.jpg"
+            }
+          },
+          "f449389e-4b94-4b41-92bd-99322d623066": {
+            "type": "text_block",
+            "settings": {
+              "bg_block": "#f5f5f5",
+              "title": "Panigale V4",
+              "description": "La Ducati Panigale V4 2020 es todavía más avanzada y deportiva que su versión anterior. Para conseguir dar ese nuevo paso, los diseñadores de Ducati han recurrido a instalar en la versión 2020 componentes de la Panigale V4 R de 2019",
+              "description_label": "214 CV a 13.000 rpm",
+              "description_label_motor": "6,500 kms",
+              "description_label_total": "124 Nm a 10.000 rpm",
+              "description_label_par": "2020",
+              "price": "$497,000 mxn",
+              "enable_target": true,
+              "button_label": "Contactar a un asesor",
+              "button_link": "https:\/\/wa.me\/5215550213847?text=Quiero%20contactar%20a%20un%20ejecutivo",
+              "image": "shopify:\/\/shop_images\/thumbnail_IMG_6864.jpg"
+            }
+          },
+          "517bc7fa-41e6-41b5-9309-b229caee42f6": {
+            "type": "text_block",
+            "settings": {
+              "bg_block": "#f5f5f5",
+              "title": "Monster 1200s 25 Aniversario",
+              "description": "Ducati ha querido rendir homenaje a los 25 primeros años de su Monster con esta edición especial de la 1200 que, junto con una decoración exclusiva con la bandera tricolor italiana, tiene algunos detalles que la hacen exclusiva como sus ruedas Marchesini, piezas realizadas en aluminio mecanizado, protectores en fibra de carbono o elementos Ohlins de última generación en sus suspensiones.",
+              "description_label": "147 cv",
+              "description_label_motor": "2,000 kms",
+              "description_label_total": "124 nm",
+              "description_label_par": "2019",
+              "price": "$375,000 mxn",
+              "enable_target": true,
+              "button_label": "Contactar a un asesor",
+              "button_link": "https:\/\/wa.me\/5215550213847?text=Quiero%20contactar%20a%20un%20ejecutivo",
+              "image": "shopify:\/\/shop_images\/thumbnail_IMG_6554.jpg"
+            }
+          },
+          "faff7812-55a7-4ebb-ac5e-17d396debb37": {
+            "type": "text_block",
+            "settings": {
+              "bg_block": "#f5f5f5",
+              "title": "Diavel 1260 S",
+              "description": "La Ducati Diavel 1260 se renueva con el motor Ducati Testastretta DVT 1262, logrando una conducción mucho más llena y suave. Además implementa paquete electrónico de última generación y mejoras en el ciclo.",
+              "description_label": "117 kW (159 hp) @ 9,500 rpm",
+              "description_label_motor": "8,000 kms",
+              "description_label_total": "",
+              "description_label_par": "2019",
+              "price": "$330,000 mxn",
+              "enable_target": true,
+              "button_label": "Contactar a un asesor",
+              "button_link": "https:\/\/wa.me\/5215550213847?text=Quiero%20contactar%20a%20un%20ejecutivo",
+              "image": "shopify:\/\/shop_images\/thumbnail_IMG_8657.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "9ecd4e9d-f445-4874-afca-a330504b35c0",
+          "040d0e61-2e50-4ab9-be20-197660a06393",
+          "f449389e-4b94-4b41-92bd-99322d623066",
+          "517bc7fa-41e6-41b5-9309-b229caee42f6",
+          "faff7812-55a7-4ebb-ac5e-17d396debb37"
+        ],
+        "settings": {
+        }
+      },
+      "seminuevas-scrambler": {
+        "type": "seminuevas-scrambler",
+        "blocks": {
+          "7a5197d2-5f72-458c-a6ee-71ee10c0ff43": {
+            "type": "text_block",
+            "settings": {
+              "bg_block": "#f5f5f5",
+              "title": "Scrambler Icon Dark",
+              "description": "Esta motocicleta nace para exaltar la propia personalidad del motociclista y satisfacer los deseos más oscuros de todos los Scrambleristas.",
+              "description_label": "53,6 kW (73 hp) @ 8,250 rpm",
+              "description_label_motor": "1000 Kms",
+              "description_label_total": "6,7 Kgm (66,2 Nm) @ 5750 rpm",
+              "description_label_par": "2022",
+              "price": "$207,000  mxn",
+              "enable_target": true,
+              "button_label": "Contactar a un asesor",
+              "button_link": "https:\/\/wa.me\/5215550213847?text=Quiero%20contactar%20a%20un%20ejecutivo",
+              "image": "shopify:\/\/shop_images\/thumbnail_IMG_7999.jpg"
+            }
+          },
+          "32cdd0b7-1cbb-4a9f-aa3a-9aab95084ba2": {
+            "type": "text_block",
+            "disabled": true,
+            "settings": {
+              "bg_block": "#f5f5f5",
+              "title": "Scrambler Sixty2",
+              "description": "La Ducati Scrambler Sixty2 es un planteamiento muy similar al resto de las Scrambler, pero con motor y componentes mucho más accesibles.",
+              "description_label": "41 CV a 8.750 rpm",
+              "description_label_motor": "8,000 kms",
+              "description_label_total": "34.3 Nm a 7.750 rpm",
+              "description_label_par": "2016",
+              "price": "$110,000 mxn",
+              "enable_target": true,
+              "button_label": "Contactar a un asesor",
+              "button_link": "https:\/\/wa.me\/5215550213847?text=Quiero%20contactar%20a%20un%20ejecutivo",
+              "image": "shopify:\/\/shop_images\/thumbnail_IMG_8686.jpg"
+            }
+          },
+          "8e3d88fc-5d4b-4a11-960b-cc110929967d": {
+            "type": "text_block",
+            "settings": {
+              "bg_block": "#f5f5f5",
+              "title": "Scrambler 1100 Special Grey",
+              "description": "Su imagen te cautiva, su estampa te hipnotiza y su comportamiento te deslumbra… pero ¡cuidado! su ponzoña te puede infectar y poseer para siempre. Así es la nueva Ducati Scrambler 1100 Special y su tóxico pero dulce veneno.",
+              "description_label": "86 cv",
+              "description_label_motor": "6,000 kms",
+              "description_label_total": "88.4 Nm a 4.750 rpm",
+              "description_label_par": "2018",
+              "price": "$200,000 mxn",
+              "enable_target": true,
+              "button_label": "Contactar a un asesor",
+              "button_link": "https:\/\/wa.me\/5215550213847?text=Quiero%20contactar%20a%20un%20ejecutivo",
+              "image": "shopify:\/\/shop_images\/thumbnail_IMG_8955.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "7a5197d2-5f72-458c-a6ee-71ee10c0ff43",
+          "32cdd0b7-1cbb-4a9f-aa3a-9aab95084ba2",
+          "8e3d88fc-5d4b-4a11-960b-cc110929967d"
+        ],
+        "settings": {
+        }
+      },
+      "seminuevas-agusta": {
+        "type": "seminuevas-agusta",
+        "blocks": {
+          "65ecceab-3558-42bb-ab24-b95964dc64e8": {
+            "type": "text_block",
+            "disabled": true,
+            "settings": {
+              "bg_block": "#f5f5f5",
+              "title": "Brutale 800",
+              "description": "La MV Agusta Brutale 800 es una versión 'vitaminada' de la naked italiana. Mejora el rendimiento de su tricilíndrico y recibe retoques estéticos espectaculares.",
+              "description_label": "116.00 cv a 11600 rpm",
+              "description_label_motor": "10,000 kms",
+              "description_label_total": "83.00 Nm a 7600 rpm",
+              "description_label_par": "2018",
+              "price": "$210,000 mxn",
+              "enable_target": true,
+              "button_label": "Contactar a un asesor",
+              "button_link": "https:\/\/wa.me\/5215550213847?text=Quiero%20contactar%20a%20un%20ejecutivo",
+              "image": "shopify:\/\/shop_images\/thumbnail_IMG_8479.jpg"
+            }
+          },
+          "4b1d7b5d-2f80-4adb-87bc-d30c04968916": {
+            "type": "text_block",
+            "disabled": true,
+            "settings": {
+              "bg_block": "#f5f5f5",
+              "title": "F4 RR CorsaCorta",
+              "description": "La F4 RR es el máximo exponente del perfil racing de la marca e introduce novedades en todas sus facetas respecto a anteriores modelos F4.",
+              "description_label": "201 a 13.400rpm",
+              "description_label_motor": "11,000 kms",
+              "description_label_total": "114 Nm a 9.200rpm",
+              "description_label_par": "2012",
+              "price": "$220,000 mxn",
+              "enable_target": true,
+              "button_label": "Contactar a un asesor",
+              "button_link": "https:\/\/wa.me\/5215550213847?text=Quiero%20contactar%20a%20un%20ejecutivo",
+              "image": "shopify:\/\/shop_images\/thumbnail_IMG_8612.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "65ecceab-3558-42bb-ab24-b95964dc64e8",
+          "4b1d7b5d-2f80-4adb-87bc-d30c04968916"
+        ],
+        "settings": {
+        }
+      },
+      "seminuevas-otras": {
+        "type": "seminuevas-otras",
+        "blocks": {
+          "c427761c-dbc1-4019-a857-ed7485a1c0b4": {
+            "type": "text_block",
+            "disabled": true,
+            "settings": {
+              "bg_block": "#f5f5f5",
+              "title": "Motoguzzi V7III Stone",
+              "description": "Estamos ante una Moto Guzzi V7 muy mejorada a todos los niveles que ofrece más potencia para su clásico motor de dos clindros en V",
+              "description_label": "52 CV a 6.200 rpm",
+              "description_label_motor": "124 Kms",
+              "description_label_total": "44 Nm a 4.900 rpm",
+              "description_label_par": "2017",
+              "price": "$195,000 mxn",
+              "enable_target": true,
+              "button_label": "Contactar a un asesor",
+              "button_link": "https:\/\/wa.me\/5215550213847?text=Quiero%20contactar%20a%20un%20ejecutivo",
+              "image": "shopify:\/\/shop_images\/thumbnail_IMG_7690.jpg"
+            }
+          },
+          "02856bb2-53d1-458e-9c81-c264d25c414b": {
+            "type": "text_block",
+            "settings": {
+              "bg_block": "#f5f5f5",
+              "title": "Indian FTR 1200s Race Replica",
+              "description": "La FTR 1200 S Race Réplica cuenta con 3 modos de conducción los cuales se caracterizan con un funcionamiento más o menos intrusivo del ABS y del control de tracción, además de un carácter más tranquilo o salvaje del motor.",
+              "description_label": "91.7 KW (123 HP)",
+              "description_label_motor": "314 Kms",
+              "description_label_total": "117.9 N m\/87  ft-lb",
+              "description_label_par": "2019",
+              "price": "$295,000 mxn",
+              "enable_target": true,
+              "button_label": "Contactar a un asesor",
+              "button_link": "https:\/\/wa.me\/5215550213847?text=Quiero%20contactar%20a%20un%20ejecutivo",
+              "image": "shopify:\/\/shop_images\/thumbnail_IMG_7719.jpg"
+            }
+          },
+          "a9ed788c-20cf-44b8-b2a2-4a4efa0799c5": {
+            "type": "text_block",
+            "settings": {
+              "bg_block": "#f5f5f5",
+              "title": "Buell Ulysses XB12XT",
+              "description": "La moto Buell Ulysses XB12X del año 2009 fue lanzada al mercado por la empresa Buell y pertenece a la serie de Buell ulysses xb12x que abarca motos de diferentes cilindradas.",
+              "description_label": "103.00 cv (75.2 kw) a 6800 rpm",
+              "description_label_motor": "3,400 Kms",
+              "description_label_total": "113.90 Nm a 6000 rpm",
+              "description_label_par": "2009",
+              "price": "$125,000 mxn",
+              "enable_target": true,
+              "button_label": "Contactar a un asesor",
+              "button_link": "https:\/\/wa.me\/5215550213847?text=Quiero%20contactar%20a%20un%20ejecutivo",
+              "image": "shopify:\/\/shop_images\/thumbnail_IMG_7006.jpg"
+            }
+          },
+          "e2b3884e-37aa-4e0e-ae8a-2df52483988f": {
+            "type": "text_block",
+            "settings": {
+              "bg_block": "#f5f5f5",
+              "title": "Kymco Xciting S 400",
+              "description": "La XCITING S 400 de Kymco es lo último en términos de movilidad urbana, lo mejor, esto porque cada pequeño detalle a sido diseñado para ser perfecto, y esto se nota en la gran calidad de todos sus componentes.",
+              "description_label": "34 cv",
+              "description_label_motor": "1,400 kms",
+              "description_label_total": "",
+              "description_label_par": "2022",
+              "price": "$155,000 mxn",
+              "enable_target": true,
+              "button_label": "Contactar a un asesor",
+              "button_link": "https:\/\/wa.me\/5215550213847?text=Quiero%20contactar%20a%20un%20ejecutivo",
+              "image": "shopify:\/\/shop_images\/thumbnail_IMG_8463.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "c427761c-dbc1-4019-a857-ed7485a1c0b4",
+          "02856bb2-53d1-458e-9c81-c264d25c414b",
+          "a9ed788c-20cf-44b8-b2a2-4a4efa0799c5",
+          "e2b3884e-37aa-4e0e-ae8a-2df52483988f"
+        ],
+        "settings": {
+        }
+      },
+      "seminuevas-contenedor-icons-business": {
+        "type": "seminuevas-contenedor-icons-business",
+        "blocks": {
+          "10db69c0-098a-450c-b5db-204cbe3fdfc2": {
+            "type": "text_block",
+            "settings": {
+              "image_icono": "shopify:\/\/shop_images\/icono_financiamiento.png",
+              "title": "FINANCIAMIENTO",
+              "description": "<p>Contamos con planes de financiamiento a partir de un 35% de enganche y el resto se puede financiar en 12, 24 ó 36 meses.<\/p>"
+            }
+          },
+          "520e01e8-e890-4451-93d7-c2a350b4f2d5": {
+            "type": "text_block",
+            "settings": {
+              "image_icono": "shopify:\/\/shop_images\/icono_soporte.png",
+              "title": "SOPORTE",
+              "description": "<p>De lunes a viernes de 9:00 a 19:00 y sábados de 9:00 a 14:00 hrs GMT-6.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "10db69c0-098a-450c-b5db-204cbe3fdfc2",
+          "520e01e8-e890-4451-93d7-c2a350b4f2d5"
+        ],
+        "settings": {
+        }
+      },
+      "seminuevas-icons-description": {
+        "type": "seminuevas-icons-description",
+        "blocks": {
+          "020bc846-ed91-4e04-b329-f9811fc112b6": {
+            "type": "text_block",
+            "settings": {
+              "image_icono": "shopify:\/\/shop_images\/icon-1_d573ec78-0e8f-4d39-9a0c-10e8057f6cf8.png",
+              "description": "Envíos rápidos a todo México. Enviamos a todo el territorio nacional mexicano y con entregas de 2 a 5 días hábiles."
+            }
+          },
+          "9c97c37d-6e70-45e8-82bd-fc6fd8d3322d": {
+            "type": "text_block",
+            "settings": {
+              "image_icono": "shopify:\/\/shop_images\/icon-2_8cb8d738-da9f-496b-b82f-2f3093f6d1b3.png",
+              "description": "Cambia o devuelve fácil. Si no te sientes satisfecho por el producto que adquiriste cuentas con 30 días para solicitar cambio o devolución."
+            }
+          },
+          "67b48d32-baeb-4653-9530-5f528bc5290a": {
+            "type": "text_block",
+            "settings": {
+              "image_icono": "shopify:\/\/shop_images\/icon-3_b7f7b6c7-f4dc-47ea-b2a3-a029b12cc591.png",
+              "description": "Compra protegida y envíos gratis. En compras mayores a $3000 el envío es gratuito. Puedes rastrear tu pedido hasta que llegue a ti."
+            }
+          },
+          "e9ff658f-d192-49e6-9cfd-5653d2b62fce": {
+            "type": "text_block",
+            "settings": {
+              "image_icono": "shopify:\/\/shop_images\/icon-4_9f7d6b4c-b8de-41bd-bffc-ab3a3d0f3943.png",
+              "description": "Pagos 100% seguros Aceptamos pagos con tarjeta, PayPal, MercadoPago, trasferencia, depósito bancario o en OXXO."
+            }
+          },
+          "1405fc90-ccdc-4406-a22f-40b02bc27673": {
+            "type": "text_block",
+            "settings": {
+              "image_icono": "shopify:\/\/shop_images\/icon-5_a3d8e7eb-7fe6-487b-bb00-d6b61901380a.png",
+              "description": "¿Necesitas ayuda? Contáctanos por WhatsApp, teléfono o por nuestas redes sociales y te apoyamos con tu compra."
+            }
+          }
+        },
+        "block_order": [
+          "020bc846-ed91-4e04-b329-f9811fc112b6",
+          "9c97c37d-6e70-45e8-82bd-fc6fd8d3322d",
+          "67b48d32-baeb-4653-9530-5f528bc5290a",
+          "e9ff658f-d192-49e6-9cfd-5653d2b62fce",
+          "1405fc90-ccdc-4406-a22f-40b02bc27673"
+        ],
+        "settings": {
+          "title": "DLG Moto Art, <strong>la mejor y más grande tienda<\/strong> para motos y accesorios en México"
+        }
+      },
+      "menu-bottom-agusta": {
+        "type": "menu-bottom-agusta",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/link-menu-bottom-agusta-1.jpg",
+          "image_1": "shopify:\/\/shop_images\/link-menu-bottom-agusta-2_f48a93c2-8ba6-4d4e-b990-a3bb7f484946.jpg",
+          "image_2": "shopify:\/\/shop_images\/link-menu-agusta-3.jpg",
+          "image_3": "shopify:\/\/shop_images\/link-menu-bottom-agusta-4.jpg",
+          "image_4": "shopify:\/\/shop_images\/link-menu-bottom-agusta-5.jpg",
+          "button_text": "Motos Nuevas",
+          "button_link": "shopify:\/\/pages\/agusta-motos-nuevas",
+          "button_text_2": "Motos seminuevas",
+          "button_link_2": "shopify:\/\/pages\/seminuevas-agusta",
+          "button_text_3": "Equipamiento",
+          "button_link_3": "#",
+          "button_text_4": "servicio",
+          "button_link_4": "#",
+          "button_text_5": "Accesorios <br> para motos",
+          "button_link_5": "#"
+        }
+      },
+      "menu-bottom-ducati": {
+        "type": "menu-bottom-ducati",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/parallelogram-1_68c9b005-c2c8-49c4-89a3-2866fb431c20.jpg",
+          "image_1": "shopify:\/\/shop_images\/parallelogram-2_399d8876-17b1-415b-b0a8-0ac325eaa70b.jpg",
+          "image_2": "shopify:\/\/shop_images\/parallelogram-3-a_b32f9c20-179b-4425-a403-865c2be5ba40.jpg",
+          "image_3": "shopify:\/\/shop_images\/parallelogram-4_f7eb8d5c-c908-4233-8060-2e134a5d64f5.jpg",
+          "image_4": "shopify:\/\/shop_images\/parallelogram-5_5e3c2393-cb71-4cd3-b318-08f73bc80cd9.jpg",
+          "button_text": "MOTOS NUEVAS",
+          "button_link": "shopify:\/\/pages\/ducati-motos-nuevas",
+          "button_text_2": "MOTOS SEMINUEVAS",
+          "button_link_2": "shopify:\/\/pages\/seminuevas-ducati",
+          "button_text_3": "ROPA Y ACCESORIOS",
+          "button_link_3": "shopify:\/\/pages\/accesorios",
+          "button_text_4": "SERVICIO",
+          "button_link_4": "shopify:\/\/pages\/taller",
+          "button_text_5": "REFACCIONES Y <br> ACCESORIOS",
+          "button_link_5": "#"
+        }
+      },
+      "menu-bottom-scrambler": {
+        "type": "menu-bottom-scrambler",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/motos-nuevas-menu-scrambler.jpg",
+          "image_1": "shopify:\/\/shop_images\/menu-bottom-scrambler-2.jpg",
+          "image_2": "shopify:\/\/shop_images\/menu-bottom-scrambler-3.jpg",
+          "image_3": "shopify:\/\/shop_images\/menu-bottom-scrambler-4.jpg",
+          "image_4": "shopify:\/\/shop_images\/menu-bottom-scrambler-5.jpg",
+          "button_text": "Motos Nuevas",
+          "button_link": "shopify:\/\/pages\/scrambler-motos-nuevas",
+          "button_text_2": "Motos Seminuevas",
+          "button_link_2": "shopify:\/\/pages\/scrambler-seminuevas",
+          "button_text_3": "Ropa y <br>Accesorios",
+          "button_link_3": "#",
+          "button_text_4": "Servicio",
+          "button_link_4": "#",
+          "button_text_5": "Refacciones",
+          "button_link_5": "#"
+        }
+      },
+      "eventos-banner": {
+        "type": "eventos-banner",
+        "settings": {
+          "video_banner_check": true,
+          "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/907ade970d514242b08ee0b33455931b.mp4",
+          "video_url_mobile": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/2d634e6210914471af5fbe8109f69c8b.mp4",
+          "image_banner_check": false,
+          "image_banner": "shopify:\/\/shop_images\/banner-seccion-eventos.jpg",
+          "image_banner_mobile": "shopify:\/\/shop_images\/banner-actividades-mobile.jpg"
+        }
+      },
+      "eventos-bloque-texto-simple": {
+        "type": "eventos-bloque-texto-simple",
+        "settings": {
+          "bg_color": "#f5f5f5",
+          "title": "Sé parte de la comunidad <strong>DLG Moto Art<\/strong>",
+          "description": "<p>DLG Moto Art es mucho más que solo subirte a tu motocicleta y manejar. Creamos comunidad y un estilo de vida, a través de experiencias exclusivas para nuestros clientes. <br\/><br\/>Rodadas, Track Days, reuniones, eventos especiales, escuelas de manejo, etc. son parte de DLG Moto Art.<\/p>"
+        }
+      },
+      "eventos-ciudad": {
+        "type": "eventos-ciudad",
+        "blocks": {
+          "17c1e0dd-96a4-46b4-83df-8f1c2e1b8632": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Mv-Salida-BanIntDesktop.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/Mv-Salida-Ban2-MOB_90951f6f-22de-486b-8ccd-969edde99982.jpg",
+              "title": "SALIDA MV AGUSTA",
+              "subtitle": "HACIA EL NEVADO DE TOLUCA",
+              "description": "<p><strong>CITA EN DLG MOTO ART: <\/strong><\/p><p>Eje 7 Sur (Extremadura) 111,<br\/>Col. Insurgentes Mixcoac,<br\/>Benito Juarez, 03920, CDMX, México.<br\/><br\/><strong>1RO · OCTUBRE · 2022<\/strong><\/p>",
+              "price": "",
+              "enable_target": true,
+              "button_label": "Más Información",
+              "button_link": "https:\/\/wa.me\/5215550213847"
+            }
+          }
+        },
+        "block_order": [
+          "17c1e0dd-96a4-46b4-83df-8f1c2e1b8632"
+        ],
+        "settings": {
+        }
+      },
+      "eventos-carretera": {
+        "type": "eventos-carretera",
+        "blocks": {
+          "e25ea719-0644-49b2-b916-a16bd54d1ce6": {
+            "type": "text_block",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imagen-evento.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/imagen_eventos_mobile.jpg",
+              "title": "CURSO DE MANEJO",
+              "subtitle": "Fecha por confirmar",
+              "description": "<p>Instrucción y práctica para conocer la postura más adecuada en cualquier situación del motociclismo deportivo, que también es apropiada para entender la dinámica de una motocicleta de ciudad, turismo o carretera.<\/p><p><strong>Horario: 10:00 AM a 2 PM<\/strong><\/p><p><strong>Sede: Kartódromo Sierra Esmeralda<\/strong><\/p><p><a href=\"#\" target=\"_blank\" title=\"#\">Ver más<\/a><\/p>",
+              "price": "$2,000.00",
+              "enable_target": true,
+              "button_label": "Reserva Aquí",
+              "button_link": "#"
+            }
+          },
+          "5f578ed0-07b2-4f88-ab24-e5a32d63b644": {
+            "type": "text_block",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/imagen-evento.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/imagen_eventos_mobile.jpg",
+              "title": "CURSO DE MANEJO",
+              "subtitle": "Fecha por confirmar",
+              "description": "<p>Instrucción y práctica para conocer la postura más adecuada en cualquier situación del motociclismo deportivo, que también es apropiada para entender la dinámica de una motocicleta de ciudad, turismo o carretera.<\/p><p><strong>Horario: 10:00 AM a 2 PM<\/strong><\/p><p><strong>Sede: Kartódromo Sierra Esmeralda<\/strong><\/p><p><a href=\"#\" target=\"_blank\" title=\"#\">Ver más<\/a><\/p>",
+              "price": "$2,000.00",
+              "enable_target": true,
+              "button_label": "Reserva Aquí",
+              "button_link": "#"
+            }
+          }
+        },
+        "block_order": [
+          "e25ea719-0644-49b2-b916-a16bd54d1ce6",
+          "5f578ed0-07b2-4f88-ab24-e5a32d63b644"
+        ],
+        "settings": {
+        }
+      },
+      "eventos-track": {
+        "type": "eventos-track",
+        "blocks": {
+          "ed95d6c3-7b87-4e9b-b246-e9d8d47f6ada": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/TD-Jul22-Desktop-Ban_b887f9a6-0476-4a07-ade9-1936d8895d8b.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/TD-Jul22-Desktop-Ban_b887f9a6-0476-4a07-ade9-1936d8895d8b.jpg",
+              "title": "Track Day",
+              "subtitle": "Hermanos Rodríguez",
+              "description": "<p><strong>INCLUYE: <\/strong><\/p><p>· Prueba de motos de demostración<br\/>· Acceso a pista y Pits<br\/>· Revisión técnica<br\/>· Bebidas Hidratantes<br\/>· Coffee Break \/ Comida<\/p><p><strong>NIVEL DE MANEJO: <\/strong><\/p><p>· Principiante<br\/>· Intermedio<br\/>· Avanzado<\/p><p><br\/><strong>16 · DICIEMBRE · 2022<\/strong><\/p>",
+              "price": "$7,500.00 MXN",
+              "enable_target": false,
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "ed95d6c3-7b87-4e9b-b246-e9d8d47f6ada"
+        ],
+        "settings": {
+        }
+      },
+      "eventos-road": {
+        "type": "eventos-road",
+        "settings": {
+        }
+      },
+      "eventos-pasados": {
+        "type": "eventos-pasados",
+        "settings": {
+          "header": "ACTIVIDADES ANTERIORES",
+          "header_sub": "",
+          "image": "shopify:\/\/shop_images\/imagen_evento_pasado.jpg",
+          "date": "13 de marzo · 2021",
+          "title": "<strong>Disfrutamos y aprendimos<\/strong> en el Safety Day y Curso de manejo organizado por DLG Moto Art",
+          "description": "<p><\/p>"
+        }
+      },
+      "eventos-galeria": {
+        "type": "eventos-galeria",
+        "blocks": {
+          "8f4a68b7-3d64-4260-88f2-3cb0ab7bca4a": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/eventos-galeria-1.jpg"
+            }
+          },
+          "3c8f6e3a-7f1e-475e-8576-6109025fff82": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/eventos-galeria-2.jpg"
+            }
+          },
+          "960d467d-ad45-4623-adae-f489c0c623a8": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/eventos-galeria-1_c1d6d3b9-5d91-4c0a-990b-344807f9a310.jpg"
+            }
+          },
+          "2338fc59-1726-4836-a282-fab1525a3111": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/eventos-galeria-2_9e786f3a-b8df-4af5-92b0-d04210b3ad32.jpg"
+            }
+          },
+          "cf600ba4-3e28-459f-9f96-a1484936940e": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/eventos-galeria-2_9e786f3a-b8df-4af5-92b0-d04210b3ad32.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "8f4a68b7-3d64-4260-88f2-3cb0ab7bca4a",
+          "3c8f6e3a-7f1e-475e-8576-6109025fff82",
+          "960d467d-ad45-4623-adae-f489c0c623a8",
+          "2338fc59-1726-4836-a282-fab1525a3111",
+          "cf600ba4-3e28-459f-9f96-a1484936940e"
+        ],
+        "settings": {
+        }
+      },
+      "eventos-contacto": {
+        "type": "eventos-contacto",
+        "settings": {
+          "title": "Por favor llena este formulario para estar al tanto de nuestros eventos"
+        }
+      },
+      "iconos-atencion-clientes-productos": {
+        "type": "iconos-atencion-clientes-productos",
+        "blocks": {
+          "f0031a79-abc6-4700-ab3f-f237475ed63f": {
+            "type": "text_block",
+            "settings": {
+              "image_icono": "shopify:\/\/shop_images\/icono-envios.png",
+              "title": "",
+              "description": "<p>ENVÍO GRATIS en ordenes mayores a $3000MXN<br\/>*Aplica solo en el interior de la República Mexicana<\/p>"
+            }
+          },
+          "10bc2ef4-caf1-4abb-8f2a-8316bfb6a258": {
+            "type": "text_block",
+            "settings": {
+              "image_icono": "shopify:\/\/shop_images\/icono_financiamiento_2d7c654f-b4c6-40ad-a10d-a566bcbf6883.png",
+              "title": "¿QUIERES SER DISTRIBUIDOR?",
+              "description": "<p>Contáctanos y, si cumples con los requisitos, podrás vender nuestros productos desde cualquier lugar.<\/p>"
+            }
+          },
+          "4c631166-f4c8-49b0-b68f-199aa3e5a3ae": {
+            "type": "text_block",
+            "settings": {
+              "image_icono": "shopify:\/\/shop_images\/icono_soporte_59a03645-7243-49bc-8ae7-69f1245b5a24.png",
+              "title": "SOPORTE",
+              "description": "<p>De lunes a viernes de 9:00 a 19:00 y sábados de 9:00 a 14:00 hrs GMT-6.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "f0031a79-abc6-4700-ab3f-f237475ed63f",
+          "10bc2ef4-caf1-4abb-8f2a-8316bfb6a258",
+          "4c631166-f4c8-49b0-b68f-199aa3e5a3ae"
+        ],
+        "settings": {
+        }
+      },
+      "contacto-agusta": {
+        "type": "contacto-agusta",
+        "settings": {
+          "form_id": "NjU3NTU="
+        }
+      },
+      "1639185431b8a6776d": {
+        "type": "index-motos",
+        "blocks": {
+          "1639185431b8a6776d-0": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/motos-ducati-homepage.png",
+              "image_mobile": "shopify:\/\/shop_images\/motos-ducati-mobile.png",
+              "image_logotipo": "shopify:\/\/shop_images\/logo-Ducati_b689c054-05fb-4027-a30f-ef67fbb2246a.png",
+              "title": "Conoce la tienda <strong>Ducati más grande en México.<\/strong>",
+              "text_description": "<p>Desde los últimos lanzamientos, todos los accesorios disponibles y el mayor catálogo de equipamiento Ducati en un solo lugar.<\/p>",
+              "tipo_moto": "ducati-moto-information",
+              "enable_target": true,
+              "button_link": "shopify:\/\/pages\/ducati-motos",
+              "button_label": "Mundo Ducati"
+            }
+          },
+          "1639185431b8a6776d-1": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/agusta-motos-home_6477913a-75a9-43cb-b381-7ea04ed7d1cf.png",
+              "image_mobile": "shopify:\/\/shop_images\/motos-agusta-home.png",
+              "image_logotipo": "shopify:\/\/shop_images\/clipart4605135_58d3a063-27ca-42c5-8333-ed42c88ecdaa.png",
+              "title": "<strong>No solo<\/strong> Construimos <strong>MotocICLETAS,<\/strong> CREAMOS <strong>EMOCIONES.<\/strong>",
+              "text_description": "<p>Miramos al futuro, y creamos maquinas que siempre están un paso adelante. Conoce MV Agusta México.<\/p>",
+              "tipo_moto": "agusta-moto-information",
+              "enable_target": true,
+              "button_link": "shopify:\/\/pages\/mundo-agusta",
+              "button_label": "Mundo MV Agusta"
+            }
+          },
+          "1639185431b8a6776d-2": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/scrambler-motos-home_b788f658-338f-4df6-9617-60ba485c563a.png",
+              "image_mobile": "shopify:\/\/shop_images\/motos-scrambler-home_1ca3e524-8725-4bf0-847b-292f3cf595af.png",
+              "image_logotipo": "shopify:\/\/shop_images\/Imagen_6_f42aad43-2e70-4ba0-887b-1cffe76f5c30.png",
+              "title": "¿Estás preparado para una nueva era?",
+              "text_description": "<p>Descubre la nueva linea de motos, accesorios y equipamiento Scrambler.<\/p>",
+              "tipo_moto": "scrambler-moto-information",
+              "enable_target": false,
+              "button_link": "shopify:\/\/pages\/scrambler-motos",
+              "button_label": "Mundo scrambler"
+            }
+          }
+        },
+        "block_order": [
+          "1639185431b8a6776d-0",
+          "1639185431b8a6776d-1",
+          "1639185431b8a6776d-2"
+        ],
+        "settings": {
+        }
+      },
+      "collections-tabs": {
+        "type": "collections-tabs",
+        "blocks": {
+          "0005ae23-f9f7-4f57-9004-f5bc99b3bb3b": {
+            "type": "collection_tab",
+            "settings": {
+              "featured_product_handle": "ducati-monster-1",
+              "tab_name": "Monster",
+              "bg_block": "#f5f5f5"
+            }
+          },
+          "1ae2f395-ff2e-484b-ac89-e3252630593c": {
+            "type": "collection_tab",
+            "settings": {
+              "featured_product_handle": "ducati-diavel-1",
+              "tab_name": "Diavel",
+              "bg_block": "#f5f5f5"
+            }
+          },
+          "c4d350c2-df53-42d4-8165-ad54ef4db15e": {
+            "type": "collection_tab",
+            "settings": {
+              "featured_product_handle": "ducati-panigale",
+              "tab_name": "Panigale",
+              "bg_block": "#f5f5f5"
+            }
+          },
+          "c93d058a-8a57-4a59-b610-0047bbdf11a6": {
+            "type": "collection_tab",
+            "settings": {
+              "featured_product_handle": "ducati-multistrada",
+              "tab_name": "Multistrada",
+              "bg_block": "#f5f5f5"
+            }
+          },
+          "419b364d-c687-427e-be5e-cd6c65a89de1": {
+            "type": "collection_tab",
+            "settings": {
+              "featured_product_handle": "ducati-hypermotard",
+              "tab_name": "HYPERMOTARD",
+              "bg_block": "#f5f5f5"
+            }
+          },
+          "2f99e438-cfb6-4879-97e6-b7aaeffbc5f3": {
+            "type": "collection_tab",
+            "settings": {
+              "featured_product_handle": "ducati-streetfighter",
+              "tab_name": "STREETFIGHTER",
+              "bg_block": "#f5f5f5"
+            }
+          },
+          "6d8c0eec-04af-4229-927c-70a52a367dac": {
+            "type": "collection_tab",
+            "settings": {
+              "featured_product_handle": "ducati-supersport",
+              "tab_name": "SUPERSPORT",
+              "bg_block": "#f5f5f5"
+            }
+          }
+        },
+        "block_order": [
+          "0005ae23-f9f7-4f57-9004-f5bc99b3bb3b",
+          "1ae2f395-ff2e-484b-ac89-e3252630593c",
+          "c4d350c2-df53-42d4-8165-ad54ef4db15e",
+          "c93d058a-8a57-4a59-b610-0047bbdf11a6",
+          "419b364d-c687-427e-be5e-cd6c65a89de1",
+          "2f99e438-cfb6-4879-97e6-b7aaeffbc5f3",
+          "6d8c0eec-04af-4229-927c-70a52a367dac"
+        ],
+        "settings": {
+          "title": "De <strong>Ducati<\/strong> para México",
+          "description": "Los puntos fuertes de Ducati han sido siempre el estilo dinámico, la compactación visual de los volúmenes y la elegancia de las líneas con las proporciones.",
+          "bg_block": "#f5f5f5"
+        }
+      },
+      "collections-tabs-agusta": {
+        "type": "collections-tabs-agusta",
+        "blocks": {
+          "51b61571-bedc-4540-a719-fee3fc444548": {
+            "type": "collection_tab",
+            "settings": {
+              "featured_product_handle": "agusta-brutale",
+              "tab_name": "BRUTALE",
+              "bg_block": "#f5f5f5"
+            }
+          },
+          "16269a23-2981-455b-bbcc-663c0a8aa5d7": {
+            "type": "collection_tab",
+            "settings": {
+              "featured_product_handle": "agusta-dragster",
+              "tab_name": "Dragster",
+              "bg_block": "#f5f5f5"
+            }
+          },
+          "17b999c4-85d7-4b3e-ae10-5ab0b4e871ad": {
+            "type": "collection_tab",
+            "settings": {
+              "featured_product_handle": "agusta-f3",
+              "tab_name": "F3",
+              "bg_block": "#f5f5f5"
+            }
+          },
+          "b5c3e10d-35ab-4b2c-bff5-97c4a82adf1e": {
+            "type": "collection_tab",
+            "settings": {
+              "featured_product_handle": "agusta-superveloce",
+              "tab_name": "Superveloce",
+              "bg_block": "#f5f5f5"
+            }
+          },
+          "0c584dee-7618-444f-8c3c-63e866615193": {
+            "type": "collection_tab",
+            "settings": {
+              "featured_product_handle": "agusta-turismo-veloce",
+              "tab_name": "Turismo Veloce",
+              "bg_block": "#f5f5f5"
+            }
+          },
+          "2da3624b-5632-4e47-9f9b-00587d7b32a0": {
+            "type": "collection_tab",
+            "settings": {
+              "featured_product_handle": "agusta-rush",
+              "tab_name": "Rush",
+              "bg_block": "#f5f5f5"
+            }
+          }
+        },
+        "block_order": [
+          "51b61571-bedc-4540-a719-fee3fc444548",
+          "16269a23-2981-455b-bbcc-663c0a8aa5d7",
+          "17b999c4-85d7-4b3e-ae10-5ab0b4e871ad",
+          "b5c3e10d-35ab-4b2c-bff5-97c4a82adf1e",
+          "0c584dee-7618-444f-8c3c-63e866615193",
+          "2da3624b-5632-4e47-9f9b-00587d7b32a0"
+        ],
+        "settings": {
+          "title": "EL DESTINO<br> <strong>TIENE MUCHOS CAMINOS<\/strong> <br>ESCOGE EL <strong>TUYO<\/strong>",
+          "description": "No hay dos pilotos iguales, por esto MV Agusta ha creado distintos tipos de máquinas para todo tipo de piloto. Escoge la tuya.",
+          "bg_block": "#f5f5f5"
+        }
+      },
+      "collections-tabs-scrambler": {
+        "type": "collections-tabs-scrambler",
+        "blocks": {
+          "5c55a6e4-001d-4871-854c-528bd349a1de": {
+            "type": "collection_tab",
+            "settings": {
+              "featured_product_handle": "icon-scrambler",
+              "tab_name": "Icon",
+              "bg_block": "rgba(0,0,0,0)"
+            }
+          },
+          "8fdc1d03-5304-45fb-ad24-deb72b83c96b": {
+            "type": "collection_tab",
+            "settings": {
+              "featured_product_handle": "scrambler-nightshift",
+              "tab_name": "NightShift",
+              "bg_block": "#ffffff"
+            }
+          },
+          "d8688b10-c7af-4e15-8c6f-cbbe53fa4a05": {
+            "type": "collection_tab",
+            "settings": {
+              "featured_product_handle": "",
+              "tab_name": "URBAN ENDURO",
+              "bg_block": "#f5f5f5"
+            }
+          },
+          "797c3ef9-0204-4a7a-aef0-7644774bd98b": {
+            "type": "collection_tab",
+            "settings": {
+              "featured_product_handle": "scrambler-desert-sled",
+              "tab_name": "Desert Sled",
+              "bg_block": "#ffffff"
+            }
+          },
+          "6586a93f-1dde-409d-9d69-380efc487ac3": {
+            "type": "collection_tab",
+            "settings": {
+              "featured_product_handle": "scrambler-1100",
+              "tab_name": "Scrambler 1100",
+              "bg_block": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "5c55a6e4-001d-4871-854c-528bd349a1de",
+          "8fdc1d03-5304-45fb-ad24-deb72b83c96b",
+          "d8688b10-c7af-4e15-8c6f-cbbe53fa4a05",
+          "797c3ef9-0204-4a7a-aef0-7644774bd98b",
+          "6586a93f-1dde-409d-9d69-380efc487ac3"
+        ],
+        "settings": {
+          "image_icono": "shopify:\/\/shop_images\/icon-more-scrambler_a63f3b1e-e8b6-4ad3-b20c-6912379374e8.png",
+          "title": "Conoce a la familia.",
+          "subtitle": "Elige tu versión favorita.",
+          "bg_block": "#f5f5f5"
+        }
+      },
+      "1644362476491cb94e": {
+        "type": "section-carousel-brands",
+        "blocks": {
+          "1644362476491cb94e-0": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Imagen_21.png",
+              "url": ""
+            }
+          },
+          "1644362476491cb94e-1": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Imagen_20.png",
+              "url": ""
+            }
+          },
+          "1644362476491cb94e-2": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Imagen_19.png",
+              "url": ""
+            }
+          },
+          "56ac9bc8-d7e5-4c1a-9528-d1dcd99e4641": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Imagen_18.png",
+              "url": ""
+            }
+          },
+          "722e1ff5-49ad-4a0c-bc11-c9187d869b8e": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Imagen_17.png",
+              "url": ""
+            }
+          },
+          "36c59ad5-bc08-41be-9fae-d6025cde893d": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Imagen_28.png",
+              "url": ""
+            }
+          },
+          "1aaa592f-2252-48a8-a401-41f07c2a161f": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Imagen_27.png",
+              "url": ""
+            }
+          },
+          "707ba955-9ba2-4e85-93b2-1e6bd5a40401": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Imagen_26.png",
+              "url": ""
+            }
+          },
+          "7ea4e339-38f7-46f2-b430-c34ca757d416": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Imagen_25.png",
+              "url": ""
+            }
+          },
+          "fcd74e83-28fa-4b6e-8420-ae7fbdd8f536": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Imagen_24.png",
+              "url": ""
+            }
+          },
+          "5087c16f-bb98-4807-9e6f-fa20412d546a": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Imagen_23.png",
+              "url": ""
+            }
+          },
+          "c2bc41d6-690e-44cc-8902-ec379f89f118": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Imagen_22.png",
+              "url": ""
+            }
+          }
+        },
+        "block_order": [
+          "1644362476491cb94e-0",
+          "1644362476491cb94e-1",
+          "1644362476491cb94e-2",
+          "56ac9bc8-d7e5-4c1a-9528-d1dcd99e4641",
+          "722e1ff5-49ad-4a0c-bc11-c9187d869b8e",
+          "36c59ad5-bc08-41be-9fae-d6025cde893d",
+          "1aaa592f-2252-48a8-a401-41f07c2a161f",
+          "707ba955-9ba2-4e85-93b2-1e6bd5a40401",
+          "7ea4e339-38f7-46f2-b430-c34ca757d416",
+          "fcd74e83-28fa-4b6e-8420-ae7fbdd8f536",
+          "5087c16f-bb98-4807-9e6f-fa20412d546a",
+          "c2bc41d6-690e-44cc-8902-ec379f89f118"
+        ],
+        "settings": {
+          "bg_color": "#efefef",
+          "heading": "Nuestras marcas"
+        }
+      },
+      "contacto-ducati": {
+        "type": "contacto-ducati",
+        "settings": {
+          "form_id": "ODMzNTk="
+        }
+      },
+      "1655393102ebf0b3ef": {
+        "type": "slider-home",
+        "blocks": {
+          "27451d6a-4e2b-41f7-ae41-60d41c385be9": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Linea-BannerDesktop.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/Linea-BannerMob.jpg",
+              "title": "",
+              "description": "",
+              "enable_buttons": true,
+              "url_primer_boton": "",
+              "txt_primer_boton": "",
+              "url_segundo_boton": "",
+              "txt_segundo_boton": "",
+              "url_tercer_boton": "",
+              "txt_tercer_boton": "",
+              "enable_especificaciones": false,
+              "potencia": "",
+              "par": "",
+              "subtitulo_final": "",
+              "texto_final": ""
+            }
+          },
+          "8dcad094-c48d-40de-b309-257ee2b5c7f0": {
+            "type": "text_block",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Cyberdays-Desk_790c25b7-7511-4898-bed5-3edca8dec14c.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/Cyberdays-Mob_4d34a2f5-7f0b-4641-ae1c-986b2fd65c03.jpg",
+              "title": "",
+              "description": "<p><\/p>",
+              "enable_buttons": false,
+              "url_primer_boton": "shopify:\/\/pages\/scrambler-motos",
+              "txt_primer_boton": "Ver  monster",
+              "url_segundo_boton": "",
+              "txt_segundo_boton": "",
+              "url_tercer_boton": "",
+              "txt_tercer_boton": "",
+              "enable_especificaciones": false,
+              "potencia": "",
+              "par": "9.5 KGM (93 NM) @ 6,500 RPM",
+              "subtitulo_final": "",
+              "texto_final": ""
+            }
+          },
+          "505e38be-1cfa-4633-9dc8-a17ae69badbb": {
+            "type": "text_block",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Lanzamiento-Desktop_71f78bd9-af39-497c-b8db-2474fa9e20ae.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/Lanzamiento-Mob.jpg",
+              "title": "",
+              "description": "",
+              "enable_buttons": false,
+              "url_primer_boton": "shopify:\/\/pages\/motos-nuevas",
+              "txt_primer_boton": "Motos nuevas",
+              "url_segundo_boton": "shopify:\/\/pages\/accesorios",
+              "txt_segundo_boton": "Accesorios motos",
+              "url_tercer_boton": "shopify:\/\/pages\/equipamiento",
+              "txt_tercer_boton": "Equipamiento",
+              "enable_especificaciones": false,
+              "potencia": "",
+              "par": "",
+              "subtitulo_final": "",
+              "texto_final": ""
+            }
+          },
+          "b3861dd6-b5f5-4a6b-b83d-833c12e89744": {
+            "type": "text_block",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Sidi-BanDesktop.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/Sidi-Crossfire-Mobile_copia.jpg",
+              "title": "",
+              "description": "<p><\/p>",
+              "enable_buttons": false,
+              "url_primer_boton": "",
+              "txt_primer_boton": "",
+              "url_segundo_boton": "",
+              "txt_segundo_boton": "",
+              "url_tercer_boton": "",
+              "txt_tercer_boton": "",
+              "enable_especificaciones": false,
+              "potencia": "",
+              "par": "",
+              "subtitulo_final": "",
+              "texto_final": ""
+            }
+          },
+          "48ae0f66-134d-4dc4-af6b-04796ab03531": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/AGV-DesktopNEW.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/AGV-DesktopNEWmobile.jpg",
+              "title": "",
+              "description": "<p><\/p>",
+              "enable_buttons": true,
+              "url_primer_boton": "shopify:\/\/collections\/agv-3000x",
+              "txt_primer_boton": "Conoce los productos",
+              "url_segundo_boton": "",
+              "txt_segundo_boton": "",
+              "url_tercer_boton": "",
+              "txt_tercer_boton": "",
+              "enable_especificaciones": false,
+              "potencia": "",
+              "par": "",
+              "subtitulo_final": "",
+              "texto_final": ""
+            }
+          },
+          "4086ff8a-14e3-4d69-8b5b-c5bc292f02ec": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/DesertX-Deskt.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/DesertX-Mob.jpg",
+              "title": "",
+              "description": "<p><\/p>",
+              "enable_buttons": false,
+              "url_primer_boton": "",
+              "txt_primer_boton": "",
+              "url_segundo_boton": "",
+              "txt_segundo_boton": "",
+              "url_tercer_boton": "",
+              "txt_tercer_boton": "",
+              "enable_especificaciones": false,
+              "potencia": "",
+              "par": "",
+              "subtitulo_final": "",
+              "texto_final": ""
+            }
+          },
+          "d6aa6d84-a97f-4783-8cd5-c8e9b7e4de59": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/PAGINA_PRINCIPAL_B.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/PISTA_GP_RR_ASSEN_2007_MOBILE.jpg",
+              "title": "",
+              "description": "<p><\/p>",
+              "enable_buttons": true,
+              "url_primer_boton": "",
+              "txt_primer_boton": "",
+              "url_segundo_boton": "",
+              "txt_segundo_boton": "",
+              "url_tercer_boton": "",
+              "txt_tercer_boton": "",
+              "enable_especificaciones": false,
+              "potencia": "",
+              "par": "",
+              "subtitulo_final": "",
+              "texto_final": ""
+            }
+          },
+          "954803df-30d3-4511-8656-6a992bccff8f": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/CASCO_VALENTINO_SOLELUNA_2022.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/PISTA_GP_RR_SOLELUNA_MOBILE.jpg",
+              "title": "",
+              "description": "<p><\/p>",
+              "enable_buttons": true,
+              "url_primer_boton": "",
+              "txt_primer_boton": "",
+              "url_segundo_boton": "",
+              "txt_segundo_boton": "",
+              "url_tercer_boton": "",
+              "txt_tercer_boton": "",
+              "enable_especificaciones": false,
+              "potencia": "",
+              "par": "",
+              "subtitulo_final": "",
+              "texto_final": ""
+            }
+          }
+        },
+        "block_order": [
+          "27451d6a-4e2b-41f7-ae41-60d41c385be9",
+          "8dcad094-c48d-40de-b309-257ee2b5c7f0",
+          "505e38be-1cfa-4633-9dc8-a17ae69badbb",
+          "b3861dd6-b5f5-4a6b-b83d-833c12e89744",
+          "48ae0f66-134d-4dc4-af6b-04796ab03531",
+          "4086ff8a-14e3-4d69-8b5b-c5bc292f02ec",
+          "d6aa6d84-a97f-4783-8cd5-c8e9b7e4de59",
+          "954803df-30d3-4511-8656-6a992bccff8f"
+        ],
+        "settings": {
+        }
+      },
+      "contacto-seminuevas": {
+        "type": "contacto-seminuevas",
+        "settings": {
+          "form_id": "ODMzNjE="
+        }
+      },
+      "collection-banner": {
+        "type": "collection-banner",
+        "settings": {
+        }
+      },
+      "contacto-scrambler": {
+        "type": "contacto-scrambler",
+        "settings": {
+          "form_id": "ODMzNjQ="
+        }
+      },
+      "titulo-ciudad": {
+        "type": "titulo-ciudad",
+        "settings": {
+          "title": "Ciudad"
+        }
+      },
+      "titulo-carretera": {
+        "type": "titulo-carretera",
+        "settings": {
+          "title": "Carretera"
+        }
+      },
+      "titulo-track": {
+        "type": "titulo-track",
+        "settings": {
+          "title": "Track Day"
+        }
+      },
+      "titulo-off": {
+        "type": "titulo-off",
+        "settings": {
+          "title": "OFF - Road"
+        }
+      },
+      "titulo-right-float-road": {
+        "type": "titulo-right-float-road",
+        "settings": {
+          "title": ""
+        }
+      }
+    },
+    "content_for_index": [
+      "1524768368258",
+      "1655393102ebf0b3ef",
+      "16147000264ed69ab2",
+      "16352010196d930763",
+      "16355289356e98f0ac",
+      "1635206202f4e36155",
+      "1639185431b8a6776d",
+      "16354402231755ad0d",
+      "1644362476491cb94e",
+      "1635447480e0e439be",
+      "16354533103a51bff3"
+    ],
+    "blocks": {
+      "5038451100865107764": {
+        "type": "shopify:\/\/apps\/product-filter-search\/blocks\/boost-pfs\/7fc998ae-a150-4367-bab8-505d8a4503f7",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "16114465257489415219": {
+        "type": "shopify:\/\/apps\/product-filter-search\/blocks\/boost-pfs-style\/7fc998ae-a150-4367-bab8-505d8a4503f7",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "6279071938380501511": {
+        "type": "shopify:\/\/apps\/powerful-contact-form-builder\/blocks\/app-embed\/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "942670587456160541": {
+        "type": "shopify:\/\/apps\/discount-ninja\/blocks\/discountninja-app-embed-stable\/b9a933ba-e276-459f-a4bf-3571d5a1e81c",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "14417550493701535262": {
+        "type": "shopify:\/\/apps\/discount-ninja\/blocks\/discountninja-app-embed-latest\/b9a933ba-e276-459f-a4bf-3571d5a1e81c",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
+  },
+  "presets": {
+    "Modern": {
+      "breadcrumb": false,
+      "button_style": "square",
+      "cart_notes_enable": false,
+      "cart_terms_conditions_enable": false,
+      "cart_type": "drawer",
+      "checkout_accent_color": "#111111",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_button_color": "#111111",
+      "checkout_error_color": "#ff6d6d",
+      "checkout_input_background_color_mode": "white",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_sidebar_background_color": "#fafafa",
+      "collection_color_swatches": false,
+      "collection_grid_gutter": true,
+      "collection_grid_image": "product",
+      "collection_grid_opacity": 10,
+      "collection_grid_shape": "square",
+      "collection_grid_style": "overlaid-box",
+      "collection_grid_text_align": "center",
+      "collection_grid_tint": "#000000",
+      "color_announcement": "#0f0f0f",
+      "color_announcement_text": "#ffffff",
+      "color_body_bg": "#ffffff",
+      "color_body_text": "#000000",
+      "color_borders": "#e8e8e1",
+      "color_button": "#111111",
+      "color_button_text": "#ffffff",
+      "color_cart_dot": "#ff4f33",
+      "color_drawer_background": "#ffffff",
+      "color_drawer_border": "#e8e8e1",
+      "color_drawer_button": "#111111",
+      "color_drawer_button_text": "#ffffff",
+      "color_drawer_text": "#000000",
+      "color_footer": "#ffffff",
+      "color_footer_text": "#000000",
+      "color_header": "#ffffff",
+      "color_header_text": "#000000",
+      "color_image_overlay": "#000000",
+      "color_image_overlay_text_shadow": 20,
+      "color_large_image_bg": "#0f0f0f",
+      "color_modal_overlays": "#e6e6e6",
+      "color_price": "#1c1d1d",
+      "color_savings_text": "#C20000",
+      "color_small_image_bg": "#ffffff",
+      "icon_linecaps": "miter",
+      "icon_weight": "2px",
+      "inventory_enable": true,
+      "product_color_swatches": false,
+      "product_contact": false,
+      "product_grid_image_size": "natural",
+      "product_hover_image": false,
+      "quantity_enable": false,
+      "quick_shop_text": "Quick view",
+      "share_facebook": true,
+      "share_pinterest": true,
+      "share_twitter": true,
+      "sku_enable": false,
+      "social_facebook_link": "https:\/\/www.facebook.com\/shopify",
+      "social_instagram_link": "https:\/\/instagram.com\/shopify",
+      "social_pinterest_link": "https:\/\/www.pinterest.com\/shopify",
+      "type_base_font_family": "futura_n4",
+      "type_base_line_height": 1.6,
+      "type_base_size": 16,
+      "type_base_spacing": "25",
+      "type_body_align_text": true,
+      "type_collection_font": "body",
+      "type_collection_size": 18,
+      "type_header_base_size": 38,
+      "type_header_capitalize": true,
+      "type_header_font_family": "tiemann_n4",
+      "type_header_line_height": 1,
+      "type_header_spacing": "0",
+      "type_headers_align_text": true,
+      "type_navigation_capitalize": true,
+      "type_navigation_size": 13,
+      "type_navigation_style": "body",
+      "type_product_style": "body",
+      "variant_type": "button",
+      "vendor_enable": false,
+      "sections": {
+        "header": {
+          "type": "header",
+          "blocks": {
+            "1524770014057": {
+              "type": "logo",
+              "settings": {
+                "desktop_logo_width": 140,
+                "mobile_logo_width": 110
+              }
+            },
+            "1524770292306": {
+              "type": "announcement",
+              "settings": {
+                "text": "Free shipping",
+                "link_text": "On all orders over $100"
+              }
+            },
+            "1524770296206": {
+              "type": "announcement",
+              "settings": {
+                "text": "Hassle-free returns",
+                "link_text": "30-day postage paid returns"
+              }
+            }
+          },
+          "block_order": [
+            "1524770014057",
+            "1524770292306",
+            "1524770296206"
+          ],
+          "settings": {
+            "main_menu_link_list": "main-menu",
+            "main_menu_alignment": "center-split",
+            "header_style": "sticky",
+            "sticky_index": false,
+            "sticky_collection": false,
+            "announcement_compact": true,
+            "toolbar_menu": "top",
+            "toolbar_social": true
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1494301487048": {
+              "type": "logo_social",
+              "settings": {
+                "container_width": 95
+              }
+            }
+          },
+          "block_order": [
+            "1494301487048"
+          ],
+          "settings": {
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "subcollection_style": "above",
+            "subcollections_per_row": 5,
+            "per_row": 4
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "social_enable": true,
+            "image_position": "left",
+            "image_size": "large"
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+          }
+        },
+        "1498163293234": {
+          "type": "featured-content",
+          "settings": {
+            "align_text": "center",
+            "narrow_column": true,
+            "enlarge_text": true,
+            "divider": false
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+          }
+        },
+        "1499789718857": {
+          "type": "featured-collections",
+          "blocks": {
+            "1499789718857-0": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "1499789718857-1": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "1499789718857-2": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "1499789718857-3": {
+              "type": "collection",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1499789718857-0",
+            "1499789718857-1",
+            "1499789718857-2",
+            "1499789718857-3"
+          ],
+          "settings": {
+            "title": "Shop by category",
+            "divider": false,
+            "per_row": 4,
+            "enable_gutter": true
+          }
+        },
+        "1499790633921": {
+          "type": "background-image-text",
+          "settings": {
+            "button_link": "shopify:\/\/collections\/all",
+            "focal_point": "80% 0",
+            "color_border": "#cdb8ac",
+            "layout": "left",
+            "height": 750,
+            "framed": false,
+            "parallax": true
+          }
+        },
+        "product-sections-template": {
+          "type": "product-sections-template",
+          "blocks": {
+            "sections-1592408474529": {
+              "type": "text-and-image",
+              "settings": {
+                "image": "",
+                "image_width": 500,
+                "subtitle": "Improved",
+                "button_label": "Optional button",
+                "button_link": "",
+                "layout": "right"
+              }
+            },
+            "sections-1592410313636": {
+              "type": "background-image-text",
+              "settings": {
+                "subtitle": "Why choose us?",
+                "title": "Explain your brand philosophy",
+                "text": "<p>Use this section to explain your company philosophy or standards. Showcase lifestyle photography for added emphasis. This content will appear on all products.<\/p>",
+                "button_label": "",
+                "button_link": "",
+                "image": "",
+                "alignment": "center",
+                "color_border": "#f4f4f4",
+                "layout": "right",
+                "height": 650,
+                "parallax": true
+              }
+            },
+            "sections-1592408476245": {
+              "type": "testimonials",
+              "settings": {
+                "title": "Testimonials",
+                "align_text": "center",
+                "round_images": false,
+                "testimonial_1": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.<\/p>",
+                "image_1": "",
+                "author_1": "Author's name",
+                "testimonial_2": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.<\/p>",
+                "image_2": "",
+                "author_2": "Author's name"
+              }
+            },
+            "sections-1592410272428": {
+              "type": "image-hero",
+              "settings": {
+                "parallax": true,
+                "title": "Two line\ntitle image",
+                "title_size": 80,
+                "subheading": "And optional subtext",
+                "link": "",
+                "link_text": "Optional button",
+                "link_2": "",
+                "link_text_2": "",
+                "color_accent": "#ffffff",
+                "text_align": "vertical-center horizontal-center",
+                "image": "",
+                "focal_point": "center center",
+                "section_height": "650px",
+                "mobile_height": "auto"
+              }
+            },
+            "sections-1592410318615": {
+              "type": "text-and-image",
+              "settings": {
+                "image": "",
+                "image_width": 500,
+                "subtitle": "Improved",
+                "button_label": "Optional button",
+                "button_link": "",
+                "layout": "left"
+              }
+            }
+          },
+          "block_order": [
+            "sections-1592410313636",
+            "sections-1592408476245",
+            "sections-1592408474529",
+            "sections-1592410318615",
+            "sections-1592410272428"
+          ],
+          "settings": {
+          }
+        },
+        "product-story-sections": {
+          "type": "product-story-sections",
+          "blocks": {
+            "1592408474529": {
+              "type": "text-and-image",
+              "settings": {
+                "image": "",
+                "image_width": 500,
+                "subtitle": "Improved",
+                "button_label": "Optional button",
+                "button_link": "",
+                "layout": "right"
+              }
+            },
+            "1592410313636": {
+              "type": "background-image-text",
+              "settings": {
+                "subtitle": "Why choose us?",
+                "title": "Explain your brand philosophy",
+                "text": "<p>Use this section to explain your company philosophy or standards. Showcase lifestyle photography for added emphasis. This content will appear on all products.<\/p>",
+                "button_label": "",
+                "button_link": "",
+                "image": "",
+                "alignment": "center",
+                "color_border": "#f4f4f4",
+                "layout": "right",
+                "height": 650,
+                "parallax": true
+              }
+            },
+            "1592408476245": {
+              "type": "testimonials",
+              "settings": {
+                "title": "Testimonials",
+                "align_text": "center",
+                "round_images": false,
+                "testimonial_1": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.<\/p>",
+                "image_1": "",
+                "author_1": "Author's name",
+                "testimonial_2": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.<\/p>",
+                "image_2": "",
+                "author_2": "Author's name"
+              }
+            },
+            "1592410272428": {
+              "type": "image-hero",
+              "settings": {
+                "parallax": true,
+                "title": "Two line\ntitle image",
+                "title_size": 80,
+                "subheading": "And optional subtext",
+                "link": "",
+                "link_text": "Optional button",
+                "link_2": "",
+                "link_text_2": "",
+                "color_accent": "#ffffff",
+                "text_align": "vertical-center horizontal-center",
+                "image": "",
+                "focal_point": "center center",
+                "section_height": "650px",
+                "mobile_height": "auto"
+              }
+            },
+            "1592410318615": {
+              "type": "text-and-image",
+              "settings": {
+                "image": "",
+                "image_width": 500,
+                "subtitle": "Improved",
+                "button_label": "Optional button",
+                "button_link": "",
+                "layout": "left"
+              }
+            }
+          },
+          "block_order": [
+            "1592410313636",
+            "1592408476245",
+            "1592408474529",
+            "1592410318615",
+            "1592410272428"
+          ],
+          "settings": {
+          }
+        },
+        "page-sections-template": {
+          "type": "page-sections-template",
+          "blocks": {
+            "page-image-hero": {
+              "type": "image-hero",
+              "settings": {
+              }
+            },
+            "page-rich-text": {
+              "type": "rich-text",
+              "settings": {
+                "align_text": "center",
+                "narrow_column": true,
+                "enlarge_text": true
+              }
+            },
+            "page-text-columns": {
+              "type": "text-columns",
+              "settings": {
+              }
+            },
+            "page-background-image-text": {
+              "type": "background-image-text",
+              "settings": {
+                "alignment": "center",
+                "color_border": "#f4f4f4",
+                "layout": "right",
+                "height": 550
+              }
+            },
+            "page-featured-collection": {
+              "type": "featured-collection",
+              "settings": {
+                "title": "Featured collection",
+                "per_row": 4,
+                "rows": 1,
+                "view_all": true
+              }
+            }
+          },
+          "block_order": [
+            "page-image-hero",
+            "page-rich-text",
+            "page-text-columns",
+            "page-background-image-text",
+            "page-featured-collection"
+          ],
+          "settings": {
+            "page_title_enable": false,
+            "page_content_enable": false
+          }
+        },
+        "newsletter-popup": {
+          "type": "newsletter-popup",
+          "settings": {
+          }
+        },
+        "1524769873765": {
+          "type": "slideshow",
+          "blocks": {
+            "1524769873765-0": {
+              "type": "image",
+              "settings": {
+                "title_size": 80,
+                "link_text_2": "Shop all",
+                "link_2": "shopify:\/\/collections\/all",
+                "color_accent": "#000000",
+                "text_align": "vertical-center horizontal-center",
+                "focal_point": "top center"
+              }
+            },
+            "1524769873765-1": {
+              "type": "image",
+              "settings": {
+                "title_size": 80,
+                "link_text_2": "Shop all",
+                "link_2": "shopify:\/\/collections\/all",
+                "color_accent": "#000000",
+                "text_align": "vertical-bottom horizontal-left",
+                "focal_point": "top center"
+              }
+            }
+          },
+          "block_order": [
+            "1524769873765-0",
+            "1524769873765-1"
+          ],
+          "settings": {
+            "section_height": "750px",
+            "mobile_height": "auto",
+            "parallax": true,
+            "style": "bars",
+            "autoplay": true,
+            "autoplay_speed": 7
+          }
+        },
+        "collection-header": {
+          "type": "collection-header",
+          "settings": {
+          }
+        },
+        "collection-sidebar": {
+          "type": "collection-sidebar",
+          "blocks": {
+            "1524772785241": {
+              "type": "subcollections",
+              "settings": {
+              }
+            },
+            "1524772580942": {
+              "type": "tags_all",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1524772785241",
+            "1524772580942"
+          ],
+          "settings": {
+            "enable_sidebar": true,
+            "filter_style": "sidebar",
+            "tags_combine": false,
+            "enable_sort": true
+          }
+        },
+        "1525115199973": {
+          "type": "blog-posts",
+          "settings": {
+            "title": "From the journal",
+            "blog": "news",
+            "post_limit": 3,
+            "blog_show_tags": false,
+            "blog_show_date": true,
+            "blog_show_comments": false,
+            "blog_show_author": false,
+            "view_all": true,
+            "blog_image_size": "wide",
+            "divider": false
+          }
+        },
+        "1525118065355": {
+          "type": "map",
+          "settings": {
+          }
+        },
+        "1525295772132": {
+          "type": "featured-collection",
+          "settings": {
+            "per_row": 4,
+            "rows": 1,
+            "view_all": true,
+            "divider": false
+          }
+        },
+        "1525886124958": {
+          "type": "promo-grid",
+          "blocks": {
+            "1525886482727": {
+              "type": "advanced",
+              "settings": {
+                "cta_link1": "shopify:\/\/collections\/all",
+                "width": "100",
+                "height": 720,
+                "text_size": 120,
+                "focal_point": "80% 50%",
+                "boxed": false,
+                "framed": false
+              }
+            },
+            "1525886854810": {
+              "type": "sale_collection",
+              "settings": {
+                "width": "50",
+                "boxed": false,
+                "framed": true
+              }
+            },
+            "1525911710924": {
+              "type": "sale_collection",
+              "settings": {
+                "width": "50",
+                "boxed": false,
+                "framed": true
+              }
+            }
+          },
+          "block_order": [
+            "1525886482727",
+            "1525886854810",
+            "1525911710924"
+          ],
+          "settings": {
+            "full_width": false,
+            "gutter_size": 20,
+            "space_above": false,
+            "space_below": false
+          }
+        },
+        "1525912530555": {
+          "type": "promo-grid",
+          "blocks": {
+            "1525912530555-0": {
+              "type": "advanced",
+              "settings": {
+                "cta_link1": "shopify:\/\/collections\/all",
+                "width": "50",
+                "height": 800,
+                "text_size": 100,
+                "text_align": "vertical-center horizontal-center",
+                "focal_point": "center",
+                "boxed": false,
+                "framed": true
+              }
+            },
+            "1525912530555-1": {
+              "type": "advanced",
+              "settings": {
+                "cta_link1": "shopify:\/\/collections\/all",
+                "width": "50",
+                "height": 500,
+                "text_size": 100,
+                "text_align": "vertical-bottom horizontal-center",
+                "focal_point": "80% 50%",
+                "boxed": true,
+                "framed": false
+              }
+            }
+          },
+          "block_order": [
+            "1525912530555-0",
+            "1525912530555-1"
+          ],
+          "settings": {
+            "full_width": true,
+            "gutter_size": 20,
+            "space_above": false,
+            "space_below": false
+          }
+        },
+        "collection-promotions": {
+          "type": "collection-promotions",
+          "blocks": {
+            "1526403837307": {
+              "type": "banner",
+              "settings": {
+                "link": "shopify:\/\/collections\/all",
+                "label": "Shop now",
+                "color_tint": "#e95454",
+                "color_tint_opacity": 10,
+                "framed": false
+              }
+            }
+          },
+          "block_order": [
+            "1526403837307"
+          ],
+          "settings": {
+            "gutter_size": 20
+          }
+        }
+      },
+      "content_for_index": [
+        "1524769873765",
+        "1498163293234",
+        "1525912530555",
+        "1499789718857",
+        "1525886124958",
+        "1525295772132",
+        "1499790633921",
+        "1525115199973",
+        "1525118065355"
+      ]
+    },
+    "Clean": {
+      "show_breadcrumbs": true,
+      "color_body_bg": "#ffffff",
+      "color_body_text": "#000000",
+      "color_price": "#1c1d1d",
+      "color_savings_text": "#ff4e4e",
+      "color_borders": "#e8e8e1",
+      "color_button": "#111111",
+      "color_button_text": "#ffffff",
+      "color_cart_dot": "#ff4f33",
+      "color_small_image_bg": "#e5e5e5",
+      "color_large_image_bg": "#0f0f0f",
+      "color_header": "#ffffff",
+      "color_header_text": "#000000",
+      "color_announcement": "#0f0f0f",
+      "color_announcement_text": "#ffffff",
+      "color_footer": "#ffffff",
+      "color_footer_text": "#000000",
+      "color_drawer_background": "#ffffff",
+      "color_drawer_text": "#000000",
+      "color_drawer_border": "#e8e8e1",
+      "color_drawer_button": "#111111",
+      "color_drawer_button_text": "#ffffff",
+      "color_modal_overlays": "#e6e6e6",
+      "color_image_overlay_opacity": 0,
+      "color_image_overlay_text_shadow": 24,
+      "type_header_font_family": "basic_commercial_n7",
+      "type_header_spacing": "25",
+      "type_header_base_size": 38,
+      "type_header_line_height": 1,
+      "type_header_capitalize": false,
+      "type_headers_align_text": false,
+      "type_base_font_family": "basic_commercial_n4",
+      "type_base_spacing": "25",
+      "type_base_size": 16,
+      "type_base_line_height": 1.6,
+      "type_body_align_text": false,
+      "type_navigation_style": "body",
+      "type_navigation_size": 18,
+      "type_navigation_capitalize": false,
+      "type_product_style": "heading",
+      "type_product_capitalize": false,
+      "type_collection_font": "body",
+      "type_collection_size": 24,
+      "button_style": "square",
+      "icon_weight": "4px",
+      "icon_linecaps": "miter",
+      "vendor_enable": false,
+      "sku_enable": false,
+      "quantity_enable": false,
+      "variant_type": "button",
+      "inventory_enable": false,
+      "quick_shop_text": "Quick view",
+      "product_grid_image_size": "square",
+      "product_hover_image": true,
+      "product_color_swatches": false,
+      "collection_color_swatches": false,
+      "product_contact": true,
+      "collection_grid_style": "overlaid",
+      "collection_grid_shape": "square",
+      "collection_grid_image": "collection",
+      "collection_grid_text_align": "center",
+      "collection_grid_tint": "#000000",
+      "collection_grid_opacity": 20,
+      "collection_grid_gutter": true,
+      "cart_type": "drawer",
+      "cart_notes_enable": false,
+      "cart_terms_conditions_enable": false,
+      "social_facebook_link": "https:\/\/www.facebook.com\/shopify",
+      "social_twitter_link": "https:\/\/twitter.com\/shopify",
+      "social_instagram_link": "https:\/\/instagram.com\/shopify",
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#f5f5f5",
+      "checkout_accent_color": "#682d2d",
+      "checkout_button_color": "#682d2d",
+      "checkout_error_color": "#ff6d6d",
+      "product_fixed_image_height": false,
+      "sections": {
+        "header": {
+          "type": "header",
+          "blocks": {
+            "1520882467782": {
+              "type": "logo",
+              "settings": {
+                "logo": "",
+                "logo-inverted": "",
+                "desktop_logo_width": 200,
+                "mobile_logo_width": 140
+              }
+            },
+            "1521051841065": {
+              "type": "announcement",
+              "settings": {
+                "text": "Free shipping",
+                "link_text": "On all orders over $100",
+                "link": "shopify:\/\/collections\/all"
+              }
+            },
+            "1520888647304": {
+              "type": "announcement",
+              "settings": {
+                "text": "Hassle-free returns",
+                "link_text": "30-day postage paid returns",
+                "link": "shopify:\/\/collections\/all"
+              }
+            }
+          },
+          "block_order": [
+            "1520882467782",
+            "1521051841065",
+            "1520888647304"
+          ],
+          "settings": {
+            "main_menu_link_list": "main-menu",
+            "mega_menu_images": true,
+            "main_menu_alignment": "left-center",
+            "header_style": "sticky",
+            "sticky_index": true,
+            "sticky_collection": true,
+            "announcement_compact": true,
+            "announcement_above_header": true,
+            "toolbar_menu": "",
+            "toolbar_social": true,
+            "show_locale_selector": true,
+            "show_currency_selector": true,
+            "show_currency_flags": true
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1494301487048": {
+              "type": "logo_social",
+              "settings": {
+                "logo": "",
+                "desktop_logo_height": 50,
+                "container_width": 95
+              }
+            }
+          },
+          "block_order": [
+            "1494301487048"
+          ],
+          "settings": {
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "description_position": "top",
+            "subcollection_style": "above",
+            "subcollections_per_row": 3,
+            "enable_collection_count": true,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "description_style": "default",
+            "social_enable": true,
+            "image_position": "left",
+            "image_size": "large",
+            "thumbnail_position": "below",
+            "thumbnail_arrows": false,
+            "enable_video_looping": true,
+            "product_video_style": "muted"
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+          }
+        },
+        "1498163293234": {
+          "type": "featured-content",
+          "settings": {
+            "title": "",
+            "text": "<p>A sentence or two introducing your brand, what you sell, and what makes your brand compelling to customers.<\/p>",
+            "align_text": "center",
+            "narrow_column": true,
+            "enlarge_text": true,
+            "divider": false
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+          }
+        },
+        "product-sections-template": {
+          "type": "product-sections-template",
+          "blocks": {
+            "sections-1592408474529": {
+              "type": "text-and-image",
+              "settings": {
+                "image": "",
+                "image_width": 500,
+                "subtitle": "Improved",
+                "button_label": "Optional button",
+                "button_link": "",
+                "layout": "right"
+              }
+            },
+            "sections-1592410313636": {
+              "type": "background-image-text",
+              "settings": {
+                "subtitle": "Why choose us?",
+                "title": "Explain your brand philosophy",
+                "text": "<p>Use this section to explain your company philosophy or standards. Showcase lifestyle photography for added emphasis. This content will appear on all products.<\/p>",
+                "button_label": "",
+                "button_link": "",
+                "image": "",
+                "alignment": "center",
+                "color_border": "#f4f4f4",
+                "layout": "right",
+                "height": 650,
+                "parallax": true
+              }
+            },
+            "sections-1592408476245": {
+              "type": "testimonials",
+              "settings": {
+                "title": "Testimonials",
+                "align_text": "center",
+                "round_images": false,
+                "testimonial_1": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.<\/p>",
+                "image_1": "",
+                "author_1": "Author's name",
+                "testimonial_2": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.<\/p>",
+                "image_2": "",
+                "author_2": "Author's name"
+              }
+            },
+            "sections-1592410272428": {
+              "type": "image-hero",
+              "settings": {
+                "parallax": true,
+                "title": "Two line\ntitle image",
+                "title_size": 80,
+                "subheading": "And optional subtext",
+                "link": "",
+                "link_text": "Optional button",
+                "link_2": "",
+                "link_text_2": "",
+                "color_accent": "#ffffff",
+                "text_align": "vertical-center horizontal-center",
+                "image": "",
+                "focal_point": "center center",
+                "section_height": "650px",
+                "mobile_height": "auto"
+              }
+            },
+            "sections-1592410318615": {
+              "type": "text-and-image",
+              "settings": {
+                "image": "",
+                "image_width": 500,
+                "subtitle": "Improved",
+                "button_label": "Optional button",
+                "button_link": "",
+                "layout": "left"
+              }
+            }
+          },
+          "block_order": [
+            "sections-1592410313636",
+            "sections-1592408476245",
+            "sections-1592408474529",
+            "sections-1592410318615",
+            "sections-1592410272428"
+          ],
+          "settings": {
+          }
+        },
+        "product-story-sections": {
+          "type": "product-story-sections",
+          "blocks": {
+            "1592408474529": {
+              "type": "text-and-image",
+              "settings": {
+                "image": "",
+                "image_width": 500,
+                "subtitle": "Improved",
+                "button_label": "Optional button",
+                "button_link": "",
+                "layout": "right"
+              }
+            },
+            "1592410313636": {
+              "type": "background-image-text",
+              "settings": {
+                "subtitle": "Why choose us?",
+                "title": "Explain your brand philosophy",
+                "text": "<p>Use this section to explain your company philosophy or standards. Showcase lifestyle photography for added emphasis. This content will appear on all products.<\/p>",
+                "button_label": "",
+                "button_link": "",
+                "image": "",
+                "alignment": "center",
+                "color_border": "#f4f4f4",
+                "layout": "right",
+                "height": 650,
+                "parallax": true
+              }
+            },
+            "1592408476245": {
+              "type": "testimonials",
+              "settings": {
+                "title": "Testimonials",
+                "align_text": "center",
+                "round_images": false,
+                "testimonial_1": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.<\/p>",
+                "image_1": "",
+                "author_1": "Author's name",
+                "testimonial_2": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.<\/p>",
+                "image_2": "",
+                "author_2": "Author's name"
+              }
+            },
+            "1592410272428": {
+              "type": "image-hero",
+              "settings": {
+                "parallax": true,
+                "title": "Two line\ntitle image",
+                "title_size": 80,
+                "subheading": "And optional subtext",
+                "link": "",
+                "link_text": "Optional button",
+                "link_2": "",
+                "link_text_2": "",
+                "color_accent": "#ffffff",
+                "text_align": "vertical-center horizontal-center",
+                "image": "",
+                "focal_point": "center center",
+                "section_height": "650px",
+                "mobile_height": "auto"
+              }
+            },
+            "1592410318615": {
+              "type": "text-and-image",
+              "settings": {
+                "image": "",
+                "image_width": 500,
+                "subtitle": "Improved",
+                "button_label": "Optional button",
+                "button_link": "",
+                "layout": "left"
+              }
+            }
+          },
+          "block_order": [
+            "1592410313636",
+            "1592408476245",
+            "1592408474529",
+            "1592410318615",
+            "1592410272428"
+          ],
+          "settings": {
+          }
+        },
+        "page-sections-template": {
+          "type": "page-sections-template",
+          "blocks": {
+            "page-rich-text": {
+              "type": "rich-text",
+              "settings": {
+                "title": "Rich text block",
+                "text": "<p>Use this section for any descriptive text you need to fill out your pages or to add introductory headings between other blocks.<\/p>",
+                "align_text": "center",
+                "narrow_column": true,
+                "enlarge_text": true
+              }
+            },
+            "page-text-columns": {
+              "type": "text-columns",
+              "settings": {
+                "title": "",
+                "align_text": "center",
+                "enable_image_1": true,
+                "image_1": "",
+                "image_width_1": 650,
+                "title_1": "Example title",
+                "text_1": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+                "button_label_1": "",
+                "button_link_1": "",
+                "enable_image_2": true,
+                "image_2": "",
+                "image_width_2": 650,
+                "title_2": "Example title",
+                "text_2": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+                "button_label_2": "",
+                "button_link_2": "",
+                "enable_image_3": true,
+                "image_3": "",
+                "image_width_3": 650,
+                "title_3": "Example title",
+                "text_3": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+                "button_label_3": "",
+                "button_link_3": ""
+              }
+            },
+            "page-background-image-text": {
+              "type": "background-image-text",
+              "settings": {
+                "subtitle": "Impressive",
+                "title": "Large image with text box",
+                "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
+                "button_label": "",
+                "button_link": "",
+                "image": "",
+                "alignment": "center",
+                "color_border": "#f4f4f4",
+                "layout": "right",
+                "height": 550,
+                "parallax": true
+              }
+            },
+            "page-featured-collection": {
+              "type": "featured-collection",
+              "settings": {
+                "title": "Featured collection",
+                "collection": "",
+                "per_row": 4,
+                "rows": 1,
+                "mobile_scrollable": true,
+                "view_all": true
+              }
+            }
+          },
+          "block_order": [
+            "page-rich-text",
+            "page-text-columns",
+            "page-background-image-text",
+            "page-featured-collection"
+          ],
+          "settings": {
+            "page_title_enable": false,
+            "page_content_enable": false
+          }
+        },
+        "newsletter-popup": {
+          "type": "newsletter-popup",
+          "settings": {
+            "mode": "disabled",
+            "popup_seconds": 5,
+            "popup_days": 30,
+            "popup_title": "Sign up and save",
+            "popup_image": "",
+            "popup_text": "<p>Entice customers to sign up for your mailing list with discounts or exclusive offers. Include an image for extra impact.<\/p>",
+            "close_text": "No thanks",
+            "enable_newsletter": true,
+            "button_label": "Optional button",
+            "button_link": "",
+            "enable_button": false
+          }
+        },
+        "collection-header": {
+          "type": "collection-header",
+          "settings": {
+          }
+        },
+        "collection-sidebar": {
+          "type": "collection-sidebar",
+          "blocks": {
+            "1524772785241": {
+              "type": "subcollections",
+              "settings": {
+                "enable_subsubcollections": true,
+                "enable_count": false,
+                "collapsed": false
+              }
+            },
+            "1524772580942": {
+              "type": "tags_all",
+              "settings": {
+                "title": "Filter",
+                "collapsed": false
+              }
+            }
+          },
+          "block_order": [
+            "1524772785241",
+            "1524772580942"
+          ],
+          "settings": {
+            "enable_sidebar": true,
+            "filter_style": "sidebar",
+            "tags_combine": false,
+            "enable_sort": true
+          }
+        },
+        "1523298253705": {
+          "type": "slideshow",
+          "blocks": {
+            "1523298253705-0": {
+              "type": "image",
+              "settings": {
+                "title": "Two line\ntitle slide.",
+                "title_size": 80,
+                "subheading": "",
+                "link_text_2": "Shop all",
+                "link_2": "",
+                "color_accent": "#ffffff",
+                "text_align": "vertical-bottom horizontal-left",
+                "image": "",
+                "focal_point": "center center"
+              }
+            },
+            "1523298253705-1": {
+              "type": "image",
+              "settings": {
+                "title": "Two line\ntitle slide.",
+                "title_size": 80,
+                "subheading": "Optional descriptive text",
+                "link_text_2": "Shop all",
+                "link_2": "",
+                "color_accent": "#ffffff",
+                "text_align": "vertical-center horizontal-center",
+                "image": "",
+                "focal_point": "center center"
+              }
+            }
+          },
+          "block_order": [
+            "1523298253705-0",
+            "1523298253705-1"
+          ],
+          "settings": {
+            "section_height": "100vh",
+            "mobile_height": "500px",
+            "parallax": true,
+            "style": "bars",
+            "autoplay": true,
+            "autoplay_speed": 7
+          }
+        },
+        "list-collections-template": {
+          "type": "list-collections-template",
+          "settings": {
+            "title_enable": true,
+            "display_type": "all",
+            "sort": "alphabetical",
+            "grid": "3"
+          }
+        },
+        "1524685456938": {
+          "type": "background-image-text",
+          "settings": {
+            "subtitle": "Impressive",
+            "title": "Large image with text box",
+            "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
+            "button_label": "Shop this ⟶",
+            "button_link": "shopify:\/\/collections\/all",
+            "image": "",
+            "focal_point": "center",
+            "color_border": "#e5e5e5",
+            "layout": "right",
+            "height": 650,
+            "framed": false,
+            "parallax": true
+          }
+        },
+        "1524685919990": {
+          "type": "featured-collection",
+          "settings": {
+            "title": "Featured collection",
+            "home_featured_products": "",
+            "per_row": 4,
+            "rows": 1,
+            "mobile_scrollable": true,
+            "view_all": true,
+            "divider": false
+          }
+        },
+        "1524685997883": {
+          "type": "newsletter",
+          "settings": {
+            "title": "Join the club.",
+            "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>",
+            "color_background": "#000000",
+            "color_text": "#ffffff"
+          }
+        },
+        "1524686167862": {
+          "type": "featured-collection",
+          "settings": {
+            "title": "Featured collection",
+            "home_featured_products": "",
+            "per_row": 3,
+            "rows": 1,
+            "mobile_scrollable": true,
+            "view_all": true,
+            "divider": false
+          }
+        },
+        "1524686876171": {
+          "type": "featured-collections",
+          "blocks": {
+            "1524686876171-0": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "title": "",
+                "focal_point": "center center"
+              }
+            },
+            "1524686876171-1": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "title": "",
+                "focal_point": "center center"
+              }
+            },
+            "1588626135647": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "title": "",
+                "focal_point": "center center"
+              }
+            },
+            "1588626162332": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "title": "",
+                "focal_point": "center center"
+              }
+            },
+            "1588626173524": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "title": "",
+                "focal_point": "center center"
+              }
+            }
+          },
+          "block_order": [
+            "1524686876171-0",
+            "1524686876171-1",
+            "1588626135647",
+            "1588626162332",
+            "1588626173524"
+          ],
+          "settings": {
+            "title": "Collections",
+            "divider": false,
+            "per_row": 5,
+            "enable_gutter": true
+          }
+        },
+        "1525878145666": {
+          "type": "promo-grid",
+          "blocks": {
+            "1525879359021": {
+              "type": "advanced",
+              "settings": {
+                "subheading": "",
+                "heading": "Your promotion.",
+                "textarea": "",
+                "cta_text1": "Shop This",
+                "cta_link1": "shopify:\/\/collections\/all",
+                "cta_text2": "",
+                "cta_link2": "",
+                "image": "",
+                "video_url": "",
+                "width": "33",
+                "height": 560,
+                "text_size": 115,
+                "text_align": "vertical-bottom horizontal-left",
+                "focal_point": "80% 50%",
+                "color_accent": "#000000",
+                "boxed": false,
+                "framed": false
+              }
+            },
+            "1588625715338": {
+              "type": "advanced",
+              "settings": {
+                "subheading": "",
+                "heading": "Another promotion.",
+                "textarea": "",
+                "cta_text1": "Shop This",
+                "cta_link1": "",
+                "cta_text2": "",
+                "cta_link2": "",
+                "image": "",
+                "video_url": "",
+                "width": "33",
+                "height": 500,
+                "text_size": 115,
+                "text_align": "vertical-center horizontal-center",
+                "focal_point": "center",
+                "color_accent": "#000000",
+                "boxed": false,
+                "framed": false
+              }
+            },
+            "1588625789930": {
+              "type": "advanced",
+              "settings": {
+                "subheading": "",
+                "heading": "A boxed promotion.",
+                "textarea": "Include smaller text.",
+                "cta_text1": "Shop This",
+                "cta_link1": "",
+                "cta_text2": "",
+                "cta_link2": "",
+                "image": "",
+                "video_url": "",
+                "width": "33",
+                "height": 500,
+                "text_size": 100,
+                "text_align": "vertical-bottom horizontal-left",
+                "focal_point": "center",
+                "color_accent": "#000000",
+                "boxed": true,
+                "framed": false
+              }
+            }
+          },
+          "block_order": [
+            "1525879359021",
+            "1588625715338",
+            "1588625789930"
+          ],
+          "settings": {
+            "full_width": false,
+            "gutter_size": 10,
+            "space_above": true,
+            "space_below": false
+          }
+        },
+        "1525881294487": {
+          "type": "promo-grid",
+          "blocks": {
+            "1588626352304": {
+              "type": "product",
+              "settings": {
+                "product": "",
+                "subheading": "Limited time",
+                "heading": "Announce your product",
+                "textarea": "Include the smaller details of your promotion in text below the title.",
+                "link_label": "Learn more",
+                "label": "New",
+                "enable_price": true,
+                "width": "50",
+                "text_size": 100,
+                "color_tint": "#000000",
+                "color_tint_opacity": 0,
+                "framed": false
+              }
+            },
+            "1588626372747": {
+              "type": "simple",
+              "settings": {
+                "link": "",
+                "text": "",
+                "image": "",
+                "width": "50",
+                "height": 300,
+                "color_tint": "#000000",
+                "color_tint_opacity": 8,
+                "framed": false
+              }
+            }
+          },
+          "block_order": [
+            "1588626352304",
+            "1588626372747"
+          ],
+          "settings": {
+            "full_width": false,
+            "gutter_size": 40,
+            "space_above": true,
+            "space_below": false
+          }
+        },
+        "1526493275292": {
+          "type": "promo-grid",
+          "blocks": {
+            "1588625972876": {
+              "type": "advanced",
+              "settings": {
+                "subheading": "",
+                "heading": "Powerful flexibility.",
+                "textarea": "Include the smaller details of your promotion in text below the title.",
+                "cta_text1": "Shop This",
+                "cta_link1": "",
+                "cta_text2": "",
+                "cta_link2": "",
+                "image": "",
+                "video_url": "",
+                "width": "50",
+                "height": 700,
+                "text_size": 115,
+                "text_align": "vertical-bottom horizontal-left",
+                "focal_point": "center",
+                "color_accent": "#000000",
+                "boxed": false,
+                "framed": false
+              }
+            },
+            "1588625975479": {
+              "type": "advanced",
+              "settings": {
+                "subheading": "",
+                "heading": "Adaptive layouts",
+                "textarea": "Include the smaller details of your promotion in text below the title.",
+                "cta_text1": "Shop This",
+                "cta_link1": "",
+                "cta_text2": "Shop All",
+                "cta_link2": "",
+                "image": "",
+                "video_url": "",
+                "width": "50",
+                "height": 500,
+                "text_size": 100,
+                "text_align": "vertical-center horizontal-center",
+                "focal_point": "center",
+                "color_accent": "rgba(0,0,0,0)",
+                "boxed": true,
+                "framed": false
+              }
+            }
+          },
+          "block_order": [
+            "1588625972876",
+            "1588625975479"
+          ],
+          "settings": {
+            "full_width": true,
+            "gutter_size": 20,
+            "space_above": true,
+            "space_below": false
+          }
+        },
+        "collection-promotions": {
+          "type": "collection-promotions",
+          "blocks": {
+            "1526501699095": {
+              "type": "banner",
+              "settings": {
+                "promo_collection": "",
+                "heading": "Summer Savings",
+                "text": "<p>Add the details of your promotion<\/p>",
+                "link": "shopify:\/\/collections\/all",
+                "label": "Shop now",
+                "image": "",
+                "color_tint": "#66a7d7",
+                "color_tint_opacity": 14,
+                "framed": false
+              }
+            }
+          },
+          "block_order": [
+            "1526501699095"
+          ],
+          "settings": {
+            "gutter_size": 17
+          }
+        },
+        "footer-promotions": {
+          "type": "footer-promotions",
+          "blocks": {
+            "footer-promotions-0": {
+              "type": "promotion",
+              "settings": {
+                "enable_image": true,
+                "image": "",
+                "title": "Site-wide promotion",
+                "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
+                "button_label": "Optional button",
+                "button_link": ""
+              }
+            },
+            "footer-promotions-1": {
+              "type": "promotion",
+              "settings": {
+                "enable_image": true,
+                "image": "",
+                "title": "Site-wide promotion",
+                "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
+                "button_label": "Optional button",
+                "button_link": ""
+              }
+            },
+            "footer-promotions-2": {
+              "type": "promotion",
+              "settings": {
+                "enable_image": true,
+                "image": "",
+                "title": "Site-wide promotion",
+                "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
+                "button_label": "Optional button",
+                "button_link": ""
+              }
+            }
+          },
+          "block_order": [
+            "footer-promotions-0",
+            "footer-promotions-1",
+            "footer-promotions-2"
+          ],
+          "settings": {
+            "hide_homepage": false,
+            "image_size": "wide"
+          }
+        },
+        "1588626192341": {
+          "type": "featured-collections",
+          "blocks": {
+            "1588626192341-0": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "title": "",
+                "focal_point": "center center"
+              }
+            },
+            "1588626192341-1": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "title": "",
+                "focal_point": "center center"
+              }
+            },
+            "1588626192341-2": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "title": "",
+                "focal_point": "center center"
+              }
+            }
+          },
+          "block_order": [
+            "1588626192341-0",
+            "1588626192341-1",
+            "1588626192341-2"
+          ],
+          "settings": {
+            "title": "More collections",
+            "divider": false,
+            "per_row": 3,
+            "enable_gutter": true
+          }
+        },
+        "1588626476600": {
+          "type": "featured-content",
+          "settings": {
+            "title": "Rich text",
+            "text": "<p>A sentence or two introducing your brand, what you sell, and what makes your brand compelling to customers.<\/p>",
+            "align_text": "center",
+            "narrow_column": true,
+            "enlarge_text": true,
+            "divider": true
+          }
+        },
+        "1588626523224": {
+          "type": "promo-grid",
+          "blocks": {
+            "1588626523224-0": {
+              "type": "simple",
+              "settings": {
+                "link": "",
+                "text": "",
+                "image": "",
+                "width": "33",
+                "height": 340,
+                "color_tint": "#000000",
+                "color_tint_opacity": 8,
+                "framed": false
+              }
+            },
+            "1588626523224-1": {
+              "type": "simple",
+              "settings": {
+                "link": "",
+                "text": "",
+                "image": "",
+                "width": "33",
+                "height": 300,
+                "color_tint": "#000000",
+                "color_tint_opacity": 8,
+                "framed": false
+              }
+            },
+            "1588626529491": {
+              "type": "simple",
+              "settings": {
+                "link": "",
+                "text": "",
+                "image": "",
+                "width": "33",
+                "height": 300,
+                "color_tint": "#000000",
+                "color_tint_opacity": 8,
+                "framed": false
+              }
+            }
+          },
+          "block_order": [
+            "1588626523224-0",
+            "1588626523224-1",
+            "1588626529491"
+          ],
+          "settings": {
+            "full_width": false,
+            "gutter_size": 5,
+            "space_above": false,
+            "space_below": true
+          }
+        }
+      },
+      "content_for_index": [
+        "1523298253705",
+        "1525878145666",
+        "1498163293234",
+        "1524685919990",
+        "1526493275292",
+        "1524686876171",
+        "1588626192341",
+        "1524685456938",
+        "1525881294487",
+        "1524686167862",
+        "1588626476600",
+        "1588626523224",
+        "1524685997883"
+      ]
+    },
+    "Bold": {
+      "color_body_bg": "#000000",
+      "color_body_text": "#ffffff",
+      "color_price": "#d1ba98",
+      "color_savings_text": "#b30000",
+      "color_borders": "#2b2a27",
+      "color_button": "#9f8561",
+      "color_button_text": "#ffffff",
+      "color_cart_dot": "#b30000",
+      "color_small_image_bg": "#000000",
+      "color_large_image_bg": "#111111",
+      "color_header": "#000000",
+      "color_header_text": "#ffffff",
+      "color_announcement": "#cf2424",
+      "color_announcement_text": "#ffffff",
+      "color_footer": "#000000",
+      "color_footer_text": "#ffffff",
+      "color_drawer_background": "#000000",
+      "color_drawer_text": "#ffffff",
+      "color_drawer_border": "#2b2a27",
+      "color_drawer_button": "#9f8561",
+      "color_drawer_button_text": "#ffffff",
+      "color_modal_overlays": "#67635d",
+      "color_image_overlay": "#000000",
+      "color_image_overlay_opacity": 15,
+      "color_image_overlay_text_shadow": 30,
+      "type_header_font_family": "fjalla_one_n4",
+      "type_header_spacing": "150",
+      "type_header_base_size": 45,
+      "type_header_line_height": 1.2,
+      "type_header_capitalize": true,
+      "type_headers_align_text": true,
+      "type_base_font_family": "itc_conduit_n4",
+      "type_base_spacing": "50",
+      "type_base_size": 18,
+      "type_base_line_height": 1.4,
+      "type_body_align_text": true,
+      "type_navigation_style": "heading",
+      "type_navigation_size": 18,
+      "type_product_style": "heading",
+      "type_collection_font": "heading",
+      "type_collection_size": 23,
+      "button_style": "angled",
+      "icon_weight": "5px",
+      "icon_linecaps": "miter",
+      "vendor_enable": false,
+      "search_enable": false,
+      "sku_enable": false,
+      "quantity_enable": false,
+      "variant_type": "button",
+      "inventory_enable": false,
+      "product_save_amount": true,
+      "product_zoom_enable": false,
+      "quick_shop_enable": true,
+      "quick_shop_text": "Quick view",
+      "product_grid_image_size": "square",
+      "product_hover_image": false,
+      "product_color_swatches": false,
+      "collection_color_swatches": false,
+      "product_content_collapse_1": false,
+      "product_content_collapse_2": true,
+      "product_content_collapse_3": true,
+      "product_contact": false,
+      "enable_product_reviews": true,
+      "reviews_layout": "expandable",
+      "collection_grid_style": "overlaid-box",
+      "collection_grid_shape": "landscape",
+      "collection_grid_image": "collection",
+      "collection_grid_text_align": "bottom-center",
+      "collection_grid_tint": "#000000",
+      "collection_grid_opacity": 10,
+      "collection_grid_gutter": true,
+      "cart_type": "drawer",
+      "social_facebook_link": "https:\/\/www.facebook.com\/shopify",
+      "social_twitter_link": "https:\/\/twitter.com\/shopify",
+      "social_youtube_link": "https:\/\/www.youtube.com\/user\/shopify",
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#000000",
+      "checkout_input_background_color_mode": "transparent",
+      "checkout_sidebar_background_color": "#000000",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_body_font": "Helvetica Neue",
+      "checkout_accent_color": "#ae9878",
+      "checkout_button_color": "#ae9878",
+      "checkout_error_color": "#ff6d6d",
+      "color_image_2": "#cf2424",
+      "color_image_2_opacity": 0,
+      "color_image_1": "#6d1414",
+      "color_image_1_opacity": 0,
+      "type_accent_style": "body",
+      "type_accent_bold": true,
+      "type_accent_capitalize": true,
+      "type_button_font": "heading",
+      "type_button_capitalize": false,
+      "type_header_accent_transform": true,
+      "type_base_accent_transform": true,
+      "collection_grid_font": "heading",
+      "color_image_bg": "#000000",
+      "breadcrumb": true,
+      "color_sale_tag": "#990000",
+      "color_input": "#ffffff",
+      "checkout_banner_background_color": "#ffffff",
+      "checkout_call_to_action_color": "#a26b25",
+      "sections": {
+        "header": {
+          "type": "header",
+          "blocks": {
+            "1524768779513": {
+              "type": "logo",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1524768779513"
+          ],
+          "settings": {
+            "main_menu_link_list": "main-menu",
+            "main_menu_alignment": "left-center",
+            "header_style": "normal",
+            "sticky_index": true,
+            "sticky_collection": false,
+            "announcement_compact": false,
+            "toolbar_social": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1525444454442": {
+              "type": "logo_social",
+              "settings": {
+                "container_width": 95
+              }
+            }
+          },
+          "block_order": [
+            "1525444454442"
+          ],
+          "settings": {
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "subcollection_style": "above",
+            "subcollections_per_row": 3,
+            "per_row": 5,
+            "mobile_flush_grid": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "social_enable": true,
+            "image_size": "large"
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+          }
+        },
+        "1499790633921": {
+          "type": "background-image-text",
+          "settings": {
+            "button_link": "shopify:\/\/collections\/all",
+            "focal_point": "center",
+            "color_border": "#090909",
+            "layout": "right",
+            "height": 750,
+            "framed": false,
+            "parallax": true
+          }
+        },
+        "product-sections-template": {
+          "type": "product-sections-template",
+          "blocks": {
+            "sections-1592408474529": {
+              "type": "text-and-image",
+              "settings": {
+                "image": "",
+                "image_width": 500,
+                "subtitle": "Improved",
+                "button_label": "Optional button",
+                "button_link": "",
+                "layout": "right"
+              }
+            },
+            "sections-1592410313636": {
+              "type": "background-image-text",
+              "settings": {
+                "subtitle": "Why choose us?",
+                "title": "Explain your brand philosophy",
+                "text": "<p>Use this section to explain your company philosophy or standards. Showcase lifestyle photography for added emphasis. This content will appear on all products.<\/p>",
+                "button_label": "",
+                "button_link": "",
+                "image": "",
+                "alignment": "center",
+                "color_border": "#f4f4f4",
+                "layout": "right",
+                "height": 650,
+                "parallax": true
+              }
+            },
+            "sections-1592408476245": {
+              "type": "testimonials",
+              "settings": {
+                "title": "Testimonials",
+                "align_text": "center",
+                "round_images": false,
+                "testimonial_1": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.<\/p>",
+                "image_1": "",
+                "author_1": "Author's name",
+                "testimonial_2": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.<\/p>",
+                "image_2": "",
+                "author_2": "Author's name"
+              }
+            },
+            "sections-1592410272428": {
+              "type": "image-hero",
+              "settings": {
+                "parallax": true,
+                "title": "Two line\ntitle image",
+                "title_size": 80,
+                "subheading": "And optional subtext",
+                "link": "",
+                "link_text": "Optional button",
+                "link_2": "",
+                "link_text_2": "",
+                "color_accent": "#ffffff",
+                "text_align": "vertical-center horizontal-center",
+                "image": "",
+                "focal_point": "center center",
+                "section_height": "650px",
+                "mobile_height": "auto"
+              }
+            },
+            "sections-1592410318615": {
+              "type": "text-and-image",
+              "settings": {
+                "image": "",
+                "image_width": 500,
+                "subtitle": "Improved",
+                "button_label": "Optional button",
+                "button_link": "",
+                "layout": "left"
+              }
+            }
+          },
+          "block_order": [
+            "sections-1592410313636",
+            "sections-1592408476245",
+            "sections-1592408474529",
+            "sections-1592410318615",
+            "sections-1592410272428"
+          ],
+          "settings": {
+          }
+        },
+        "product-story-sections": {
+          "type": "product-story-sections",
+          "blocks": {
+            "1592408474529": {
+              "type": "text-and-image",
+              "settings": {
+                "image": "",
+                "image_width": 500,
+                "subtitle": "Improved",
+                "button_label": "Optional button",
+                "button_link": "",
+                "layout": "right"
+              }
+            },
+            "1592410313636": {
+              "type": "background-image-text",
+              "settings": {
+                "subtitle": "Why choose us?",
+                "title": "Explain your brand philosophy",
+                "text": "<p>Use this section to explain your company philosophy or standards. Showcase lifestyle photography for added emphasis. This content will appear on all products.<\/p>",
+                "button_label": "",
+                "button_link": "",
+                "image": "",
+                "alignment": "center",
+                "color_border": "#f4f4f4",
+                "layout": "right",
+                "height": 650,
+                "parallax": true
+              }
+            },
+            "1592408476245": {
+              "type": "testimonials",
+              "settings": {
+                "title": "Testimonials",
+                "align_text": "center",
+                "round_images": false,
+                "testimonial_1": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.<\/p>",
+                "image_1": "",
+                "author_1": "Author's name",
+                "testimonial_2": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.<\/p>",
+                "image_2": "",
+                "author_2": "Author's name"
+              }
+            },
+            "1592410272428": {
+              "type": "image-hero",
+              "settings": {
+                "parallax": true,
+                "title": "Two line\ntitle image",
+                "title_size": 80,
+                "subheading": "And optional subtext",
+                "link": "",
+                "link_text": "Optional button",
+                "link_2": "",
+                "link_text_2": "",
+                "color_accent": "#ffffff",
+                "text_align": "vertical-center horizontal-center",
+                "image": "",
+                "focal_point": "center center",
+                "section_height": "650px",
+                "mobile_height": "auto"
+              }
+            },
+            "1592410318615": {
+              "type": "text-and-image",
+              "settings": {
+                "image": "",
+                "image_width": 500,
+                "subtitle": "Improved",
+                "button_label": "Optional button",
+                "button_link": "",
+                "layout": "left"
+              }
+            }
+          },
+          "block_order": [
+            "1592410313636",
+            "1592408476245",
+            "1592408474529",
+            "1592410318615",
+            "1592410272428"
+          ],
+          "settings": {
+          }
+        },
+        "page-sections-template": {
+          "type": "page-sections-template",
+          "blocks": {
+            "page-rich-text": {
+              "type": "rich-text",
+              "settings": {
+                "align_text": "center",
+                "narrow_column": true,
+                "enlarge_text": true
+              }
+            },
+            "page-text-columns": {
+              "type": "text-columns",
+              "settings": {
+              }
+            },
+            "page-background-image-text": {
+              "type": "background-image-text",
+              "settings": {
+                "alignment": "center",
+                "color_border": "#f4f4f4",
+                "layout": "right",
+                "height": 550
+              }
+            },
+            "page-featured-collection": {
+              "type": "featured-collection",
+              "settings": {
+                "per_row": 4,
+                "rows": 1,
+                "view_all": true
+              }
+            }
+          },
+          "block_order": [
+            "page-rich-text",
+            "page-text-columns",
+            "page-background-image-text",
+            "page-featured-collection"
+          ],
+          "settings": {
+            "page_title_enable": false,
+            "page_content_enable": false
+          }
+        },
+        "newsletter-popup": {
+          "type": "newsletter-popup",
+          "settings": {
+          }
+        },
+        "1524768368258": {
+          "type": "slideshow",
+          "blocks": {
+            "1524768368258-0": {
+              "type": "image",
+              "settings": {
+                "text_align": "vertical-center horizontal-left",
+                "focal_point": "top center"
+              }
+            }
+          },
+          "block_order": [
+            "1524768368258-0"
+          ],
+          "settings": {
+            "section_height": "750px",
+            "mobile_height": "auto",
+            "parallax": true,
+            "style": "minimal",
+            "autoplay": true,
+            "autoplay_speed": 5
+          }
+        },
+        "collection-header": {
+          "type": "collection-header",
+          "settings": {
+          }
+        },
+        "collection-sidebar": {
+          "type": "collection-sidebar",
+          "blocks": {
+            "1524772785241": {
+              "type": "subcollections",
+              "settings": {
+              }
+            },
+            "1524772580942": {
+              "type": "tags_all",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1524772785241",
+            "1524772580942"
+          ],
+          "settings": {
+            "enable_sidebar": true,
+            "filter_style": "sidebar",
+            "tags_combine": false,
+            "enable_sort": true
+          }
+        },
+        "1525290496166": {
+          "type": "featured-collections",
+          "blocks": {
+            "1525290496166-0": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "1525290496166-2": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "1525290496166-1": {
+              "type": "collection",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1525290496166-0",
+            "1525290496166-2",
+            "1525290496166-1"
+          ],
+          "settings": {
+            "divider": false,
+            "per_row": 3,
+            "enable_gutter": true
+          }
+        },
+        "1525969132569": {
+          "type": "promo-grid",
+          "blocks": {
+            "1525969870126": {
+              "type": "product",
+              "settings": {
+                "link_label": "Shop now",
+                "label": "New",
+                "enable_price": true,
+                "width": "50",
+                "text_size": 100,
+                "color_tint": "#f8ebd4",
+                "color_tint_opacity": 0,
+                "framed": true
+              }
+            },
+            "1525969996422": {
+              "type": "product",
+              "settings": {
+                "link_label": "Shop now",
+                "label": "New",
+                "enable_price": true,
+                "width": "50",
+                "text_size": 100,
+                "color_tint": "#ff0000",
+                "color_tint_opacity": 0,
+                "framed": true
+              }
+            }
+          },
+          "block_order": [
+            "1525969870126",
+            "1525969996422"
+          ],
+          "settings": {
+            "full_width": false,
+            "gutter_size": 5,
+            "space_above": false,
+            "space_below": false
+          }
+        },
+        "1526048428302": {
+          "type": "featured-collection",
+          "settings": {
+            "per_row": 4,
+            "rows": 1,
+            "view_all": false,
+            "divider": false
+          }
+        },
+        "1526048519234": {
+          "type": "newsletter",
+          "settings": {
+            "color_background": "#171615",
+            "color_text": "#ffffff"
+          }
+        },
+        "1526048620689": {
+          "type": "blog-posts",
+          "settings": {
+            "title": "Our blog",
+            "blog": "news",
+            "post_limit": 3,
+            "blog_show_tags": false,
+            "blog_show_date": true,
+            "blog_show_comments": false,
+            "blog_show_author": false,
+            "view_all": true,
+            "blog_image_size": "wide",
+            "divider": false
+          }
+        },
+        "collection-promotions": {
+          "type": "collection-promotions",
+          "blocks": {
+            "1526501360047": {
+              "type": "banner",
+              "settings": {
+                "label": "Shop 2017",
+                "color_tint": "#514f4b",
+                "color_tint_opacity": 20,
+                "framed": false
+              }
+            }
+          },
+          "block_order": [
+            "1526501360047"
+          ],
+          "settings": {
+            "gutter_size": 20
+          }
+        },
+        "1526480838446": {
+          "type": "background-image-text",
+          "settings": {
+            "button_link": "shopify:\/\/collections\/all",
+            "focal_point": "center",
+            "color_border": "#f4f4f4",
+            "layout": "left",
+            "height": 750,
+            "framed": false,
+            "parallax": true
+          }
+        },
+        "1526481284428": {
+          "type": "featured-content",
+          "settings": {
+            "align_text": "center",
+            "narrow_column": true,
+            "enlarge_text": true,
+            "divider": false
+          }
+        },
+        "1526481405629": {
+          "type": "promo-grid",
+          "blocks": {
+            "1526481405629-1": {
+              "type": "advanced",
+              "settings": {
+                "width": "100",
+                "height": 660,
+                "text_size": 120,
+                "text_align": "vertical-center horizontal-center",
+                "focal_point": "center",
+                "boxed": false,
+                "framed": false
+              }
+            }
+          },
+          "block_order": [
+            "1526481405629-1"
+          ],
+          "settings": {
+            "full_width": false,
+            "gutter_size": 34,
+            "space_above": false,
+            "space_below": true
+          }
+        }
+      },
+      "content_for_index": [
+        "1524768368258",
+        "1526481284428",
+        "1525969132569",
+        "1525290496166",
+        "1526048428302",
+        "1526480838446",
+        "1499790633921",
+        "1526048519234",
+        "1526048620689",
+        "1526481405629"
+      ]
+    }
+  }
+}

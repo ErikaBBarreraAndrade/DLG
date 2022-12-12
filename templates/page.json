@@ -1,0 +1,256 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "tipo_pagina": "page_ducati"
+      }
+    },
+    "1635741338db15375d": {
+      "type": "agusta-motos-banner",
+      "settings": {
+        "bg_color": "#ef0000",
+        "bg_desktop": "shopify:\/\/shop_images\/banner-principal-1-Ducati.jpg",
+        "bg_mobile": "shopify:\/\/shop_images\/banner-mundo-ducati-principal-mobile.jpg",
+        "title": "Conoce la tienda más completa",
+        "subtitle": "de DUCATI en México",
+        "text_description": "",
+        "image_desktop": "shopify:\/\/shop_images\/motos-banner-ducati.png"
+      }
+    },
+    "163978494770d1d31b": {
+      "type": "category-section-inside",
+      "blocks": {
+        "163978494710078f2f-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/motos-nuevas-icono-ducati.png",
+            "button_link": "shopify:\/\/pages\/ducati-motos-nuevas",
+            "title": "Motos nuevas"
+          }
+        },
+        "163978494710078f2f-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/motos-seminuevas-icono-ducati.png",
+            "button_link": "shopify:\/\/pages\/seminuevas-ducati",
+            "title": "seminuevas"
+          }
+        },
+        "163978494710078f2f-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/equipamiento-icono-ducati.png",
+            "button_link": "shopify:\/\/pages\/equipamiento",
+            "title": "equipamiento"
+          }
+        },
+        "a015e5af-403d-4d31-bc9d-ffe4694ab75d": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/servicio-icono-agusta_179b3c1a-b5a0-4971-825d-0e4278bf6127.png",
+            "button_link": "shopify:\/\/pages\/taller",
+            "title": "servicio"
+          }
+        },
+        "26c08bbc-c712-4c53-8ffb-7d15a7da5839": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/accesorios-icono-ducati.png",
+            "button_link": "shopify:\/\/pages\/accesorios",
+            "title": "accesorios"
+          }
+        }
+      },
+      "block_order": [
+        "163978494710078f2f-0",
+        "163978494710078f2f-1",
+        "163978494710078f2f-2",
+        "a015e5af-403d-4d31-bc9d-ffe4694ab75d",
+        "26c08bbc-c712-4c53-8ffb-7d15a7da5839"
+      ],
+      "settings": {
+        "custom_space": "",
+        "set_box": "box-full",
+        "bg_section": "#ef0000",
+        "title": "",
+        "align_text": "left"
+      }
+    },
+    "16357849275366f241": {
+      "type": "agusta-motos-coleccion",
+      "settings": {
+        "title": "Ducati es un emblema de estilo y clase, conoce toda nuestra colección de ropa y accesorios.",
+        "subtitle": "",
+        "text_end": "",
+        "enable_target": true,
+        "boton_label": "VER ROPA Y ACCESORIOS",
+        "boton_link": "#",
+        "home_featured_products": "accesorios-cascos"
+      }
+    },
+    "1635955501fa17a41c": {
+      "type": "agusta-motos-banner-secundario",
+      "settings": {
+        "image_banner_secondary": "shopify:\/\/shop_images\/banner_secundario_ducati_257e1c7a-0aef-471a-aa96-f422ce775f88.jpg",
+        "image_banner_mobile_secondary": "shopify:\/\/shop_images\/banner-secundario-conoce-ducati-mobile.jpg",
+        "image_logotipo": "shopify:\/\/shop_images\/logo-Ducati_b689c054-05fb-4027-a30f-ef67fbb2246a.png",
+        "title": "",
+        "subtitle": "Líneas distintivas, aceleración brutal, tecnología de punta y un increíble diseño italiano.",
+        "enable_target": false,
+        "boton_url": "shopify:\/\/pages\/ducati-motos-nuevas",
+        "boton_label": "COLECCIÓN 2021"
+      }
+    },
+    "1635956850ad81c53e": {
+      "type": "agusta-motos-iconos",
+      "blocks": {
+        "1635956850ad81c53e-0": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icon-1_26dd7a23-d907-4cc9-8d4b-05e7fdb1f813.png",
+            "description": "Tenemos el inventario más grande en México. Entregas y devoluciones rápidas en toda la República."
+          }
+        },
+        "1635956850ad81c53e-1": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icon-2_44c4b190-933c-4e77-b3f0-34bf2bc53a83.png",
+            "description": "Ofrecemos no solo una experiencia de compra, sino una experiencia de vida."
+          }
+        },
+        "1635956850ad81c53e-2": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icon-3_1d8c5249-04a5-4df1-9658-b56db4f23f36.png",
+            "description": "Más de 17 años de experiencia trabajando con las mejores marcas de Italia y el mundo."
+          }
+        },
+        "1766abce-c3d5-47f7-953f-9a324a6208f0": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icon-4_4d4b3759-d3fb-45d6-8c52-64c53b23c573.png",
+            "description": "Tu compra es segura, aceptamos todos los métodos de pagos disponibles en México."
+          }
+        },
+        "9a6aa26e-fac5-4d59-b6c9-f1cf497a5c8e": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icon-5_b86b4fed-7eb6-4362-966d-8055ed6af65b.png",
+            "description": "Y si no te gusta devolvemos tu dinero sin preguntar."
+          }
+        }
+      },
+      "block_order": [
+        "1635956850ad81c53e-0",
+        "1635956850ad81c53e-1",
+        "1635956850ad81c53e-2",
+        "1766abce-c3d5-47f7-953f-9a324a6208f0",
+        "9a6aa26e-fac5-4d59-b6c9-f1cf497a5c8e"
+      ],
+      "settings": {
+        "title": "DLG Moto Art, <strong>la mejor y más grande tienda<\/strong> para motos y accesorios DUCATI en México"
+      }
+    },
+    "16359579522db73fd6": {
+      "type": "agusta-motos-seminuevas",
+      "blocks": {
+        "16359579522db73fd6-0": {
+          "type": "text_block",
+          "settings": {
+            "image_slider": "shopify:\/\/shop_images\/base_monster821stealth.jpg",
+            "link_image": "",
+            "enable_target": true,
+            "description": "Monster 821 Stealth",
+            "price": "$254,500.00"
+          }
+        },
+        "16359579522db73fd6-2": {
+          "type": "text_block",
+          "settings": {
+            "image_slider": "shopify:\/\/shop_images\/Multistrada-1200-Enduro-Pro.jpg",
+            "link_image": "",
+            "enable_target": true,
+            "description": "Multistrada 1200 Enduro Pro",
+            "price": "$299,000.00"
+          }
+        },
+        "d589a15a-d25b-484a-a5b4-66d598e73cc2": {
+          "type": "text_block",
+          "settings": {
+            "image_slider": "shopify:\/\/shop_images\/Hypermotard-950.jpg",
+            "link_image": "",
+            "enable_target": true,
+            "description": "Hypermotard 950",
+            "price": "$225,000.00"
+          }
+        },
+        "c2ad665c-69a4-4bb7-a4e2-0bac90a2e925": {
+          "type": "text_block",
+          "settings": {
+            "image_slider": "shopify:\/\/shop_images\/Panigale-V4-R.jpg",
+            "link_image": "",
+            "enable_target": true,
+            "description": "Panigale V4 R",
+            "price": "$837,000.00"
+          }
+        },
+        "a11b213d-588d-4627-a888-9acd51626946": {
+          "type": "text_block",
+          "settings": {
+            "image_slider": "shopify:\/\/shop_images\/X-Diavel.jpg",
+            "link_image": "",
+            "enable_target": true,
+            "description": "X Diavel",
+            "price": "$320,000.00"
+          }
+        }
+      },
+      "block_order": [
+        "16359579522db73fd6-0",
+        "16359579522db73fd6-2",
+        "d589a15a-d25b-484a-a5b4-66d598e73cc2",
+        "c2ad665c-69a4-4bb7-a4e2-0bac90a2e925",
+        "a11b213d-588d-4627-a888-9acd51626946"
+      ],
+      "settings": {
+        "color_bg": "#e3e3e3",
+        "title": "<strong>Ducati para todos,<\/strong> conoce nuestras motos usadas certificadas",
+        "title_second": "",
+        "title_right": "DUCATI SEMINUEVAS",
+        "subtitle_right": "Las mejores motos en DLG Moto Art",
+        "text_right": "<p>Ducati puede ser para ti también. Conoce nuestra colección de Ducati seminuevas en DLG Moto Art.<\/p><p>Tenemos opciones de pago distintas y flexibles. <br\/><em>Ofrecemos financiamiento y garantía de mínimo <br\/>30 días.<\/em><\/p>",
+        "button_link": "shopify:\/\/pages\/seminuevas-ducati",
+        "button_label": "Ver seminuevas"
+      }
+    },
+    "163596042558a09315": {
+      "type": "content-service-motos",
+      "settings": {
+        "image_servicio": "shopify:\/\/shop_images\/servicio-ducati.jpg",
+        "title": "servicio <strong>ducati<\/strong>",
+        "subtitle": "Agenda una cita para la revisión de tu moto.",
+        "description_short": "Si necesitas servicio original para tu moto, contamos con las mejores instalaciones, los técnicos más experimentados y el inventario de refacciones y accesorios más grande del país.",
+        "description": "",
+        "enable_target": true,
+        "button_link": "#",
+        "button_label": "Agendar cita"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1635741338db15375d",
+    "163978494770d1d31b",
+    "16357849275366f241",
+    "1635955501fa17a41c",
+    "1635956850ad81c53e",
+    "16359579522db73fd6",
+    "163596042558a09315"
+  ]
+}

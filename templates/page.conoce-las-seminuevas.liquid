@@ -1,0 +1,109 @@
+<div class="container-fluid p-0">
+	{% section 'seminuevas-banner' %}
+	{% section 'seminuevas-texto-simple' %}
+	<div class="col-12">
+	<div class="row m-0 justify-content-center block-content-tabs-information" id="motos-nuevas">
+		<div class="col-12">
+			<div class="row justify-content-center">
+				<div class="col-11 col-sm-11 col-lg-12 col-xl-11 col-xxl-9">
+					<ul class="nav nav-tabs justify-content-center row" id="myTab" role="tablist">
+						<li class="nav-item col col-lg text-center my-auto" role="presentation">
+							<button class="nav-link m-auto active" id="ducati-seminuevas-tab" data-bs-toggle="tab" data-bs-target="#ducati-seminuevas" type="button" role="tab" aria-controls="home" aria-selected="true">
+								<img class="img-fluid lazyload logotipo-blanco-negro"
+								     data-src="{{ "ducati-blanco-negro.png" | asset_url }}"
+								     data-widths="[180, 360, 540, 720, 900, 1080]"
+								     data-aspectratio="{{ preview_image.aspect_ratio }}"
+								     data-sizes="auto"
+								     alt="{{ preview_image.alt | escape }}">
+								<img class="img-fluid lazyload logotipo-color"
+								     data-src="{{ "ducati-color.png" | asset_url }}"
+								     data-widths="[180, 360, 540, 720, 900, 1080]"
+								     data-aspectratio="{{ preview_image.aspect_ratio }}"
+								     data-sizes="auto"
+								     alt="{{ preview_image.alt | escape }}">
+							</button>
+						</li>
+						<li class="nav-item col col-lg text-center my-auto" role="presentation">
+							<button class="nav-link m-auto" id="scmrabler-seminuevas-tab" data-bs-toggle="tab" data-bs-target="#scmrabler-seminuevas" type="button" role="tab" aria-controls="scmrabler-seminuevas" aria-selected="false">
+								<img class="img-fluid lazyload logotipo-blanco-negro"
+								     data-src="{{ "scrambler-blanco-negro.png" | asset_url }}"
+								     data-widths="[180, 360, 540, 720, 900, 1080]"
+								     data-aspectratio="{{ preview_image.aspect_ratio }}"
+								     data-sizes="auto"
+								     alt="{{ preview_image.alt | escape }}">
+								<img class="img-fluid lazyload logotipo-color"
+								     data-src="{{ "scrambler-color.png" | asset_url }}"
+								     data-widths="[180, 360, 540, 720, 900, 1080]"
+								     data-aspectratio="{{ preview_image.aspect_ratio }}"
+								     data-sizes="auto"
+								     alt="{{ preview_image.alt | escape }}">
+							</button>
+						</li>
+						<li class="nav-item col col-lg text-center my-auto" role="presentation">
+							<button class="nav-link m-auto" id="agusta-seminuevas-tab" data-bs-toggle="tab" data-bs-target="#agusta-seminuevas" type="button" role="tab" aria-controls="agusta-seminuevas" aria-selected="false">
+								<img class="img-fluid lazyload logotipo-blanco-negro"
+								     data-src="{{ "imagen-agusta-blanco-y-negro.png" | asset_url }}"
+								     data-widths="[180, 360, 540, 720, 900, 1080]"
+								     data-aspectratio="{{ preview_image.aspect_ratio }}"
+								     data-sizes="auto"
+								     alt="{{ preview_image.alt | escape }}">
+								<img class="img-fluid lazyload logotipo-color"
+								     data-src="{{ "imagen-agusta-color.png" | asset_url }}"
+								     data-widths="[180, 360, 540, 720, 900, 1080]"
+								     data-aspectratio="{{ preview_image.aspect_ratio }}"
+								     data-sizes="auto"
+								     alt="{{ preview_image.alt | escape }}">
+							</button>
+						</li>
+						<li class="nav-item col-12 col-lg text-center my-auto" role="presentation">
+							<button class="nav-link m-auto" id="otras-marcas-seminuevas-tab" data-bs-toggle="tab" data-bs-target="#otras-marcas-seminuevas" type="button" role="tab" aria-controls="otras-marcas-seminuevas" aria-selected="false">
+								Otras Marcas
+							</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="tab-content tab-seminuevas-conocelas" id="myTabContent">
+						<div class="tab-pane fade show active" id="ducati-seminuevas" role="tabpanel" aria-labelledby="ducati-seminuevas-tab">
+							<div class="row justify-content-center">
+								<div class="col-11 col-sm-11 col-lg-12 col-xl-11 col-xxl-9">
+									{% section 'seminuevas-ducati'%}
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="scmrabler-seminuevas" role="tabpanel" aria-labelledby="scmrabler-seminuevas-tab">
+							<div class="row justify-content-center">
+								<div class="col-11 col-sm-11 col-lg-12 col-xl-11 col-xxl-9">
+									{% section 'seminuevas-scrambler'%}
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="agusta-seminuevas" role="tabpanel" aria-labelledby="agusta-seminuevas-tab">
+							<div class="row justify-content-center">
+								<div class="col-11 col-sm-11 col-lg-12 col-xl-11 col-xxl-9">
+									{% section 'seminuevas-agusta'%}
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="otras-marcas-seminuevas" role="tabpanel" aria-labelledby="otras-marcas-seminuevas-tab">
+							<div class="row justify-content-center">
+								<div class="col-11 col-sm-11 col-lg-12 col-xl-11 col-xxl-9">
+									{% section 'seminuevas-otras'%}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12">
+					{% section 'seminuevas-contenedor-icons-business'%}
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="col-12">
+		{% section 'seminuevas-icons-description' %}
+	</div>
+</div>

@@ -1,0 +1,126 @@
+{{ "banner-collection.scss.css" | asset_url | stylesheet_tag }}
+<div class="col-12 banner-collection">
+    <div class="content-image">
+      {% if collection.metafields.dlg.banner_desktop != blank %}
+        <img class="img-fluid w-100 d-none d-lg-block"
+             src="{{ collection.metafields.dlg.banner_desktop | img_url: 'master' }}"
+             data-widths="[180, 360, 540, 720]"
+             data-aspectratio="{{ collection.metafields.dlg.banner_desktop}}"
+             alt="{{ collection.metafields.dlg.banner_desktop.alt }}">
+      {% endif %}
+      {% if collection.metafields.dlg.banner_mobile != blank %}
+        <img class="img-fluid w-100 d-block d-lg-none"
+             src="{{ collection.metafields.dlg.banner_mobile | img_url: 'master' }}"
+             data-widths="[180, 360, 540, 720]"
+             data-aspectratio="{{ collection.metafields.dlg.banner_mobile}}"
+             alt="{{ collection.metafields.dlg.banner_mobile.alt }}">
+      {% endif %}
+      <div class="content-description row justify-content-lg-start">
+        <div class="box-txt col-12 col-lg-5 offset-lg-2 mt-auto">
+          {% if collection.metafields.dlg.titulo != blank %}
+            <div class="title text-uppercase mx-auto text-center text-lg-start ms-lg-0">
+              {{ collection.metafields.dlg.titulo }}
+            </div>
+          {% endif %}
+          {% if collection.metafields.dlg.descripcion != blank %}
+            <div class="description mx-auto text-center text-lg-start ms-lg-0 d-none d-lg-block">
+              {{ collection.metafields.dlg.descripcion }}
+            </div>
+          {% endif %}
+          {% if collection.metafields.dlg.url_boton != blank %}
+            <div class="button-content mx-auto text-center text-lg-start ms-lg-0">
+              <a href="{{ collection.metafields.dlg.url_boton }}">
+                {{ collection.metafields.dlg.texto_boton }}
+              </a>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% if collection.metafields.dlg.bloque_categoria_banner_1 != blank %}
+    <div class="content-block-cat-images-global">
+    <div class="content-block-cat-images mx-auto">
+      <div class="block-cat">
+        <a href="{{ collection.metafields.dlg.bloque_categoria_url_1 }}">
+          {% if collection.metafields.dlg.bloque_categoria_banner_1 != blank %}
+            <img class="img-fluid"
+                 src="{{ collection.metafields.dlg.bloque_categoria_banner_1 | img_url: 'master' }}"
+                 data-widths="[180, 360, 540, 720]"
+                 data-aspectratio="{{ collection.metafields.dlg.bloque_categoria_banner_1}}"
+                 alt="{{ collection.metafields.dlg.bloque_categoria_banner_1.alt }}">
+          {% endif %}
+          <div class="content-text-cat">
+            <div class="col-12 mt-auto">
+              <div class="title text-center">
+                {{ collection.metafields.dlg.bloque_categoria_b_titulo_1 }}
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="block-cat">
+        {% if collection.metafields.dlg.bloque_categoria_banner_2 != blank %}
+        <a href="{{ collection.metafields.dlg.bloque_categoria_url_2 }}">
+          <img class="img-fluid"
+                 src="{{ collection.metafields.dlg.bloque_categoria_banner_2 | img_url: 'master' }}"
+                 data-widths="[180, 360, 540, 720]"
+                 data-aspectratio="{{ collection.metafields.dlg.bloque_categoria_banner_2}}"
+                 alt="{{ collection.metafields.dlg.bloque_categoria_banner_2.alt }}">
+          {% endif %}
+          <div class="content-text-cat">
+            <div class="col-12 mt-auto">
+              <div class="title text-center">
+                {{ collection.metafields.dlg.bloque_categoria_ban_titulo_2 }}
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="block-cat">
+        {% if collection.metafields.dlg.bloque_categoria_banner_3 != blank %}
+        <a href="{{ collection.metafields.dlg.bloque_categoria_url_3 }}">
+          <img class="img-fluid"
+                 src="{{ collection.metafields.dlg.bloque_categoria_banner_3 | img_url: 'master' }}"
+                 data-widths="[180, 360, 540, 720]"
+                 data-aspectratio="{{ collection.metafields.dlg.bloque_categoria_banner_3}}"
+                 alt="{{ collection.metafields.dlg.bloque_categoria_banner_3.alt }}">
+          {% endif %}
+          <div class="content-text-cat">
+            <div class="col-12 mt-auto">
+              <div class="title text-center">
+                {{ collection.metafields.dlg.bloque_categoria_ban_titulo_3 }}
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="block-cat">
+        {% if collection.metafields.dlg.bloque_categoria_banner_4 != blank %}
+        <a href="{{ collection.metafields.dlg.bloque_categoria_url_4 }}">
+          <img class="img-fluid"
+               src="{{ collection.metafields.dlg.bloque_categoria_banner_4 | img_url: 'master' }}"
+               data-widths="[180, 360, 540, 720]"
+               data-aspectratio="{{ collection.metafields.dlg.bloque_categoria_banner_4}}"
+               alt="{{ collection.metafields.dlg.bloque_categoria_banner_4.alt }}">
+        {% endif %}
+          <div class="content-text-cat">
+            <div class="col-12 mt-auto">
+              <div class="title text-center">
+                {{ collection.metafields.dlg.bloque_categoria_ban_titulo_4 }}
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+  console.log("a")
+  $("body").addClass("header-black");
+  {% if collection.metafields.dlg.banner_desktop != blank %}
+  $("body").removeClass("header-black");
+  {%endif%}
+</script>

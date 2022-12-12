@@ -1,0 +1,110 @@
+<div class="row m-0 justify-content-center block-content-tabs-information" id="motos-nuevas">
+	<div id="shopify-section-ducati-motos-nuevas-title-tabs" class="shopify-section agusta-seminuevas-tabs">	
+  <div class="col-11 col-lg-12">
+          {% if section.settings.title != blank%}
+              <p class="title-tabs text-uppercase text-center mb-0">
+                  {{ section.settings.title }}
+              </p>
+          {% endif %}
+          {% if section.settings.description != blank%}
+              <p class="description-tabs text-center">
+                  {{ section.settings.description }}
+              </p>
+          {% endif %}
+      </div>
+  </div>
+    
+	
+
+		<div class="col-11 col-lg-12">
+			<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+              
+                {% for block in section.blocks %}
+                  <li class="nav-item" role="presentation">
+                      <button class="nav-link  {% if forloop.first %}active{% endif %}" id="{{block.settings.tab_name | handleize}}-tab" data-bs-toggle="tab" data-bs-target="#{{block.settings.tab_name | handleize}}" type="button" role="tab" aria-controls="home" aria-selected="true">
+                          {{block.settings.tab_name | capitalize}}
+                      </button>
+                  </li>
+  				{% endfor %}
+			</ul>
+			<div class="tab-content" id="myTabContent">
+              {% for block in section.blocks %}
+				<div class="tab-pane fade {% if forloop.first %} show active{% endif %}" id="{{block.settings.tab_name | handleize}}" role="tabpanel" aria-labelledby="{{block.settings.tab_name | handleize}}-tab">
+					<div class="row justify-content-center">
+						<div class="col-11 col-sm-11 col-lg-12 col-xl-11 col-xxl-10">
+                          {%- assign featured_product = collections[block.settings.featured_product_handle] -%}
+                          {%- for product in featured_product.products -%}
+                          {% include 'catalog-card-product-list', cProduct:product %}
+                          {%- endfor -%}
+                      </div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+
+{% schema %}
+  {
+    "name": "Collections Tabs",
+    "settings": [{
+              "type": "header",
+              "content": "==== Titulos ===="
+          },
+          {
+              "type": "text",
+              "id": "title",
+              "label": "Titulo"
+          },
+	      {
+              "type": "header",
+              "content": "==== Descripción ===="
+          },
+	  	 {
+              "type": "text",
+              "id": "description",
+              "label": "Descripción"
+          },
+	 	{
+              "type": "color",
+              "id": "bg_block",
+              "label": "Background",
+			"default": "#f5f5f5"
+          }],
+    "blocks": [
+ 				{
+            "type": "collection_tab",
+            "name": "coltab",
+            "settings": [
+
+        {
+                    "type": "collection",
+                    "id": "featured_product_handle",
+                    "label": "Select Collection"
+                },{
+              "type": "text",
+              "id": "tab_name",
+              "label": "Tab Name"
+          },
+	 	{
+              "type": "color",
+              "id": "bg_block",
+              "label": "Background",
+			"default": "#f5f5f5"
+          }
+          ]}],
+"presets": [
+{
+"name": "Collections Tabs",
+"category": "Collection"
+}
+]
+
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

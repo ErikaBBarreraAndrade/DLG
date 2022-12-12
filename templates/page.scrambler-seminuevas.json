@@ -1,0 +1,46 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "tipo_pagina": "page_scrambler"
+      }
+    },
+    "1637775876bf01375c": {
+      "type": "banner-simple-descripcion-logotipo",
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/banner-seccion-scrambler-seminuevas.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-seminuevas-scrambler-mobile.jpg",
+        "image_logotipo": "shopify:\/\/shop_images\/logotipo_scrambler_seminuevas.png",
+        "title": "Tenemos la mejor colección de motos",
+        "subtitle": "Seminuevas scrambler en dlg Moto Art",
+        "enable_target": false,
+        "button_label": "Ver seminuevas",
+        "button_link": "#"
+      }
+    },
+    "16378134175d1b3e30": {
+      "type": "content-description-short",
+      "settings": {
+        "logotipo_imagen": "shopify:\/\/shop_images\/imagen-scrambler-seminuevas-description-corta.jpg",
+        "title": "Hay una moto para cada actitud. <br>¿Cúal es la tuya?",
+        "subtitle": "",
+        "description": "<p>Scrambler puede ser para ti también. Conode nuestra colección de Scrambler seminuevas en DLG Moto Art. Tenemos opciones de pago distintas y flexibles.<\/p><p>Financiamiento y garantía de 30 días.*<\/p>"
+      }
+    },
+    "1637815290646ac56b": {
+      "type": "seminuevas-loop-motos",
+      "settings": {
+        "enable_boton": true,
+        "boton_url": "shopify:\/\/pages\/conoce-seminuevas",
+        "boton_label": "Otras marcas"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1637775876bf01375c",
+    "16378134175d1b3e30",
+    "1637815290646ac56b"
+  ]
+}

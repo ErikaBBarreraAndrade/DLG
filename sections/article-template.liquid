@@ -1,0 +1,110 @@
+<link rel="preload" href="{{ "main-article-template.scss.css" | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ "main-article-template.scss.css" | asset_url }}"></noscript>
+{% assign shortdesc = article.content | split: '[shortdesc]' | last %}
+{% assign splitShortDesc = shortdesc | split: "|" %}
+{%- assign number_of_comments = article.comments_count -%}
+{%- if comment -%}
+  {%- assign number_of_comments = article.comments_count | plus: 1 -%}
+{%- endif -%}
+<div class="container-fluid">
+  <div class="row justify-content-center content-global">
+    <div class="col-11 col-lg-7">
+      <div class="row">
+        <div class="col-12 content-return-link">
+          <a href="{{ blog.url }}" class="btn return-link">
+           <span>
+             <svg xmlns="http://www.w3.org/2000/svg" width="15.529" height="15.529" viewBox="0 0 15.529 15.529">
+            <path id="arrow_forward_FILL0_wght400_GRAD0_opsz48" d="M15.765,23.529l-1.019-1.043,5.993-5.993H8V15.037H20.739L14.746,9.043,15.765,8l7.765,7.765Z" transform="translate(23.529 23.529) rotate(180)"/>
+            </svg>
+           </span>
+            Atrás
+          </a>
+        </div>
+        <div class="col-12">
+          <div class="content-date-article">
+            {{ article.published_at | date: format: 'date' }}
+          </div>
+          <div class="content-header__title text-lg-start">{{ article.title }}</div>
+          <div class="article__content">
+            {{ splitShortDesc[0] | split: '[/shortdesc]' | first }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-7 content-image-article">
+      <div class="article__content">
+        {{ splitShortDesc[1] | split: '[/shortdesc]' | first }}
+      </div>
+    </div>
+    <div class="col-11 col-lg-7">
+      <div class="article__content mt-0">
+        {{ splitShortDesc[2] | split: '[/shortdesc]' | first }}
+      </div>
+    </div>
+    <div class="col-11 col-lg-7">
+      <div class="content-link-next">
+        {% if blog.next_article %}
+          <a href="{{ next_article.url }}">
+            Siguiente artículo
+            <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15.529" height="15.529" viewBox="0 0 15.529 15.529">
+                    <path id="arrow_forward_FILL0_wght400_GRAD0_opsz48" d="M15.765,23.529l-1.019-1.043,5.993-5.993H8V15.037H20.739L14.746,9.043,15.765,8l7.765,7.765Z" transform="translate(-8 -8)"/>
+                    </svg>
+                  </span>
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "articleBody": {{ article.content | strip_html | json }},
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ shop.url | append: article.url | json }}
+  },
+  "headline": {{ article.title | json }},
+  {% if article.excerpt != blank %}
+    "description": {{ article.excerpt | strip_html | json }},
+  {% endif %}
+  {% if article.image %}
+    {% assign image_size = article.image.width | append: 'x' %}
+    "image": [
+      {{ article | img_url: image_size | prepend: "https:" | json }}
+    ],
+  {% endif %}
+  "datePublished": {{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+  "dateModified": {{ article.updated_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+  "dateCreated": {{ article.created_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+  "author": {
+    "@type": "Person",
+    "name": {{ article.author | json }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    {% if settings.share_image %}
+      {% assign image_size = settings.share_image.width | append: 'x' %}
+      "logo": {
+        "@type": "ImageObject",
+        "height": {{ settings.share_image.height | json }},
+        "url": {{ settings.share_image | img_url: image_size | prepend: "https:" | json }},
+        "width": {{ settings.share_image.width | json }}
+      },
+    {% endif %}
+    "name": {{ shop.name | json }}
+  }
+}
+</script>
+
+{% schema %}
+  {
+    "name": "Article pages",
+    "class": "main-article-template",
+    "settings": [
+
+    ]
+  }
+{% endschema %}

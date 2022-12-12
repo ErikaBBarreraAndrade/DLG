@@ -1,0 +1,276 @@
+{%- liquid
+  assign show_selectors = false
+  assign currency_selector = false
+  assign locale_selector = false
+
+  if section.settings.show_currency_selector and shop.enabled_currencies.size > 1
+    assign currency_selector = true
+  endif
+
+  if section.settings.show_locale_selector and shop.enabled_locales.size > 1
+    assign locale_selector = true
+  endif
+
+  if currency_selector or locale_selector
+    assign show_selectors = true
+  endif
+-%}
+
+{%- if settings.color_footer == settings.color_body_bg -%}
+  {%- style -%}
+    .site-footer {
+border-top: 1px solid {{ settings.color_borders }};
+}
+{%- endstyle -%}
+{%- endif -%}
+<div class="box-newsletter">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-7 col-xxl-5 content-form-newsletter">
+        {%- assign formId = 'ContactFooter' -%}
+        {% form 'customer', id: formId, novalidate: 'novalidate' %}
+        {%- if form.posted_successfully? -%}
+        {%- endif -%}
+        <input type="hidden" name="contact[tags]" value="newsletter">
+        <div class="input-group {% if form.errors %} input-group--error{% endif %}">
+          <input type="email"
+                 name="contact[email]"
+                 id="{{ formId }}-email"
+                 class="form-control input-group__field newsletter__input{% if form.errors %} input--error{% endif %}"
+                 value="{{ form.email }}"
+                 placeholder="Suscríbete a nuestro boletín de noticias"
+                 aria-label="Suscríbete a nuestro boletín de noticias"
+                 aria-required="true"
+                 required
+                 autocorrect="off"
+                 autocapitalize="off"
+                 {% if form.errors %}
+                 aria-invalid="true"
+                 aria-describedby="{{ formId }}-email-error"
+                 data-form-status
+                 {% endif %}>
+          <span class="input-group__btn button-send-newsletter">
+            <button type="submit" class="btn newsletter__submit" name="commit" >
+              <span class="newsletter__submit-text--large">{{ 'general.newsletter_form.submit' | t }}</span>
+            </button>
+          </span>
+        </div>
+        {% if form.errors contains 'email' %}
+
+        {% endif %}
+        {% endform %}
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="site-footer container-fluid" data-section-id="{{ section.id }}" data-section-type="footer-section">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-11 col-lg-12 col-xl-11 col-xxl-8 text-center text-lg-start">
+      <div class="row">
+        <div class="col-12 col-lg-2">
+          {%- for block in section.blocks -%}
+          {%- liquid
+            case block.type
+              when 'logo_social'
+                render 'footer-logo', block: block
+            endcase
+          -%}
+          {%- endfor -%}
+        </div>
+	      <div class="col-12 col-lg d-block d-lg-none">
+		      <ul class="d-flex py-4 list-unstyled p-0 m-0 block-social justify-content-center justify-content-lg-start">
+			      <li class="my-auto">
+				      <a href="https://www.facebook.com/dlgmotoart/" target="_blank">
+					      <svg id="Grupo_45" data-name="Grupo 45" xmlns="http://www.w3.org/2000/svg" width="34.058" height="33.916" viewBox="0 0 34.058 33.916">
+						      <path id="Trazado_80" data-name="Trazado 80" d="M109.258,4399.3a17.02,17.02,0,0,0-2.839,33.8v-13.221H102.31v-4.758h4.108v-3.508c0-4.07,2.485-6.288,6.117-6.288a34.044,34.044,0,0,1,3.668.187v4.255h-2.518c-1.974,0-2.355.938-2.355,2.315v3.036h4.711l-.615,4.758h-4.1v13.336a17.021,17.021,0,0,0-2.072-33.916Z" transform="translate(-92.229 -4399.301)" fill="#fff"/>
+					      </svg>
+				      </a>
+			      </li>
+			      <li class="my-auto">
+				      <a href="https://www.instagram.com/dlgmotoart/?hl=en" target="_blank">
+					      <svg xmlns="http://www.w3.org/2000/svg" width="32.278" height="32.277" viewBox="0 0 32.278 32.277">
+						      <g id="Grupo_46" data-name="Grupo 46" transform="translate(0 0)">
+							      <path id="Trazado_81" data-name="Trazado 81" d="M178.378,4400.039h-14.8a8.747,8.747,0,0,0-8.738,8.737v14.8a8.747,8.747,0,0,0,8.738,8.738h14.8a8.747,8.747,0,0,0,8.737-8.738v-14.8A8.747,8.747,0,0,0,178.378,4400.039Zm-7.4,24.964a8.826,8.826,0,1,1,8.825-8.826A8.836,8.836,0,0,1,170.978,4425Zm10.139-16.3a2.608,2.608,0,1,1,2.608-2.607A2.611,2.611,0,0,1,181.117,4408.7Z" transform="translate(-154.838 -4400.039)" fill="#fff"/>
+							      <path id="Trazado_82" data-name="Trazado 82" d="M170.062,4408.329a6.934,6.934,0,1,0,6.933,6.933A6.941,6.941,0,0,0,170.062,4408.329Z" transform="translate(-153.923 -4399.123)" fill="#fff"/>
+						      </g>
+					      </svg>
+				      </a>
+			      </li>
+			      <li class="my-auto">
+				      <a href="https://www.youtube.com/user/DLGMotoArt/videos" target="_blank">
+					      <svg xmlns="http://www.w3.org/2000/svg" width="41.815" height="29.277" viewBox="0 0 41.815 29.277">
+						      <path id="Trazado_83" data-name="Trazado 83" d="M256.8,4405.971a5.239,5.239,0,0,0-3.685-3.686c-3.272-.9-16.36-.9-16.36-.9s-13.088,0-16.361.862a5.344,5.344,0,0,0-3.685,3.719c-.862,3.272-.862,10.057-.862,10.057s0,6.82.862,10.058a5.239,5.239,0,0,0,3.685,3.686c3.307.9,16.361.9,16.361.9s13.088,0,16.36-.861a5.238,5.238,0,0,0,3.685-3.686c.862-3.272.862-10.059.862-10.059S257.694,4409.243,256.8,4405.971ZM232.584,4422.3V4409.76l10.884,6.268Z" transform="translate(-215.844 -4401.39)" fill="#fff"/>
+					      </svg>
+				      </a>
+			      </li>
+			      <li class="my-auto">
+				      <a href="https://twitter.com/DLGMOTOART" target="_blank">
+					      <svg xmlns="http://www.w3.org/2000/svg" width="32.177" height="26.145" viewBox="0 0 32.177 26.145">
+						      <g id="Grupo_48" data-name="Grupo 48" transform="translate(0 0)">
+							      <g id="Grupo_47" data-name="Grupo 47">
+								      <path id="Trazado_84" data-name="Trazado 84" d="M315.621,4405.9a13.767,13.767,0,0,1-3.8,1.043,6.564,6.564,0,0,0,2.9-3.646,13.192,13.192,0,0,1-4.183,1.6,6.6,6.6,0,0,0-11.412,4.51,6.79,6.79,0,0,0,.153,1.505,18.675,18.675,0,0,1-13.6-6.9,6.6,6.6,0,0,0,2.026,8.817,6.509,6.509,0,0,1-2.98-.813v.074a6.627,6.627,0,0,0,5.285,6.481,6.582,6.582,0,0,1-1.73.218,5.8,5.8,0,0,1-1.248-.113,6.661,6.661,0,0,0,6.164,4.6,13.253,13.253,0,0,1-8.179,2.813,12.353,12.353,0,0,1-1.579-.09,18.58,18.58,0,0,0,10.12,2.96c12.139,0,18.776-10.056,18.776-18.771,0-.292-.011-.573-.024-.853A13.15,13.15,0,0,0,315.621,4405.9Z" transform="translate(-283.444 -4402.801)" fill="#fff"/>
+							      </g>
+						      </g>
+					      </svg>
+				      </a>
+			      </li>
+		      </ul>
+	      </div>
+        <div class="col-12 col-lg">
+          <p class="label text-uppercase">
+            Dirección
+          </p>
+          <div class="box-description">
+            <div class="d-flex">
+              <div class="flex-shrink-0 d-none d-lg-block">
+                <img src="{{ 'icon-location.png' | asset_url}}" class="img-fluid">
+              </div>
+              <div class="flex-grow-1 ms-3">
+                Eje 7 Sur (Extremadura) 111, <br>
+                Col. Insurgentes Mixcoac,
+                Benito Juarez, 03920, CDMX, México
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg pt-3 pt-lg-0">
+          <p class="label text-uppercase">
+            Contacto
+          </p>
+          <div class="box-description">
+            <div class="d-flex">
+              <div class="flex-shrink-0 d-none d-lg-block">
+                <img src="{{ 'icon-phone.png' | asset_url}}" class="img-fluid">
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <a href="tel:5555986637">
+                  (55) 5598 6637
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="box-description">
+            <div class="d-flex">
+              <div class="flex-shrink-0 d-none d-lg-block">
+                <img src="{{ 'icon-email.png' | asset_url}}" class="img-fluid">
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <a href="mailto: info@dlgmotoart.com">
+                  info@dlgmotoart.com
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg d-none d-lg-block">
+          <p class="label text-uppercase">
+            Nuestras redes
+          </p>
+          <ul class="d-flex list-unstyled p-0 m-0 block-social justify-content-center justify-content-lg-start">
+            <li class="my-auto">
+              <a href="https://www.facebook.com/dlgmotoart/" target="_blank">
+                <svg id="Grupo_45" data-name="Grupo 45" xmlns="http://www.w3.org/2000/svg" width="34.058" height="33.916" viewBox="0 0 34.058 33.916">
+                  <path id="Trazado_80" data-name="Trazado 80" d="M109.258,4399.3a17.02,17.02,0,0,0-2.839,33.8v-13.221H102.31v-4.758h4.108v-3.508c0-4.07,2.485-6.288,6.117-6.288a34.044,34.044,0,0,1,3.668.187v4.255h-2.518c-1.974,0-2.355.938-2.355,2.315v3.036h4.711l-.615,4.758h-4.1v13.336a17.021,17.021,0,0,0-2.072-33.916Z" transform="translate(-92.229 -4399.301)" fill="#fff"/>
+                </svg>
+              </a>
+            </li>
+            <li class="my-auto">
+              <a href="https://www.instagram.com/dlgmotoart/?hl=en" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32.278" height="32.277" viewBox="0 0 32.278 32.277">
+                  <g id="Grupo_46" data-name="Grupo 46" transform="translate(0 0)">
+                    <path id="Trazado_81" data-name="Trazado 81" d="M178.378,4400.039h-14.8a8.747,8.747,0,0,0-8.738,8.737v14.8a8.747,8.747,0,0,0,8.738,8.738h14.8a8.747,8.747,0,0,0,8.737-8.738v-14.8A8.747,8.747,0,0,0,178.378,4400.039Zm-7.4,24.964a8.826,8.826,0,1,1,8.825-8.826A8.836,8.836,0,0,1,170.978,4425Zm10.139-16.3a2.608,2.608,0,1,1,2.608-2.607A2.611,2.611,0,0,1,181.117,4408.7Z" transform="translate(-154.838 -4400.039)" fill="#fff"/>
+                    <path id="Trazado_82" data-name="Trazado 82" d="M170.062,4408.329a6.934,6.934,0,1,0,6.933,6.933A6.941,6.941,0,0,0,170.062,4408.329Z" transform="translate(-153.923 -4399.123)" fill="#fff"/>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="my-auto">
+              <a href="https://www.youtube.com/user/DLGMotoArt/videos" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="41.815" height="29.277" viewBox="0 0 41.815 29.277">
+                  <path id="Trazado_83" data-name="Trazado 83" d="M256.8,4405.971a5.239,5.239,0,0,0-3.685-3.686c-3.272-.9-16.36-.9-16.36-.9s-13.088,0-16.361.862a5.344,5.344,0,0,0-3.685,3.719c-.862,3.272-.862,10.057-.862,10.057s0,6.82.862,10.058a5.239,5.239,0,0,0,3.685,3.686c3.307.9,16.361.9,16.361.9s13.088,0,16.36-.861a5.238,5.238,0,0,0,3.685-3.686c.862-3.272.862-10.059.862-10.059S257.694,4409.243,256.8,4405.971ZM232.584,4422.3V4409.76l10.884,6.268Z" transform="translate(-215.844 -4401.39)" fill="#fff"/>
+                </svg>
+              </a>
+            </li>
+            <li class="my-auto">
+              <a href="https://twitter.com/DLGMOTOART" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32.177" height="26.145" viewBox="0 0 32.177 26.145">
+                  <g id="Grupo_48" data-name="Grupo 48" transform="translate(0 0)">
+                    <g id="Grupo_47" data-name="Grupo 47">
+                      <path id="Trazado_84" data-name="Trazado 84" d="M315.621,4405.9a13.767,13.767,0,0,1-3.8,1.043,6.564,6.564,0,0,0,2.9-3.646,13.192,13.192,0,0,1-4.183,1.6,6.6,6.6,0,0,0-11.412,4.51,6.79,6.79,0,0,0,.153,1.505,18.675,18.675,0,0,1-13.6-6.9,6.6,6.6,0,0,0,2.026,8.817,6.509,6.509,0,0,1-2.98-.813v.074a6.627,6.627,0,0,0,5.285,6.481,6.582,6.582,0,0,1-1.73.218,5.8,5.8,0,0,1-1.248-.113,6.661,6.661,0,0,0,6.164,4.6,13.253,13.253,0,0,1-8.179,2.813,12.353,12.353,0,0,1-1.579-.09,18.58,18.58,0,0,0,10.12,2.96c12.139,0,18.776-10.056,18.776-18.771,0-.292-.011-.573-.024-.853A13.15,13.15,0,0,0,315.621,4405.9Z" transform="translate(-283.444 -4402.801)" fill="#fff"/>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row justify-content-end box-copyright">
+        <div class="col-12 col-lg-10">
+          <div class="row">
+            <div class="col-12 col-lg">
+              <a href="/pages/politica-de-privacidad">
+                Políticas de privacidad
+              </a>
+            </div>
+            <div class="col-12 col-lg">
+              <a href="/pages/terminos-y-condiciones">
+                Términos y condiciones
+              </a>
+            </div>
+            <div class="col-12 col-lg">
+              <p style="color:#000000";>Contenido, sitio y estrategia digital por <a class="item-link-copy" href="https://www.undertk.com" target="_blank" style="color:#000000" font size="14";>undertkstudio</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+  {
+    "name": "Footer",
+    "max_blocks": 12,
+    "settings": [
+    ],
+    "blocks": [
+      {
+        "type": "logo_social",
+        "name": "Logo",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "Logo image"
+          },
+          {
+            "type": "range",
+            "id": "desktop_logo_height",
+            "label": "Logo height",
+            "default": 50,
+            "min": 20,
+            "max": 120,
+            "unit": "px"
+          },
+          {
+            "type": "range",
+            "id": "container_width",
+            "label": "Column width",
+            "default": 25,
+            "min": 15,
+            "max": 95,
+            "unit": "%"
+          }
+        ]
+      }
+    ],
+    "default": {
+      "settings": {},
+      "blocks": [
+
+      ]
+    }
+  }
+{% endschema %}

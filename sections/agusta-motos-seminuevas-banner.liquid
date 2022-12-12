@@ -1,0 +1,97 @@
+<style>
+  .content-banner-principal-motos{
+    background: url({{section.settings.bg_mobile | img_url: 'master'}});
+  }
+  @media(min-width: 992px) {
+    .content-banner-principal-motos{
+      background: url({{section.settings.bg_desktop | img_url: 'master'}});
+    }
+  }
+</style>
+<div class="row justify-content-center">
+  <div class="col-12 p-0">
+    <div class="content-banner-principal-motos">
+      <div class="row content-information-motos m-0">
+        <div class="col-12 mt-auto">
+          {% if section.settings.title != blank %}
+          <p class="title text-uppercase text-center mb-0">
+            {{section.settings.title}}
+          </p>
+          {% endif %}
+          {% if section.settings.subtitle != blank %}
+          <p class="subtitle text-center mb-0">
+            {{section.settings.subtitle}}
+          </p>
+          {% endif %}
+          {% if section.settings.button_link != blank %}
+          <p class="content-button text-center">
+            <a href="{{section.settings.button_link}}" class="btn text-uppercase">
+              {{section.settings.button_label}}
+            </a>
+          </p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Banner nuevas motos",
+    "class": "agusta-banner-seminuevas",
+    "settings": [
+		{
+			"type": "header",
+			"content": "==== Imagenes background ===="
+		},
+		{
+			"type": "image_picker",
+			"id": "bg_desktop",
+			"label": "Banner desktop"
+		},
+	{
+			"type": "image_picker",
+			"id": "bg_mobile",
+			"label": "Banner mobile"
+		},
+{
+			"type": "header",
+			"content": "==== Titulos  ===="
+		},
+{
+			"type": "text",
+			"id": "title",
+			"label": "Titulo"
+		},
+{
+			"type": "text",
+			"id": "subtitle",
+			"label": "Subtitulo"
+		},
+{
+			"type": "header",
+			"content": "==== Botón  ===="
+		},
+{
+			"type": "text",
+			"id": "button_label",
+			"label": "Botón label"
+		},
+{
+			"type": "url",
+			"id": "button_link",
+			"label": "Botón link"
+		}
+],
+"presets": [{
+"name": "Banner nuevas motos",
+"category": "Banner"
+}]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

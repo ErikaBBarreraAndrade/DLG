@@ -1,0 +1,122 @@
+<div class="container-fluid">
+  <div class="row justify-content-center box-servicio-augusta">
+    <div class="col-11 col-sm-11 col-lg-11 col-xl-11 col-xxl-9">
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            {% if section.settings.image_servicio != blank %}
+            <div class="col-12 {% if page.handle contains "ducati" %}col-lg-5{%else%}col-lg-6 {% endif %} content-slider">
+              {{ section.settings.image_servicio | img_url: 'master' | img_tag: 'informacion-motos','img-fluid w-100' }}
+            </div>
+            {% endif %}
+            <div class="col-12 {% if page.handle contains "scramble" %} col-lg-5 offset-lg-1  {% elsif page.handle contains "ducati" %}col-lg-6 offset-lg-1 {% else %} col-lg-6 {% endif %}block-content-description-servicio my-lg-auto">
+              <div class="row content-txt-box">
+                <div class="col-12">
+                  {% if page.handle contains "scrambler" %}
+                  <p class="header_styled">
+                    <img src="{{ 'icon-more-scrambler.png' | asset_url }}" class="img-fluid">
+                  </p>
+                  {% endif %}
+                  {% if section.settings.title != blank %}
+                  <p class="title-servicio    {% if page.handle contains "agusta" %}text-center text-uppercase{% endif %}">
+                    {{section.settings.title}}
+                  </p>
+                  {% endif %}
+                  {% if section.settings.title != blank %}
+                  <p class="subtitle-servicio    {% if page.handle contains "agusta" %}text-center{% endif %}">
+                    {{section.settings.subtitle}}
+                  </p>
+                  {% endif %}
+                  {% if section.settings.description_short != blank %}
+                  <p class="description-short-servicio    {% if page.handle contains "agusta" %}text-center{% endif %}">
+                    {{section.settings.description_short}}
+                  </p>
+                  {% endif %}
+                  {% if section.settings.description != blank %}
+                  <p class="description   {% if page.handle contains "agusta" %}text-center mt-3 mt-sm-3 mt-lg-3{% endif %}">
+                    {{section.settings.description}}
+                  </p>
+                  {% endif %}
+                  {% if section.settings.button_link != blank %}
+                  <p class="content-button    {% if page.handle contains "agusta" %}text-center{% endif %}">
+                    <a href="{{section.settings.button_link}}" {% if section.settings.enable_target %}target="_blank" {% endif %}  class="btn text-uppercase">
+                      {{section.settings.button_label}}
+                    </a>
+                  </p>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Servicio seccion",
+    "class": "agusta-motos-servicio",
+    "settings": [
+		{
+			"type": "header",
+			"content": "==== Imagen ===="
+		},
+	{
+			"type": "image_picker",
+			"id": "image_servicio",
+			"label": "Imagen"
+		},
+	{
+			"type": "header",
+			"content": "==== Titulo y textos ===="
+		},
+	{
+			"type": "text",
+			"id": "title",
+			"label": "Titulo"
+		},
+	{
+			"type": "text",
+			"id": "subtitle",
+			"label": "subtitulo"
+		},
+	{
+			"type": "text",
+			"id": "description_short",
+			"label": "Descripción corta"
+		},
+	{
+			"type": "text",
+			"id": "description",
+			"label": "Descripción"
+		},
+	{
+			"type": "header",
+			"content": "==== Botón ===="
+		},
+ {
+          "type": "checkbox",
+          "id": "enable_target",
+          "label": "Abrir en página aparte",
+          "default": true
+        },
+	{
+			"type": "url",
+			"id": "button_link",
+			"label": "Link botón"
+		},
+	{
+			"type": "text",
+			"id": "button_label",
+			"label": "Label botón"
+		}
+],
+    "presets": [
+      {
+        "name": "Servicio seccion",
+        "category": "Text"
+      }
+    ]
+  }
+{% endschema %}

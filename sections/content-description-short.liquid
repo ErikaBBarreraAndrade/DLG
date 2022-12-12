@@ -1,0 +1,94 @@
+<div class="container-fluid">
+	<div class="row content-box-text-description justify-content-center">
+		<div class="col-12 col-lg-12">
+			<div class="row block-des-txt">
+				{% if section.settings.logotipo_imagen != blank %}
+					<div class="col-12 col-lg-6 text-center my-auto d-none d-lg-block">
+						<div class="row justify-content-center">
+							<div class="col-12 col-lg-8 content-image">
+								<img class="img-fluid lazyload"
+								     data-src="{{ section.settings.logotipo_imagen | img_url:"master" }}"
+								     data-aspectratio="{{ preview_image.aspect_ratio }}"
+								     width="{{ section.settings.logotipo_imagen.width }}"
+								     height="{{ section.settings.logotipo_imagen.width | divided_by: section.settings.logotipo_imagen.aspect_ratio | round }}"
+								     alt="{{ preview_image.alt | escape }}">
+							</div>
+						</div>
+					</div>
+				{% endif %}
+				<div class="col-12 col-lg-6 my-auto">
+					<div class="content-description-txt">
+						{% if page.handle contains "scrambler" %}
+							<p class="header_styled">
+								<img src="{{ 'icon-more-scrambler.png' | asset_url }}" class="img-fluid">
+							</p>
+						{% endif %}
+						{% if section.settings.title != blank %}
+							<p class="title mb-0">
+								{{section.settings.title}}
+							</p>
+						{% endif %}
+						{% if section.settings.subtitle != blank %}
+							<p class="subtitle mb-0">
+								{{section.settings.subtitle}}
+							</p>
+						{% endif %}
+						{% if section.settings.description != blank %}
+							<div class="description mb-0">
+								{{section.settings.description}}
+							</div>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Descripcion corta",
+"class": "bloque-descripcion-corta",
+"settings": [
+{
+"type": "header",
+"content":"==== Imagen ===="
+},
+{
+"type": "image_picker",
+"id":"logotipo_imagen",
+"label":"Imagen Logotipo"
+},
+{
+"type": "header",
+"content":"==== Titulos ===="
+},
+{
+"type": "text",
+"id":"title",
+"label":"Titulo"
+},
+{
+"type": "text",
+"id":"subtitle",
+"label":"Subtitulo"
+},
+{
+"type": "richtext",
+"id":"description",
+"label":"Descripcion"
+}
+],
+"presets": [
+{
+"name": "Descripcion corta",
+"category": "Text & image"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

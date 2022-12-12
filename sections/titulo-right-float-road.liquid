@@ -1,0 +1,27 @@
+<span class="title-right float-lg-end">
+                                  {{ section.settings.title }}
+          					</span>
+{% schema %}
+{
+  "name": "Titulo simple",
+  "settings": [
+    {
+      "type": "header",
+      "content": "===== Titulo ===="
+    },
+        {
+      "type": "text",
+      "id": "title",
+      "label": "Titulo",
+       "default": "Off-Road"
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Titulo simple"
+      }
+    }
+  ]
+}
+{% endschema %}

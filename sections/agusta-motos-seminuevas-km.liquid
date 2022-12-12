@@ -1,0 +1,93 @@
+<div class="row content-km-motos">
+  {% if section.settings.image_top != blank%}
+  <div class="content-imagen-top">
+    {{ section.settings.image_top | img_url: 'master' | img_tag: 'iconos-agusta','img-fluid' }}
+  </div>
+  {% endif %}
+  <div class="col-12">
+    <div class="row banner-km-motos">
+      <div class="col-12 my-auto content-information">
+        {% if section.settings.title != blank%}
+        <p class="title mb-0 text-uppercase text-center">
+          {{section.settings.title}}
+        </p>
+        {% endif %}
+        {% if section.settings.subtitle != blank%}
+        <p class="subtitle mb-0 text-uppercase text-center">
+          {{section.settings.subtitle}}
+        </p>
+        {% endif %}
+        {% if section.settings.text_end != blank%}
+        <p class="text-end text-center">
+          {{section.settings.text_end}}
+        </p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="content-imagen-bottom">
+    {% if section.settings.image_bottom_desktop != blank%}
+    {{ section.settings.image_bottom_desktop | img_url: 'master' | img_tag: 'iconos-agusta','img-fluid d-none d-lg-block' }}
+    {% endif %}
+    {% if section.settings.image_bottom_mobile != blank%}
+    {{ section.settings.image_bottom_mobile | img_url: 'master' | img_tag: 'iconos-agusta','img-fluid d-block d-lg-none' }}
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Agusta seminuevas km",
+    "class": "agusta-seminuevas-km",
+    "settings": [
+		{
+			"type": "header",
+			"content": "==== Imagen top ===="
+		},
+		{
+			"type": "image_picker",
+              "id": "image_top",
+              "label": "Imagen"
+		},
+		{
+			"type": "header",
+			"content": "==== Titulos ===="
+		},
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Titulo"
+		},
+		{
+			"type": "text",
+			"id": "subtitle",
+			"label": "Subtitulo"
+		},
+		{
+			"type": "text",
+			"id": "text_end",
+			"label": "Texto final"
+		},
+		{
+			"type": "header",
+			"content": "==== Imagen bottom ===="
+		},
+		{
+			"type": "image_picker",
+              "id": "image_bottom_desktop",
+              "label": "Imagen Desktop"
+		},
+		{
+			"type": "image_picker",
+              "id": "image_bottom_mobile",
+              "label": "Imagen mobile"
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

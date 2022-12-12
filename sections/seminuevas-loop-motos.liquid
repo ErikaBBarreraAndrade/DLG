@@ -1,0 +1,253 @@
+<div class="container-fluid">
+	<div class="row justify-content-center content-seminuevas-loop-container">
+		<div class="col-11 col-sm-11 col-lg-12">
+			{% for block in section.blocks %}
+			<div class="row box-motos-description" style="background: {{ block.settings.bg_block }};">
+				{% if page.handle contains "scrambler" %}
+					<div class="triangle-right">
+					</div>
+				{% endif %}
+				<div class="col-12 col-lg-6 content-description my-lg-auto">
+					<div class="row">
+						<div class="col-12">
+							{% if block.settings.title != blank%}
+								<p class="title">
+									{{ block.settings.title }}
+								</p>
+							{% endif %}
+							{% if block.settings.description != blank%}
+								<div class="description-motos">
+									{{ block.settings.description }}
+								</div>
+							{% endif %}
+						</div>
+					</div>
+					<div class="row content-details-motos">
+						<div class="col-12 col-lg-12">
+							<div class="row">
+								{% if block.settings.description_label != blank%}
+									<div class="col-6 col-sm-6 col-lg-6">
+										<p class="label mb-0">
+											Potencia máxima del motor
+										</p>
+										<p class="description-label">
+											{{ block.settings.description_label }}
+										</p>
+									</div>
+								{% endif %}
+								{% if block.settings.description_label_motor != blank%}
+									<div class="col-6 col-sm-6 col-lg-6">
+										<p class="label mb-0">
+											Kilometraje
+										</p>
+										<p class="description-label">
+											{{ block.settings.description_label_motor }}
+										</p>
+									</div>
+								{% endif %}
+								{% if block.settings.description_label_total != blank%}
+									<div class="col-6 col-sm-6 col-lg-6">
+										<p class="label mb-0">
+											Torque
+										</p>
+										<p class="description-label">
+											{{ block.settings.description_label_total }}
+										</p>
+									</div>
+								{% endif %}
+								{% if block.settings.description_label_par != blank%}
+									<div class="col-6 col-sm-6 col-lg-6">
+										<p class="label mb-0">
+											Año
+										</p>
+										<p class="description-label">
+											{{ block.settings.description_label_par }}
+										</p>
+									</div>
+								{% endif %}
+							</div>
+						</div>
+					</div>
+					{% if block.settings.price != blank%}
+						<div class="col-12">
+							<div class="row">
+								<div class="col-12 col-sm-6 col-lg-6 my-auto">
+									<div class="price mt-4">
+										{{ block.settings.price }}
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-lg-6 my-auto">
+									{% if block.settings.button_link != blank%}
+										<div class="content-button mt-4">
+											<a href="{{ block.settings.button_link }}" {% if block.settings.enable_target %}target="_blank" {% endif %} class="btn text-uppercase">
+												{{ block.settings.button_label }}
+											</a>
+										</div>
+									{% endif %}
+								</div>
+							</div>
+						</div>
+					{% endif %}
+				</div>
+				{% if block.settings.image != blank%}
+					<div class="col-12 col-lg-6 content-image my-lg-auto">
+						{{ block.settings.image | img_url: 'master' | img_tag: 'motos seminuevas','img-fluid w-100' }}
+					</div>
+				{% endif %}
+				
+				{% if page.handle contains "scrambler" %}
+						<div class="triangle-bottom">
+						</div>
+					{%- endif -%}
+					</div>
+				
+			{% endfor %}
+			{% if section.settings.enable_boton %}
+			{% if section.settings.boton_url != blank %}
+			<div class="row">
+				<div class="col-12 content-button-end">
+					<a href="{{ section.settings.boton_url }}">
+						<span><svg id="motorcycle-2" xmlns="http://www.w3.org/2000/svg" width="29.035" height="24.234" viewBox="0 0 29.035 24.234">
+  <path id="Trazado_247" data-name="Trazado 247" d="M24.782,14.137a3.685,3.685,0,0,0-1.927.573l-1.15-1.622A5.205,5.205,0,0,1,23.35,12.3a5.881,5.881,0,0,1,1.437-.182,2.249,2.249,0,0,0,1.725-.84,3.507,3.507,0,0,0,.766-2.309C27.277,3.8,23.607,0,19.732,0h-.961a.94.94,0,0,0-.851,1.01.94.94,0,0,0,.851,1.01h.961a4.871,4.871,0,0,1,.74.089V4.06a3.731,3.731,0,0,0-1.4.478c-.006-.008-.013-.013-.018-.02a4.543,4.543,0,0,0-1.736,1.77L15.382,9.735a.853.853,0,0,1-.579.438,5.549,5.549,0,0,0-4,3.52,9.123,9.123,0,0,1,1.161,4.483H10.208c0-3.341-2.289-6.059-5.1-6.059S0,14.835,0,18.176s2.289,6.059,5.1,6.059A5.242,5.242,0,0,0,9.894,20.2H17.92a.94.94,0,0,0,.851-1.01,8.933,8.933,0,0,1,.167-1.7,7.348,7.348,0,0,1,1.442-3.129l1.148,1.62a5.582,5.582,0,0,0-1,3.211c0,2.784,1.908,5.049,4.253,5.049s4.253-2.265,4.253-5.049S27.127,14.137,24.782,14.137ZM5.1,22.215c-1.877,0-3.4-1.812-3.4-4.039s1.526-4.039,3.4-4.039,3.4,1.812,3.4,4.039H5.955a.941.941,0,0,1-.851-1.01.94.94,0,0,0-.851-1.01.94.94,0,0,0-.851,1.01A2.825,2.825,0,0,0,5.955,20.2H8.033A3.343,3.343,0,0,1,5.1,22.215Zm19.678,0a2.825,2.825,0,0,1-2.552-3.029,3.424,3.424,0,0,1,.39-1.591l1.5,2.222a.764.764,0,0,0,1.2.158,1.144,1.144,0,0,0,.133-1.42l-1.5-2.219a2.169,2.169,0,0,1,.831-.179,2.825,2.825,0,0,1,2.552,3.029A2.825,2.825,0,0,1,24.782,22.215Zm0,0" fill="#fff"/>
+  <path id="Trazado_248" data-name="Trazado 248" d="M174.574,35.962l1.8-2.694a7.3,7.3,0,0,1,2.182-2.1A7.268,7.268,0,0,0,174.662,30a7.358,7.358,0,0,0-6.111,3.287l1.677,1.006A13.989,13.989,0,0,0,174.574,35.962Zm0,0" transform="translate(-159.854 -27.903)" fill="#fff"/>
+  <path id="Trazado_249" data-name="Trazado 249" d="M12.377,63.994,5.65,60h-4.6A1.048,1.048,0,0,0,0,61.048,5.248,5.248,0,0,0,5.241,66.29c2.1,0,4.272.046,6.6,2.071.009-.017.009-.035.019-.052a8.687,8.687,0,0,1,3.278-3.034A16.069,16.069,0,0,1,12.377,63.994Zm0,0" transform="translate(0 -56.038)" fill="#fff"/>
+</svg>
+</span>{{ section.settings.boton_label }}
+					</a>
+				</div>
+			</div>
+			{% endif %}
+			{% endif %}
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Seminuevas card",
+"class": "section-seminuevas-card",
+"settings": [
+{
+"type": "header",
+"content": "==== Botón ===="
+},
+{
+"type": "checkbox",
+"id": "enable_boton",
+"label": "Habilitar botón Otras marcas",
+"default": true
+},
+{
+"type":"url",
+"id": "boton_url",
+"label":"Link botón"
+},
+{
+"type":"text",
+"id": "boton_label",
+"label":"Label botón"
+}
+],
+
+"blocks": [
+{
+"type": "text_block",
+"name": "Column",
+"settings": [
+{
+"type": "header",
+"content": "==== Color del bloque ===="
+},
+{
+"type": "color",
+"id": "bg_block",
+"label": "Background",
+"default": "#f5f5f5"
+},
+{
+"type": "header",
+"content": "==== Titulos ===="
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+},
+{
+"type": "header",
+"content": "==== Descripción ===="
+},
+{
+"type": "text",
+"id": "description",
+"label": "Descripción"
+},
+{
+"type": "header",
+"content": "==== Detalles de la moto ===="
+},
+{
+"type": "text",
+"id": "description_label",
+"label": "Potencia máxima del motor"
+},
+{
+"type": "text",
+"id": "description_label_motor",
+"label": "Kilometraje"
+},
+{
+"type": "text",
+"id": "description_label_total",
+"label": "Torque"
+},
+{
+"type": "text",
+"id": "description_label_par",
+"label": "Año"
+},
+{
+"type": "text",
+"id": "price",
+"label": "Precio"
+},
+{
+"type": "header",
+"content": "==== Botón ===="
+},
+{
+"type": "checkbox",
+"id": "enable_target",
+"label": "Abrir en página aparte",
+"default": true
+},
+{
+"type": "text",
+"id": "button_label",
+"label": "Botón label",
+"default": "Contactar a un asesor"
+},
+{
+"type": "url",
+"id": "button_link",
+"label": "Botón link"
+},
+{
+"type": "header",
+"content": "==== Imagen de moto ===="
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Seminuevas card",
+"category": "Card"
+}
+]
+}
+{% endschema %}

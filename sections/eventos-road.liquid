@@ -1,0 +1,121 @@
+{% for block in section.blocks %}
+	<div>
+		
+		<div class="row box-eventos-description">
+			{% if block.settings.image != blank%}
+				<div class="col-12 col-lg-7 content-image my-lg-auto">
+					{{ block.settings.image | img_url: 'master' | img_tag: 'motos seminuevas','img-fluid w-100 d-none d-lg-block' }}
+					{{ block.settings.image_mobile | img_url: 'master' | img_tag: 'motos seminuevas','img-fluid w-100 d-block d-lg-none' }}
+				</div>
+			{% endif %}
+			<div class="col-12 col-lg-5 content-description my-lg-auto">
+				{% if block.settings.title != blank%}
+					<p class="title mb-0">
+						{{ block.settings.title }}
+					</p>
+				{% endif %}
+				{% if block.settings.subtitle != blank%}
+					<p class="subtitle">
+						{{ block.settings.subtitle }}
+					</p>
+				{% endif %}
+				{% if block.settings.description != blank%}
+					<div class="description">
+						{{ block.settings.description }}
+					</div>
+				{% endif %}
+				{% if block.settings.price != blank%}
+					<p class="price">
+						{{ block.settings.price }}
+					</p>
+				{% endif %}
+				{% if block.settings.button_link != blank%}
+					<p class="content-button">
+						<a href="{{ block.settings.button_link }}" {% if block.settings.enable_target %} target="_blank" {% endif %}>
+							{{ block.settings.button_label }}
+						</a>
+					</p>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+{% endfor %}
+{% schema %}
+{
+"name": "Eventos Road",
+"class": "eventos-slider",
+"settings": [],
+
+"blocks": [
+{
+"type": "text_block",
+"name": "Column",
+"settings": [
+{
+"type": "header",
+"content": "==== Imagen del evento ===="
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+},
+{
+"type": "image_picker",
+"id": "image_mobile",
+"label": "Imagen  Mobile"
+},
+{
+"type": "header",
+"content": "==== Titulos ===="
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+},
+{
+"type": "text",
+"id": "subtitle",
+"label": "Subtitulo"
+},
+{
+"type": "header",
+"content": "==== Descripción ===="
+},
+{
+"type": "richtext",
+"id": "description",
+"label": "Descripción"
+},
+{
+"type": "text",
+"id": "price",
+"label": "Precio"
+},
+{
+"type": "header",
+"content": "==== Botón ===="
+},
+{
+"type": "checkbox",
+"id": "enable_target",
+"label": "Abrir en página aparte",
+"default": true
+},
+{
+"type": "text",
+"id": "button_label",
+"label": "Botón label",
+"default": "Reserva Aquí"
+},
+{
+"type": "url",
+"id": "button_link",
+"label": "Botón link"
+}
+]
+}
+]
+}
+{% endschema %}

@@ -1,0 +1,61 @@
+<style>
+    .section-bloque-texto-simple{
+        background: {{ section.settings.bg_color }}
+    }
+</style>
+<div class="container-fluid">
+	<div class="row content-box-txt">
+		<div class="col-12 text-center content-box-description">
+			{% if section.settings.title != blank %}
+				<p class="title mb-0">
+					{{ section.settings.title }}
+				</p>
+			{% endif %}
+			{% if section.settings.description != blank %}
+				<div class="description">
+					{{ section.settings.description }}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Bloque texto simple",
+"class":"section-bloque-texto-simple",
+"settings": [
+{
+"type": "header",
+"content": "==== Background ===="
+},
+{
+"type": "color",
+"id": "bg_color",
+"label": "Background"
+},
+{
+"type": "header",
+"content": "==== Logotipo ===="
+},
+{
+"type": "image_picker",
+"id": "image_logotipo",
+"label": "Logotipo"
+},
+{
+"type": "header",
+"content": "==== Titulos ===="
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+},
+{
+"type": "richtext",
+"id": "description",
+"label": "Descripción"
+}
+]
+}
+{% endschema %}

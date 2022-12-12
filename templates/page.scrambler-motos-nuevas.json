@@ -1,0 +1,159 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "tipo_pagina": "page_scrambler"
+      }
+    },
+    "1635721584d1f2a24b": {
+      "type": "agusta-motos-banner",
+      "settings": {
+        "bg_color": "",
+        "bg_desktop": "shopify:\/\/shop_images\/banner-principal-1-Scrambler_f9de92fd-4a67-4edd-99f3-dab8cc47f2a0.jpg",
+        "bg_mobile": "shopify:\/\/shop_images\/banner-prinicipal-motos-scrambler.jpg",
+        "title": "Bienvenido a",
+        "subtitle": "The land of joy",
+        "text_description": "Conoce toda la tienda más completa de Ducati Scrambler en México",
+        "image_desktop": "shopify:\/\/shop_images\/banner-motos-scramble_f2c592fa-97ac-4312-929f-295630f9afea.png",
+        "image_mobile": "shopify:\/\/shop_images\/banner-motos-scramble_f2c592fa-97ac-4312-929f-295630f9afea.png"
+      }
+    },
+    "1635721598f291f6da": {
+      "type": "agusta-motos-coleccion",
+      "settings": {
+        "title": "Hay algo para cada actitud.",
+        "subtitle": "¿Cuál es la tuya?",
+        "text_end": "Descubre el catálogo más completo de ropa y equipamiento Scrambler en DLG Moto Art",
+        "enable_target": true,
+        "boton_label": "Ver ropa y accesorios",
+        "boton_link": "shopify:\/\/collections",
+        "home_featured_products": "populares"
+      }
+    },
+    "16357217494ce1cfc9": {
+      "type": "agusta-motos-banner-secundario",
+      "settings": {
+        "image_banner_secondary": "shopify:\/\/shop_images\/banner-secundario-scrambler_db95d635-3c9f-43cf-b96b-919e02c66bea.jpg",
+        "image_banner_mobile_secondary": "shopify:\/\/shop_images\/banner-secundario-scrambler-mobile.jpg",
+        "image_logotipo": "shopify:\/\/shop_images\/logo-Scrambler.png",
+        "title": "Todo evoluciona en The Land of Joy <strong>Conoce tu nueva Scrambler<\/strong>",
+        "subtitle": "Ducati Scrambler representa la esencia más genuina del motociclismo y un universo colmado de alegría, expresión personal y libertad.",
+        "enable_target": true,
+        "boton_url": "shopify:\/\/collections",
+        "boton_label": "Colección 2021"
+      }
+    },
+    "16357219185b3a63de": {
+      "type": "agusta-motos-iconos",
+      "blocks": {
+        "16357219185b3a63de-0": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icon-1_26dd7a23-d907-4cc9-8d4b-05e7fdb1f813.png",
+            "description": "Tenemos el inventario más grande en México. Entregas y devoluciones rápidas en toda la República."
+          }
+        },
+        "16357219185b3a63de-1": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icon-2_44c4b190-933c-4e77-b3f0-34bf2bc53a83.png",
+            "description": "Ofrecemos no solo una experiencia de compra, sino una experiencia de vida."
+          }
+        },
+        "16357219185b3a63de-2": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icon-3_1d8c5249-04a5-4df1-9658-b56db4f23f36.png",
+            "description": "Más de 17 años de experiencia trabajando con las mejores marcas de Italia y el mundo."
+          }
+        },
+        "ab4a8a59-fd11-4d36-8236-64c014808c65": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icon-4_4d4b3759-d3fb-45d6-8c52-64c53b23c573.png",
+            "description": "Tu compra es segura, aceptamos todos los métodos de pagos disponibles en México."
+          }
+        },
+        "a3bba46f-04dd-45cf-881d-7c896d571237": {
+          "type": "text_block",
+          "settings": {
+            "image_icono": "shopify:\/\/shop_images\/icon-5_b86b4fed-7eb6-4362-966d-8055ed6af65b.png",
+            "description": "Y si no te gusta devolvemos tu dinero sin preguntar."
+          }
+        }
+      },
+      "block_order": [
+        "16357219185b3a63de-0",
+        "16357219185b3a63de-1",
+        "16357219185b3a63de-2",
+        "ab4a8a59-fd11-4d36-8236-64c014808c65",
+        "a3bba46f-04dd-45cf-881d-7c896d571237"
+      ],
+      "settings": {
+        "title": "DLG Moto Art, <strong>la mejor y más grande tienda <\/strong> para motos y accesorios Scrambler en México"
+      }
+    },
+    "16357235053d6854f4": {
+      "type": "agusta-motos-seminuevas",
+      "blocks": {
+        "16357235053d6854f4-0": {
+          "type": "text_block",
+          "settings": {
+            "image_slider": "shopify:\/\/shop_images\/producto-augusta-seminueva_614bf516-9123-4811-a4f1-29666b951b9f.jpg",
+            "link_image": "",
+            "enable_target": true,
+            "description": "MV AGUSTA BRUTALE 800 · 2020",
+            "price": "$259,500 MXN"
+          }
+        },
+        "16357235053d6854f4-1": {
+          "type": "text_block",
+          "settings": {
+            "image_slider": "shopify:\/\/shop_images\/producto-augusta-seminueva_614bf516-9123-4811-a4f1-29666b951b9f.jpg",
+            "link_image": "",
+            "enable_target": true,
+            "description": "MV AGUSTA BRUTALE 800 · 2020",
+            "price": "$259,500 MXN"
+          }
+        }
+      },
+      "block_order": [
+        "16357235053d6854f4-0",
+        "16357235053d6854f4-1"
+      ],
+      "settings": {
+        "color_bg": "",
+        "title": "Scrambler para todos.",
+        "title_second": "Conoce nuestras motos usadas certificadas",
+        "title_right": "Scrambler Seminuevas",
+        "subtitle_right": "Las mejores motos en DLG Moto Art",
+        "text_right": "<p>Scrambler puede ser para ti también. Conoce nuestra colección de Scrambler seminuevas en DLG Moto Art. <br\/><br\/>Tenemos opciones de pago distintas y flexibles. <br\/>Ofrecemos financiamiento y garantía de mínimo <br\/>30 días.<br\/><br\/><\/p>",
+        "button_link": "shopify:\/\/pages\/scrambler-seminuevas",
+        "button_label": "Ver seminuevas"
+      }
+    },
+    "1635723585bc514ee9": {
+      "type": "content-service-motos",
+      "settings": {
+        "image_servicio": "shopify:\/\/shop_images\/banner-servicio-scrmabler.jpg",
+        "title": "Servicio",
+        "subtitle": "Scrambler",
+        "description_short": "Agenda una cita para la revisión de tu moto.",
+        "description": "Si necesitas servicio original para tu moto, contamos con las mejores instalaciones, los técnicos más experimentados y el inventario de refacciones y accesorios más grande del país.",
+        "enable_target": true,
+        "button_link": "shopify:\/\/collections",
+        "button_label": "Agendar cita"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1635721584d1f2a24b",
+    "1635721598f291f6da",
+    "16357217494ce1cfc9",
+    "16357219185b3a63de",
+    "16357235053d6854f4",
+    "1635723585bc514ee9"
+  ]
+}

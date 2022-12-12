@@ -1,0 +1,116 @@
+{{ "section-banner-simple-logotipo.scss.css" | asset_url | stylesheet_tag }}
+<style>
+    .content-slider-box{
+        background: url("{{ section.settings.image_mobile | img_url:"master" }}");
+        background-size: cover !important;
+    }
+    @media(min-width: 992px){
+        .content-slider-box{
+            background: url("{{ section.settings.image_desktop | img_url:"master" }}");
+        }
+    }
+</style>
+<div class="container-fluid">
+	<div class="row content-slider-box">
+		<div class="col-12 my-auto text-center content-box-description">
+			{% if section.settings.image_logotipo != blank %}
+				<div class="content-logotipo">
+					<img class="lazyload img-fluid"
+					     data-src="{{ section.settings.image_logotipo | img_url:"master" }}"
+					     data-aspectratio="{{ preview_image.aspect_ratio }}"
+					     width="{{ section.settings.image_logotipo.width }}"
+					     height="{{ section.settings.image_logotipo.width | divided_by: section.settings.image_logotipo.aspect_ratio | round }}"
+					     alt="{{ preview_image.alt | escape }}">
+				</div>
+			{% endif %}
+			{% if section.settings.title != blank %}
+				<p class="title mb-0">
+					{{ section.settings.title }}
+				</p>
+			{% endif %}
+			{% if section.settings.subtitle != blank %}
+				<p class="subtitle">
+					{{ section.settings.subtitle }}
+				</p>
+			{% endif %}
+			{% if section.settings.button_link != blank %}
+				<p class="content-button">
+					<a href="{{ section.settings.button_link }}" {% if section.settings.enable_target %}target="_blank" {% endif %}>
+						{{ section.settings.button_label }}
+					</a>
+				</p>
+			{% endif %}
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Banner simple logo",
+"class":"section-banner-simple-logotipo",
+"settings": [
+{
+"type": "header",
+"content": "==== Imagenes Banner ===="
+},
+{
+"type": "image_picker",
+"id": "image_desktop",
+"label": "Banner Desktop"
+},
+{
+"type": "image_picker",
+"id": "image_mobile",
+"label": "Banner Mobile"
+},
+{
+"type": "header",
+"content": "==== Logotipo ===="
+},
+{
+"type": "image_picker",
+"id": "image_logotipo",
+"label": "Logotipo"
+},
+{
+"type": "header",
+"content": "==== Titulos ===="
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+},
+{
+"type": "text",
+"id": "subtitle",
+"label": "Subtitulo"
+},
+{
+"type": "header",
+"content": "==== Botón ===="
+},
+{
+"type": "checkbox",
+"id": "enable_target",
+"label": "Abrir en página aparte",
+"default": true
+},
+{
+"type": "text",
+"id": "button_label",
+"label": "Texto Botón"
+},
+{
+"type": "url",
+"id": "button_link",
+"label": "Link Botón"
+}
+],
+"presets": [
+{
+"name": "Banner simple logo",
+"category": "Text & image"
+}
+]
+}
+{% endschema %}

@@ -1,0 +1,104 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "tipo_pagina": "page_agusta"
+      }
+    },
+    "1637775876bf01375c": {
+      "type": "banner-simple-descripcion-logotipo",
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/banner-seminuevos-agusta.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner-agusta-seminuevas-mobile.jpg",
+        "image_logotipo": "shopify:\/\/shop_images\/logotipo-agusta-seminuevos_9c182f7f-61ee-4bad-bd9b-bb1f3b550bbe.png",
+        "title": "Mv agusta certfied",
+        "subtitle": "Seminuevas mv agusta en dlg moto art",
+        "enable_target": false,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "16378134175d1b3e30": {
+      "type": "content-description-short",
+      "settings": {
+        "logotipo_imagen": "shopify:\/\/shop_images\/descripcion-corta-imagen-agusta-seminuevas.jpg",
+        "title": "disEÑo exclusivo",
+        "subtitle": "desde Cualquier Ángulo",
+        "description": "<p>Ducati puede ser para ti también. Conoce nuestra colección de Ducati seminuevas en DLG Moto Art. Tenemos opciones de pago distintas y flexibles.<\/p><p>Ofrecemos financiamiento y garantía de mínimo 30 días.<br\/>Financiamiento y garantía de 30 días.*<\/p>"
+      }
+    },
+    "1637815290646ac56b": {
+      "type": "seminuevas-loop-motos",
+      "blocks": {
+        "c927bde4-9b79-4167-b90b-b4848f529bb4": {
+          "type": "text_block",
+          "settings": {
+            "bg_block": "#ffffff",
+            "title": "BRUTALE 800",
+            "description": "Toda la esencia de Ducati en una moto moderna y contemporánea. Aquí está la nueva Monster en la forma más compacta, esencial y ligera posible.",
+            "description_label": "81kW (110 CV) a 11,500 r.p.m.",
+            "description_label_motor": "4,161 km",
+            "description_label_total": "83 Nm (8.46 kgm) a 7,600 r.p.m.",
+            "description_label_par": "2020",
+            "price": "$259,500.00",
+            "enable_target": true,
+            "button_label": "Contactar a un asesor",
+            "button_link": "https:\/\/wa.me\/5215550213847?text=Quiero%20contactar%20a%20un%20ejecutivo",
+            "image": "shopify:\/\/shop_images\/brutale-800-agusta-seminuevas.jpg"
+          }
+        },
+        "dbdc7bb4-9ff0-474e-8ceb-e04d9977e9ea": {
+          "type": "text_block",
+          "settings": {
+            "bg_block": "#ffffff",
+            "title": "DRAGSTER 800 RR",
+            "description": "Toda la esencia de Ducati en una moto moderna y contemporánea. Aquí está la nueva Monster en la forma más compacta, esencial y ligera posible.",
+            "description_label": "103 kW (140 CV) a 12,300 r.p.m.",
+            "description_label_motor": "1,331 km",
+            "description_label_total": "87 Nm (8.87 kgm) a 10,100 r.p.m.",
+            "description_label_par": "2020",
+            "price": "$350,000.00",
+            "enable_target": true,
+            "button_label": "Contactar a un asesor",
+            "button_link": "https:\/\/wa.me\/5215550213847?text=Quiero%20contactar%20a%20un%20ejecutivo",
+            "image": "shopify:\/\/shop_images\/dragster-800-rr-agusta-seminuevas.jpg"
+          }
+        },
+        "173933b0-fed5-4fd5-b2e8-cd40987f166c": {
+          "type": "text_block",
+          "settings": {
+            "bg_block": "#ffffff",
+            "title": "Turismo Veloce",
+            "description": "Toda la esencia de Ducati en una moto moderna y contemporánea. Aquí está la nueva Monster en la forma más compacta, esencial y ligera posible.",
+            "description_label": "81 kW (110 CV) a 10,150 r.p.m.",
+            "description_label_motor": "16,800 km",
+            "description_label_total": "80 Nm a 7,100 r.p.m.",
+            "description_label_par": "2017",
+            "price": "$225,000.00",
+            "enable_target": true,
+            "button_label": "Contactar a un asesor",
+            "button_link": "https:\/\/wa.me\/5215550213847?text=Quiero%20contactar%20a%20un%20ejecutivo",
+            "image": "shopify:\/\/shop_images\/multistrada-1200-ducati-seminuevas.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "c927bde4-9b79-4167-b90b-b4848f529bb4",
+        "dbdc7bb4-9ff0-474e-8ceb-e04d9977e9ea",
+        "173933b0-fed5-4fd5-b2e8-cd40987f166c"
+      ],
+      "settings": {
+        "enable_boton": true,
+        "boton_url": "shopify:\/\/pages\/conoce-seminuevas",
+        "boton_label": "Otras marcas"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1637775876bf01375c",
+    "16378134175d1b3e30",
+    "1637815290646ac56b"
+  ]
+}

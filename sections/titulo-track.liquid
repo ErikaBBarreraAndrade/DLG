@@ -1,0 +1,25 @@
+{{ section.settings.title }}
+{% schema %}
+{
+  "name": "Titulo simple",
+  "settings": [
+    {
+      "type": "header",
+      "content": "===== Titulo ===="
+    },
+        {
+      "type": "text",
+      "id": "title",
+      "label": "Titulo",
+       "default": "Track Day"
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Titulo simple"
+      }
+    }
+  ]
+}
+{% endschema %}

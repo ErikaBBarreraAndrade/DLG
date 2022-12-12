@@ -1,0 +1,43 @@
+<div class="row">
+	<div class="col-12 col-xl-7 my-auto">
+		<div class="content-description my-auto">
+			<div class="content-date">
+				{{ article.published_at | date: format: 'date' }}
+			</div>
+			<div class="content-title">
+				{{ article.title }}
+			</div>
+			<div class="content-excerpt">
+				{%- if article.excerpt.size > 0 -%}
+					{{ article.excerpt | strip_html | truncatewords: 30 }}
+				{%- else -%}
+					{{ article.content | strip_html | truncatewords: 30 }}
+				{%- endif -%}
+			</div>
+			<div class="content-link">
+				<a href="{{ article.url }}">
+					Leer Artículo
+					<span>
+					<svg xmlns="http://www.w3.org/2000/svg" width="15.529" height="15.529" viewBox="0 0 15.529 15.529">
+  <path id="arrow_forward_FILL0_wght400_GRAD0_opsz48" d="M15.765,23.529l-1.019-1.043,5.993-5.993H8V15.037H20.739L14.746,9.043,15.765,8l7.765,7.765Z" transform="translate(-8 -8)"/>
+</svg>
+				</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-xl-5 content-image-article">
+		<a href="{{ article.url }}">
+		<img
+			srcset="{{ article.image.src | img_url:"master" }}"
+			src="{{ article.image.src | img_url:"master" }}"
+			alt="{{ article.image.src.alt | escape }}"
+			class="img-fluid w-100"
+			{% unless lazy_load == false %}loading="lazy"{% endunless %}
+			width="{{ article.image.width }}"
+			height="{{ article.image.height }}"
+		>
+		</a>
+	</div>
+</div>
+

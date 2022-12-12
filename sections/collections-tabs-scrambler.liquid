@@ -1,0 +1,119 @@
+<div class="row m-0 justify-content-center block-content-tabs-information" id="motos-nuevas">
+	<div class="container-fluid">
+		<div id="shopify-section-ducati-motos-nuevas-title-tabs" class="shopify-section agusta-seminuevas-tabs row justify-content-center">
+			<div class="col-11 col-lg-12">
+				{% if section.settings.image_icono != blank%}
+					<div class="imagen-icono-content text-center">
+						<img class="lazyload img-fluid"
+						     data-src="{{ section.settings.image_icono | img_url:"master" }}"
+						     data-aspectratio="{{ preview_image.aspect_ratio }}"
+						     width="{{ section.settings.image_icono.width }}"
+						     height="{{ section.settings.image_icono.width | divided_by: section.settings.image_icono.aspect_ratio | round }}"
+						     alt="{{ preview_image.alt | escape }}">
+					</div>
+				{% endif %}
+				{% if section.settings.title != blank%}
+					<p class="title-tabs text-center">
+						<span>{{ section.settings.title }}</span>
+					</p>
+				{% endif %}
+				{% if section.settings.subtitle != blank%}
+					<p class="subtitle-tabs text-center mb-0">
+						{{ section.settings.subtitle }}
+					</p>
+				{% endif %}
+			</div>
+			<div class="col-11 col-lg-12">
+				<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+
+					{% for block in section.blocks %}
+						<li class="nav-item" role="presentation">
+							<button class="nav-link  {% if forloop.first %}active{% endif %}" id="{{block.settings.tab_name | handleize}}-tab" data-bs-toggle="tab" data-bs-target="#{{block.settings.tab_name | handleize}}" type="button" role="tab" aria-controls="home" aria-selected="true">
+								{{block.settings.tab_name | capitalize}}
+							</button>
+						</li>
+					{% endfor %}
+				</ul>
+				<div class="tab-content" id="myTabContent">
+					{% for block in section.blocks %}
+						<div class="tab-pane fade {% if forloop.first %} show active{% endif %}" id="{{block.settings.tab_name | handleize}}" role="tabpanel" aria-labelledby="{{block.settings.tab_name | handleize}}-tab">
+							<div class="row justify-content-center">
+								<div class="col-11 col-sm-11 col-lg-12 col-xl-11 col-xxl-10">
+									{%- assign featured_product = collections[block.settings.featured_product_handle] -%}
+									{%- for product in featured_product.products -%}
+										{% include 'catalog-card-product-list', cProduct:product %}
+									{%- endfor -%}
+								</div>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+"name": "Collections Tabs",
+"settings": [
+{
+"type": "header",
+"content": "==== Imagen icono ===="
+},
+{
+"type": "image_picker",
+"id": "image_icono",
+"label": "Icono"
+},
+{
+"type": "header",
+"content": "==== Titulos ===="
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+},
+{
+"type": "text",
+"id": "subtitle",
+"label": "Subtitulo"
+},
+{
+"type": "color",
+"id": "bg_block",
+"label": "Background",
+"default": "#f5f5f5"
+}],
+"blocks": [
+{
+"type": "collection_tab",
+"name": "coltab",
+"settings": [
+
+{
+"type": "collection",
+"id": "featured_product_handle",
+"label": "Select Collection"
+},{
+"type": "text",
+"id": "tab_name",
+"label": "Tab Name"
+},
+{
+"type": "color",
+"id": "bg_block",
+"label": "Background",
+"default": "#f5f5f5"
+}
+]}]
+
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

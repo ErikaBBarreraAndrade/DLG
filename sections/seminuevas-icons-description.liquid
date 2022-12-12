@@ -1,0 +1,80 @@
+<div class="container-fluid">
+	<div class="row content-iconos-box justify-content-center">
+		<div class="col-12 col-sm-11 col-lg-12 col-xl-11 col-xxl-9">
+			<div class="row">
+				<div class="col-12">
+					{% if section.settings.title != blank%}
+						<p class="title text-center">
+							{{ section.settings.title }}
+						</p>
+					{% endif %}
+				</div>
+				<div class="col-12">
+					<div class="row">
+						{% for block in section.blocks %}
+							<div class="col-12 col-lg text-center content-info-icono">
+								<div class="row">
+									{% if block.settings.image_icono != blank%}
+										<div class="col-12 content-icono">
+											{{ block.settings.image_icono | img_url: 'master' | img_tag: 'iconos-agusta','img-fluid' }}
+										</div>
+									{% endif %}
+									<div class="col-12">
+										{% if block.settings.description != blank%}
+											<div class="description">
+												{{block.settings.description}}
+											</div>
+										{% endif %}
+									</div>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "Icons description",
+"class": "section-icons-description",
+"settings": [
+{
+"type": "header",
+"content": "==== Titulos y textos ===="
+},
+{
+"type": "text",
+"id": "title",
+"label": "Titulo"
+}
+],
+"blocks": [
+{
+"type": "text_block",
+"name": "Column",
+"settings": [
+{
+"type": "header",
+"content": "==== Iconos ===="
+},
+{
+"type": "image_picker",
+"id": "image_icono",
+"label": "Iconos"
+},
+{
+"type": "header",
+"content": "==== Descripción ===="
+},
+{
+"type": "text",
+"id": "description",
+"label": "Descripción"
+}
+]
+}
+]
+}
+{% endschema %}

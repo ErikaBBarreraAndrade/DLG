@@ -1,0 +1,114 @@
+<style>
+  .banner-second {
+    background: url({{section.settings.bg_mobile | img_url: 'master'}});
+  }
+  @media(min-width: 992px) {
+    .banner-second {
+      background: url( {{section.settings.bg_desktop | img_url: 'master'}} );
+    }
+  }
+</style>
+<div class="row justify-content-center block-content-banner-second">
+  <div class="col-12">
+    <div class="row banner-second">
+      <div class="col-12 my-auto">
+        <div class="row logo-content justify-content-center">
+          {% if section.settings.image_logotipo != blank%}
+          <div class="col-7 col-md-4 col-lg-3 col-xxl-2 text-center">
+            {{ section.settings.image_logotipo | img_url: 'master' | img_tag: 'logo-agusta','img-fluid' }}
+          </div>
+          {% endif %}
+        </div>
+          {% if section.settings.title != blank%}
+        <p class="title-banner text-center text-uppercase">
+          	{{ section.settings.title }}
+        </p>
+        {% endif %}
+        {% if section.settings.subtitle != blank%}
+        <p class="subtitle-banner text-center text-uppercase">
+          {{ section.settings.subtitle }}
+        </p>
+        {% endif %}
+        {% if section.settings.text_end != blank%}
+        <p class="text-end text-center">
+          {{ section.settings.text_end }}
+        </p>
+        {% endif %}
+        {% if section.settings.button_link != blank%}
+        <p class="content-button text-center">
+          <a href="{{ section.settings.button_link}}" {% if section.settings.enable_target %}target="_blank" {% endif %}  class="btn text-uppercase">
+            {{ section.settings.button_label }}
+          </a>
+        </p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Banner secondary nuevas",
+    "class": "agusta-seminuevas-banner-sec",
+    "settings": [
+		{
+			"type": "header",
+			"content": "==== Imagen background ===="
+		},
+		{
+			"type": "image_picker",
+			"id": "bg_desktop",
+			"label": "Banner desktop"
+		},
+		{
+			"type": "image_picker",
+			"id": "bg_mobile",
+			"label": "Banner mobile"
+		},
+		{
+			"type": "header",
+			"content": "==== Imagen logotipo ===="
+		},
+		{
+			"type": "image_picker",
+			"id": "image_logotipo",
+			"label": "Logotipo"
+		},
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Titulo"
+		},
+		{
+			"type": "text",
+			"id": "subtitle",
+			"label": "Subtitulo"
+		},
+		{
+			"type": "text",
+			"id": "text_end",
+			"label": "Texto final"
+		},
+		{
+			"type": "header",
+			"content": "==== Botón ===="
+		},
+		 {
+          "type": "checkbox",
+          "id": "enable_target",
+          "label": "Abrir en página aparte",
+          "default": true
+        },
+		{
+			"type": "text",
+			"id": "button_label",
+			"label": "Botón label"
+		},
+		{
+			"type": "url",
+			"id": "button_link",
+			"label": "Botón link"
+		}
+	]
+  }
+{% endschema %}

@@ -1,0 +1,117 @@
+<ul
+  class="site-nav site-navigation new-navigation d-none d-xl-block"
+  {% unless disable_aria %}
+    role="navigation" aria-label="Primary"
+  {% endunless %}>
+
+  {% for block in section.blocks %}
+	{%- case block.type -%}
+  		{% when 'menu' %}
+  		{% if block.settings.menu_view != 'mobile' %}
+  {% assign cMenu = block.settings.menu_link_list %}
+   {%- liquid
+    assign has_dropdown = false
+    if cMenu.links != blank
+	    assign has_dropdown = true
+    endif
+    -%}
+
+  <li
+      class="link_item_block site-nav__item site-nav__expanded-item {{ cMenu.title | capitalize }} {% if has_dropdown %} site-nav--has-dropdown{% endif %}"
+      {% if has_dropdown %}aria-haspopup="true"{% endif %}>
+      <a href="{{ block.settings.link_menu }}" class="site-nav__link site-nav__link--underline{% if has_dropdown %} site-nav__link--has-dropdown{% endif %}">
+        {{ block.settings.text_menu }}
+      </a>
+      {%- if has_dropdown -%}
+    <div class="site-nav__dropdown text-left menu-{{ block.settings.text_menu }}">
+      {% assign brand-logo = false %}
+      {% assign brand-item-list = false %}
+        <ul class="menu-parent-global">
+          {%- for link in cMenu.links -%}
+
+            {%- liquid
+              assign has_sub_dropdown = false
+              if link.links != blank
+                assign has_sub_dropdown = true
+              endif
+            -%}
+
+            <li class="link-parent-global {% if has_sub_dropdown %} site-nav__deep-dropdown-trigger{% endif %}">
+                {% if link.title contains '[i]' %}
+					{% assign splitTitle = link.title | split : '[i]' %}
+					{% if forloop.first == true %}
+						      {% assign brand-logo = splitTitle[1] %}
+                	{% endif %}
+                <!--<a href="{{ link.url }}" data-switch="{{ splitTitle[1] | file_img_url: '1200x1200' }}" class="parent_first_link site-nav__dropdown-link dropdown-switch site-nav__dropdown-link--second-level{% if has_sub_dropdown %} site-nav__dropdown-link--has-children{% endif %}">-->
+                  <a href="{{ link.url }}" data-switch="{{ splitTitle[1] | file_img_url: '1200x1200' }}" class="parent_first_link site-nav__dropdown-link dropdown-switch site-nav__dropdown-link--second-level{% if has_sub_dropdown %} site-nav__dropdown-link--has-children{% endif %}">
+                  {{ splitTitle[0] | escape }}
+                </a>
+                {% else %}
+                <a href="{{ link.url }}" class="parent_first_link site-nav__dropdown-link site-nav__dropdown-link--second-level{% if has_sub_dropdown %} site-nav__dropdown-link--has-children{% endif %}">
+                  {{ link.title | escape }}
+                </a>
+              {% endif %}
+                {%- if has_sub_dropdown -%}
+                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down parent_first_link" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
+                {%- endif -%}
+              {%- if has_sub_dropdown -%}
+                <ul class="site-nav__deep-dropdown_1 collapsed-menu">
+                  {%- for childlink in link.links -%}
+                  		{%- liquid
+                        assign has_sub_dropdown_1 = false
+                        if childlink.links != blank
+                          assign has_sub_dropdown_1 = true
+                        endif
+                      -%}
+                    <li class="{% if has_sub_dropdown_1 %} site-nav__collapsible{% endif %}">
+                    {% assign splitsTitle = childlink.title | escape %}
+                    {% if childlink.title contains '[i]' %}
+                        {% assign splitsTitle = childlink.title | split : '[i]' %}
+                        {% if forloop.first == true and brand-item-list == false %}
+                                  {% assign brand-item-list = splitsTitle[1] %}
+                        {% endif %}
+                        <a href="{{ childlink.url }}" data-switch="{{splitsTitle[1]| file_img_url: '200x500' }}" class="parent_second_link site-nav__dropdown-link sub-dropdown-switch">
+                        {{ splitsTitle[0] | escape }}
+                        </a>
+                    {% elsif splitsTitle contains "Todo" %}
+                      <a href="{{ childlink.url }}" class="parent_second_link_special site-nav__dropdown-link ">
+                        {{ childlink.title | escape }}
+                                              </a>
+                    {% else %}
+                                            <a href="{{ childlink.url }}" class="parent_second_link site-nav__dropdown-link">
+                        {{ childlink.title | escape }}
+                                              </a>
+
+                    {% endif %}
+                      {% assign splitsTitle = childlink.title | escape %}
+                      {% if splitsTitle contains "Todo" %}
+                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down redLinkSpecial" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
+                      {%- endif -%}
+                      {%- if has_sub_dropdown_1 -%}
+                                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down parent_second_link" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
+                        <ul class="site-nav__deep-dropdown_2 dropdown-child-link collapsed-menu">
+                          {%- for grandchildlink in childlink.links -%}
+                            <li>
+                              <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">{{ grandchildlink.title | escape }}</a>
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      {%- endif -%}
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        </ul>
+      <ul class="brand-image-container">
+        <li class="brand-logo"><img src="{{ brand-logo | file_img_url: '1200x1200' }}" class="img-fluid"></li>
+        <li class="brand-item-list"><img src="{{brand-item-list| file_img_url: '200x500' }}" class="img-fluid"></li>
+      </ul>
+    </div>
+      {%- endif -%}
+    </li>
+  	{% endif %}
+    {%- endcase -%}
+  {% endfor %}
+</ul>

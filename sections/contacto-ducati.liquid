@@ -1,0 +1,38 @@
+<div class="contact-box">
+	<div class="title text-center text-uppercase">
+		<strong>Déjanos tus datos y uno de</strong> nuestros asesores <strong>te contactará cuanto antes.</strong>
+	</div>
+	<div class="globo-formbuilder" data-id={{section.settings.form_id}} ></div>
+</div>
+{% schema %}
+{
+  "name": "Form",
+  "settings": [
+    {
+      "type": "select",
+      "id": "form_id",
+      "label": "Select form to display",
+      "default": "ODMzNTk=",
+      "options": [
+        {"label":"Ducati","value":"ODMzNTk="}
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Form"
+      },
+      "category": {
+        "en": "Powerful Contact Form Builder"
+      }
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

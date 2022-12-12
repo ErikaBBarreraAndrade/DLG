@@ -1,0 +1,202 @@
+#shopify-section-collection-banner{
+  padding: 0;
+}
+.banner-collection{
+  .content-image{
+    position: relative;
+    img{
+      object-fit: cover;
+      height: 400px;
+      @media (min-width: 992px) {
+        object-fit: cover;
+        height: 420px;
+      }
+    }
+    .content-description{
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      .box-txt{
+        margin-bottom: 90px;
+        @media (min-width: 992px) {
+          margin-bottom: 90px;
+        }
+        @media (min-width: 1280px) {
+          margin-bottom: 90px;
+        }
+        .title{
+          font-family: 'Open Sans Light';
+          font-size: 30px;
+          line-height: 35px;
+          color: #FFFFFF;
+          width: 90%;
+          @media (min-width: 576px) {
+            font-size: 45px;
+            line-height: 47px;
+            width: 70%;
+          }
+          @media (min-width: 992px) {
+            font-size: 30px;
+            line-height: 35px;
+            width: auto;
+          }
+          @media (min-width: 1280px) {
+            font-size: 40px;
+            line-height: 45px;
+            color: #FFFFFF;
+            width: 440px;
+          }
+          strong{
+            font-family: 'Open Sans Bold';
+          }
+        }
+        .description{
+          font-family: 'Open Sans Regular';
+          color: #FFF;
+          font-size: 15px;
+          line-height: 17px;
+          margin-top: 25px;
+          width: 85%;
+          @media (min-width: 576px) {
+            font-size: 25px;
+            line-height: 27px;
+            width: 75%;
+          }
+          @media (min-width: 992px) {
+            font-size: 15px;
+            line-height: 20px;
+            width: auto;
+          }
+          @media (min-width: 1280px) {
+            font-size: 15px;
+            line-height: 20px;
+            width: 460px;
+          }
+        }
+        .button-content{
+          margin-top: 25px;
+          @media (min-width: 576px) {
+            margin-top: 65px;
+          }
+          @media (min-width: 992px) {
+            margin-top: 25px;
+          }
+          a{
+            font-family: 'Open Sans Bold';
+            font-size: 13px;
+            line-height: 15px;
+            text-transform: uppercase;
+            background: #F00000;
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 15px;
+            @media (min-width: 576px) {
+              letter-spacing: 3px;
+              font-size: 23px;
+              line-height: 25px;
+            }
+            @media (min-width: 992px) {
+              font-size: 15px;
+              line-height: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .content-block-cat-images-global{
+    margin-top: -40px;
+    position: relative;
+    @media (max-width: 991px) {
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+    @media (min-width: 576px) {
+      margin-top: -40px;
+    }
+    @media (min-width: 992px) {
+      margin-top: -40px;
+    }
+    @media (min-width: 1280px) {
+      margin-top: -40px;
+    }
+    &:after{
+      background: #F5F5F5;
+      position: absolute;
+      height: 145px;
+      top: 100px;
+      width: 100%;
+      @media (min-width: 576px) {
+        top: 50px;
+        height: 185px;
+      }
+      @media (min-width: 992px) {
+        top: 55px;
+        height: 145px;
+      }
+      @media (min-width: 1280px) {
+        top: 100px;
+      }
+    }
+    .content-block-cat-images{
+      width: 760px;
+      display: flex;
+      position: relative;
+      z-index: 9;
+      padding: 0 30px;
+      justify-content: center;
+      @media (min-width: 576px) {
+        padding: 0 30px;
+        width: 985px;
+      }
+      @media (min-width: 992px) {
+        width: 780px;
+        padding: 0px;
+      }
+      @media (min-width: 1280px) {
+        width: 985px;
+      }
+      .block-cat{
+        padding: 0 3px;
+        position: relative;
+        a{
+          font-family: 'Open Sans Bold';
+          color: #FFFFFF;
+          font-size: 18px;
+          line-height: 26px;
+          text-transform: uppercase;
+          text-decoration: none;
+          @media (min-width: 992px) {
+            font-size: 15px;
+            line-height: 18px;
+          }
+          @media (min-width: 1280px) {
+            font-size: 15px;
+            line-height: 20px;
+          }
+          .content-text-cat{
+            position: absolute;
+            width: 100%;
+            bottom: 20px;
+            .title{
+              position: relative;
+              margin-top: 195px;
+              margin-bottom: 50px;
+              @media (min-width: 992px) {
+                top: 0;
+                margin-top: 160px;
+                bottom: 0;
+                margin-bottom: 50px;
+                padding: 0 15px;
+              }
+              @media (min-width: 1280px) {
+                margin-top: 195px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

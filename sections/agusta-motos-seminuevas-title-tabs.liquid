@@ -1,0 +1,54 @@
+<div class="col-12">
+  {% if section.settings.title != blank%}
+  <p class="title-tabs text-uppercase text-center mb-0">
+    {{ section.settings.title }}
+  </p>
+  {% endif %}
+  {% if section.settings.subtitle != blank%}
+  <p class="subtitle-tabs text-uppercase text-center mb-0">
+    {{ section.settings.subtitle }}
+  </p>
+  {% endif %}
+  {% if section.settings.subtitle_end != blank%}
+  <p class="subtitle-tabs-end text-uppercase text-center mb-0">
+    {{ section.settings.subtitle_end }}
+  </p>
+  {% endif %}
+  {% if section.settings.description != blank%}
+  <p class="description-tabs text-center">
+    {{ section.settings.description }}
+  </p>
+  {% endif %}
+</div>
+{% schema %}
+{
+    "name": "Agusta seminuevas tabs",
+    "class": "agusta-seminuevas-tabs",
+    "settings": [
+		{
+			"type": "header",
+			"content": "==== Titulos ===="
+		},
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Titulo"
+		},
+		{
+			"type": "text",
+			"id": "subtitle",
+			"label": "Subtitulo"
+		},
+		{
+			"type": "text",
+			"id": "subtitle_end",
+			"label": "Subtitulo final"
+		},
+		{
+			"type": "text",
+			"id": "description",
+			"label": "Descripción"
+		}
+	]
+  }
+{% endschema %}
