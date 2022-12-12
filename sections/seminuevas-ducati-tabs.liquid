@@ -2,38 +2,6 @@
 	<div class="container-fluid">
 		<div id="shopify-section-ducati-motos-nuevas-title-tabs" class="shopify-section agusta-seminuevas-tabs row justify-content-center">
 			<div class="col-11 col-lg-12">
-				{% if section.settings.image_icono != blank%}
-					<div class="imagen-icono-content text-center">
-						<img class="lazyload img-fluid"
-						     data-src="{{ section.settings.image_icono | img_url:"master" }}"
-						     data-aspectratio="{{ preview_image.aspect_ratio }}"
-						     width="{{ section.settings.image_icono.width }}"
-						     height="{{ section.settings.image_icono.width | divided_by: section.settings.image_icono.aspect_ratio | round }}"
-						     alt="{{ preview_image.alt | escape }}">
-					</div>
-				{% endif %}
-				{% if section.settings.title != blank%}
-					<p class="title-tabs text-center">
-						<span>{{ section.settings.title }}</span>
-					</p>
-				{% endif %}
-				{% if section.settings.subtitle != blank%}
-					<p class="subtitle-tabs text-center mb-0">
-						{{ section.settings.subtitle }}
-					</p>
-				{% endif %}
-			</div>
-			<div class="col-11 col-lg-12">
-				<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-
-					{% for block in section.blocks %}
-						<li class="nav-item" role="presentation">
-							<button class="nav-link  {% if forloop.first %}active{% endif %}" id="{{block.settings.tab_name | handleize}}-tab" data-bs-toggle="tab" data-bs-target="#{{block.settings.tab_name | handleize}}" type="button" role="tab" aria-controls="home" aria-selected="true">
-								{{block.settings.tab_name | capitalize}}
-							</button>
-						</li>
-					{% endfor %}
-				</ul>
 				<div class="tab-content" id="myTabContent">
 					{% for block in section.blocks %}
 						<div class="tab-pane fade {% if forloop.first %} show active{% endif %}" id="{{block.settings.tab_name | handleize}}" role="tabpanel" aria-labelledby="{{block.settings.tab_name | handleize}}-tab">
