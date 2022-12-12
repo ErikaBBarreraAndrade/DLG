@@ -30,6 +30,7 @@
     },
     "1637815290646ac56b": {
       "type": "seminuevas-loop-motos",
+      "disabled": true,
       "blocks": {
         "c927bde4-9b79-4167-b90b-b4848f529bb4": {
           "type": "text_block",
