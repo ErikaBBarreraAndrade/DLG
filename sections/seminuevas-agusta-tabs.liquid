@@ -1,0 +1,45 @@
+<div class="row m-0 justify-content-center block-content-tabs-information pt-0" id="motos-nuevas">
+	<div class="container-fluid">
+		<div id="shopify-section-ducati-motos-nuevas-title-tabs" class="shopify-section agusta-seminuevas-tabs row justify-content-center">
+			<div class="col-12">
+				<div class="row justify-content-center">
+					<div class="col-12">
+						{%- assign featured_product = collections[section.settings.featured_product_handle] -%}
+						{%- for product in featured_product.products -%}
+							{% include 'catalog-card-product-list-alone', cProduct:product %}
+						{%- endfor -%}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+  "name": "Seminuevas Agusta",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "featured_product_handle",
+      "label": "Select Collection"
+    },
+    {
+      "type": "color",
+      "id": "bg_block",
+      "label": "Background",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Url botón"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
