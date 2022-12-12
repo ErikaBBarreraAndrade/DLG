@@ -22,16 +22,6 @@
 		<div class="row content-details-motos">
 			<div class="col-12 col-lg-12">
 				<div class="row">
-					{% if cProduct.metafields.catalog.alimentacion.value != blank%}
-						<div class="col-6 col-sm-6 col-lg-6">
-							<p class="label mb-0">
-								Alimentación
-							</p>
-							<p class="description-label">
-								{{ cProduct.metafields.catalog.alimentacion.value }}
-							</p>
-						</div>
-					{% endif %}
 					{% if cProduct.metafields.catalog.potencia.value != blank%}
 						<div class="col-6 col-sm-6 col-lg-6">
 							<p class="label mb-0">
@@ -42,23 +32,33 @@
 							</p>
 						</div>
 					{% endif %}
-					{% if cProduct.metafields.catalog.desplazamiento.value != blank%}
+					{% if cProduct.metafields.dlg.kilometraje_seminuevas != blank%}
 						<div class="col-6 col-sm-6 col-lg-6">
 							<p class="label mb-0">
-								Desplazamiento total del motor
+								Kilometraje
 							</p>
 							<p class="description-label">
-								{{ cProduct.metafields.catalog.desplazamiento.value }}
+								{{ cProduct.metafields.dlg.kilometraje_seminuevas }}
 							</p>
 						</div>
 					{% endif %}
-					{% if cProduct.metafields.catalog.par.value != blank%}
+					{% if cProduct.metafields.dlg.torque != blank%}
 						<div class="col-6 col-sm-6 col-lg-6">
 							<p class="label mb-0">
-								Par máximo del motor
+								Torque
 							</p>
 							<p class="description-label">
-								{{ cProduct.metafields.catalog.par.value }}
+								{{ cProduct.metafields.dlg.torque }}
+							</p>
+						</div>
+					{% endif %}
+					{% if cProduct.metafields.dlg.anio_moto != blank%}
+						<div class="col-6 col-sm-6 col-lg-6">
+							<p class="label mb-0">
+								Año
+							</p>
+							<p class="description-label">
+								{{ cProduct.metafields.dlg.anio_moto }}
 							</p>
 						</div>
 					{% endif %}
